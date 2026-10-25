@@ -5,288 +5,259 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>AYM Finance | Boekhouden doen wij, ondernemen doe jij</title>
+<meta name="description" content="Boekhouding, belastingzaken en financieel advies voor zzp, mkb en particulieren in Huizen en omgeving.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Cinzel:wght@500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#14143C;--navy2:#1E1E52;--indigo:#5B63D3;--indigo-d:#4148B0;--lav:#F2F2FA;--gray:#6B6B73;--hex-l:#D9D9DE;--ink:#1A1A33;--muted:#5A5A72;--line:#E2E2EE}
+/* Layout: dark identity hero, then a typographic ledger of services, steps marked with their own hexagons */
+:root{
+  --night:#14143C; --night2:#1C1C4C; --peri:#5C69C4; --peri-d:#4652AE;
+  --stone:#6E6E78; --mist:#EEEEF3; --line:#DCDCE6; --ink:#17173A; --muted:#55556B; --paper:#FFFFFF;
+  --serif:'Cormorant Garamond',Garamond,'Times New Roman',serif;
+  --caps:'Cinzel','Trajan Pro',Georgia,serif;
+  --sans:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Manrope,system-ui,sans-serif;color:var(--ink);font-size:17px;line-height:1.65;background:#fff}
-img{max-width:100%;display:block;height:auto}
+body{margin:0;font-family:var(--sans);font-size:18px;line-height:1.6;color:var(--ink);background:var(--paper)}
+img,svg{display:block;max-width:100%}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--indigo);outline-offset:3px;border-radius:6px}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-h1,h2,h3{margin:0;line-height:1.12;letter-spacing:-0.02em}
-h2{font-size:clamp(30px,3.8vw,44px);font-weight:800}
-h3{font-weight:700}
 p{margin:0}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:12px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer}
-.btn-primary{background:var(--indigo);color:#fff}.btn-primary:hover{background:var(--indigo-d)}
-.btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}.btn-ghost:hover{background:rgba(255,255,255,.08)}
-.btn-dark{background:var(--navy);color:#fff}
-.btn-outline{border-color:var(--navy);color:var(--navy)}.btn-outline:hover{background:var(--lav)}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:600;line-height:1.05;text-wrap:balance}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.caps{font-family:var(--caps);font-weight:500;letter-spacing:.22em;text-transform:uppercase;font-size:13px}
+:focus-visible{outline:3px solid var(--peri);outline-offset:3px}
 
-/* logo */
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
-.logo svg{flex:none}
-.logo-txt{display:flex;flex-direction:column;line-height:1}
-.logo-txt b{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:27px;letter-spacing:0}
-.logo-txt i{font-family:Cinzel,serif;font-style:normal;font-size:9.5px;letter-spacing:.08em;margin-top:3px;opacity:.85}
+/* top bar like their current site */
+.top{background:var(--peri);color:#fff;font-size:15px}
+.top .wrap{display:flex;justify-content:flex-end;gap:26px;padding-block:7px}
+.top a{text-decoration:none;display:inline-flex;align-items:center;gap:7px}
+.top a:hover{text-decoration:underline}
 
-/* top + nav */
-.topbar{background:var(--indigo);color:#fff;font-size:14px}
-.topbar .wrap{display:flex;justify-content:flex-end;gap:22px;min-height:38px;align-items:center;flex-wrap:wrap}
-.topbar a{text-decoration:none;display:flex;gap:7px;align-items:center}
-header{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
-.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:18px}
-.nav nav{display:flex;align-items:center;gap:26px;font-weight:600;font-size:15px}
-.nav nav a{text-decoration:none;opacity:.9}.nav nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
-.nav .btn{min-height:44px;padding:0 18px}
-@media (max-width:860px){.nav nav a:not(.btn){display:none}.topbar .wrap{justify-content:center}}
+/* header + hero */
+.hero{background:var(--night);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 85% 20%,rgba(92,105,196,.28),transparent 70%);pointer-events:none}
+nav.main{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;padding-block:22px}
+.mini{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mini span{font-family:var(--serif);font-size:24px;font-weight:600;letter-spacing:.01em}
+nav.main ul{list-style:none;margin:0;padding:0;display:flex;gap:30px;font-size:16px}
+nav.main ul a{text-decoration:none;opacity:.85}
+nav.main ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:56px;align-items:center;padding-block:56px 92px}
+.mark{width:min(380px,100%);justify-self:center}
+.hero h1{font-size:clamp(56px,8vw,104px);font-weight:500;letter-spacing:-.01em}
+.hero .slogan{margin-top:14px;color:#D9DAEE;font-size:clamp(12px,1.25vw,15px)}
+.hero .intro{margin-top:30px;max-width:30em;color:#D2D3E6;font-size:19px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:4px;font-weight:600;font-size:17px;text-decoration:none;border:1.5px solid transparent;transition:background .2s,border-color .2s}
+.btn-p{background:var(--peri);color:#fff}
+.btn-p:hover{background:var(--peri-d)}
+.btn-o{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-o:hover{border-color:#fff}
+.where{margin-top:22px;font-size:15px;color:#A9AAC8}
 
-/* hero */
-.hero{background:radial-gradient(1200px 500px at 85% 10%,#2C2C7A 0,transparent 60%),var(--navy);color:#fff;padding:80px 0 100px;position:relative;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:center;position:relative}
-.hero h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(44px,6vw,72px);letter-spacing:-0.01em;line-height:1.02}
-.hero .lead{font-size:19px;color:#C9CAE6;margin:24px 0 34px;max-width:32em}
-.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
-.hero .note{margin-top:22px;font-size:15px;color:#A9AAD0;display:flex;gap:10px;align-items:center}
-.hex-bg{position:absolute;right:-60px;bottom:-80px;opacity:.12;pointer-events:none}
+/* services ledger */
+section{padding-block:96px}
+.split{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}
+.split .side{position:sticky;top:32px}
+.kicker{color:var(--peri-d);margin-bottom:16px}
+h2{font-size:clamp(38px,4.6vw,58px)}
+.side p{margin-top:18px;color:var(--muted);max-width:24em}
+.ledger{border-top:1.5px solid var(--ink)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:28px;padding-block:26px;border-bottom:1px solid var(--line)}
+.row h3{font-size:28px;font-weight:600}
+.row p{color:var(--muted)}
+.row .for{display:block;margin-top:10px;color:var(--stone);font-size:11px}
 
-/* phone */
-.phone{width:min(320px,100%);margin:0 auto;background:#0B0B26;border-radius:38px;padding:12px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08);position:relative}
-.screen{background:#fff;color:var(--ink);border-radius:28px;padding:22px 18px;min-height:560px}
-.app-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
-.app-top b{font-size:15px}
-.badge{font-size:11px;font-weight:700;background:var(--lav);color:var(--indigo-d);padding:4px 8px;border-radius:999px}
-.kpi{background:var(--navy);color:#fff;border-radius:18px;padding:18px}
-.kpi small{color:#B9BAE0;font-size:12px}
-.kpi strong{display:block;font-size:30px;font-weight:800;margin:4px 0 10px}
-.bars{display:flex;align-items:flex-end;gap:7px;height:62px}
-.bars span{flex:1;background:var(--indigo);border-radius:5px 5px 2px 2px}
-.bars span:last-child{background:#9EA3F0}
-.app-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
-.app-row span{color:var(--muted)}
-.scan{margin-top:16px;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--indigo);color:#fff;border-radius:14px;padding:14px;font-weight:700;font-size:15px}
-.float{position:absolute;left:-40px;bottom:70px;background:#fff;color:var(--ink);border-radius:16px;padding:12px 16px;box-shadow:0 20px 40px -15px rgba(0,0,0,.5);display:flex;gap:10px;align-items:center;font-size:14px;font-weight:600}
-.float i{width:30px;height:30px;border-radius:50%;background:#E7F7EE;display:grid;place-items:center}
-.demo{font-size:11px;color:var(--muted);text-align:center;margin-top:10px}
+/* steps */
+.steps-sec{background:var(--mist)}
+.steps-head{max-width:40em}
+.steps-head p{margin-top:16px;color:var(--muted)}
+.steps{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;position:relative}
+.steps::before{content:"";position:absolute;left:30px;right:30px;top:30px;border-top:1.5px dashed #B9BBD8}
+.steps li{position:relative}
+.hex{width:60px;height:52px;display:grid;place-items:center;font-family:var(--serif);font-size:28px;font-weight:600;color:#fff;background:var(--peri);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)}
+.steps li:nth-child(2) .hex{background:var(--stone)}
+.steps li:nth-child(3) .hex{background:var(--night)}
+.steps h3{font-size:30px;margin-top:22px}
+.steps p{margin-top:8px;color:var(--muted)}
 
-/* trust */
-.trust{background:var(--lav);border-bottom:1px solid var(--line)}
-.trust .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding:28px 20px}
-.trust div{display:flex;gap:12px;align-items:center;font-weight:600;font-size:15px}
-.trust svg{flex:none}
-
-section{padding:96px 0}
-.head{max-width:40em;margin-bottom:48px}
-.head p{color:var(--muted);font-size:18px;margin-top:14px}
-.kicker{font-weight:700;color:var(--indigo-d);font-size:15px;margin-bottom:12px}
-
-/* services */
-.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.svc article{border:1px solid var(--line);border-radius:18px;padding:28px;background:#fff;display:flex;flex-direction:column;gap:12px;transition:border-color .15s}
-.svc article:hover{border-color:var(--indigo)}
-.svc .ic{width:52px;height:52px;display:grid;place-items:center}
-.svc h3{font-size:20px}
-.svc p{color:var(--muted);font-size:16px}
-.svc .for{margin-top:auto;font-size:13px;font-weight:700;color:var(--indigo-d)}
-
-/* how */
-.how{background:var(--navy);color:#fff}
-.how .head p{color:#C9CAE6}
-.how .kicker{color:#9EA3F0}
-.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.steps div{background:var(--navy2);border-radius:18px;padding:28px;border:1px solid rgba(255,255,255,.07)}
-.num{width:44px;height:44px;margin-bottom:18px}
-.steps h3{font-size:21px;margin-bottom:8px}
-.steps p{color:#C9CAE6;font-size:16px}
-
-/* why */
-.why{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
-.why ul{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:16px}
-.why li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px}
-.why li b{display:block}
-.why li span{color:var(--muted);font-size:16px}
-.quote{background:var(--lav);border-radius:24px;padding:40px;position:relative}
-.quote p{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3vw,34px);font-weight:700;line-height:1.2;color:var(--navy)}
-.quote small{display:block;margin-top:18px;color:var(--muted);font-size:15px}
+/* belief */
+.belief{background:var(--night);color:#fff;position:relative;overflow:hidden}
+.belief .ghost{position:absolute;right:-60px;bottom:-80px;width:420px;opacity:.07}
+.belief blockquote{margin:0;max-width:17em;font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(36px,4.8vw,60px);line-height:1.1}
+.belief cite{display:block;margin-top:22px;font-style:normal;color:#A9AAC8}
+.points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:72px}
+.points div{border-top:1px solid rgba(255,255,255,.25);padding-top:20px}
+.points b{display:block;font-family:var(--serif);font-size:26px;font-weight:600}
+.points span{display:block;margin-top:8px;color:#C9CADF}
 
 /* audience */
-.aud{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.aud div{border-radius:18px;padding:26px;background:var(--lav)}
-.aud h3{font-size:20px;margin-bottom:8px}
-.aud p{color:var(--muted);font-size:16px}
-
-/* cta */
-.cta{background:linear-gradient(120deg,var(--indigo) 0,#3F45A8 100%);color:#fff;border-radius:28px;padding:clamp(36px,6vw,64px);display:grid;grid-template-columns:minmax(0,1.2fr) auto;gap:32px;align-items:center}
-.cta h2{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(34px,4.4vw,52px)}
-.cta p{color:#E2E3FF;font-size:18px;margin-top:12px}
-.cta .ctas{display:flex;flex-direction:column;gap:12px}
-.cta .btn-white{background:#fff;color:var(--navy)}
+.who{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:48px}
+.who h3{font-size:30px;margin-top:10px}
+.who p{margin-top:8px;color:var(--muted)}
+.who .caps{color:var(--peri-d);font-size:11px}
 
 /* contact */
-.contact{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start}
-.c-list{display:grid;gap:14px;margin-top:24px}
-.c-list a,.c-list div{display:flex;gap:14px;align-items:center;text-decoration:none;font-weight:600}
-.c-list i{width:44px;height:44px;border-radius:12px;background:var(--lav);display:grid;place-items:center;flex:none}
-form{border:1px solid var(--line);border-radius:22px;padding:28px;display:grid;gap:14px;background:#fff;box-shadow:0 20px 50px -30px rgba(20,20,60,.35)}
+.contact{background:var(--mist)}
+.contact-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.contact h2{font-size:clamp(44px,5.6vw,72px)}
+.contact .lead{margin-top:16px;color:var(--muted);max-width:26em}
+.phone{display:inline-block;margin-top:34px;font-family:var(--serif);font-size:clamp(38px,4.4vw,52px);font-weight:600;text-decoration:none;color:var(--night)}
+.phone:hover{color:var(--peri-d)}
+.ways{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:8px;font-size:17px}
+.ways a{text-decoration:underline;text-decoration-color:var(--peri);text-underline-offset:4px}
+form{background:#fff;border-top:4px solid var(--peri);padding:34px;display:grid;gap:20px}
 label{display:grid;gap:6px;font-weight:600;font-size:15px}
-input,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #CFCFE0;border-radius:10px}
+input,textarea{font:inherit;font-size:17px;padding:12px 2px;border:0;border-bottom:1.5px solid #C9CAD9;background:transparent;color:var(--ink);border-radius:0}
+input:focus,textarea:focus{outline:none;border-bottom-color:var(--peri)}
 textarea{min-height:110px;resize:vertical}
+form .btn{justify-self:start;border:0;cursor:pointer}
+.note{font-size:14px;color:var(--stone)}
 
-footer{background:var(--navy);color:#C9CAE6;padding:48px 0;font-size:15px;margin-top:96px}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
-footer .logo{color:#fff}
+footer{background:var(--night);color:#A9AAC8;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px;padding-block:34px}
+footer .mini span{color:#fff}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
 
-@media (max-width:960px){
-  .hero-grid,.why,.contact,.cta{grid-template-columns:1fr}
-  .svc,.steps,.aud{grid-template-columns:1fr}
-  .trust .wrap{grid-template-columns:1fr 1fr}
-  .float{left:0}
-  section{padding:72px 0}
+@media (max-width:900px){
+  nav.main ul{display:none}
+  .hero-in,.split,.contact-in{grid-template-columns:1fr;gap:36px}
+  .mark{width:200px;justify-self:start}
+  .split .side{position:static}
+  .row{grid-template-columns:1fr;gap:6px}
+  .steps,.points,.who{grid-template-columns:1fr}
+  .steps::before{display:none}
+  section{padding-block:72px}
+  .top .wrap{justify-content:center;gap:18px;font-size:14px}
 }
-@media (max-width:520px){.trust .wrap{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
-<div class="topbar"><div class="wrap">
+<div class="top"><div class="wrap">
 <a href="mailto:info@aymfinance.nl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@aymfinance.nl</a>
 <a href="tel:+31619246393"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>06 19 24 63 93</a>
 </div></div>
 
-<header><div class="wrap nav">
-<a class="logo" href="#top" aria-label="AYM Finance">
-<svg width="52" height="44" viewBox="0 0 52 44" aria-hidden="true"><polygon points="35,2 45,2 50,10.7 45,19.4 35,19.4 30,10.7" fill="#3B3FA8"/><polygon points="19,11 29,11 34,19.7 29,28.4 19,28.4 14,19.7" fill="#7A7A82"/><polygon points="5,20 13,20 17,27 13,34 5,34 1,27" fill="#9A9AA2"/><polygon points="20,27 30,27 35,35.5 30,44 20,44 15,35.5" fill="#E4E4EA"/></svg>
-<span class="logo-txt"><b>AYM Finance</b><i>Boekhouden doen wij, ondernemen doe jij.</i></span>
-</a>
-<nav aria-label="Hoofdmenu">
-<a href="#diensten">Diensten</a><a href="#werkwijze">Werkwijze</a><a href="#over">Over ons</a><a href="#contact">Contact</a>
-<a class="btn btn-primary" href="#contact">Gratis kennismaking</a>
-</nav>
-</div></header>
-
-<main id="top">
-<section class="hero">
-<svg class="hex-bg" width="520" height="460" viewBox="0 0 52 44" aria-hidden="true"><polygon points="35,2 45,2 50,10.7 45,19.4 35,19.4 30,10.7" fill="#fff"/><polygon points="19,11 29,11 34,19.7 29,28.4 19,28.4 14,19.7" fill="#fff"/><polygon points="20,27 30,27 35,35.5 30,44 20,44 15,35.5" fill="#fff"/></svg>
-<div class="wrap hero-grid">
-<div>
-<h1>Boekhouden doen wij, ondernemen doe jij.</h1>
-<p class="lead">Jouw partner in boekhouding, belastingzaken en financieel advies. Persoonlijke aandacht, een handige app voor je bonnetjes en een boekhouder die met je meedenkt. Zo onderneem je zorgeloos.</p>
-<div class="ctas"><a class="btn btn-primary" href="#contact">Plan een gratis kennismaking</a><a class="btn btn-ghost" href="https://wa.me/31619246393">Stuur een WhatsApp</a></div>
-<p class="note"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9EA3F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Voor zzp, mkb en particulieren in Huizen en omgeving</p>
-</div>
-<div style="position:relative">
-<div class="phone"><div class="screen">
-<div class="app-top"><b>Mijn cijfers</b><span class="badge">Live</span></div>
-<div class="kpi"><small>Omzet dit kwartaal</small><strong>€ 38.420</strong><div class="bars" aria-hidden="true"><span style="height:40%"></span><span style="height:55%"></span><span style="height:48%"></span><span style="height:70%"></span><span style="height:62%"></span><span style="height:85%"></span></div></div>
-<div class="app-row"><span>Btw te betalen</span><b>€ 4.115</b></div>
-<div class="app-row"><span>Openstaande facturen</span><b>3</b></div>
-<div class="app-row"><span>Bonnetjes verwerkt</span><b>27</b></div>
-<div class="scan"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8V5a1 1 0 011-1h3M16 4h3a1 1 0 011 1v3M20 16v3a1 1 0 01-1 1h-3M8 20H5a1 1 0 01-1-1v-3M7 12h10"/></svg>Scan een bonnetje</div>
-<p class="demo">Voorbeeldweergave</p>
-</div></div>
-<div class="float"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></i>Bonnetje verwerkt</div>
-</div>
-</div>
-</section>
-
-<div class="trust"><div class="wrap">
-<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>Persoonlijk contact</div>
-<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>Real time inzicht via de app</div>
-<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>Geen fiscale voordelen mislopen</div>
-<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Gevestigd in Huizen</div>
-</div></div>
-
-<section id="diensten">
+<header class="hero">
 <div class="wrap">
-<div class="head"><p class="kicker">Onze diensten</p><h2>Alles voor een gezonde administratie</h2><p>Van je dagelijkse boekhouding tot strategisch advies. Je kiest wat je nodig hebt, wij zorgen dat het klopt.</p></div>
-<div class="svc">
-<article><svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><polygon points="16,4 36,4 46,21 36,38 16,38 6,21" fill="#ECECFA"/><path d="M18 14h16v18H18zM22 19h8M22 24h8M22 29h5" fill="none" stroke="#4148B0" stroke-width="2.2" stroke-linecap="round"/></svg><h3>Complete boekhouding</h3><p>Van het inboeken van facturen en bankmutaties tot maand en jaaroverzichten. Altijd actueel, altijd correct.</p><span class="for">Voor zzp en mkb</span></article>
-<article><svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><polygon points="16,4 36,4 46,21 36,38 16,38 6,21" fill="#ECECFA"/><path d="M19 30l14-14M20 17h.01M32 29h.01" fill="none" stroke="#4148B0" stroke-width="2.6" stroke-linecap="round"/><circle cx="20.5" cy="17.5" r="2.5" fill="none" stroke="#4148B0" stroke-width="2.2"/><circle cx="31.5" cy="28.5" r="2.5" fill="none" stroke="#4148B0" stroke-width="2.2"/></svg><h3>Fiscale aangiftes</h3><p>Btw, inkomstenbelasting en complexe situaties zoals eigen woning, echtscheiding of buitenlands vermogen.</p><span class="for">Voor ondernemers en particulieren</span></article>
-<article><svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><polygon points="16,4 36,4 46,21 36,38 16,38 6,21" fill="#ECECFA"/><path d="M17 30l6-7 4 3 8-10M29 16h6v6" fill="none" stroke="#4148B0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Financieel en fiscaal advies</h3><p>Investeringen, fiscale optimalisatie of de juiste ondernemingsvorm. We kijken vooruit, niet alleen terug.</p><span class="for">Voor groeiende ondernemers</span></article>
-<article><svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><polygon points="16,4 36,4 46,21 36,38 16,38 6,21" fill="#ECECFA"/><path d="M18 31V22M24 31V16M30 31V25M36 31V19" fill="none" stroke="#4148B0" stroke-width="2.6" stroke-linecap="round"/></svg><h3>Jaarrekening en rapportages</h3><p>Een jaarrekening volgens de richtlijnen, plus tussentijdse rapportages om op tijd bij te sturen.</p><span class="for">Voor bv's en mkb</span></article>
-<article><svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><polygon points="16,4 36,4 46,21 36,38 16,38 6,21" fill="#ECECFA"/><circle cx="22" cy="18" r="4" fill="none" stroke="#4148B0" stroke-width="2.2"/><path d="M15 31a7 7 0 0114 0M31 15a3.5 3.5 0 110 7M33 31a6 6 0 00-3-5" fill="none" stroke="#4148B0" stroke-width="2.2" stroke-linecap="round"/></svg><h3>Loonadministratie</h3><p>Loonstroken, loonaangiftes en cao regels. Foutloos en op tijd, zodat jij en je personeel zeker zijn.</p><span class="for">Voor werkgevers</span></article>
-<article><svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><polygon points="16,4 36,4 46,21 36,38 16,38 6,21" fill="#ECECFA"/><path d="M20 14h12a2 2 0 012 2v14a2 2 0 01-2 2H20a2 2 0 01-2-2V16a2 2 0 012-2zM24 28h4" fill="none" stroke="#4148B0" stroke-width="2.2" stroke-linecap="round"/></svg><h3>Digitalisering</h3><p>Scan en herken software, automatische bankkoppelingen en real time dashboards. Minder werk, minder fouten.</p><span class="for">Voor iedereen die tijd wil besparen</span></article>
-</div>
-</div>
-</section>
-
-<section class="how" id="werkwijze">
-<div class="wrap">
-<div class="head"><p class="kicker">Onze werkwijze</p><h2>Je cijfers nog nooit zo dichtbij</h2><p>Met onze app stuur je facturen en bonnetjes direct vanaf je telefoon. Wij doen de rest, en jij kijkt live mee.</p></div>
-<div class="steps">
-<div><svg class="num" viewBox="0 0 44 44" aria-hidden="true"><polygon points="12,2 32,2 42,22 32,42 12,42 2,22" fill="#5B63D3"/><text x="22" y="28" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="16" fill="#fff">1</text></svg><h3>Scan en stuur</h3><p>Maak een foto van je bonnetje of factuur in de app. Klaar, geen schoenendoos meer.</p></div>
-<div><svg class="num" viewBox="0 0 44 44" aria-hidden="true"><polygon points="12,2 32,2 42,22 32,42 12,42 2,22" fill="#5B63D3"/><text x="22" y="28" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="16" fill="#fff">2</text></svg><h3>Wij verwerken</h3><p>Wij boeken alles correct in en zorgen dat je aan al je fiscale verplichtingen voldoet.</p></div>
-<div><svg class="num" viewBox="0 0 44 44" aria-hidden="true"><polygon points="12,2 32,2 42,22 32,42 12,42 2,22" fill="#5B63D3"/><text x="22" y="28" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="16" fill="#fff">3</text></svg><h3>Jij houdt overzicht</h3><p>In de app zie je real time hoe je ervoor staat. Geen verrassingen aan het einde van de maand.</p></div>
-</div>
-</div>
-</section>
-
-<section id="over">
-<div class="wrap why">
-<div>
-<p class="kicker">Waarom AYM Finance</p>
-<h2>Een boekhouder die verder kijkt dan de cijfers</h2>
+<nav class="main" aria-label="Hoofdmenu">
+<a class="mini" href="#top" aria-label="AYM Finance"><svg width="40" height="34" viewBox="0 0 52 44" aria-hidden="true"><polygon points="35,2 45,2 50,10.7 45,19.4 35,19.4 30,10.7" fill="#5C69C4"/><polygon points="19,11 29,11 34,19.7 29,28.4 19,28.4 14,19.7" fill="#8A8A94"/><polygon points="5,20 13,20 17,27 13,34 5,34 1,27" fill="#A6A6AE"/><polygon points="20,27 30,27 35,35.5 30,44 20,44 15,35.5" fill="#E4E4EA"/></svg><span>AYM Finance</span></a>
 <ul>
-<li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>Je business partner</b><span>We denken actief mee en signaleren kansen en risico's voordat ze op je pad komen.</span></div></li>
-<li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>Ervaren finance professionals</b><span>Diepgaande kennis van boekhouding, belastingen en financieel advies, voor ondernemers uit allerlei branches.</span></div></li>
-<li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>Meer tijd voor advies</b><span>Doordat we slim automatiseren, houden we meer tijd over om jouw cijfers te analyseren.</span></div></li>
+<li><a href="#diensten">Diensten</a></li>
+<li><a href="#werkwijze">Werkwijze</a></li>
+<li><a href="#over">Over ons</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="hero-in" id="top">
+<svg class="mark" viewBox="0 0 52 44" role="img" aria-label="Logo van AYM Finance"><polygon points="35,2 45,2 50,10.7 45,19.4 35,19.4 30,10.7" fill="#5C69C4"/><polygon points="19,11 29,11 34,19.7 29,28.4 19,28.4 14,19.7" fill="#8A8A94"/><polygon points="5,20 13,20 17,27 13,34 5,34 1,27" fill="#A6A6AE"/><polygon points="20,27 30,27 35,35.5 30,44 20,44 15,35.5" fill="#E4E4EA"/></svg>
+<div>
+<h1>AYM Finance</h1>
+<p class="slogan caps">Boekhouden doen wij, ondernemen doe jij.</p>
+<p class="intro">Je partner in boekhouding, belastingzaken en financieel advies. Persoonlijke aandacht, een handige app voor je bonnetjes en een boekhouder die met je meedenkt.</p>
+<div class="ctas">
+<a class="btn btn-p" href="#contact">Plan een kennismaking</a>
+<a class="btn btn-o" href="tel:+31619246393">Bel 06 19 24 63 93</a>
+</div>
+<p class="where">Voor zzp, mkb en particulieren in Huizen en omgeving</p>
+</div>
+</div>
+</div>
+</header>
+
+<main>
+<section id="diensten">
+<div class="wrap split">
+<div class="side">
+<p class="kicker caps">Diensten</p>
+<h2>Alles voor een administratie die klopt</h2>
+<p>Van je dagelijkse boekhouding tot advies over de toekomst. Je kiest wat je nodig hebt, wij zorgen dat het klopt.</p>
+</div>
+<div class="ledger">
+<div class="row"><h3>Boekhouding</h3><p>Facturen en bankmutaties ingeboekt, maand en jaaroverzichten altijd actueel.<span class="for caps">Zzp en mkb</span></p></div>
+<div class="row"><h3>Belastingaangiftes</h3><p>Btw en inkomstenbelasting, ook bij een eigen woning, een echtscheiding of vermogen in het buitenland.<span class="for caps">Ondernemers en particulieren</span></p></div>
+<div class="row"><h3>Financieel en fiscaal advies</h3><p>Investeren, de juiste ondernemingsvorm of fiscaal slimmer werken. We kijken vooruit, niet alleen terug.<span class="for caps">Groeiende ondernemers</span></p></div>
+<div class="row"><h3>Jaarrekening en rapportages</h3><p>Een jaarrekening volgens de richtlijnen, en tussentijds overzicht zodat je op tijd kunt bijsturen.<span class="for caps">Bv's en mkb</span></p></div>
+<div class="row"><h3>Loonadministratie</h3><p>Loonstroken, loonaangiftes en cao regels, op tijd en zonder fouten.<span class="for caps">Werkgevers</span></p></div>
+<div class="row"><h3>Digitale administratie</h3><p>Bonnetjes scannen, bankkoppelingen en overzicht in de app. Minder werk, minder fouten.<span class="for caps">Iedereen die tijd wil besparen</span></p></div>
+</div>
+</div>
+</section>
+
+<section class="steps-sec" id="werkwijze">
+<div class="wrap">
+<div class="steps-head">
+<p class="kicker caps">Werkwijze</p>
+<h2>Geen schoenendoos meer</h2>
+<p>Met de app stuur je facturen en bonnetjes direct vanaf je telefoon. Wij doen de rest.</p>
+</div>
+<ol class="steps">
+<li><div class="hex">1</div><h3>Je maakt een foto</h3><p>Van je bonnetje of factuur, in de app. Klaar.</p></li>
+<li><div class="hex">2</div><h3>Wij boeken het in</h3><p>Correct verwerkt, en we letten op al je fiscale verplichtingen.</p></li>
+<li><div class="hex">3</div><h3>Jij houdt overzicht</h3><p>Je ziet hoe je ervoor staat. Geen verrassingen aan het eind van het kwartaal.</p></li>
+</ol>
+</div>
+</section>
+
+<section class="belief" id="over">
+<svg class="ghost" viewBox="0 0 52 44" aria-hidden="true"><polygon points="35,2 45,2 50,10.7 45,19.4 35,19.4 30,10.7" fill="#fff"/><polygon points="19,11 29,11 34,19.7 29,28.4 19,28.4 14,19.7" fill="#fff"/><polygon points="20,27 30,27 35,35.5 30,44 20,44 15,35.5" fill="#fff"/></svg>
+<div class="wrap">
+<blockquote>Wij geloven dat een goede boekhouder verder kijkt dan alleen de cijfers.<cite class="caps">De visie van AYM Finance</cite></blockquote>
+<div class="points">
+<div><b>Een partner, geen loket</b><span>We denken mee en zien kansen en risico's voordat ze op je pad komen.</span></div>
+<div><b>Ervaren in finance</b><span>Kennis van boekhouding, belastingen en advies, voor ondernemers uit allerlei branches.</span></div>
+<div><b>Tijd voor advies</b><span>Omdat we slim automatiseren, houden we tijd over om echt naar je cijfers te kijken.</span></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<p class="kicker caps">Voor wie</p>
+<h2>Of je nu net begint of al jaren onderneemt</h2>
+<div class="who">
+<div><p class="caps">Starters</p><h3>Zzp en starters</h3><p>Een boekhouding die vanaf dag één klopt, zonder fiscale voordelen te laten liggen.</p></div>
+<div><p class="caps">Groeiers</p><h3>Mkb</h3><p>Rapportages, loonadministratie en advies dat meegroeit met je bedrijf.</p></div>
+<div><p class="caps">Thuis</p><h3>Particulieren</h3><p>Je aangifte inkomstenbelasting, ook als het wat ingewikkelder is.</p></div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap contact-in">
+<div>
+<p class="kicker caps">Contact</p>
+<h2>De koffie staat al klaar</h2>
+<p class="lead">Benieuwd wat we voor je kunnen doen? Plan een gratis kennismaking, bel of stuur een appje.</p>
+<a class="phone" href="tel:+31619246393">06 19 24 63 93</a>
+<ul class="ways">
+<li><a href="https://wa.me/31619246393">Stuur een WhatsApp</a></li>
+<li><a href="mailto:info@aymfinance.nl">info@aymfinance.nl</a></li>
+<li>Huizen</li>
 </ul>
 </div>
-<div class="quote"><p>Wij geloven dat een goede boekhouder verder kijkt dan alleen de cijfers.</p><small>Onze visie</small></div>
-</div>
-</section>
-
-<section style="padding-top:0">
-<div class="wrap">
-<div class="head"><p class="kicker">Voor wie</p><h2>Of je nu net begint of al jaren onderneemt</h2></div>
-<div class="aud">
-<div><h3>Zzp'ers en starters</h3><p>Zorgeloos starten, met een boekhouding die vanaf dag één klopt en geen fiscale voordelen die je laat liggen.</p></div>
-<div><h3>Mkb en groeiers</h3><p>Rapportages, loonadministratie en advies dat meegroeit met je bedrijf.</p></div>
-<div><h3>Particulieren</h3><p>Je aangifte inkomstenbelasting, ook bij een eigen woning, echtscheiding of vermogen in het buitenland.</p></div>
-</div>
-</div>
-</section>
-
-<section style="padding-top:0">
-<div class="wrap">
-<div class="cta">
-<div><h2>De koffie staat al klaar</h2><p>Benieuwd wat we voor jouw bedrijf kunnen betekenen? Plan een gratis en vrijblijvende kennismaking.</p></div>
-<div class="ctas"><a class="btn btn-white" href="#contact">Plan een kennismaking</a><a class="btn btn-ghost" href="tel:+31619246393">Bel 06 19 24 63 93</a></div>
-</div>
-</div>
-</section>
-
-<section id="contact" style="padding-top:0">
-<div class="wrap contact">
-<div>
-<p class="kicker">Contact</p>
-<h2>Laten we kennismaken</h2>
-<p style="color:var(--muted);margin-top:14px">Stuur een bericht, bel of app ons. We reageren snel en persoonlijk.</p>
-<div class="c-list">
-<a href="tel:+31619246393"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg></i>06 19 24 63 93</a>
-<a href="mailto:info@aymfinance.nl"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></i>info@aymfinance.nl</a>
-<a href="https://wa.me/31619246393"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.5-4A8 8 0 1112 20a8 8 0 01-4-1z"/></svg></i>WhatsApp</a>
-<div><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4148B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></i>Huizen</div>
-</div>
-</div>
-<form onsubmit="event.preventDefault()">
-<label>Naam<input type="text" placeholder="Je naam"></label>
-<label>E-mailadres<input type="email" placeholder="naam@bedrijf.nl"></label>
-<label>Telefoonnummer<input type="tel" placeholder="06 12345678"></label>
-<label>Waar kunnen we je mee helpen?<textarea placeholder="Bijvoorbeeld: ik start als zzp'er en zoek een boekhouder"></textarea></label>
-<button class="btn btn-primary" type="submit">Verstuur bericht</button>
+<form onsubmit="event.preventDefault();this.querySelector('.note').textContent='Dit is een voorbeeld. In de echte site komt je bericht direct binnen.';">
+<label>Naam<input type="text" name="naam" autocomplete="name"></label>
+<label>Mailadres<input type="email" name="email" autocomplete="email"></label>
+<label>Telefoonnummer<input type="tel" name="tel" autocomplete="tel"></label>
+<label>Waar kunnen we je mee helpen?<textarea name="vraag"></textarea></label>
+<button class="btn btn-p" type="submit">Verstuur bericht</button>
+<p class="note" role="status">We reageren snel en persoonlijk.</p>
 </form>
 </div>
 </section>
 </main>
 
-<footer><div class="wrap">
-<a class="logo" href="#top"><svg width="44" height="38" viewBox="0 0 52 44" aria-hidden="true"><polygon points="35,2 45,2 50,10.7 45,19.4 35,19.4 30,10.7" fill="#5B63D3"/><polygon points="19,11 29,11 34,19.7 29,28.4 19,28.4 14,19.7" fill="#7A7A82"/><polygon points="5,20 13,20 17,27 13,34 5,34 1,27" fill="#9A9AA2"/><polygon points="20,27 30,27 35,35.5 30,44 20,44 15,35.5" fill="#E4E4EA"/></svg><span class="logo-txt"><b>AYM Finance</b><i>Boekhouden doen wij, ondernemen doe jij.</i></span></a>
-<span>Huizen &nbsp; 06 19 24 63 93 &nbsp; info@aymfinance.nl</span>
-</div></footer>
+<footer>
+<div class="wrap">
+<a class="mini" href="#top"><svg width="34" height="29" viewBox="0 0 52 44" aria-hidden="true"><polygon points="35,2 45,2 50,10.7 45,19.4 35,19.4 30,10.7" fill="#5C69C4"/><polygon points="19,11 29,11 34,19.7 29,28.4 19,28.4 14,19.7" fill="#8A8A94"/><polygon points="5,20 13,20 17,27 13,34 5,34 1,27" fill="#A6A6AE"/><polygon points="20,27 30,27 35,35.5 30,44 20,44 15,35.5" fill="#E4E4EA"/></svg><span>AYM Finance</span></a>
+<span>Huizen &nbsp;·&nbsp; <a href="tel:+31619246393">06 19 24 63 93</a> &nbsp;·&nbsp; <a href="mailto:info@aymfinance.nl">info@aymfinance.nl</a></span>
+</div>
+</footer>
 </body>
 </html>
