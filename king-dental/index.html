@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tandartspraktijk King Dental | Aweg 17, Groningen</title>
+<meta name="description" content="Tandartspraktijk King Dental aan de Aweg in Groningen. Tandarts Balázs Gyovai neemt de tijd voor u. Nederlands, English, magyar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --oranje:#ff7e00; --oranje-donker:#d96a00; --olijf:#2f3116; --olijf-2:#4a4c22; --room:#fbf6ec; --zand:#f3e9d6;
+  --inkt:#23241a; --grijs:#686a58;
+  --kop:"Young Serif", Georgia, serif; --tekst:"Instrument Sans", Arial, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--room);color:var(--inkt);font:17px/1.6 var(--tekst);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.kroon{display:block;width:46px;height:20px;color:var(--oranje)}
+
+header{padding:22px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.merk{display:flex;align-items:center;gap:12px;text-decoration:none}
+.merk img{height:46px;width:auto}
+.merk b{font:400 21px/1 var(--kop);color:var(--olijf)}
+.merk small{display:block;font:600 11px/1.4 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--grijs);margin-top:4px}
+nav{display:flex;gap:26px;font-size:15px;font-weight:500}
+nav a{text-decoration:none}
+nav a:hover{color:var(--oranje-donker)}
+.taal{font-size:13px;color:var(--grijs);border:1px solid #d9cdb5;border-radius:99px;padding:5px 12px}
+.knop{display:inline-flex;align-items:center;gap:10px;background:var(--oranje);color:#fff;text-decoration:none;font-weight:600;padding:14px 24px;border-radius:99px;font-size:16px;transition:background .2s}
+.knop:hover{background:var(--oranje-donker)}
+.knop.rand{background:transparent;color:var(--olijf);box-shadow:inset 0 0 0 1.5px var(--olijf)}
+.knop.rand:hover{background:var(--olijf);color:#fff}
+
+/* hero */
+.hero{padding:40px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.hero h1{font:400 clamp(46px,6.4vw,88px)/1 var(--kop);color:var(--olijf);letter-spacing:-.015em;margin:18px 0 24px}
+.hero h1 span{color:var(--oranje)}
+.hero p{font-size:19px;max-width:31em;color:#3d3f2c}
+.hero .acties{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.boog{position:relative;justify-self:center;width:min(100%,400px)}
+.boog .vorm{background:var(--oranje);border-radius:220px 220px 22px 22px;padding:26px 26px 0;overflow:hidden}
+.boog img{width:100%;border-radius:190px 190px 0 0;aspect-ratio:358/520;object-fit:cover;object-position:center 20%}
+.boog .kroon-groot{position:absolute;left:50%;top:-58px;transform:translateX(-50%);width:120px;height:60px;color:var(--oranje)}
+.boog figcaption{position:absolute;right:-18px;bottom:34px;background:var(--room);padding:12px 16px;border-radius:14px;font-size:14px;line-height:1.35;box-shadow:0 12px 30px -14px rgba(0,0,0,.35)}
+.boog figcaption b{font:400 18px/1.2 var(--kop);display:block;color:var(--olijf)}
+
+.strook{background:var(--olijf);color:#efe9d6}
+.strook .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;padding-top:26px;padding-bottom:26px}
+.strook b{display:block;color:#fff;font-weight:600}
+.strook a{color:#fff}
+.strook span{font-size:15px;opacity:.85}
+
+section{padding:100px 0}
+.label{font:600 12px/1 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:var(--oranje-donker)}
+h2{font:400 clamp(34px,4.2vw,56px)/1.05 var(--kop);color:var(--olijf);margin:14px 0 20px}
+h3{font:400 24px/1.2 var(--kop);color:var(--olijf)}
+
+/* tandarts */
+.tandarts .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px}
+.tandarts p{color:#3d3f2c;max-width:32em}
+.reis{list-style:none;margin-top:10px;position:relative}
+.reis:before{content:"";position:absolute;left:58px;top:8px;bottom:8px;width:2px;background:repeating-linear-gradient(var(--oranje) 0 6px,transparent 6px 12px)}
+.reis li{display:grid;grid-template-columns:44px 1fr;gap:34px;padding:16px 0}
+.reis b{font:400 18px/1.4 var(--kop);color:var(--oranje-donker);text-align:right}
+.reis span{font-size:16px}
+.reis span strong{display:block;font-weight:600;color:var(--olijf)}
+.talen{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+.talen span{background:var(--zand);border-radius:99px;padding:7px 15px;font-size:14px;font-weight:500}
+
+/* behandelingen */
+.behandel{background:var(--zand)}
+.behandel .wrap{display:grid;grid-template-columns:1fr 1.5fr;gap:70px}
+.groepen{display:grid;grid-template-columns:1fr 1fr;gap:40px 50px}
+.groep h3{padding-bottom:12px;border-bottom:2px solid var(--oranje);margin-bottom:12px;font-size:21px}
+.groep p{font-size:16px;color:#3d3f2c}
+.verwijs{margin-top:28px;font-size:15px;color:var(--grijs)}
+.belofte{margin-top:34px;font:400 22px/1.45 var(--kop);color:var(--olijf)}
+
+/* stemmen */
+.stemmen .wrap{display:grid;grid-template-columns:.8fr 1fr 1fr;gap:40px}
+.cijfer{font:400 110px/.85 var(--kop);color:var(--oranje)}
+.cijfer small{display:block;font:500 14px/1.4 var(--tekst);color:var(--grijs);margin-top:14px}
+blockquote{font:400 22px/1.4 var(--kop);color:var(--olijf);border-top:2px solid var(--olijf);padding-top:20px}
+blockquote cite{display:block;font:500 14px/1.4 var(--tekst);font-style:normal;color:var(--grijs);margin-top:14px}
+
+/* praktisch */
+.praktisch{background:var(--olijf);color:#e9e4d0}
+.praktisch h2{color:#fff}
+.praktisch .label{color:var(--oranje)}
+.kolommen{display:grid;grid-template-columns:repeat(3,1fr);gap:46px;margin-top:44px}
+.kolommen h3{color:#fff;font-size:22px;margin-bottom:14px}
+.kolommen p{font-size:15px;margin-bottom:10px;color:#d8d3bd}
+.kolommen a{color:#fff}
+.spoednr{font:400 30px/1.2 var(--kop);color:var(--oranje);text-decoration:none;display:block;margin:6px 0 8px}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:start}
+.tel{font:400 clamp(40px,5vw,60px)/1 var(--kop);color:var(--olijf);text-decoration:none;display:block;margin:8px 0 18px}
+.melding{background:#fff;border-left:4px solid var(--oranje);padding:16px 20px;font-size:15px;margin-top:22px}
+.uren div{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #e4d8c0;font-size:16px}
+.uren .vandaag{font-weight:600}
+.uren p{font-size:14px;color:var(--grijs);margin-top:14px}
+footer{border-top:1px solid #e4d8c0;padding:28px 0;font-size:14px;color:var(--grijs)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.belknop{display:none}
+
+@media (max-width:960px){
+  nav{display:none}
+  .hero .wrap,.tandarts .wrap,.behandel .wrap,.stemmen .wrap,.contact .wrap{grid-template-columns:1fr;gap:50px}
+  .kolommen{grid-template-columns:1fr;gap:30px}
+  .boog{margin-top:60px}
+  section{padding:72px 0}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  header .knop,.taal{display:none}
+  .merk img{height:38px}
+  .hero{padding-top:20px}
+  .hero p{font-size:17px}
+  .strook .wrap{grid-template-columns:1fr;gap:14px}
+  .groepen{grid-template-columns:1fr;gap:28px}
+  .boog figcaption{right:0}
+  .cijfer{font-size:84px}
+  .belknop{display:flex;position:fixed;right:16px;bottom:16px;z-index:40;background:var(--oranje);color:#fff;text-decoration:none;font-weight:600;padding:15px 22px;border-radius:99px;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="kroon" viewBox="0 0 120 52"><path d="M8 46 L12 10 L36 32 L60 4 L84 32 L108 10 L112 46 Z" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+</svg>
+
+<header><div class="wrap">
+  <a class="merk" href="#"><img src="logo-kies.png" alt=""><span><b>King Dental</b><small>Tandartspraktijk · Groningen</small></span></a>
+  <nav>
+    <a href="#tandarts">De tandarts</a>
+    <a href="#behandelingen">Behandelingen</a>
+    <a href="#praktisch">Spoed en route</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <span class="taal">NL · EN</span>
+  <a class="knop" href="tel:0503121605">050 312 16 05</a>
+</div></header>
+
+<main>
+<section class="hero" style="padding-top:64px">
+  <div class="wrap">
+    <div>
+      <svg class="kroon"><use href="#kroon"/></svg>
+      <h1>De patiënt is de <span>koning(in).</span></h1>
+      <p>Een tandartspraktijk aan de Aweg, vlak bij de Westerhaven. Tandarts Balázs Gyovai doet elke behandeling zelf en neemt daar de tijd voor. Persoonlijke aandacht heeft hier de hoogste prioriteit.</p>
+      <div class="acties">
+        <a class="knop" href="tel:0503121605">Bel 050 312 16 05</a>
+        <a class="knop rand" href="#praktisch">Spoed? Zo werkt het</a>
+      </div>
+    </div>
+    <figure class="boog">
+      <svg class="kroon-groot"><use href="#kroon"/></svg>
+      <div class="vorm"><img src="gyovai.jpg" alt="Tandarts Balázs Gyovai"></div>
+      <figcaption><b>Balázs Gyovai</b>tandarts sinds 1999</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="strook"><div class="wrap">
+  <div><b>Aweg 17, Groningen</b><span>50 meter van de Westerhaven</span></div>
+  <div><b>Ma t/m do 08.00 – 17.00</b><span>vrijdag 08.30 – 13.00</span></div>
+  <div><b><a href="mailto:info@kingdental.nl">info@kingdental.nl</a></b><span>wij sturen een herinnering 1 week en 1 dag vooraf</span></div>
+</div></div>
+
+<section class="tandarts" id="tandarts">
+  <div class="wrap">
+    <div>
+      <span class="label">Uw tandarts</span>
+      <h2>Van Boedapest naar de Aweg</h2>
+      <p>Balázs Gyovai werkte in Hongarije, Engeland en Zwitserland voordat hij zich in Groningen vestigde. Die jaren tussen verschillende culturen leerden hem vooral één ding: goed samenwerken met de patiënt in de stoel.</p>
+      <div class="talen"><span>Nederlands</span><span>English</span><span>Magyar</span></div>
+    </div>
+    <ol class="reis">
+      <li><b>1999</b><span><strong>Afgestudeerd</strong>Medische universiteit in Boedapest</span></li>
+      <li><b>2001</b><span><strong>Eigen praktijk</strong>In Hongarije</span></li>
+      <li><b>Later</b><span><strong>Internationale praktijk</strong>Werk in onder meer Engeland en Zwitserland</span></li>
+      <li><b>2014</b><span><strong>Naar Nederland</strong>En sindsdien tandarts aan de Aweg in Groningen</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="behandel" id="behandelingen">
+  <div class="wrap">
+    <div>
+      <span class="label">Behandelingen</span>
+      <h2>Alles bij één tandarts</h2>
+      <p class="belofte">Pijnloos behandelen, moderne apparatuur, gesteriliseerde instrumenten en latexvrije handschoenen.</p>
+      <p class="verwijs">Voor parodontologie, orthodontie of kaakchirurgie verwijzen we u door naar een specialist.</p>
+    </div>
+    <div class="groepen">
+      <div class="groep"><h3>Controle en preventie</h3><p>Periodieke controle, röntgenfoto's, verdoving en preventieve zorg zoals sealen.</p></div>
+      <div class="groep"><h3>Herstel</h3><p>Vullingen, kronen en bruggen. Wortelkanaalbehandeling en tandvleesbehandeling.</p></div>
+      <div class="groep"><h3>Vervangen</h3><p>Implantaten, kunstgebitten en een noodgebit als het snel moet.</p></div>
+      <div class="groep"><h3>Verder</h3><p>Extracties, tanden bleken en een opbeetplaat tegen knarsen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="stemmen">
+  <div class="wrap">
+    <div class="cijfer">4,9<small>op Google, uit 18 reviews</small></div>
+    <blockquote>“De tandarts stelt je gerust, legt alles goed uit en is vooraf duidelijk over de financiën.”<cite>Daan, via Google</cite></blockquote>
+    <blockquote>“Niet iets waar je op zit te wachten maar het was sneller voorbij dan ik auw kon zeggen.”<cite>Marlon, over een extractie</cite></blockquote>
+  </div>
+</section>
+
+<section class="praktisch" id="praktisch">
+  <div class="wrap">
+    <span class="label">Goed om te weten</span>
+    <h2>Spoed, route en betalen</h2>
+    <div class="kolommen">
+      <div>
+        <h3>Spoed</h3>
+        <p>Heftige pijn of een acuut probleem? Neem dan op een werkdag vóór 10.00 uur contact met ons op.</p>
+        <p>Buiten praktijkuren belt u de spoeddienst:</p>
+        <a class="spoednr" href="tel:09008602">0900 8602</a>
+      </div>
+      <div>
+        <h3>Route</h3>
+        <p>Aweg 17, 9718 CV Groningen.</p>
+        <p>Met de bus: lijn 7, 8 of 9 tot de Westerhaven, dan 50 meter lopen. Of lijn 35 of 39 tot de H. Colleniusstraat, dan 200 meter.</p>
+        <p>Met de auto: betaald parkeren in de straat (maximaal 2 uur) of in de Q-Park Westerhaven.</p>
+      </div>
+      <div>
+        <h3>Betalen</h3>
+        <p>U rekent na de behandeling direct bij ons af, het liefst met de pin. De nota declareert u daarna zelf bij uw zorgverzekeraar.</p>
+        <p>Tot 18 jaar gaat de declaratie rechtstreeks naar de verzekeraar.</p>
+        <p>Neem bij elk bezoek uw zorgpas en een geldig legitimatiebewijs mee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <span class="label">Afspraak maken</span>
+      <a class="tel" href="tel:0503121605">050 312 16 05</a>
+      <p>Telefonisch bereikbaar elke werkdag van 08.30 tot 11.30 uur, en van maandag tot en met donderdag ook van 13.00 tot 16.00 uur.</p>
+      <p style="margin-top:10px">Of mail naar <a href="mailto:info@kingdental.nl">info@kingdental.nl</a>.</p>
+      <div class="melding"><b>Tijdelijke patiëntenstop.</b> Op dit moment kunnen we geen nieuwe patiënten inschrijven. We have a temporary stop for new patients.</div>
+    </div>
+    <div class="uren" id="uren">
+      <div data-d="1"><span>Maandag</span><span>08.00 – 17.00</span></div>
+      <div data-d="2"><span>Dinsdag</span><span>08.00 – 17.00</span></div>
+      <div data-d="3"><span>Woensdag</span><span>08.00 – 17.00</span></div>
+      <div data-d="4"><span>Donderdag</span><span>08.00 – 17.00</span></div>
+      <div data-d="5"><span>Vrijdag</span><span>08.30 – 13.00</span></div>
+      <div data-d="6"><span>Zaterdag en zondag</span><span>gesloten</span></div>
+      <p>Kunt u niet komen? Zeg uw afspraak dan op tijd af.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <span>Tandartspraktijk King Dental · Aweg 17 · 9718 CV Groningen</span>
+  <span>English spoken · Magyarul is beszélünk</span>
+</div></footer>
+
+<a class="belknop" href="tel:0503121605">Bel de praktijk</a>
+<script>
+(function(){var d=new Date().getDay();if(d===0)d=6;var r=document.querySelector('#uren [data-d="'+d+'"]');if(r)r.classList.add('vandaag');})();
+</script>
+</body>
+</html>

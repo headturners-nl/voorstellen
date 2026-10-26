@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mondhygiënepraktijk Holtman | Gratamastraat 22, Groningen</title>
+<meta name="description" content="Mondhygiënist Anna Holtman, sinds 1994 in Groningen. Zonder verwijzing welkom, rolstoeltoegankelijk en gratis parkeren aan de Gratamastraat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --groen:#00823a; --groen-donker:#0b5a2e; --munt:#eaf4ee; --munt-2:#d6eadd; --wit:#fcfdfb;
+  --inkt:#1d2a22; --grijs:#5b6b61; --rood:#d1361b;
+  --kop:"Source Serif 4", Georgia, serif; --tekst:"Figtree", Arial, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--wit);color:var(--inkt);font:17px/1.65 var(--tekst);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+
+header{border-bottom:1px solid #e1ebe4;background:var(--wit);position:sticky;top:0;z-index:20}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:80px;gap:20px}
+.merk{display:flex;align-items:center;gap:14px;text-decoration:none}
+.merk img{height:40px;width:auto}
+.merk b{font:600 19px/1.1 var(--kop);color:var(--groen-donker);display:block}
+.merk i{font:italic 400 16px/1.1 var(--kop);color:var(--groen)}
+nav{display:flex;gap:26px;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:#33443a}
+nav a:hover{color:var(--groen)}
+.knop{display:inline-flex;align-items:center;gap:8px;background:var(--groen);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 22px;border-radius:8px}
+.knop:hover{background:var(--groen-donker)}
+.knop.zacht{background:var(--munt);color:var(--groen-donker)}
+.knop.zacht:hover{background:var(--munt-2)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:90px 0 100px;background:linear-gradient(180deg,var(--wit) 0,var(--munt) 100%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:end}
+.watermerk{position:absolute;right:-60px;top:20px;width:560px;opacity:.13;pointer-events:none}
+.sinds{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--groen-donker)}
+.sinds:before{content:"";width:34px;height:1.5px;background:var(--groen);transform:rotate(-28deg)}
+h1{font:400 clamp(42px,5.6vw,74px)/1.05 var(--kop);color:var(--groen-donker);margin:20px 0 24px;letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--groen)}
+.hero p{font-size:19px;max-width:32em;color:#2f3d34}
+.hero .acties{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.welkom{background:#fff;border-radius:14px;padding:26px 26px 22px;box-shadow:0 20px 50px -30px rgba(11,90,46,.45)}
+.welkom h2{font:600 22px/1.25 var(--kop);color:var(--groen-donker);margin:0 0 12px}
+.welkom ul{list-style:none;font-size:16px}
+.welkom li{padding:10px 0 10px 26px;border-top:1px solid #e6efe9;position:relative}
+.welkom li:before{content:"";position:absolute;left:2px;top:19px;width:12px;height:2px;background:var(--groen);transform:rotate(-28deg)}
+
+section{padding:96px 0}
+.label{font:700 12px/1 var(--tekst);letter-spacing:.18em;text-transform:uppercase;color:var(--groen)}
+h2{font:400 clamp(32px,3.8vw,48px)/1.1 var(--kop);color:var(--groen-donker);margin:14px 0 18px}
+
+/* klachten */
+.klachten .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.klachten p{color:#34443a;margin-bottom:14px}
+.kl-lijst{display:flex;flex-direction:column;gap:14px}
+.kl-lijst div{font:400 28px/1.25 var(--kop);color:var(--groen-donker);padding-bottom:14px;border-bottom:1px solid #dde9e1}
+.kl-lijst div span{color:var(--rood)}
+
+/* eerste bezoek */
+.bezoek1{background:var(--munt)}
+.stap-rij{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;background:#fff;border-radius:14px;overflow:hidden}
+.stap{padding:32px 30px;border-right:1px solid #e1ebe4}
+.stap:last-child{border-right:0}
+.stap b{font:600 13px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--groen)}
+.stap h3{font:600 22px/1.25 var(--kop);color:var(--groen-donker);margin:14px 0 10px}
+.stap p{font-size:16px;color:#3a4a40}
+
+/* anna */
+.anna .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}
+.portret{display:flex;gap:22px;align-items:center;margin-top:10px}
+.portret img{width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:center 30%;box-shadow:0 0 0 6px var(--munt)}
+.portret b{font:600 22px/1.2 var(--kop);color:var(--groen-donker);display:block}
+.portret span{font-size:15px;color:var(--grijs)}
+.anna p{color:#34443a;margin-top:22px}
+.jaren{list-style:none;border-left:2px solid var(--munt-2)}
+.jaren li{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:14px 0 14px 26px;position:relative}
+.jaren li:before{content:"";position:absolute;left:-7px;top:24px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--groen)}
+.jaren b{font:600 22px/1.3 var(--kop);color:var(--groen)}
+.jaren span{font-size:16px;color:#33443a;padding-top:3px}
+.leden{margin-top:30px;font-size:14px;color:var(--grijs)}
+
+/* toegankelijk */
+.toegang{background:var(--groen-donker);color:#dbeee2}
+.toegang h2{color:#fff}
+.toegang .label{color:#8fd3a8}
+.toegang .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.groot{font:400 26px/1.4 var(--kop);color:#fff}
+.feit{padding:18px 0;border-top:1px solid rgba(255,255,255,.18)}
+.feit b{display:block;color:#fff;font-weight:600;margin-bottom:4px}
+.feit span{font-size:16px;color:#c3dccb}
+
+/* mobiele mondzorg */
+.mmg .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.mmg p{color:#34443a;margin-bottom:14px}
+.mmg-kaart{background:var(--munt);border-radius:14px;padding:30px}
+.mmg-kaart h3{font:600 20px/1.3 var(--kop);color:var(--groen-donker);margin-bottom:10px}
+.mmg-kaart ul{list-style:none}
+.mmg-kaart li{padding:8px 0;border-top:1px solid var(--munt-2);font-size:16px}
+
+/* contact */
+.contact{background:var(--munt)}
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:70px}
+.tel{font:400 clamp(38px,4.6vw,56px)/1 var(--kop);color:var(--groen-donker);text-decoration:none;display:block;margin:10px 0 16px}
+.contact p{color:#34443a;margin-bottom:10px}
+.uren{background:#fff;border-radius:14px;padding:26px 28px}
+.uren div{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #e6efe9}
+.uren div:last-child{border-bottom:0;color:var(--grijs)}
+footer{padding:26px 0;font-size:14px;color:var(--grijs);background:var(--wit)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.belknop{display:none}
+
+@media (max-width:960px){
+  nav{display:none}
+  .hero .wrap,.klachten .wrap,.anna .wrap,.toegang .wrap,.mmg .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+  .stap-rij{grid-template-columns:1fr}
+  .stap{border-right:0;border-bottom:1px solid #e1ebe4}
+  section{padding:70px 0}
+  .watermerk{width:380px;right:-120px;top:auto;bottom:40px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  header .wrap{height:68px}
+  header .knop{display:none}
+  .merk img{height:32px}
+  .merk b{font-size:16px}
+  .hero{padding:54px 0 70px}
+  .hero p{font-size:17px}
+  .kl-lijst div{font-size:23px}
+  .jaren li{grid-template-columns:82px 1fr;gap:12px;padding-left:20px}
+  .groot{font-size:22px}
+  .belknop{display:flex;position:fixed;left:16px;right:16px;bottom:14px;justify-content:center;background:var(--groen);color:#fff;text-decoration:none;font-weight:600;padding:15px;border-radius:10px;z-index:40;box-shadow:0 10px 24px -10px rgba(0,0,0,.45)}
+  body{padding-bottom:70px}
+}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="merk" href="#"><img src="kies.png" alt=""><span><b>Mondhygiënepraktijk</b><i>Holtman</i></span></a>
+  <nav>
+    <a href="#eerste-bezoek">Eerste bezoek</a>
+    <a href="#anna">Over Anna</a>
+    <a href="#toegankelijk">Bereikbaarheid</a>
+    <a href="#aan-huis">Mondzorg aan huis</a>
+  </nav>
+  <a class="knop" href="tel:0503127341">050 312 73 41</a>
+</div></header>
+
+<main>
+<section class="hero">
+  <img class="watermerk" src="kies.png" alt="">
+  <div class="wrap">
+    <div>
+      <span class="sinds">Mondhygiënist in Groningen sinds 1994</span>
+      <h1>Een gezonde mond, voor nu <em>en juist ook voor later.</em></h1>
+      <p>Goed kunnen eten, praten en lachen begint bij gezond tandvlees. Aan de Gratamastraat helpt Anna Holtman u daar al ruim dertig jaar bij, met een verwijzing van uw tandarts of gewoon op eigen initiatief.</p>
+      <div class="acties">
+        <a class="knop" href="tel:0503127341">Bel 050 312 73 41</a>
+        <a class="knop zacht" href="https://www.mondhygieneholtman.nl/contactformulier">Afspraak via het formulier</a>
+      </div>
+    </div>
+    <aside class="welkom">
+      <h2>Wij nemen nog nieuwe patiënten aan</h2>
+      <ul>
+        <li>Ook zonder verwijzing van de tandarts</li>
+        <li>Gratis parkeren bij de praktijk</li>
+        <li>Rolstoeltoegankelijk, op de begane grond</li>
+        <li>Nederlands, English, Deutsch</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="klachten">
+  <div class="wrap">
+    <div>
+      <span class="label">Wanneer naar de mondhygiënist</span>
+      <h2>Herkent u dit?</h2>
+      <p>Een bezoek aan de mondhygiënist kan u van deze klachten afhelpen. Ook bij bepaalde ziektes, zoals diabetes, is een goede mondgezondheid belangrijk.</p>
+      <p>Heeft u een verwijzing van uw tandarts gekregen? Dan bent u hier op de goede plek.</p>
+    </div>
+    <div class="kl-lijst">
+      <div>Bloedend tandvlees</div>
+      <div>Gevoelige tanden</div>
+      <div>Een vieze smaak in de mond</div>
+    </div>
+  </div>
+</section>
+
+<section class="bezoek1" id="eerste-bezoek">
+  <div class="wrap">
+    <span class="label">Uw eerste bezoek</span>
+    <h2>Zo gaat een eerste afspraak</h2>
+    <div class="stap-rij">
+      <div class="stap"><b>Vooraf</b><h3>Gezondheidsvragenlijst</h3><p>Soms zijn voorzorgsmaatregelen nodig voordat de behandeling kan beginnen. Neem een actueel medicatieoverzicht mee, dat krijgt u bij uw apotheek.</p></div>
+      <div class="stap"><b>In de stoel</b><h3>Onderzoek van uw tandvlees</h3><p>We bekijken samen hoe uw tandvlees ervoor staat, bespreken wat we zien en stellen zo nodig een behandelplan op.</p></div>
+      <div class="stap"><b>Duidelijkheid</b><h3>Begroting op papier</h3><p>Komen de kosten boven de 150 euro, dan krijgt u een schriftelijke begroting. Zo kunt u bij uw verzekeraar nagaan wat vergoed wordt.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="anna" id="anna">
+  <div class="wrap">
+    <div>
+      <span class="label">Uw mondhygiënist</span>
+      <div class="portret"><img src="anna.jpg" alt="Anna Holtman"><div><b>Anna Holtman</b><span>Mondhygiënist sinds 1991</span></div></div>
+      <p>Anna begon als tandartsassistente en werkte daarna in een algemene praktijk, een orthodontiepraktijk en een verpleeghuis. In 1994 startte ze haar eigen praktijk.</p>
+      <p class="leden">Aangesloten bij de NVM, het Kwaliteitsregister Mondhygiënisten en de Nederlandse Vereniging voor Parodontologie.</p>
+    </div>
+    <ol class="jaren">
+      <li><b>1988</b><span>Driejarige opleiding tot tandartsassistente afgerond</span></li>
+      <li><b>1991</b><span>Afgestudeerd als mondhygiënist in Nijmegen</span></li>
+      <li><b>’91–’94</b><span>Drie jaar werk in een algemene praktijk, een orthodontiepraktijk en een verpleeghuis</span></li>
+      <li><b>1994</b><span>Eigen praktijk aan de Herman Colleniusstraat</span></li>
+      <li><b>1999</b><span>Verhuisd naar de Gratamastraat 22, waar de praktijk nog steeds zit</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="toegang" id="toegankelijk">
+  <div class="wrap">
+    <div>
+      <span class="label">Bereikbaarheid</span>
+      <h2>Ook als u slecht ter been bent</h2>
+      <p class="groot">Lukt het niet meer om vanuit uw rolstoel in de behandelstoel te gaan zitten? Dan behandelen we u in uw eigen stoel, mits die gekanteld kan worden.</p>
+    </div>
+    <div>
+      <div class="feit"><b>Begane grond</b><span>De praktijk is rolstoeltoegankelijk.</span></div>
+      <div class="feit"><b>Gratis parkeren</b><span>Direct bij de praktijk aan de Gratamastraat 22.</span></div>
+      <div class="feit"><b>Met de bus</b><span>Lijn 2 tot halte Molukkenstraat, dan ongeveer 2 minuten lopen. Of lijn 3 tot halte Zaagmuldersbrug, ongeveer 5 minuten lopen.</span></div>
+      <div class="feit"><b>Talen</b><span>Voornamelijk Nederlands, maar we staan u ook graag te woord in het Engels en Duits.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="mmg" id="aan-huis">
+  <div class="wrap">
+    <div>
+      <span class="label">Mobiele Mondzorg Groningen</span>
+      <h2>Mondzorg aan huis</h2>
+      <p>Samen met mondhygiënist Saskia Westerhoff startte Anna Mobiele Mondzorg Groningen. Voor ouderen, volwassenen en jongeren met een verminderde mobiliteit, bijvoorbeeld door ALS, MS of COPD, die niet meer naar de praktijk kunnen komen.</p>
+      <p>Thuis krijgt u een complete gebitsreiniging, met tips en advies om uw mond gezond te houden.</p>
+    </div>
+    <div class="mmg-kaart">
+      <h3>Ook voor zorgverleners</h3>
+      <ul>
+        <li>Behandeling bij u thuis</li>
+        <li>Klinische lessen voor thuiszorginstellingen</li>
+        <li>Uitleg en advies voor mantelzorgers</li>
+        <li>Offerte op verzoek</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <span class="label">Afspraak maken</span>
+      <a class="tel" href="tel:0503127341">050 312 73 41</a>
+      <p>Bel tijdens onze werkuren of gebruik het contactformulier. We nemen zo snel mogelijk contact met u op.</p>
+      <p><a href="mailto:info@mondhygieneholtman.nl">info@mondhygieneholtman.nl</a></p>
+      <p>Gratamastraat 22, 9714 HS Groningen</p>
+    </div>
+    <div class="uren">
+      <div><span>Maandag</span><span>08.00 – 17.00</span></div>
+      <div><span>Dinsdag</span><span>08.00 – 17.00</span></div>
+      <div><span>Woensdag</span><span>08.00 – 17.00</span></div>
+      <div><span>Donderdag</span><span>08.00 – 17.00</span></div>
+      <div><span>Vrijdag</span><span>gesloten</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <span>Mondhygiënepraktijk Holtman · Gratamastraat 22 · 9714 HS Groningen</span>
+  <span>De mondhygiënist voor een gezond gebit</span>
+</div></footer>
+<a class="belknop" href="tel:0503127341">Bel 050 312 73 41</a>
+</body>
+</html>

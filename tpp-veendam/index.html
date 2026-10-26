@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tandprothetische Praktijk Veendam | Kunstgebit op maat aan de Molenstreek</title>
+<meta name="description" content="Gebitsprotheses, klikgebitten en reparaties op maat door tandprotheticus Marco van Tongeren, Molenstreek 13 in Veendam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=Libre+Bodoni:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0d1f61; --blauw:#0071c1; --licht:#26c0ef;
+  --papier:#f5f2ec; --wand:#ebe6dd; --inkt:#1c2333; --grijs:#5d6473;
+  --serif:"Libre Bodoni", Georgia, serif; --sans:"Archivo", Arial, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--papier);color:var(--inkt);font:17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* topbalk */
+.top{background:var(--navy);color:#fff;font-size:14px}
+.top .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+.top a{text-decoration:none;font-weight:700}
+.top span{opacity:.8}
+
+header.kop{position:sticky;top:0;z-index:20;background:rgba(245,242,236,.96);border-bottom:1px solid #d9d2c4}
+header.kop .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.woordmerk{font:800 15px/1.12 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--navy);text-decoration:none}
+.woordmerk em{display:block;font-style:normal;color:var(--blauw)}
+nav.menu{display:flex;gap:28px;font-size:15px;font-weight:500}
+nav.menu a{text-decoration:none;color:var(--inkt)}
+nav.menu a:hover{color:var(--blauw)}
+.knop{display:inline-flex;align-items:center;gap:10px;background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:13px 22px;border-radius:2px;transition:background .2s}
+.knop:hover{background:var(--blauw)}
+.knop.licht{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 2px var(--navy)}
+.knop.licht:hover{background:var(--navy);color:#fff}
+
+/* hero: de zaal */
+.zaal{padding:72px 0 40px}
+.zaal .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.label{font:700 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--blauw)}
+h1{font:400 clamp(44px,6.2vw,84px)/1.02 var(--serif);color:var(--navy);margin:22px 0 26px;letter-spacing:-.01em}
+h1 i{color:var(--blauw)}
+.zaal p.intro{font-size:19px;max-width:30em;color:#333a4a}
+.zaal .acties{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.lijst-feiten{display:flex;gap:26px;margin-top:38px;padding-top:22px;border-top:1px solid #d3cbbb;flex-wrap:wrap;font-size:14px;color:var(--grijs)}
+.lijst-feiten b{display:block;color:var(--navy);font-size:15px}
+.werk{position:relative}
+.lijst{background:#fff;padding:22px;box-shadow:0 1px 0 #d7cfbf,0 30px 60px -30px rgba(13,31,97,.35)}
+.lijst img{width:100%;aspect-ratio:600/591;object-fit:cover}
+.bordje{position:absolute;left:-34px;bottom:-26px;background:#fff;padding:14px 18px;width:250px;box-shadow:0 10px 30px -12px rgba(0,0,0,.25);font-size:13px;line-height:1.45}
+.bordje b{font:600 16px/1.2 var(--serif);display:block;color:var(--navy);margin-bottom:4px}
+.bordje span{color:var(--grijs)}
+
+/* blauwe band, zoals in hun eigen voor/na foto's */
+.band{background:var(--blauw);color:#fff;margin-top:70px}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:22px;padding-bottom:22px;flex-wrap:wrap}
+.band p{font:italic 400 26px/1.3 var(--serif)}
+.band a{color:#fff;font-weight:700;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.5)}
+
+/* galerie */
+section{padding:96px 0}
+h2{font:400 clamp(34px,4.2vw,54px)/1.08 var(--serif);color:var(--navy);margin:16px 0 18px}
+.kop-tekst{max-width:640px;color:#3a4152}
+.galerie{display:grid;grid-template-columns:repeat(12,1fr);gap:46px 34px;margin-top:56px}
+.stuk{background:#fff;padding:16px 16px 18px;box-shadow:0 1px 0 #d7cfbf}
+.stuk img{width:100%;height:auto}
+.stuk .tag{margin-top:16px;display:grid;grid-template-columns:1fr auto;gap:2px 16px;font-size:14px}
+.stuk .tag b{font:600 18px/1.25 var(--serif);color:var(--navy)}
+.stuk .tag small{grid-column:1/-1;color:var(--grijs);font-size:14px;line-height:1.5}
+.stuk .tag span{font:700 11px/1.9 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--blauw);white-space:nowrap}
+.s1{grid-column:1/8}
+.s2{grid-column:8/13;align-self:end}
+.s3{grid-column:3/11}
+
+/* atelier */
+.atelier{background:var(--navy);color:#e9ecf6}
+.atelier h2{color:#fff}
+.atelier .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.atelier .label{color:var(--licht)}
+.atelier img{border:14px solid #fff}
+.stappen{margin-top:30px;border-top:1px solid rgba(255,255,255,.18)}
+.stappen div{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.stappen b{font:700 12px/1.6 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--licht)}
+.atelier p{color:#cfd6ea}
+
+/* behandelingen: catalogus */
+.catalogus{display:grid;grid-template-columns:1fr 1.3fr;gap:80px}
+.cat-lijst{border-top:2px solid var(--navy)}
+.cat-lijst div{display:grid;grid-template-columns:1fr 1.3fr;gap:24px;padding:20px 0;border-bottom:1px solid #d3cbbb}
+.cat-lijst h3{font:600 20px/1.3 var(--serif);color:var(--navy)}
+.cat-lijst p{font-size:15px;color:#454c5c}
+.gratis{margin-top:30px;background:var(--wand);padding:24px 26px;font-size:16px}
+.gratis b{color:var(--navy)}
+
+/* makers */
+.makers{background:var(--wand)}
+.makers .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;margin-top:40px}
+.maker{background:var(--papier);padding:34px 34px 30px;border-top:4px solid var(--blauw)}
+.maker h3{font:400 30px/1.1 var(--serif);color:var(--navy)}
+.maker .rol{font:700 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--blauw);margin:10px 0 18px;display:block}
+.maker ul{list-style:none;font-size:15px;color:#3f4657}
+.maker li{padding:8px 0;border-top:1px dashed #cfc6b5;display:grid;grid-template-columns:62px 1fr;gap:12px}
+.maker li b{color:var(--navy)}
+.leden{margin-top:28px;font-size:14px;color:var(--grijs)}
+
+/* stemmen */
+.stemmen .wrap{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;align-items:end}
+blockquote{font:italic 400 24px/1.35 var(--serif);color:var(--navy)}
+blockquote cite{display:block;margin-top:14px;font:500 13px/1.4 var(--sans);color:var(--grijs);font-style:normal}
+.score{font:400 92px/0.9 var(--serif);color:var(--blauw)}
+.score small{display:block;font:500 14px/1.5 var(--sans);color:var(--grijs);margin-top:12px}
+
+/* bezoek */
+.bezoek{background:#fff;border-top:1px solid #ddd5c6}
+.bezoek .wrap{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:56px}
+.bezoek h3{font:700 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--blauw);margin-bottom:18px}
+.uren div{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee7da;font-size:15px}
+.tel{font:400 40px/1.1 var(--serif);color:var(--navy);text-decoration:none;display:block;margin:6px 0 10px}
+.bezoek p{font-size:15px;color:#454c5c;margin-bottom:10px}
+footer{background:var(--navy);color:#aeb7d3;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:26px;padding-bottom:26px;flex-wrap:wrap}
+
+/* mobiel belknop */
+.belbalk{display:none}
+
+@media (max-width:960px){
+  nav.menu{display:none}
+  .zaal .wrap,.atelier .wrap,.catalogus,.bezoek .wrap,.stemmen .wrap,.makers .wrap{grid-template-columns:1fr;gap:40px}
+  .galerie{grid-template-columns:1fr;gap:34px}
+  .s1,.s2,.s3,.s4{grid-column:auto;margin-top:0}
+  .bordje{position:static;width:auto;margin-top:-6px}
+  section{padding:70px 0}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  header.kop .wrap{height:66px}
+  header.kop .knop{display:none}
+  .top span{display:none}
+  .zaal{padding-top:44px}
+  .zaal p.intro{font-size:17px}
+  .cat-lijst div{grid-template-columns:1fr;gap:6px}
+  .stappen div{grid-template-columns:1fr;gap:4px}
+  .maker{padding:26px 22px}
+  .tel{font-size:34px}
+  .belbalk{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--navy);box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+  .belbalk a{flex:1;text-align:center;color:#fff;text-decoration:none;font-weight:700;padding:16px 8px;font-size:15px}
+  .belbalk a+a{background:var(--blauw)}
+  body{padding-bottom:56px}
+}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <span>Molenstreek 13, Veendam &nbsp;·&nbsp; ma t/m do op afspraak</span>
+  <a href="tel:0598627126">Bel 0598 627 126</a>
+</div></div>
+
+<header class="kop"><div class="wrap">
+  <a class="woordmerk" href="#">Tandprothetische<em>Praktijk Veendam</em></a>
+  <nav class="menu">
+    <a href="#galerie">Galerie</a>
+    <a href="#werkwijze">Werkwijze</a>
+    <a href="#behandelingen">Behandelingen</a>
+    <a href="#praktijk">De praktijk</a>
+    <a href="#bezoek">Contact</a>
+  </nav>
+  <a class="knop" href="#bezoek">Intake plannen</a>
+</div></header>
+
+<main>
+<section class="zaal" style="padding-bottom:0">
+  <div class="wrap">
+    <div>
+      <span class="label">Tandprotheticus in Veendam</span>
+      <h1>Uw kunstgebit?<br><i>Ons kunstwerk.</i></h1>
+      <p class="intro">Elke gebitsprothese vertelt een eigen verhaal. Marco van Tongeren en zijn team meten uw prothese aan, ontwerpen hem en frezen hem in de eigen praktijk aan de Molenstreek. Digitaal waar het kan, met de hand waar het moet.</p>
+      <div class="acties">
+        <a class="knop" href="tel:0598627126">Bel 0598 627 126</a>
+        <a class="knop licht" href="https://tppveendam.nl/afspraak-intake/">Kies zelf een intakemoment</a>
+      </div>
+      <div class="lijst-feiten">
+        <div><b>Eerste consult gratis</b>vrijblijvend kennismaken</div>
+        <div><b>Vergoed</b>erkend volgens de Wet BIG</div>
+        <div><b>Rolstoelvriendelijk</b>gratis parkeren voor de deur</div>
+      </div>
+    </div>
+    <figure class="werk">
+      <div class="lijst"><img src="transparant.jpg" alt="Volledige bovenprothese met transparante verhemelteplaat"></div>
+      <figcaption class="bordje"><b>Optische illusie</b><span>Bovenprothese met transparante verhemelteplaat. Even zwaar, maar voelt voor veel dragers lichter.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="band"><div class="wrap">
+  <p>Na bijna twintig jaar weer een frisse glimlach.</p>
+  <a href="#galerie">Bekijk de voor en na foto's</a>
+</div></div>
+
+<section id="galerie">
+  <div class="wrap">
+    <span class="label">Art galerie</span>
+    <h2>Werk uit onze eigen praktijk</h2>
+    <p class="kop-tekst">Geen plaatjes uit een catalogus, maar werk van ons eigen tandprothetisch team. Zo ziet u wat maatwerk betekent: de kleur, de beethoogte, hoeveel roze kunststof u laat zien als u lacht.</p>
+
+    <div class="galerie">
+      <figure class="stuk s1">
+        <img src="voor-na-1.jpg" alt="Voor en na: vernieuwde boven- en onderprothese">
+        <figcaption class="tag"><b>Nieuwe frisse glimlach</b><span>Gefreesd</span>
+          <small>De oude prothese brokkelde na bijna twintig jaar af. Boven en onder vernieuwd, op wens van de patiënt een tint lichter.</small></figcaption>
+      </figure>
+      <figure class="stuk s2">
+        <img src="handwerk-digitaal.jpg" alt="Twee volledige protheses naast elkaar">
+        <figcaption class="tag"><b>Digitaal versus conventioneel</b><span>Twee technieken</span>
+          <small>Links en rechts twee volledige protheses: de een digitaal aangemeten en gefreesd, de ander op de klassieke manier vervaardigd.</small></figcaption>
+      </figure>
+      <figure class="stuk s3">
+        <img src="voor-na-2.jpg" alt="Voor en na: kleinere aanpassingen in kleur en tandvlees">
+        <figcaption class="tag"><b>Kleine veranderingen</b><span>Op wens</span>
+          <small>Lichtere tanden en minder roze kunststof zichtbaar bij het lachen.</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="atelier" id="werkwijze">
+  <div class="wrap">
+    <div>
+      <span class="label">Werkwijze</span>
+      <h2>Zonder gipshap, met aandacht</h2>
+      <p>In de praktijk staat een intraorale mondscanner. Daarmee maken we een digitale afdruk van uw mond, zonder afdrukmateriaal. Het ontwerp ontstaat op het scherm en wordt in de eigen praktijk gefreesd of geprint.</p>
+      <div class="stappen">
+        <div><b>Intake</b><span>U kiest zelf een beschikbare datum en tijd. Het eerste consult is altijd gratis.</span></div>
+        <div><b>Scan</b><span>Een digitale mondscan in plaats van een afdruk met gips.</span></div>
+        <div><b>Ontwerp</b><span>Kleur, vorm en beethoogte stemmen we af op uw wensen.</span></div>
+        <div><b>Plaatsen</b><span>Daarna blijven we bereikbaar voor controle, rebasing en reparatie.</span></div>
+      </div>
+    </div>
+    <img src="digitaal-frame.jpg" alt="Digitaal ontwerp van een frameprothese" style="align-self:center">
+  </div>
+</section>
+
+<section id="behandelingen">
+  <div class="wrap catalogus">
+    <div>
+      <span class="label">Behandelingen</span>
+      <h2>Uitneembaar, op maat</h2>
+      <p class="kop-tekst">Marco van Tongeren is gespecialiseerd in het aanmeten en vervaardigen van uitneembare prothetische voorzieningen. Voor implantaten werken we nauw samen met implantologen en kaakchirurgen, en met de Parodontologie Praktijk Groningen.</p>
+      <div class="gratis"><b>Het eerste consult is altijd gratis.</b> De diensten van de tandprotheticus worden vergoed door de zorgverzekering.</div>
+    </div>
+    <div class="cat-lijst">
+      <div><h3>Digitale volledige prothese</h3><p>Aangemeten met de mondscanner, ontworpen en gefreesd in de praktijk.</p></div>
+      <div><h3>Klikgebit op implantaten</h3><p>Nooit meer een losse gebitsprothese.</p></div>
+      <div><h3>Gedeeltelijke prothese</h3><p>Naast uw eigen tanden, ook als frameprothese.</p></div>
+      <div><h3>SEMCD prothese</h3><p>Een volledige prothese volgens de SEMCD methode.</p></div>
+      <div><h3>Eerste noodprothese</h3><p>Direct na het trekken van eigen tanden en kiezen, als tijdelijke oplossing.</p></div>
+      <div><h3>Rebasing en reparatie</h3><p>Een probleem met uw prothese? U kunt snel terecht.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="makers" id="praktijk">
+  <div class="wrap" style="display:block;margin-top:0">
+    <span class="label">De praktijk</span>
+    <h2>Kleinschalig, en dat merkt u</h2>
+  </div>
+  <div class="wrap">
+    <article class="maker">
+      <h3>Marco van Tongeren</h3>
+      <span class="rol">Tandprotheticus en eigenaar</span>
+      <ul>
+        <li><b>2001</b><span>Begint in de praktijk in Veendam</span></li>
+        <li><b>2011</b><span>Diploma Tandprothetiek, Hogeschool Utrecht</span></li>
+        <li><b>Basis</b><span>Vijfjarige opleiding tandtechniek en prothetiek, Instituut Vakopleiding Tandtechniek in Nieuwegein</span></li>
+      </ul>
+    </article>
+    <article class="maker">
+      <h3>Ingrid</h3>
+      <span class="rol">Assistent</span>
+      <ul>
+        <li><b>2013</b><span>Komt het team versterken</span></li>
+        <li><b>2014</b><span>Opleiding afgerond aan het Wenckebach Instituut van het UMCG</span></li>
+        <li><b>Taken</b><span>Begeleidt u tijdens de behandeling en controleert de kwaliteit van elk afgerond werkstuk</span></li>
+      </ul>
+    </article>
+  </div>
+  <div class="wrap" style="display:block;margin-top:0">
+    <p class="leden">Lid van de ONT en aangesloten bij KRTP en SGIM. ISO 9001 gecertificeerd. Gecontracteerd door veel zorgverzekeraars.</p>
+  </div>
+</section>
+
+<section class="stemmen">
+  <div class="wrap">
+    <div class="score">4,9<small>gemiddeld uit 44 Google reviews</small></div>
+    <blockquote>“Ontzettend aardig en leuk personeel.”<cite>Patricia, via Google</cite></blockquote>
+    <blockquote>“Zeer goede aanpak, heel vriendelijk personeel”<cite>Anneke, via Google</cite></blockquote>
+  </div>
+</section>
+
+<section class="bezoek" id="bezoek">
+  <div class="wrap">
+    <div>
+      <h3>Afspraak maken</h3>
+      <a class="tel" href="tel:0598627126">0598 627 126</a>
+      <p>Ma t/m do van 08.30 tot 12.30 uur voor vragen en afspraken. Van 13.30 tot 16.00 uur voor spoed, reparaties en intakes.</p>
+      <p>Niemand aan de lijn? Spreek uw naam en nummer in, dan bellen we dezelfde of de volgende werkdag terug.</p>
+      <p><a href="mailto:info@tppveendam.nl">info@tppveendam.nl</a></p>
+    </div>
+    <div>
+      <h3>Openingstijden</h3>
+      <div class="uren">
+        <div><span>Maandag</span><span>08.30 – 15.30</span></div>
+        <div><span>Dinsdag</span><span>08.30 – 15.30</span></div>
+        <div><span>Woensdag</span><span>08.30 – 15.30</span></div>
+        <div><span>Donderdag</span><span>08.30 – 15.30</span></div>
+        <div><span>Vrijdag</span><span>gesloten</span></div>
+      </div>
+      <p style="margin-top:12px">Lunchpauze van 12.30 tot 13.30 uur. Alleen op afspraak.</p>
+    </div>
+    <div>
+      <h3>Adres</h3>
+      <p><b>Molenstreek 13<br>9641 HA Veendam</b></p>
+      <p>Gratis parkeren, een invalidenparkeerplaats direct voor de deur en een laadpaal net over de brug. De praktijk is rolstoelvriendelijk.</p>
+      <a class="knop licht" href="https://tppveendam.nl/afspraakformulier/" style="margin-top:8px">Afspraak per e-mail</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <span>Tandprothetische Praktijk Veendam · Molenstreek 13 · 9641 HA Veendam</span>
+  <span>Lid van de Organisatie van Nederlandse Tandprothetici</span>
+</div></footer>
+
+<div class="belbalk"><a href="tel:0598627126">Bel de praktijk</a><a href="mailto:info@tppveendam.nl">Mail ons</a></div>
+</body>
+</html>
