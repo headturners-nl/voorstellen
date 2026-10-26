@@ -1,4 +1,7 @@
 [
   {"naam": "AYM Finance", "slug": "aym-finance", "plaats": "Huizen", "branche": "zzp en dienstverleners", "datum": "2026-10-25", "mailadres": "info@aymfinance.nl", "rechtsvorm": "onbekend"},
-  {"naam": "Lujin Privacy & Legal", "slug": "lujin-legal", "plaats": "onbekend", "branche": "zzp en dienstverleners", "datum": "2026-10-25", "mailadres": "onbekend", "rechtsvorm": "onbekend"}
+  {"naam": "Lujin Privacy & Legal", "slug": "lujin-legal", "plaats": "onbekend", "branche": "zzp en dienstverleners", "datum": "2026-10-25", "mailadres": "onbekend", "rechtsvorm": "onbekend"},
+  {"naam": "Osteopathie Peter Overvoorde", "slug": "osteopathie-overvoorde", "plaats": "Enschede", "branche": "zorg en praktijken", "datum": "2026-10-26", "mailadres": "pmovervoorde@gmail.com", "rechtsvorm": "onbekend"},
+  {"naam": "Osteopathie Egbers", "slug": "osteopathie-egbers", "plaats": "Enschede", "branche": "zorg en praktijken", "datum": "2026-10-26", "mailadres": "info@osteopathie-egbers.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Osteopathie Roossink", "slug": "osteopathie-roossink", "plaats": "Enschede", "branche": "zorg en praktijken", "datum": "2026-10-26", "mailadres": "info@osteopathieroossink.nl", "rechtsvorm": "eenmanszaak"}
 ]
