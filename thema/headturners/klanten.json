@@ -1,0 +1,29 @@
+[
+  {
+    "naam": "Tandprothetische Praktijk Al Neema",
+    "plaats": "Driebergen-Rijsenburg",
+    "branche": "Zorg",
+    "url": "https://tppalneema.nl/",
+    "voor": "klanten/tppalneema-voor.jpg",
+    "na": "klanten/tppalneema-na.jpg",
+    "diensten": [
+      "Website",
+      "Google Ads",
+      "Social media"
+    ],
+    "resultaat": "Van een algemene praktijksite naar een site die stuurt op het gratis consult, met vergoedingen, reviews en bellen of WhatsApp direct in beeld."
+  },
+  {
+    "naam": "Sami's Acupunctuur",
+    "plaats": "Nijmegen",
+    "branche": "Zorg",
+    "url": "https://samiacupunctuur.nl/",
+    "voor": "klanten/sami-voor.jpg",
+    "na": "klanten/sami-na.jpg",
+    "diensten": [
+      "Branding",
+      "Website"
+    ],
+    "resultaat": "Van een Jimdo site op een gratis adres naar een eigen merk: nieuw logo, warm palet, eigen domein en een site waar bellen, appen en een afspraak maken altijd in beeld zijn."
+  }
+]
