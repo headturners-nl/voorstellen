@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sokol Vertaalbureau, Maastricht</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400;1,7..72,600&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0e4a5a;--teal2:#138f8a;--paper:#f5f0e6;--ink:#1d2b30;--stamp:#b3322a;--line:#d9d0bd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Golos Text',sans-serif;font-size:18px;line-height:1.6;color:var(--ink);background:var(--paper)}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.serif{font-family:'Literata',Georgia,serif}
+header{position:relative;z-index:5}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;gap:24px}
+.merk{display:flex;align-items:center;gap:14px;text-decoration:none}
+.merk .vl{width:52px;height:52px;border-radius:50%;background:var(--teal);display:grid;place-items:center}
+.merk .vl img{width:34px}
+.merk b{font-family:'Literata',serif;font-size:26px;line-height:1;letter-spacing:-.01em;display:block}
+.merk span{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal2);font-weight:600}
+nav{display:flex;gap:26px;font-size:16px;font-weight:500;align-items:center}
+nav a{text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--teal2)}
+nav .ru{font-family:'Literata',serif;font-style:italic;color:var(--stamp)}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;min-height:640px}
+.hero .l{padding:56px 56px 72px max(24px,calc((100vw - 1160px)/2 + 24px));display:flex;flex-direction:column;justify-content:center}
+.hero .r{background:var(--teal);position:relative;overflow:hidden;min-height:480px}
+.hero .r .valk{position:absolute;width:520px;right:-70px;top:50%;transform:translateY(-52%);opacity:.14}
+.hero .r .stempel{position:absolute;left:50%;top:50%;width:300px;transform:translate(-50%,-50%) rotate(-9deg)}
+.kicker{font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--teal2);margin-bottom:18px}
+h1{font-size:58px;line-height:1.06;letter-spacing:-.02em;font-weight:600;margin-bottom:24px}
+h1 em{color:var(--stamp);font-weight:400}
+.lead{font-size:20px;max-width:30em;margin-bottom:32px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font-weight:600;padding:15px 26px;border-radius:4px}
+.btn.o{background:none;color:var(--teal);box-shadow:inset 0 0 0 2px var(--teal)}
+section{padding:92px 0}
+h2{font-size:40px;line-height:1.12;letter-spacing:-.015em;font-weight:600;margin-bottom:22px}
+.twee{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.stempels{background:#fff;border:1px solid var(--line);padding:48px 40px 40px;position:relative;box-shadow:8px 8px 0 var(--line)}
+.stempels .regel{height:9px;background:#ece6d6;margin-bottom:14px;border-radius:2px}
+.stempels .regel.k{width:62%}
+.stempels .rij{display:flex;justify-content:space-around;margin-top:34px}
+.stempels svg{width:150px}
+.stempels .rij .b{transform:rotate(7deg)}
+.stempels .rij .a{transform:rotate(-8deg)}
+.vertaal{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.vgrid{display:grid;grid-template-columns:1.4fr 1fr;gap:72px}
+.talen{font-family:'Literata',serif;font-size:21px;margin-bottom:26px;color:var(--teal)}
+.talen i{color:var(--stamp);padding:0 6px}
+.docs{columns:2;column-gap:36px;list-style:none;font-size:17px}
+.docs li{padding:9px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.voordeel{list-style:none}
+.voordeel li{padding:0 0 22px 28px;position:relative}
+.voordeel li:before{content:"";position:absolute;left:0;top:11px;width:14px;height:2px;background:var(--stamp)}
+.voordeel b{font-family:'Literata',serif;font-size:19px;display:block;line-height:1.3}
+.tolk{background:var(--teal);color:#f1ece0;position:relative;overflow:hidden}
+.tolk .valk2{position:absolute;right:-60px;bottom:-90px;width:440px;opacity:.07}
+.tolk h2{color:#fff}
+.tolk .kicker{color:#7fd0c9}
+.tolk .twee{align-items:start}
+.opdr{display:flex;flex-wrap:wrap;gap:10px}
+.opdr span{border:1px solid rgba(255,255,255,.35);padding:7px 16px;border-radius:40px;font-size:16px}
+.paar{font-family:'Literata',serif;font-size:26px;line-height:1.4;margin-bottom:22px}
+.paar i{color:#e9a29b}
+.klein{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);background:#fff}
+.klein>div{padding:48px 44px}
+.klein>div+div{border-left:1px solid var(--line)}
+.klein .groot{font-family:'Literata',serif;font-size:84px;line-height:.9;color:var(--stamp);margin-bottom:14px;font-style:italic}
+.klein h3{font-size:26px;margin-bottom:12px}
+.over .twee{align-items:start}
+.over blockquote{font-family:'Literata',serif;font-size:30px;line-height:1.3;font-style:italic;color:var(--teal)}
+.contact{background:var(--ink);color:#efe9da}
+.contact h2{color:#fff}
+.contact a.big{display:block;font-family:'Literata',serif;font-size:36px;text-decoration:none;color:#fff;line-height:1.3;margin-bottom:4px}
+.contact a.big:hover{color:#7fd0c9}
+.contact small{display:block;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#7fd0c9;margin:22px 0 4px}
+footer{padding:26px 0;font-size:14px;color:#6c7478;background:var(--ink);border-top:1px solid #33454c}
+@media(max-width:900px){
+ body{font-size:17px}
+ nav a:not(.ru):not(.tel){display:none}
+ .hero{grid-template-columns:1fr}
+ .hero .l{padding:40px 24px 48px}
+ .hero .r{min-height:340px}
+ .hero .r .stempel{width:240px}
+ h1{font-size:40px}
+ h2{font-size:32px}
+ section{padding:64px 0}
+ .twee,.vgrid{grid-template-columns:1fr;gap:40px}
+ .docs{columns:1}
+ .klein{grid-template-columns:1fr}
+ .klein>div+div{border-left:0;border-top:1px solid var(--line)}
+ .klein>div{padding:36px 26px}
+ .stempels{padding:34px 22px}
+ .stempels svg{width:120px}
+ .contact a.big{font-size:27px}
+ .paar{font-size:22px}
+ .over blockquote{font-size:25px}
+}
+@media(max-width:420px){.merk b{font-size:21px}.merk .vl{width:44px;height:44px}.merk .vl img{width:28px}.merk span{font-size:11px}nav .tel{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <path id="cirk" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/>
+ </defs>
+</svg>
+
+<header><div class="wrap bar">
+ <a class="merk" href="#"><span class="vl"><img src="valk.png" alt=""></span><span><b>Sokol</b><span>Vertaalbureau</span></span></a>
+ <nav>
+  <a href="#vertalen">Vertalen</a>
+  <a href="#tolken">Tolken</a>
+  <a href="#leren">Leren en rondleiden</a>
+  <a class="ru" href="https://www.sokolvertaalbureau.nl/sokol/russisch/index.php">Русский</a>
+  <a class="tel" href="#contact"><b>Contact</b></a>
+ </nav>
+</div></header>
+
+<div class="hero">
+ <div class="l">
+  <div class="kicker">Maastricht · Russisch, Duits, Nederlands</div>
+  <h1>Een vertaling <em>met stempel</em> en handtekening.</h1>
+  <p class="lead">Beëdigde vertalingen en tolkwerk van Tatjana Sokolowskaja, beëdigd door de rechtbank te Maastricht en ingeschreven in het Register beëdigde tolken en vertalers.</p>
+  <div class="knoppen">
+   <a class="btn" href="tel:+31654742510">Bel 06 54 74 25 10</a>
+   <a class="btn o" href="mailto:info@sokolvertaalbureau.nl">Mail uw document</a>
+  </div>
+ </div>
+ <div class="r">
+  <img class="valk" src="valk.png" alt="">
+  <svg class="stempel" viewBox="0 0 200 200" role="img" aria-label="Stempel: beëdigd vertaler, rechtbank Maastricht">
+   <g fill="none" stroke="#e9a29b" stroke-width="3"><circle cx="100" cy="100" r="95"/><circle cx="100" cy="100" r="58" stroke-width="1.5"/></g>
+   <text font-family="Literata,serif" font-size="15.5" font-weight="700" letter-spacing="3.2" fill="#e9a29b"><textPath href="#cirk" startOffset="0%" textLength="440" lengthAdjust="spacing">BEËDIGD VERTALER · MAASTRICHT ·</textPath></text>
+   <text x="100" y="94" text-anchor="middle" font-family="Literata,serif" font-style="italic" font-size="23" font-weight="600" fill="#e9a29b">Sokol</text>
+   <text x="100" y="116" text-anchor="middle" font-family="Golos Text,sans-serif" font-size="10" letter-spacing="2.4" fill="#e9a29b">RU · DE · NL</text>
+  </svg>
+ </div>
+</div>
+
+<section id="stempels"><div class="wrap twee">
+ <div>
+  <div class="kicker">Ook voor België</div>
+  <h2>Twee stempels voor de prijs van één.</h2>
+  <p>Tatjana is beëdigd door de rechtbank te Maastricht en ook door de rechtbank te Tongeren. Wilt u een diploma in Nederland en in België laten erkennen? Dan krijgt u twee identieke vertaalde documenten met twee verschillende stempels, voor de prijs van één.</p>
+ </div>
+ <div class="stempels" aria-hidden="true">
+  <div class="regel"></div><div class="regel"></div><div class="regel k"></div><div class="regel"></div>
+  <div class="rij">
+   <svg class="a" viewBox="0 0 200 200"><g fill="none" stroke="#b3322a" stroke-width="4"><circle cx="100" cy="100" r="94"/><circle cx="100" cy="100" r="60" stroke-width="2"/></g><text font-family="Literata,serif" font-size="16" font-weight="700" letter-spacing="3" fill="#b3322a"><textPath href="#cirk" startOffset="0%" textLength="440" lengthAdjust="spacing">RECHTBANK MAASTRICHT ·</textPath></text><text x="100" y="108" text-anchor="middle" font-family="Literata,serif" font-style="italic" font-size="26" font-weight="600" fill="#b3322a">NL</text></svg>
+   <svg class="b" viewBox="0 0 200 200"><g fill="none" stroke="#0e4a5a" stroke-width="4"><circle cx="100" cy="100" r="94"/><circle cx="100" cy="100" r="60" stroke-width="2"/></g><text font-family="Literata,serif" font-size="16" font-weight="700" letter-spacing="3" fill="#0e4a5a"><textPath href="#cirk" startOffset="0%" textLength="440" lengthAdjust="spacing">RECHTBANK TONGEREN ·</textPath></text><text x="100" y="108" text-anchor="middle" font-family="Literata,serif" font-style="italic" font-size="26" font-weight="600" fill="#0e4a5a">BE</text></svg>
+  </div>
+ </div>
+</div></section>
+
+<section class="vertaal" id="vertalen"><div class="wrap vgrid">
+ <div>
+  <div class="kicker">Vertalen</div>
+  <h2>Alle soorten documenten, vanuit en naar drie talen.</h2>
+  <p class="talen">Russisch<i>·</i>Nederlands<i>·</i>Duits</p>
+  <ul class="docs">
+   <li>Beëdigde vertalingen</li>
+   <li>Juridische vertalingen</li>
+   <li>Technische vertalingen</li>
+   <li>Zakelijke en privé correspondentie</li>
+   <li>Handelsdocumenten</li>
+   <li>Handboeken</li>
+   <li>Opleidingsmateriaal</li>
+   <li>Websites</li>
+   <li>Formulieren, brochures, advertenties, artikelen</li>
+  </ul>
+ </div>
+ <ul class="voordeel">
+  <li><b>Gratis tweede beëdigd exemplaar</b>Bij elke beëdigde vertaling.</li>
+  <li><b>Legalisatie en Apostille</b>Op verzoek.</li>
+  <li><b>Schrijfwijze van namen in overleg</b>U beslist mee hoe uw (achter)naam wordt geschreven.</li>
+  <li><b>Afhalen of aangetekend thuis</b>Niet beëdigde vertalingen kunnen ook per e-mail.</li>
+  <li><b>Tarieven op aanvraag</b>Stuur uw document of bel voor een prijs.</li>
+ </ul>
+</div></section>
+
+<section class="tolk" id="tolken">
+ <img class="valk2" src="valk.png" alt="">
+ <div class="wrap twee">
+  <div>
+   <div class="kicker">Tolken</div>
+   <h2>Aan tafel, in de rechtszaal of op reis.</h2>
+   <p class="paar">Russisch <i>⇄</i> Nederlands<br>Russisch <i>⇄</i> Duits</p>
+   <p>Voor tolkwerk rekent Tatjana een uurprijs, plus reiskosten en eventuele verblijfskosten.</p>
+  </div>
+  <div>
+   <p style="margin-bottom:16px">Ze tolkt regelmatig voor</p>
+   <div class="opdr"><span>rechtbank</span><span>advocatuur</span><span>politie</span><span>notarissen</span><span>instellingen en overheid</span><span>industriële bedrijven</span><span>particulieren</span><span>onderhandelingen</span><span>vergaderingen</span><span>zakenreizen</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="leren"><div class="wrap">
+ <div class="klein">
+  <div>
+   <div class="groot">А</div>
+   <h3>Russisch leren</h3>
+   <p>Lessen op uw eigen niveau en met uw eigen wensen, met extra aandacht voor spreekvaardigheid. Individueel of in een groep, voor particulieren en bedrijven, in Zuid-Limburg en in Belgisch Limburg. Over de plek beslist u mee. Tarieven in overleg.</p>
+  </div>
+  <div>
+   <div class="groot">Aa</div>
+   <h3>Rondleidingen in Maastricht en Aken</h3>
+   <p>Voor Russisch- en Duitstalige toeristen, inwoners van Maastricht, zakenmensen en iedereen die de oudste stad van Nederland wil leren kennen. In mei 2001 ontving Tatjana in opdracht van de VVV Maastricht een groep Russische journalisten, voor wie ze tolkte en rondleidde. Prijzen in overleg.</p>
+  </div>
+ </div>
+</div></section>
+
+<section class="over" style="padding-top:0"><div class="wrap twee">
+ <blockquote>Kwaliteit, snelheid en voordelige tarieven.</blockquote>
+ <div>
+  <h2 style="font-size:32px">Uit Moskou, in Maastricht</h2>
+  <p>Tatjana Sokolowskaja is gediplomeerd en universitair opgeleid. Ze kwam uit Moskou en bouwde ervaring op in Rusland, België en Nederland. Ze gaf Russisch aan onder meer de Hogeschool Maastricht, de opleiding Tolk/Vertaler, het Advies- en Studiecentrum Heerlen en de Volksuniversiteit Maastricht. Voor Russische tijdschriften schreef ze over Maastricht.</p>
+ </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap twee">
+ <div>
+  <h2>Een document laten vertalen?</h2>
+  <p>Bel of mail. Een beëdigde vertaling haalt u af of krijgt u per aangetekende brief, een niet beëdigde vertaling kan ook per e-mail.</p>
+ </div>
+ <div>
+  <small>Mobiel</small><a class="big" href="tel:+31654742510">06 54 74 25 10</a>
+  <small>Vast</small><a class="big" href="tel:+31433561417">043 356 14 17</a>
+  <small>E-mail</small><a class="big" href="mailto:info@sokolvertaalbureau.nl" style="font-size:26px">info@sokolvertaalbureau.nl</a>
+  <small>Adres</small><p>T.J. Sokolowskaja<br>Meendaal 50<br>6228 GR Maastricht</p>
+ </div>
+</div></section>
+<footer><div class="wrap">Sokol Vertaalbureau · Voorstel voor een nieuwe homepage</div></footer>
+</body>
+</html>
