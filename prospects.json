@@ -6,5 +6,8 @@
   {"naam": "Osteopathie Roossink", "slug": "osteopathie-roossink", "plaats": "Enschede", "branche": "zorg en praktijken", "datum": "2026-10-26", "mailadres": "info@osteopathieroossink.nl", "rechtsvorm": "eenmanszaak"},
   {"naam": "Sokol Vertaalbureau", "slug": "sokol-vertaalbureau", "plaats": "Maastricht", "branche": "zzp en dienstverleners", "datum": "2026-10-27", "mailadres": "info@sokolvertaalbureau.nl", "rechtsvorm": "onbekend"},
   {"naam": "Margrit ter Stege, bureau voor loopbaanadvies", "slug": "margrit-ter-stege", "plaats": "Groningen", "branche": "zzp en dienstverleners", "datum": "2026-10-27", "mailadres": "info@margritterstege.nl", "rechtsvorm": "onbekend"},
-  {"naam": "De Belastingkamer", "slug": "de-belastingkamer", "plaats": "Almere", "branche": "zzp en dienstverleners", "datum": "2026-10-27", "mailadres": "info@belastingkamer.nl", "rechtsvorm": "onbekend"}
+  {"naam": "De Belastingkamer", "slug": "de-belastingkamer", "plaats": "Almere", "branche": "zzp en dienstverleners", "datum": "2026-10-27", "mailadres": "info@belastingkamer.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Clean Cuts Barbershop", "slug": "clean-cuts-barbershop", "plaats": "Deventer", "branche": "horeca en winkels", "datum": "2026-10-28", "mailadres": "info@cleancutsbarbershop.nl", "rechtsvorm": "onbekend"},
+  {"naam": "De Bonte Klipper", "slug": "de-bonte-klipper", "plaats": "Deventer", "branche": "horeca en winkels", "datum": "2026-10-28", "mailadres": "info@debonteklipper.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Slagerij Peter Nijenhuis", "slug": "slagerij-peter-nijenhuis", "plaats": "Deventer", "branche": "horeca en winkels", "datum": "2026-10-28", "mailadres": "onbekend", "rechtsvorm": "onbekend"}
 ]

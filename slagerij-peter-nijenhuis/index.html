@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Slagerij Peter Nijenhuis, scharrelvlees in Deventer</title>
+<meta name="description" content="Ambachtelijke scharrelvleesslager aan de Nieuwstraat in Deventer, met eigen worstmakerij, kant en klare maaltijden en barbecuepakketten.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rood:#a3262b;
+  --rood-diep:#7c1b20;
+  --papier:#f5eee0;
+  --karton:#e9dfc9;
+  --houtskool:#2a2624;
+  --inkt:#221d1b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Karla,system-ui,sans-serif;background:var(--papier);color:var(--inkt);line-height:1.65;font-size:18px}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.05}
+
+header{background:var(--papier);border-bottom:3px solid var(--houtskool);position:sticky;top:0;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.merk{font-family:"Young Serif",serif;font-size:22px;text-decoration:none;color:var(--rood);white-space:nowrap}
+.merk small{font-family:Karla,sans-serif;font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--houtskool);margin-left:10px}
+header nav{display:flex;gap:26px;align-items:center;font-weight:700;font-size:15px}
+header nav a{text-decoration:none}
+header nav a:hover{color:var(--rood)}
+.knop{display:inline-block;background:var(--rood);color:var(--papier);padding:14px 28px;font-weight:700;text-decoration:none;font-size:16px;border:2px solid var(--rood);transition:background .2s,color .2s;white-space:nowrap}
+.knop:hover{background:transparent;color:var(--rood)}
+header .knop{padding:8px 18px;font-size:14px}
+header .knop:hover{color:var(--rood)}
+
+/* hero */
+.hero{position:relative;color:var(--papier);background:var(--houtskool)}
+.hero > img{width:100%;height:740px;object-fit:cover;object-position:50% 60%;opacity:.62}
+.hero .laag{position:absolute;inset:0;display:flex;align-items:flex-end}
+.hero .laag .wrap{width:100%;padding-bottom:64px}
+.hero h1{font-size:clamp(42px,6.4vw,88px);max-width:10em;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero p{font-size:21px;max-width:26em;margin:20px 0 30px}
+.stempel{position:absolute;right:max(28px,calc(50% - 560px));top:44px;width:150px;height:150px;border-radius:50%;border:3px solid var(--papier);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transform:rotate(8deg);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:12px;line-height:1.3;background:rgba(124,27,32,.82)}
+.stempel b{font-family:"Young Serif",serif;font-size:36px;letter-spacing:0;line-height:1;margin:4px 0;font-weight:400}
+.stempel:before{content:"";position:absolute;inset:7px;border:1px dashed rgba(245,238,224,.7);border-radius:50%}
+
+/* bonnetjes */
+.band{background:var(--rood);color:var(--papier);padding:20px 0;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px;overflow:hidden;white-space:nowrap}
+.band .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;white-space:normal}
+
+.herkomst{padding:100px 0 70px}
+.herkomst .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.herkomst figure{position:relative}
+.herkomst figure img{width:100%;height:480px;object-fit:cover;border:10px solid var(--papier);outline:3px solid var(--houtskool)}
+h2{font-size:clamp(34px,4.8vw,56px);color:var(--rood);margin-bottom:24px}
+.herkomst p{max-width:32em;margin-bottom:16px}
+.soorten{display:grid;grid-template-columns:1fr 1fr;gap:0 34px;margin-top:26px}
+.soorten div{border-top:3px solid var(--houtskool);padding:12px 0 16px}
+.soorten h3{font-size:24px;margin-bottom:4px}
+.soorten p{font-size:16px;margin:0;color:#4a423e}
+
+/* eigen keuken */
+.keuken{background:var(--karton);padding:90px 0}
+.keuken .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:start}
+.keuken ul{list-style:none;margin-top:10px}
+.keuken li{display:flex;gap:18px;align-items:baseline;padding:14px 0;border-bottom:2px dotted rgba(42,38,36,.4);font-size:20px}
+.keuken li span{font-family:"Young Serif",serif;color:var(--rood);min-width:2.2em}
+.keuken .peter{background:var(--papier);padding:32px;border:3px solid var(--houtskool);position:relative}
+.keuken .peter:before{content:"";position:absolute;left:-3px;right:-3px;top:-14px;height:14px;background:repeating-linear-gradient(90deg,var(--rood) 0 16px,var(--papier) 16px 32px);border:3px solid var(--houtskool);border-bottom:0}
+.keuken .peter p{margin-bottom:14px}
+.keuken .peter .naam{font-family:"Young Serif",serif;color:var(--rood);font-size:24px;margin:0}
+.keuken .peter small{display:block;font-size:15px;color:#4a423e}
+
+/* bbq en hapjes als bonnetje */
+.bestel{padding:100px 0}
+.bestel h2{margin-bottom:10px}
+.bestel .lead{max-width:34em;margin-bottom:40px}
+.kaarten{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
+.bon{display:flex;flex-direction:column;background:#fffdf7;border:2px solid var(--houtskool);padding:28px 26px 30px;position:relative;box-shadow:6px 6px 0 var(--houtskool)}
+.bon:nth-child(2){background:var(--rood);color:var(--papier);box-shadow:6px 6px 0 var(--rood-diep)}
+.bon h3{font-size:28px;margin-bottom:2px}
+.bon .vanaf{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.7;margin-bottom:14px}
+.bon ul{list-style:none;font-size:16.5px}
+.bon li{padding:5px 0;border-bottom:1px dashed currentColor;border-bottom-color:rgba(34,29,27,.25)}
+.bon:nth-child(2) li{border-bottom-color:rgba(245,238,224,.35)}
+.bon .prijs{font-family:"Young Serif",serif;font-size:42px;margin-top:auto;padding-top:20px;display:block}
+.bon .prijs small{font-family:Karla,sans-serif;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-left:6px;opacity:.75}
+.hapjes{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:56px;border:3px solid var(--houtskool);background:var(--karton)}
+.hapjes img{width:100%;height:100%;min-height:340px;object-fit:cover}
+.hapjes div{padding:38px 40px}
+.hapjes h3{font-size:32px;color:var(--rood);margin-bottom:12px}
+.hapjes p{margin-bottom:12px;font-size:17px}
+
+/* contact */
+.contact{background:var(--houtskool);color:var(--papier);padding:90px 0}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.contact h2{color:var(--papier)}
+.contact h2 em{font-style:normal;color:#e8837f}
+.contact address{font-style:normal;font-size:22px;margin-bottom:20px}
+.contact .tel{font-family:"Young Serif",serif;font-size:38px;text-decoration:none;display:block;margin-bottom:24px}
+.contact .tel:hover{color:#e8837f}
+.contact .knop{background:var(--papier);color:var(--houtskool);border-color:var(--papier)}
+.contact .knop:hover{background:transparent;color:var(--papier)}
+.uren{list-style:none}
+.uren li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:2px dotted rgba(245,238,224,.3);font-size:19px}
+.uren li.dicht{opacity:.55}
+.uren h3{font-size:26px;margin-bottom:10px}
+footer{background:var(--rood-diep);color:rgba(245,238,224,.8);text-align:center;padding:18px 0;font-size:14px;letter-spacing:.06em}
+
+@media (max-width:860px){
+  body{font-size:17px}
+  .wrap{padding:0 20px}
+  header nav a:not(.knop){display:none}
+  .merk{font-size:19px}.merk small{display:none}
+  .hero > img{height:620px}
+  .hero .laag .wrap{padding-bottom:40px}
+  .hero p{font-size:18px}
+  .stempel{width:104px;height:104px;top:20px;right:20px;font-size:9px}
+  .stempel b{font-size:24px}
+  .band .wrap{flex-direction:column;gap:6px}
+  .herkomst,.bestel,.keuken,.contact{padding:64px 0}
+  .herkomst .wrap,.keuken .wrap,.contact .wrap{grid-template-columns:1fr;gap:40px}
+  .herkomst figure img{height:300px}
+  .soorten{grid-template-columns:1fr}
+  .kaarten{grid-template-columns:1fr}
+  .hapjes{grid-template-columns:1fr}
+  .hapjes img{min-height:0;height:240px}
+  .hapjes div{padding:26px 22px}
+  .contact .tel{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="merk" href="#top">Peter Nijenhuis<small>Scharrelvlees</small></a>
+    <nav>
+      <a href="#herkomst">Het vlees</a>
+      <a href="#keuken">Eigen keuken</a>
+      <a href="#bestellen">Bbq en hapjes</a>
+      <a class="knop" href="#contact">Openingstijden</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="koe.jpg" alt="Scharrelrunderen in de wei" width="1600" height="1067">
+  <div class="stempel"><span>Slagerij sinds</span><b>1991</b><span>Deventer</span></div>
+  <div class="laag">
+    <div class="wrap">
+      <h1>Lekker en diervriendelijk eten, voor iedereen</h1>
+      <p>Scharrelvleesslager Peter Nijenhuis maakt veel zelf. Op de Nieuwstraat in Deventer vindt u vlees waarvan u weet waar het vandaan komt.</p>
+      <a class="knop" href="#contact">Kom langs</a>
+    </div>
+  </div>
+</section>
+<div class="band"><div class="wrap"><span>Ambachtelijke worstmakerij</span><span>Kant en klare maaltijden</span><span>Catering en bbq-pakketten</span></div></div>
+
+<section class="herkomst" id="herkomst">
+  <div class="wrap">
+    <figure><img src="frits.jpg" alt="Een koe met haar kalf in de wei" loading="lazy" width="863" height="540"></figure>
+    <div>
+      <h2>Weten waar het vandaan komt</h2>
+      <p>Bij ons staat het welzijn van het dier voorop. Daarom werken we met scharrelvlees en biologisch vlees, van dieren die ruimte hebben om binnen en buiten te leven.</p>
+      <div class="soorten">
+        <div><h3>Varken</h3><p>Van gecertificeerde scharrelvleesboeren uit Nederland.</p></div>
+        <div><h3>Rund</h3><p>Van koeien en jongvee dat in de zomer in de wei loopt.</p></div>
+        <div><h3>Kip</h3><p>De Polderhoen, een biologische scharrelkip.</p></div>
+        <div><h3>Wild</h3><p>In het winterseizoen onder meer hert, ree, haas en fazant.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="keuken" id="keuken">
+  <div class="wrap">
+    <div>
+      <h2>Wat we zelf maken</h2>
+      <ul>
+        <li><span>Worst</span>uit onze eigen worstmakerij</li>
+        <li><span>Maaltijd</span>kant en klaar, vers bereid</li>
+        <li><span>Gebraden</span>gehaktballen en kip</li>
+        <li><span>Salades</span>vers bereid in eigen keuken</li>
+      </ul>
+    </div>
+    <div class="peter">
+      <p>Ik run sinds januari 1991 de slagerij aan de Nieuwstraat 12. Kom gerust kijken, keuren en proeven.</p>
+      <p class="naam">Peter Nijenhuis</p>
+      <small>Met Carola, Gery en Sam</small>
+    </div>
+  </div>
+</section>
+
+<section class="bestel" id="bestellen">
+  <div class="wrap">
+    <h2>Barbecue en borrel</h2>
+    <p class="lead">Kies een pakket of stel er zelf een samen. Vul het aan met dagverse salades en sauzen.</p>
+    <div class="kaarten">
+      <div class="bon">
+        <h3>BBQ Populair</h3>
+        <div class="vanaf">Vanaf 4 personen</div>
+        <ul><li>Hamburger</li><li>Worstje</li><li>Texas steak</li><li>Toscaanse kipspies</li><li>Varkenshaassaté</li><li>2 soorten salade, diverse sauzen en stokbrood</li></ul>
+        <span class="prijs">&euro;13,75<small>per persoon</small></span>
+      </div>
+      <div class="bon">
+        <h3>BBQ Royale</h3>
+        <div class="vanaf">Vanaf 4 personen</div>
+        <ul><li>BBQ worst</li><li>Hamburger</li><li>Kipdijfilet</li><li>Rundersteak</li><li>Toscaanse kipspies</li><li>Varkenshaassaté</li><li>2 soorten salade, diverse sauzen en stokbrood</li></ul>
+        <span class="prijs">&euro;16,50<small>per persoon</small></span>
+      </div>
+      <div class="bon">
+        <h3>Salade schotel</h3>
+        <div class="vanaf">Vanaf 4 personen</div>
+        <ul><li>Brabantse salade of huzarensalade</li><li>5 soorten vleeswaren</li><li>Rauwkost of vruchten en garnituur</li><li>Stokbrood en kruidenboter</li></ul>
+        <span class="prijs">&euro;11,95<small>per persoon</small></span>
+      </div>
+    </div>
+    <div class="hapjes">
+      <img src="hapjes.jpg" alt="Borrelhapjes op broodjes" width="1000" height="500">
+      <div>
+        <h3>Iets te vieren?</h3>
+        <p>Een snackschaal voor ongeveer 8 tot 15 personen kost &euro;49,50. Hapjesarrangementen zijn er vanaf 75 stuks, voor &euro;1,50 per stuk.</p>
+        <p>Leuk bij een verjaardag, borrel, receptie of bruiloft.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Tot <em>ziens</em></h2>
+      <address>Slagerij Peter Nijenhuis<br>Nieuwstraat 12<br>7411 LL Deventer</address>
+      <a class="tel" href="tel:+31570612135">0570 612135</a>
+      <a class="knop" href="https://www.facebook.com/slagerij.peternijenhuis.31">Volg ons op Facebook</a>
+    </div>
+    <div>
+      <ul class="uren">
+        <li class="dicht"><span>Maandag</span><span>gesloten</span></li>
+        <li><span>Dinsdag</span><span>8.30 &ndash; 17.30</span></li>
+        <li><span>Woensdag</span><span>8.30 &ndash; 17.30</span></li>
+        <li><span>Donderdag</span><span>8.30 &ndash; 17.30</span></li>
+        <li><span>Vrijdag</span><span>8.30 &ndash; 17.30</span></li>
+        <li><span>Zaterdag</span><span>8.30 &ndash; 17.00</span></li>
+        <li class="dicht"><span>Zondag</span><span>gesloten</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Slagerij Peter Nijenhuis &middot; Nieuwstraat 12 Deventer</footer>
+</body>
+</html>

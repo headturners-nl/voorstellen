@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clean Cuts Barbershop, Nieuwstraat 9 Deventer</title>
+<meta name="description" content="Klassieke barbershop voor heren, groot en klein, in het centrum van Deventer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --groen:#1d3f2c;
+  --groen-diep:#14291d;
+  --oranje:#d8702a;
+  --room:#efe6d2;
+  --hout:#7a5230;
+  --inkt:#17130e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Libre Baskerville",Georgia,serif;background:var(--room);color:var(--inkt);line-height:1.65;font-size:17px}
+img{display:block;max-width:100%}
+a{color:inherit}
+.kop{font-family:Oswald,"Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:.06em;font-weight:500}
+.streep{height:18px;background:repeating-linear-gradient(115deg,var(--room) 0 14px,var(--groen) 14px 28px)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+/* nav */
+header{background:var(--groen-diep);color:var(--room);position:sticky;top:0;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+header .merk{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:19px;font-weight:600;text-decoration:none}
+header .merk span{color:var(--oranje)}
+header nav{display:flex;gap:26px;align-items:center}
+header nav a{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:14px;text-decoration:none;opacity:.85}
+header nav a:hover{opacity:1;color:var(--oranje)}
+.knop{display:inline-block;background:var(--oranje);color:var(--groen-diep);font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.12em;font-weight:600;font-size:15px;padding:13px 26px;text-decoration:none;border:2px solid var(--oranje);transition:background .2s,color .2s}
+.knop:hover{background:transparent;color:var(--oranje)}
+header .knop{padding:8px 18px;font-size:13px;color:var(--groen-diep)}
+header .knop:hover{color:var(--oranje)}
+
+/* hero */
+.hero{background:var(--groen);color:var(--room);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:stretch;padding-top:64px;padding-bottom:0}
+.hero .tekst{padding-bottom:72px;display:flex;flex-direction:column;justify-content:center}
+.hero .adres{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:14px;color:var(--oranje);margin-bottom:18px}
+.hero h1{font-family:Oswald,sans-serif;text-transform:uppercase;font-weight:600;font-size:clamp(64px,10vw,138px);line-height:.88;letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--oranje);display:block;font-size:.5em;letter-spacing:.34em;margin-top:.25em;font-weight:500}
+.hero p{max-width:30em;margin:30px 0 34px;font-size:18px;opacity:.92}
+.hero .foto{position:relative;align-self:end}
+.hero .foto img{width:100%;height:560px;object-fit:cover;object-position:50% 40%;border-radius:220px 220px 0 0;border:3px solid var(--oranje);border-bottom:0}
+
+/* over */
+.over{padding:100px 0}
+.over .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
+.over .portret{position:relative}
+.over .portret img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:50% 35%;border:10px solid var(--groen);outline:2px solid var(--oranje);outline-offset:-22px}
+.over .portret b{position:absolute;right:-18px;bottom:28px;background:var(--oranje);color:var(--groen-diep);font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.1em;padding:10px 16px;font-weight:600;font-size:15px;transform:rotate(-3deg)}
+h2{font-family:Oswald,sans-serif;text-transform:uppercase;font-weight:600;letter-spacing:.04em;font-size:clamp(36px,5vw,58px);line-height:1;color:var(--groen)}
+.over h2{margin-bottom:26px}
+.over p{margin-bottom:18px;max-width:34em}
+.over .tekenen{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:var(--hout);font-size:15px}
+
+/* prijslijst */
+.prijzen{background:var(--groen-diep);color:var(--room);padding:96px 0;position:relative}
+.prijzen:before,.prijzen:after{content:"";position:absolute;left:0;right:0;height:18px;background:repeating-linear-gradient(115deg,var(--room) 0 14px,var(--groen) 14px 28px)}
+.prijzen:before{top:0}.prijzen:after{bottom:0}
+.prijzen .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}
+.prijzen h2{color:var(--room)}
+.prijzen h2 span{color:var(--oranje);display:block}
+.prijzen .zij p{margin-top:22px;opacity:.85;max-width:20em}
+.menu{list-style:none}
+.menu li{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px solid rgba(239,230,210,.16)}
+.menu .naam{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:22px;font-weight:500}
+.menu .naam small{display:block;font-family:"Libre Baskerville",serif;text-transform:none;letter-spacing:0;font-size:14px;font-style:italic;opacity:.65;font-weight:400}
+.menu .punten{border-bottom:2px dotted rgba(239,230,210,.35);transform:translateY(-6px)}
+.menu .prijs{font-family:Oswald,sans-serif;font-size:30px;color:var(--oranje);font-weight:600}
+.menu li.deal .naam{color:var(--oranje)}
+
+/* sfeer */
+.sfeer{padding:100px 0 90px}
+.sfeer h2{margin-bottom:36px}
+.raster{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:290px 290px;gap:16px}
+.raster figure{overflow:hidden;background:var(--groen)}
+.raster img{width:100%;height:100%;object-fit:cover}
+.r1{grid-column:span 5;grid-row:span 2}
+.r2{grid-column:span 7}
+.r3{grid-column:span 7}
+.r1 img{object-position:50% 70%}
+.r2 img{object-position:50% 45%}
+.r3 img{object-position:50% 30%}
+
+/* contact */
+.contact{background:var(--groen);color:var(--room);padding:90px 0 0}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding-bottom:80px}
+.contact h2{color:var(--room);margin-bottom:12px}
+.contact h2 span{color:var(--oranje)}
+.contact .groot{font-family:Oswald,sans-serif;font-size:clamp(30px,4vw,44px);letter-spacing:.04em;margin:8px 0 26px;line-height:1.15}
+.contact .groot a{text-decoration:none;display:block}
+.contact .groot a:hover{color:var(--oranje)}
+.contact address{font-style:normal;margin-bottom:34px;font-size:18px}
+.uren{list-style:none;font-size:17px}
+.uren li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(239,230,210,.18);font-family:Oswald,sans-serif;letter-spacing:.06em;text-transform:uppercase;font-size:16px}
+.uren li.nu{color:var(--oranje)}
+.uren .dicht{opacity:.55}
+.contact h3{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.2em;color:var(--oranje);font-size:14px;margin-bottom:10px;font-weight:500}
+footer{background:var(--groen-diep);color:rgba(239,230,210,.6);font-size:13px;padding:18px 0;text-align:center;font-family:Oswald,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+
+@media (max-width:860px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  header nav a:not(.knop){display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:0;padding-top:40px}
+  .hero .tekst{padding-bottom:36px}
+  .hero .foto img{height:420px;border-radius:180px 180px 0 0}
+  .over{padding:64px 0}
+  .over .wrap,.prijzen .wrap,.contact .wrap{grid-template-columns:1fr;gap:38px}
+  .over .portret b{right:8px}
+  .prijzen{padding:70px 0}
+  .menu .naam{font-size:18px}
+  .menu .prijs{font-size:26px}
+  .sfeer{padding:64px 0}
+  .raster{grid-template-columns:1fr;grid-template-rows:none;gap:10px}
+  .r1,.r2,.r3{grid-column:auto;grid-row:auto;height:300px}
+  .r1{height:420px}
+  .contact{padding-top:64px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="merk" href="#top">Clean <span>Cuts</span></a>
+    <nav>
+      <a href="#over">Over Jawad</a>
+      <a href="#prijzen">Prijslijst</a>
+      <a href="#sfeer">De shop</a>
+      <a href="#contact">Contact</a>
+      <a class="knop" href="https://www.cleancutsbarbershop.nl/booking-calendar/knippen">Afspraak</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="tekst">
+      <div class="adres">Nieuwstraat 9 &middot; Deventer</div>
+      <h1>Clean Cuts<em>Barbershop</em></h1>
+      <p>Een klassieke barbershop voor heren, groot en klein. Een fijne bank, lekkere koffie en een knipbeurt waarmee je met een goed gevoel weer naar buiten loopt.</p>
+      <div><a class="knop" href="https://www.cleancutsbarbershop.nl/booking-calendar/knippen">Maak een afspraak</a></div>
+    </div>
+    <div class="foto"><img src="g2.jpg" alt="De barberstoel en de groene wand in Clean Cuts Barbershop" width="1066" height="1600"></div>
+  </div>
+  <div class="streep"></div>
+</section>
+
+<section class="over" id="over">
+  <div class="wrap">
+    <div class="portret">
+      <img src="g3.jpg" alt="Jawad Ahmadi in de Nieuwstraat in Deventer" width="1600" height="1066">
+      <b>10+ jaar barbier</b>
+    </div>
+    <div>
+      <h2>Mijn naam is Jawad</h2>
+      <p>Als ik iemand met een goed gevoel over zichzelf naar huis zie gaan, is mijn dag geslaagd. Dat is waar ik het voor doe, vanaf dag een met plezier en passie.</p>
+      <p>Het was altijd mijn droom om een klassieke barbershop te beginnen. Die droom is werkelijkheid geworden. Service op maat en kwaliteit gaan bij mij voor alles, en een haarstijl moet altijd goed in model zitten.</p>
+      <p>De vintage stijl van de shop geeft een gevoel van ouderwetse klasse. Alle heren zijn welkom.</p>
+      <div class="tekenen">Jawad Ahmadi</div>
+    </div>
+  </div>
+</section>
+
+<section class="prijzen" id="prijzen">
+  <div class="wrap">
+    <div class="zij">
+      <h2>De<span>prijslijst</span></h2>
+      <p>Boeken kan online, de agenda staat altijd open.</p>
+      <p style="margin-top:26px"><a class="knop" href="https://www.cleancutsbarbershop.nl/booking-calendar/knippen">Boek je plek</a></p>
+    </div>
+    <ul class="menu">
+      <li><span class="naam">Clean Cut<small>Knippen</small></span><span class="punten"></span><span class="prijs">&euro;35</span></li>
+      <li><span class="naam">Clean Cut &amp; Wash<small>Knippen en wassen</small></span><span class="punten"></span><span class="prijs">&euro;38</span></li>
+      <li><span class="naam">Clean Trim<small>Baard trimmen</small></span><span class="punten"></span><span class="prijs">&euro;30</span></li>
+      <li><span class="naam">Clean Shave<small>Baard scheren</small></span><span class="punten"></span><span class="prijs">&euro;38</span></li>
+      <li><span class="naam">Clean Kid<small>Kids t/m 12 jaar</small></span><span class="punten"></span><span class="prijs">&euro;28</span></li>
+      <li><span class="naam">Clean Sides<small>Zijkanten bijwerken</small></span><span class="punten"></span><span class="prijs">&euro;28</span></li>
+      <li><span class="naam">Clean Fade<small>Tondeuse</small></span><span class="punten"></span><span class="prijs">&euro;30</span></li>
+      <li class="deal"><span class="naam">Clean Package Deal<small>Wassen, knippen en scheren</small></span><span class="punten"></span><span class="prijs">&euro;60</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sfeer" id="sfeer">
+  <div class="wrap">
+    <h2>In de shop</h2>
+    <div class="raster">
+      <figure class="r1"><img src="g5.jpg" alt="Jawad knipt een klant in de barberstoel" loading="lazy" width="1066" height="1600"></figure>
+      <figure class="r2"><img src="g4.jpg" alt="Jawad aan het werk, gezien in de grote spiegel" loading="lazy" width="1600" height="1066"></figure>
+      <figure class="r3"><img src="g1.jpg" alt="Het raamlogo van Clean Cuts Barbershop aan de Nieuwstraat" loading="lazy" width="1600" height="1066"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Kom <span>langs</span></h2>
+      <div class="groot">
+        <a href="tel:+31645549063">06 45 54 90 63</a>
+        <a href="mailto:info@cleancutsbarbershop.nl" style="font-size:.62em;letter-spacing:.02em">info@cleancutsbarbershop.nl</a>
+      </div>
+      <address>Nieuwstraat 9<br>7411 LE Deventer<br>Vast nummer 0570 442021</address>
+      <a class="knop" href="https://www.cleancutsbarbershop.nl/booking-calendar/knippen">Maak een afspraak</a>
+    </div>
+    <div>
+      <h3>Openingstijden</h3>
+      <ul class="uren">
+        <li><span>Maandag</span><span>09:00 &ndash; 14:00</span></li>
+        <li><span>Dinsdag</span><span>09:00 &ndash; 18:00</span></li>
+        <li><span>Woensdag</span><span>09:00 &ndash; 18:00</span></li>
+        <li><span>Donderdag</span><span>10:00 &ndash; 20:00</span></li>
+        <li><span>Vrijdag</span><span>09:00 &ndash; 18:00</span></li>
+        <li><span>Zaterdag</span><span>09:00 &ndash; 17:00</span></li>
+        <li class="dicht"><span>Zondag</span><span>Gesloten</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="streep"></div>
+</section>
+</main>
+<footer>Clean Cuts Barbershop &middot; Nieuwstraat 9 Deventer</footer>
+</body>
+</html>
