@@ -89,8 +89,26 @@ def controleer_online(url, pogingen=10, wacht=60):
 def imap_verbind():
     host = os.environ["IMAP_HOST"]
     port = int(os.environ.get("IMAP_PORT", "993"))
+    # spaties/enters die per ongeluk mee zijn gekopieerd weghalen
+    host = host.strip()
+    user = os.environ["IMAP_USER"].strip()
+    pw = os.environ["IMAP_PASSWORD"].strip("\r\n")
+    if pw != pw.strip():
+        log("Let op: het wachtwoord begint of eindigt met een spatie.")
     M = imaplib.IMAP4_SSL(host, port, ssl_context=ssl.create_default_context())
-    M.login(os.environ["IMAP_USER"], os.environ["IMAP_PASSWORD"])
+    caps = " ".join(c.decode() if isinstance(c, bytes) else c for c in M.capabilities).upper()
+    if not user or not pw:
+        raise SystemExit("IMAP_USER of IMAP_PASSWORD is leeg.")
+    log(f"Verbonden met de mailserver, inloggen ({'AUTH PLAIN' if 'AUTH=PLAIN' in caps else 'LOGIN'})")
+    try:
+        if "AUTH=PLAIN" in caps:
+            # AUTHENTICATE PLAIN kan elk teken in het wachtwoord aan (ook ", \ en é)
+            tok = ("\0" + user + "\0" + pw).encode("utf-8")
+            M.authenticate("PLAIN", lambda _: tok)
+        else:
+            M.login(user, pw)
+    except imaplib.IMAP4.error as e:
+        raise SystemExit(f"Inloggen op de mailbox mislukt: {e}. Controleer IMAP_USER en IMAP_PASSWORD.")
     return M
 
 
