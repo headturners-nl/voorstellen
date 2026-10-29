@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Timmerbedrijf den Iseger, timmerwerk in Leeuwarden</title>
+<meta name="description" content="Dakkapellen, badkamers, kozijnen, deuren en maatwerk. Timmerwerk in Leeuwarden voor bedrijven en particulieren.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --oranje:#f35f2d;
+  --oranje-diep:#d84a1a;
+  --kool:#323031;
+  --kool-diep:#252324;
+  --hout:#f3ede3;
+  --lijn:#d9d0c1;
+  --wit:#fffdf9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Barlow,system-ui,sans-serif;background:var(--hout);color:var(--kool);font-size:18px;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;line-height:.98;letter-spacing:.005em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+
+/* duimstok: terugkerend motief */
+.duimstok{height:34px;background:
+  repeating-linear-gradient(90deg,var(--kool) 0 2px,transparent 2px 12px) 0 100%/100% 12px no-repeat,
+  repeating-linear-gradient(90deg,var(--kool) 0 2px,transparent 2px 60px) 0 100%/100% 22px no-repeat,
+  var(--oranje)}
+.duimstok.donker{background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 2px,transparent 2px 12px) 0 100%/100% 12px no-repeat,
+  repeating-linear-gradient(90deg,#fff 0 2px,transparent 2px 60px) 0 100%/100% 22px no-repeat,
+  var(--kool-diep)}
+
+header{background:var(--kool);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:12px;padding-bottom:12px}
+header img{height:58px;width:auto}
+header nav{display:flex;align-items:center;gap:28px;font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:19px;text-transform:uppercase;letter-spacing:.06em}
+header nav a{text-decoration:none}
+header nav a:hover{color:var(--oranje)}
+.bel{white-space:nowrap;background:var(--oranje);color:#fff;padding:9px 18px}
+header nav .bel:hover{background:var(--oranje-diep);color:#fff}
+
+/* hero */
+.hero{background:var(--kool);color:#fff;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.15fr;min-height:560px;padding-right:0;max-width:none;padding-left:max(28px,calc((100vw - 1200px)/2 + 28px))}
+.hero .tekst{padding:64px 48px 64px 0;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(56px,7.4vw,112px);color:#fff}
+.hero h1 span{color:var(--oranje)}
+.hero p{font-size:21px;max-width:28ch;margin-top:22px;color:#e7e1d8}
+.hero .acties{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.knop{display:inline-block;background:var(--oranje);color:#fff;text-decoration:none;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.07em;font-weight:700;font-size:21px;padding:13px 26px}
+.knop:hover{background:var(--oranje-diep)}
+.knop.rand{background:transparent;box-shadow:inset 0 0 0 2px #fff}
+.knop.rand:hover{background:#fff;color:var(--kool)}
+.hero .foto{position:relative;min-height:420px}
+.hero .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .foto span{position:absolute;left:0;bottom:0;background:var(--oranje);color:#fff;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;font-weight:600;padding:6px 16px;font-size:18px}
+
+section{padding:88px 0}
+.label{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.16em;font-weight:600;color:var(--oranje-diep);font-size:18px;margin-bottom:10px}
+h2{font-size:clamp(40px,5vw,68px);margin-bottom:26px}
+
+/* diensten als schaalverdeling */
+.diensten .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.schaal{list-style:none;counter-reset:cm}
+.schaal li{counter-increment:cm;display:grid;grid-template-columns:64px 1fr;align-items:baseline;border-top:2px solid var(--kool);padding:14px 0 14px}
+.schaal li::before{content:counter(cm) " cm";font-family:"Barlow Condensed",sans-serif;font-weight:600;color:var(--oranje-diep);font-size:18px}
+.schaal li{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-weight:600;font-size:clamp(26px,2.8vw,36px);line-height:1.1}
+.schaal li:last-child{border-bottom:2px solid var(--kool)}
+.drie{margin-top:30px;display:grid;gap:18px}
+.drie p{padding-left:18px;border-left:6px solid var(--oranje)}
+.drie b{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-size:24px;letter-spacing:.03em;display:block;line-height:1.1}
+
+/* werk */
+.werk{background:var(--kool);color:#fff}
+.werk h2{color:#fff}
+.werk .label{color:var(--oranje)}
+.mozaiek{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:120px;gap:10px;margin-top:34px}
+.mozaiek figure{position:relative;overflow:hidden;background:#111}
+.mozaiek img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.mozaiek figure:hover img{transform:scale(1.04)}
+.mozaiek figcaption{position:absolute;left:0;bottom:0;background:var(--oranje);color:#fff;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-weight:600;letter-spacing:.07em;font-size:17px;padding:3px 12px}
+.m1{grid-column:span 4;grid-row:span 4}
+.m2{grid-column:span 2;grid-row:span 4}
+.m3{grid-column:span 2;grid-row:span 4}
+.m4{grid-column:span 2;grid-row:span 4}
+.m5{grid-column:span 2;grid-row:span 4}
+.m6{grid-column:span 3;grid-row:span 4}
+.m7{grid-column:span 3;grid-row:span 4}
+.m8{grid-column:span 2;grid-row:span 4}
+.m9{grid-column:span 2;grid-row:span 4}
+.m10{grid-column:span 2;grid-row:span 4}
+.bad{margin-top:56px;display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center}
+.bad p{max-width:36ch;color:#ddd5ca}
+.bad .fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.bad .fotos img{aspect-ratio:3/4;object-fit:cover;width:100%}
+
+/* over */
+.over .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.over blockquote{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-weight:600;font-size:clamp(30px,3.6vw,48px);line-height:1.08}
+.over blockquote span{color:var(--oranje-diep)}
+.over .fotos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.over .fotos img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.over .fotos img:first-child{margin-top:34px}
+.over p.klein{margin-top:22px;max-width:44ch}
+
+/* contact */
+.contact{background:var(--oranje);color:#fff;padding:80px 0 70px}
+.contact .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:end}
+.contact h2{color:#fff;margin-bottom:22px}
+.contact a{color:#fff}
+.contact .tel{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:clamp(48px,7vw,96px);line-height:1;text-decoration:none;display:block;color:var(--kool)}
+.contact .knoppen{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.contact .knop{background:var(--kool)}
+.contact .knop:hover{background:var(--kool-diep)}
+.contact .knop.wit{background:#fff;color:var(--kool)}
+.contact address{font-style:normal;line-height:1.8;font-size:20px}
+footer{background:var(--kool-diep);color:#a49d94;font-size:14px;padding:20px 0}
+
+@media (max-width:900px){
+  header nav a:not(.bel){display:none}
+  .hero .wrap{grid-template-columns:1fr;padding-left:28px;padding-right:0}
+  .hero .tekst{padding:48px 28px 40px 0}
+  .hero .foto{min-height:320px}
+  .diensten .grid,.over .grid,.contact .grid,.bad{grid-template-columns:1fr;gap:36px}
+  section{padding:60px 0}
+  .mozaiek{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .mozaiek figure{grid-column:span 1!important;grid-row:span 2!important}
+  .mozaiek .m1,.mozaiek .m6,.mozaiek .m7{grid-column:span 2!important;grid-row:span 2!important}
+}
+@media (max-width:480px){
+  body{font-size:17px}
+  .wrap{padding:0 20px}
+  .hero .wrap{padding-left:20px}
+  header img{height:46px}
+  .schaal li{grid-template-columns:54px 1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="#"><img src="logo.png" alt="Timmerbedrijf den Iseger"></a>
+    <nav>
+      <a href="#diensten">Wat ik doe</a>
+      <a href="#werk">Werk</a>
+      <a href="#over">Over mij</a>
+      <a class="bel" href="tel:+31618887742">06 1888 7742</a>
+    </nav>
+  </div>
+</header>
+<div class="duimstok"></div>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div class="tekst">
+      <h1>Timmerwerk in <span>Leeuwarden</span></h1>
+      <p>Binnen en buiten, voor bedrijven en particulieren. Van een dakkapel tot een deur die precies past.</p>
+      <div class="acties">
+        <a class="knop" href="tel:+31618887742">Bel 06 1888 7742</a>
+        <a class="knop rand" href="#werk">Bekijk het werk</a>
+      </div>
+    </div>
+    <div class="foto">
+      <img src="dakkapel.jpg" alt="Montage van een dakkapel met houten bekleding">
+      <span>Montage van een dakkapel</span>
+    </div>
+  </div>
+</section>
+<div class="duimstok donker"></div>
+
+<section class="diensten" id="diensten">
+  <div class="wrap grid">
+    <div>
+      <div class="label">Wat ik doe</div>
+      <h2>Al het denkbare timmerwerk</h2>
+      <div class="drie">
+        <p><b>Interieur en exterieur</b>Binnen en buiten, voor bedrijven en particulieren.</p>
+        <p><b>Onderhoud en reparaties</b>Structureel onderhoud, en daarnaast reparaties.</p>
+        <p><b>Specifiek maatwerk</b>Een specifieke wens? Neem contact op en ik denk mee.</p>
+      </div>
+    </div>
+    <ol class="schaal">
+      <li>Renovatie badkamers en wc</li>
+      <li>Egaliseren van vloeren</li>
+      <li>Deuren en kozijnen op maat</li>
+      <li>Sloopwerkzaamheden</li>
+      <li>Dakwerkzaamheden</li>
+      <li>Plaatsen van keukens</li>
+      <li>Het verwerken van draagconstructie</li>
+      <li>Kitwerkzaamheden</li>
+      <li>Aanbouw, opbouw en dakkapel</li>
+    </ol>
+  </div>
+</section>
+
+<section class="werk" id="werk">
+  <div class="wrap">
+    <div class="label">Eigen werk</div>
+    <h2>Een greep uit het werk</h2>
+    <div class="mozaiek">
+      <figure class="m1"><img src="pergola.jpg" alt="Houten overkapping in de tuin"><figcaption>Overkapping</figcaption></figure>
+      <figure class="m2"><img src="deur-zwart.jpg" alt="Zwarte stalen look deur in wit kozijn"><figcaption>Deur</figcaption></figure>
+      <figure class="m3"><img src="schuifpui.jpg" alt="Schuifpui met terras"><figcaption>Schuifpui</figcaption></figure>
+      <figure class="m4"><img src="voordeur.jpg" alt="Antracietkleurige voordeur"><figcaption>Voordeur</figcaption></figure>
+      <figure class="m5"><img src="goot.jpg" alt="Goot en gevel van een rijtjeshuis"><figcaption>Goten</figcaption></figure>
+      <figure class="m6"><img src="raam.jpg" alt="Nieuw raam in baksteen gevel"><figcaption>Raam</figcaption></figure>
+      <figure class="m7"><img src="plafond-sloop.jpg" alt="Plafond en wand tijdens renovatie"><figcaption>Plafond</figcaption></figure>
+    </div>
+    <div class="bad">
+      <div>
+        <div class="label">Badkamers en toiletten</div>
+        <h2 style="font-size:clamp(36px,4.4vw,58px)">Van oude badkamer naar nieuw</h2>
+        <p>Ook de renovatie van uw badkamer of toilet kunt u bij mij onderbrengen.</p>
+      </div>
+      <div class="fotos">
+        <img src="badkamer-2.jpg" alt="Badkamer met inloopdouche en hangend toilet">
+        <img src="badkamer-3.jpg" alt="Badkamer met houten meubel en douche">
+        <img src="badkamer-4.jpg" alt="Badkamer met spiegel met verlichting">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="duimstok"></div>
+
+<section class="over" id="over">
+  <div class="wrap grid">
+    <div>
+      <div class="label">Over mij</div>
+      <blockquote>Ik werk met veel plezier aan de opdrachten van mijn klanten. <span>Met passie.</span></blockquote>
+      <p class="klein">Timmerbedrijf den Iseger is gevestigd in Leeuwarden. Ik heb de afgelopen jaren veel ervaring opgebouwd en ben gespecialiseerd in het vak, zodat het eindresultaat goed is.</p>
+    </div>
+    <div class="fotos">
+      <img src="badkamer-1.jpg" alt="Afgewerkte badkamer met douche">
+      <img src="schuifpui-2.jpg" alt="Schuifpui naar de tuin">
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap grid">
+    <div>
+      <h2>Vakman nodig?</h2>
+      <a class="tel" href="tel:+31618887742">06 1888 7742</a>
+      <div class="knoppen">
+        <a class="knop" href="https://wa.me/31618887742">WhatsApp</a>
+        <a class="knop wit" href="mailto:timmerbedrijfdeniseger@gmail.com">Stuur een mail</a>
+      </div>
+    </div>
+    <address>
+      Timmerbedrijf den Iseger<br>
+      Sjoerdsmatstate 8<br>
+      8925 AM Leeuwarden<br>
+      <a href="mailto:timmerbedrijfdeniseger@gmail.com">timmerbedrijfdeniseger@gmail.com</a>
+    </address>
+  </div>
+</section>
+</main>
+<div class="duimstok donker"></div>
+<footer><div class="wrap">Timmerbedrijf den Iseger &middot; Leeuwarden</div></footer>
+</body>
+</html>

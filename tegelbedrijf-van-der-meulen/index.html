@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tegelbedrijf H. van der Meulen, tegelspecialist in Leeuwarden sinds 1960</title>
+<meta name="description" content="Showroom, tegelzetters en restauratiewerk onder één dak aan de Polluxweg in Leeuwarden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,500;0,700;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rood:#e3001b;
+  --rood-diep:#b80016;
+  --inkt:#141212;
+  --voeg:#d8d2c8;
+  --wit:#fbfaf7;
+  --steen:#efebe4;
+  --grijs:#6c665e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Karla,system-ui,sans-serif;background:var(--wit);color:var(--inkt);font-size:18px;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Familjen Grotesk",system-ui,sans-serif;font-weight:700;line-height:1.04;letter-spacing:-.01em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+
+/* kop */
+header{background:#fff;border-bottom:6px solid var(--voeg)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:14px;padding-bottom:14px}
+header img{height:54px;width:auto}
+nav{display:flex;align-items:center;gap:26px;font-weight:500;font-size:16px}
+nav a{text-decoration:none}
+nav a:hover{color:var(--rood)}
+nav .bel{white-space:nowrap;background:var(--rood);color:#fff;padding:10px 18px;font-weight:700}
+nav .bel:hover{background:var(--rood-diep);color:#fff}
+
+/* hero als tegelwand */
+.wand{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:310px 310px;gap:6px;background:var(--voeg);border-bottom:6px solid var(--voeg)}
+.wand > *{position:relative;overflow:hidden}
+.wand img{width:100%;height:100%;object-fit:cover}
+.kop{grid-row:span 2;background:var(--wit);padding:56px 44px 44px 28px;display:flex;flex-direction:column;justify-content:space-between;padding-left:max(28px,calc((100vw - 1200px)/2 + 28px))}
+.kop h1{font-size:clamp(46px,5.6vw,82px)}
+.kop h1 em{font-style:normal;color:var(--rood)}
+.kop p{max-width:30ch;font-size:20px;margin-top:22px}
+.kop .knoppen{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.knop{display:inline-block;background:var(--rood);color:#fff;text-decoration:none;font-weight:700;padding:14px 24px}
+.knop:hover{background:var(--rood-diep)}
+.knop.licht{background:transparent;color:var(--inkt);box-shadow:inset 0 0 0 2px var(--inkt)}
+.knop.licht:hover{background:var(--inkt);color:#fff}
+.sinds{background:var(--rood);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:26px}
+.sinds b{font-family:"Familjen Grotesk",sans-serif;font-size:clamp(64px,8vw,116px);line-height:.9;letter-spacing:-.03em}
+.sinds span{font-size:17px;margin-top:8px;max-width:22ch}
+.wand .bijschrift{position:absolute;left:0;bottom:0;background:var(--wit);font-size:14px;padding:5px 12px;font-weight:500}
+
+/* algemeen blok */
+section{padding:92px 0}
+.label{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rood);margin-bottom:14px}
+h2{font-size:clamp(34px,4.2vw,56px);margin-bottom:22px}
+.twee{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.lees p+p{margin-top:16px}
+.lees{max-width:52ch}
+
+/* badkamers */
+.badkamer{background:var(--steen)}
+.fotorij{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:44px;background:var(--voeg);padding:6px}
+.fotorij img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.fotorij figure{position:relative}
+.fotorij figcaption{position:absolute;left:0;bottom:0;background:var(--wit);font-size:14px;padding:4px 10px;font-weight:500}
+.voeg{display:flex;align-items:baseline;gap:18px;margin-top:34px;border-top:2px solid var(--inkt);padding-top:22px}
+.voeg b{font-family:"Familjen Grotesk",sans-serif;font-size:clamp(46px,6vw,84px);line-height:.9;color:var(--rood);white-space:nowrap}
+.voeg p{max-width:46ch}
+.lijst{list-style:none;margin-top:22px}
+.lijst li{padding:11px 0;border-bottom:1px solid var(--voeg);display:flex;gap:14px}
+.lijst li::before{content:"";flex:none;width:11px;height:11px;margin-top:9px;background:var(--rood)}
+
+/* groot vloer */
+.zwembad{padding:0;position:relative;color:#fff;background:#000}
+.zwembad img{width:100%;height:min(72vh,640px);object-fit:cover;opacity:.82}
+.zwembad .tekst{position:absolute;inset:auto 0 0 0;padding:0 0 44px}
+.zwembad h2{max-width:20ch;margin:0;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+
+/* restauratie */
+.restauratie{background:var(--inkt);color:var(--wit)}
+.restauratie .label{color:#ff6a7a}
+.rest-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.rest-foto{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.rest-foto img{width:100%;object-fit:cover;aspect-ratio:4/3}
+.rest-foto .breed{grid-column:span 2;aspect-ratio:16/10}
+.werken{margin-top:38px}
+.werken div{padding:20px 0;border-top:1px solid #4a4540}
+.werken h3{font-size:24px;margin-bottom:6px}
+.werken p{color:#cfc9c0;font-size:17px}
+
+/* showroom */
+.merken{display:flex;flex-wrap:wrap;gap:0;margin-top:30px;border-top:2px solid var(--inkt)}
+.merken span{font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:clamp(22px,2.4vw,32px);padding:14px 26px 14px 0;line-height:1.1}
+.merken span:nth-child(3n+2){color:var(--rood)}
+.cueva{margin-top:46px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:var(--steen);padding:28px 32px}
+.cueva b{font-family:"Familjen Grotesk",sans-serif;font-size:30px}
+.tijden{display:grid;grid-template-columns:auto auto;gap:6px 30px;margin-top:22px;width:max-content}
+.tijden span:nth-child(odd){font-weight:700}
+
+/* geschiedenis */
+.geschiedenis{background:var(--steen)}
+.tijdlijn{list-style:none;margin-top:34px;border-left:6px solid var(--rood)}
+.tijdlijn li{padding:0 0 28px 28px;position:relative}
+.tijdlijn b{font-family:"Familjen Grotesk",sans-serif;font-size:34px;display:block;line-height:1.1}
+.citaat{margin-top:6px;font-family:"Familjen Grotesk",sans-serif;font-style:italic;font-weight:500;font-size:22px;color:var(--grijs)}
+.hist-foto{display:grid;gap:6px;background:var(--voeg);padding:6px}
+.hist-foto img{width:100%}
+
+/* contact */
+.contact{background:var(--rood);color:#fff;padding:84px 0}
+.contact .rij{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:end}
+.contact h2{margin-bottom:26px}
+.contact .groot{font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:clamp(36px,5vw,68px);line-height:1;text-decoration:none;display:block}
+.contact a{color:#fff}
+.contact .mail{margin-top:14px;font-size:22px}
+.contact address{font-style:normal;font-size:19px;line-height:1.7}
+.contact .knop{background:#fff;color:var(--rood);margin-top:26px}
+.contact .knop:hover{background:var(--inkt);color:#fff}
+.erkend{margin-top:40px;padding-top:22px;border-top:2px solid rgba(255,255,255,.45);font-size:16px}
+footer{background:var(--inkt);color:#9a948b;font-size:14px;padding:22px 0}
+
+@media (max-width:900px){
+  nav a:not(.bel){display:none}
+  .wand{grid-template-columns:1fr 1fr;grid-template-rows:auto 200px 200px}
+  .kop{grid-column:span 2;grid-row:auto;padding:40px 28px;gap:36px}
+  .twee,.rest-grid,.contact .rij{grid-template-columns:1fr;gap:36px}
+  .fotorij{grid-template-columns:1fr 1fr}
+  section{padding:64px 0}
+  .cueva{grid-template-columns:1fr}
+  .voeg{flex-direction:column;gap:8px}
+}
+@media (max-width:480px){
+  body{font-size:17px}
+  header img{height:42px}
+  .wrap{padding:0 20px}
+  .kop{padding:32px 20px}
+  .sinds b{font-size:56px}
+  .zwembad img{height:420px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="#"><img src="logo.png" alt="Tegelbedrijf H. van der Meulen, sedert 1960"></a>
+    <nav>
+      <a href="#badkamers">Badkamers</a>
+      <a href="#restauratie">Restauratie</a>
+      <a href="#showroom">Showroom</a>
+      <a href="#geschiedenis">Sinds 1960</a>
+      <a class="bel" href="tel:+31582891010">058 289 10 10</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wand">
+  <div class="kop">
+    <div>
+      <h1>Tegels zetten<br>sinds <em>1960</em></h1>
+      <p>Showroom, tegelzetters en voegwerk onder één dak, aan de Polluxweg in Leeuwarden.</p>
+    </div>
+    <div class="knoppen">
+      <a class="knop" href="#contact">Offerte aanvragen</a>
+      <a class="knop licht" href="#showroom">Naar de showroom</a>
+    </div>
+  </div>
+  <div><img src="zwembad.jpg" alt="Zwembad met lichtblauwe tegels"><span class="bijschrift">Zwembad</span></div>
+  <div><img src="woudagemaal.jpg" alt="Tegelzetter aan het werk in het Woudagemaal"><span class="bijschrift">Woudagemaal, Lemmer</span></div>
+  <div class="sinds"><b>60+</b><span>jaar tegelwerk vanuit Leeuwarden</span></div>
+  <div><img src="antieke-tegels.jpg" alt="Antieke tegels met vogels"><span class="bijschrift">Antieke tegels, 17e en 18e eeuw</span></div>
+</div>
+
+<section class="badkamer" id="badkamers">
+  <div class="wrap">
+    <div class="twee">
+      <div class="lees">
+        <div class="label">Badkamers, keukens en vloeren</div>
+        <h2>Een complete badkamer, van leiding tot voeg</h2>
+        <p>Voor een warme tegelvloer, een badkamer die samen met een installateur is ingericht, een betegelde keuken of een toilet: bij Van der Meulen komt het tegelwerk van één adres.</p>
+        <ul class="lijst">
+          <li>Installatiewerk en stucwerk</li>
+          <li>Tegelwerk, kitwerk en vloerverwarming</li>
+          <li>Epoxyvoegen in douches, waterdicht en niet verkleurend</li>
+        </ul>
+      </div>
+      <div class="voeg" style="margin:0;flex-direction:column;gap:10px">
+        <b>2 tot 3 mm</b>
+        <p>&ldquo;Wij houden niet van grote voegen.&rdquo; De tegels worden verwerkt met voegjes van 2 tot 3 millimeter.</p>
+      </div>
+    </div>
+    <div class="fotorij">
+      <figure><img src="badkamer.jpg" alt="Badkamer met blauwe wandtegels"></figure>
+      <figure><img src="badkamer-rood.jpg" alt="Badkamer met rode mozaïek"></figure>
+      <figure><img src="sauna.jpg" alt="Sauna met mozaïek"></figure>
+      <figure><img src="vloer.jpg" alt="Tegelvloer met cirkelmotief"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="zwembad">
+  <img src="zwembad-2.jpg" alt="Zwembad met tegels in twee blauwtinten">
+  <div class="tekst"><div class="wrap"><h2>Een vloer van duizend vierkante meter of die van een toilet</h2></div></div>
+</section>
+
+<section class="restauratie" id="restauratie">
+  <div class="wrap rest-grid">
+    <div>
+      <div class="label">Restauratiewerk</div>
+      <h2>Oud tegelwerk terug op zijn plek</h2>
+      <p style="color:#cfc9c0;max-width:48ch">In restauratiewerk en onderhoud van monumenten heeft het bedrijf jarenlange ervaring. Ook het verwerken van natuursteen en het leggen van luxe natuursteenvloeren is bekend terrein.</p>
+      <div class="werken">
+        <div><h3>Ir. D.F. Woudagemaal, Lemmer</h3><p>In fasen werden de vloeren hersteld. De losgeraakte tegels werden genummerd en elke tegel ging terug op zijn originele plaats.</p></div>
+        <div><h3>Sint Nicolaaskerk, St. Nicolaasga</h3><p>Door de tijd losgeraakte vloerdelen in dit rijksmonument uit 1887 zijn zorgvuldig gerestaureerd.</p></div>
+        <div><h3>Monumentale woningen, Drachten</h3><p>Restauratie van tegelwerk in opdracht van Monumenten Advies Noord.</p></div>
+      </div>
+    </div>
+    <div class="rest-foto">
+      <img class="breed" src="woudagemaal-vloer.jpg" alt="Vloer in het Woudagemaal">
+      <img src="kerk.jpg" alt="Sint Nicolaaskerk" style="aspect-ratio:3/4">
+      <img src="drachten.jpg" alt="Monumentale woningen in Drachten" style="aspect-ratio:3/4">
+    </div>
+  </div>
+</section>
+
+<section id="showroom">
+  <div class="wrap">
+    <div class="twee" style="align-items:start">
+      <div>
+        <div class="label">Showroom</div>
+        <h2>Kijk en voel voordat u kiest</h2>
+        <p class="lees">In de showroom staan collecties van bekende merken. Het is soms lastig om u thuis voor te stellen hoe tegels er uit gaan zien, daarom adviseert het team graag en kunt u vaak tegels op zicht meenemen.</p>
+        <div class="tijden">
+          <span>Maandag t/m vrijdag</span><span>13:30 tot 17:00</span>
+        </div>
+        <p style="margin-top:14px;color:var(--grijs);font-size:16px">Polluxweg 18, 8938 AZ Leeuwarden</p>
+      </div>
+      <img src="showroom.jpg" alt="Showroom met tegelcollecties" style="width:100%">
+    </div>
+    <div class="merken">
+      <span>Mosa</span><span>Sphinx</span><span>Grespania</span><span>Villeroy &amp; Boch</span><span>Pastorelli</span><span>Novabell</span><span>Steenbok</span><span>Marazzi</span><span>Grandeur</span><span>Delconca</span><span>Flaviker</span><span>Ecostone</span><span>Panaria</span><span>Sichenia</span><span>RAK Ceramics</span><span>Schl&uuml;ter</span>
+    </div>
+    <div class="cueva">
+      <b>La Cueva</b>
+      <p>Van der Meulen is exclusief dealer van La Cueva: tegels met een Nederlands design, geïnspireerd op natuurlijke materialen. Hout, marmer, stone, beton en trendkleuren, de volledige collectie ligt in de showroom.</p>
+    </div>
+  </div>
+</section>
+
+<section class="geschiedenis" id="geschiedenis">
+  <div class="wrap twee" style="align-items:start">
+    <div>
+      <div class="label">Sinds 1960 in Leeuwarden</div>
+      <h2>Begonnen uit liefde voor het vak</h2>
+      <ul class="tijdlijn">
+        <li><b>1960</b>Uitvoerder Hein van der Meulen begint een eigen tegelzetbedrijf, omdat hij het zetten van tegels machtig mooi werk vond. Gemiddeld vijf medewerkers.<div class="citaat">&ldquo;15 x 15 aan de wand en 10 x 10 op de vloer&rdquo;</div></li>
+        <li><b>1979</b>Een volgende generatie neemt het tegelbedrijf over en zet het voort.</li>
+        <li><b>1992</b>Verhuizing naar industrieterrein De Hemrik in Leeuwarden-oost, met tegels en hulpmaterialen onder één dak.</li>
+        <li><b>2008</b>Nieuwe locatie op De Hemrik, met meer ruimte en een bredere showroom.</li>
+        <li style="padding-bottom:0"><b>Nu</b>Acht medewerkers, aangevuld met ervaren zzp'ers.</li>
+      </ul>
+    </div>
+    <div class="hist-foto">
+      <img src="oud-pand.jpg" alt="Het eerste pand van het tegelbedrijf">
+      <img src="pand.jpg" alt="Het huidige pand aan de Polluxweg">
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rij">
+      <div>
+        <h2>Een offerte of advies voor uw tegelwerk?</h2>
+        <a class="groot" href="tel:+31582891010">058 289 10 10</a>
+        <div class="mail"><a href="mailto:hein@tegelbedrijfvdmeulen.nl">hein@tegelbedrijfvdmeulen.nl</a></div>
+        <a class="knop" href="mailto:hein@tegelbedrijfvdmeulen.nl">Stuur een bericht</a>
+      </div>
+      <address>
+        Tegelbedrijf H. van der Meulen<br>
+        Polluxweg 18<br>
+        8938 AZ Leeuwarden<br><br>
+        Showroom: maandag t/m vrijdag 13:30 tot 17:00
+      </address>
+    </div>
+    <div class="erkend">Erkend als tegel en natuursteen verwerkend bedrijf door S.G.A.T. &middot; VCA gecertificeerde vakmensen &middot; Tegelwerk onder garantie, buiten uitgezonderd</div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">Tegelbedrijf H. van der Meulen &middot; Polluxweg 18 Leeuwarden</div></footer>
+</body>
+</html>
