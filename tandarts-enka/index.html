@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tandartspraktijk in ENKA</title>
+<meta name="description" content="Interessepeiling voor een nieuwe tandartspraktijk met tandprotheticus in de wijk ENKA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#042a2b;--ink2:#0b3b3c;--blue:#4b68b0;--blue-l:#e9eefa;--mint:#9fe3c7;--bg:#f4f6f5;--line:#d6dedc;--muted:#5b6b6a}
+*{box-sizing:border-box;margin:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{background:var(--ink);color:#fff;padding:40px 20px 72px}
+.wrap{max-width:560px;margin:0 auto}
+.tag{display:inline-block;font:600 12px Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--mint);border:1px solid rgba(159,227,199,.4);padding:6px 12px;border-radius:99px;margin-bottom:20px}
+h1{font:800 clamp(28px,8vw,40px)/1.08 Montserrat,sans-serif;letter-spacing:-.01em}
+h1 u{text-decoration-color:var(--mint);text-decoration-thickness:4px;text-underline-offset:6px}
+header p{margin-top:16px;color:#cfe0de;font-size:16px}
+.card{background:#fff;border-radius:18px;padding:28px 22px;margin:-44px auto 0;box-shadow:0 10px 30px rgba(4,42,43,.12);position:relative}
+.card h2{font:700 20px Montserrat,sans-serif;margin-bottom:4px}
+.card .sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+label{display:block;font-weight:600;font-size:14px;margin:16px 0 6px}
+label span{font-weight:400;color:var(--muted)}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;font:16px Inter,sans-serif;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fbfcfc;color:var(--ink);transition:border-color .15s}
+input:focus,textarea:focus{outline:none;border-color:var(--blue);background:#fff}
+textarea{min-height:110px;resize:vertical}
+.check{display:flex;gap:10px;align-items:flex-start;margin-top:20px;font-size:13.5px;color:var(--muted)}
+.check input{width:20px;height:20px;margin-top:1px;accent-color:var(--blue);flex:none}
+button{margin-top:24px;width:100%;font:700 16px Montserrat,sans-serif;padding:16px;border:0;border-radius:12px;background:var(--blue);color:#fff;cursor:pointer}
+button:hover{background:#3d5899}
+.hp{position:absolute;left:-9999px}
+.points{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:12px}
+.points li{display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.points b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--blue-l);color:var(--blue);display:grid;place-items:center;font:700 13px Montserrat}
+footer{max-width:560px;margin:28px auto 40px;padding:0 20px;font-size:12.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="tag">Interessepeiling wijk ENKA</div>
+    <h1>Een tandartspraktijk <u>bij u in de buurt</u>?</h1>
+    <p>We onderzoeken de belangstelling voor een moderne praktijk met tandarts en tandprotheticus onder één dak. Laat vrijblijvend weten of u interesse heeft.</p>
+  </div>
+</header>
+
+<main class="wrap" style="padding:0 16px">
+  <form class="card" method="POST" action="https://formsubmit.co/info@tppalneema.nl">
+    <input type="hidden" name="_subject" value="Nieuwe aanmelding interessepeiling ENKA">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://voorstel.headturners.nl/tandarts-enka/bedankt.html">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+
+    <h2>Uw gegevens</h2>
+    <p class="sub">Duurt minder dan een minuut.</p>
+
+    <label for="naam">Naam</label>
+    <input id="naam" type="text" name="naam" autocomplete="name" required>
+
+    <label for="email">E-mailadres</label>
+    <input id="email" type="email" name="email" autocomplete="email" required>
+
+    <label for="tel">Telefoonnummer</label>
+    <input id="tel" type="tel" name="telefoon" autocomplete="tel" inputmode="tel" required>
+
+    <label for="wensen">Uw wensen <span>(optioneel)</span></label>
+    <textarea id="wensen" name="wensen" placeholder="Bijvoorbeeld: controle, gebitsprothese, behandeling voor het hele gezin"></textarea>
+
+    <div class="check">
+      <input id="ok" type="checkbox" name="toestemming" value="ja" required>
+      <label for="ok" style="margin:0;font-weight:400">Ik geef toestemming om mijn gegevens te gebruiken voor deze interessepeiling en om contact met mij op te nemen over de nieuwe praktijk.</label>
+    </div>
+
+    <button type="submit">Verstuur</button>
+
+    <ul class="points">
+      <li><b>1</b>Uitsluitend een interessepeiling, geen inschrijving als patiënt.</li>
+      <li><b>2</b>Geen verplichtingen.</li>
+      <li><b>3</b>Uw gegevens worden niet gedeeld met derden en na afloop van het onderzoek verwijderd.</li>
+    </ul>
+  </form>
+</main>
+
+<footer>Algemene tandheelkunde en gebitsprothesen op één plek, dichtbij huis in ENKA.</footer>
+</body>
+</html>
