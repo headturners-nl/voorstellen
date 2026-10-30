@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sanne Fotografie | Fotograaf in Zwolle</title>
+<meta name="description" content="Sanne Fotografie in Zwolle: portretten, zwangerschap, newborn, bruiloft, dieren en meer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0b0b0b;--coal:#171513;--sand:#dcbf92;--sand-d:#b8935c;--cream:#f4ecdf;--rose:#e8a9b8}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Karla',sans-serif;font-size:18px;line-height:1.6;background:var(--black);color:var(--cream)}
+h1,h2,h3,.hand{font-family:'Amatic SC',cursive;font-weight:700;line-height:.9}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{position:absolute;inset:0 0 auto 0;z-index:4}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:86px}
+.logo{font-family:'Amatic SC',cursive;font-size:34px;font-weight:700;text-decoration:none;letter-spacing:.02em}
+nav{display:flex;gap:30px;align-items:center;font-size:16px}
+nav a{text-decoration:none;opacity:.85}
+nav a:hover{opacity:1}
+.btn{display:inline-block;background:var(--sand);color:#1a140a;font-weight:700;text-decoration:none;padding:15px 30px;border-radius:2px;letter-spacing:.02em}
+.btn:hover{background:#ebd2a8}
+.btn.ghost{background:transparent;color:var(--cream);border:1px solid rgba(244,236,223,.5)}
+.btn.ghost:hover{border-color:var(--cream);background:rgba(244,236,223,.08)}
+nav .btn{padding:9px 18px;font-size:15px;opacity:1;color:#1a140a}
+.hero{min-height:760px;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;position:relative}
+.hero-text{padding:170px 24px 90px max(24px,calc((100vw - 1180px)/2 + 24px));display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(84px,11vw,150px);margin-bottom:6px}
+.hero h1 span{color:var(--sand)}
+.hero .tag{font-family:'Amatic SC',cursive;font-size:clamp(30px,3vw,40px);color:var(--sand);margin-bottom:28px;line-height:1}
+.hero p{max-width:470px;margin-bottom:34px;color:#d9d0c1}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-img{position:relative;min-height:520px;overflow:hidden}
+.hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.hero-img:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--black) 0,rgba(11,11,11,0) 28%)}
+.section{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
+h2{font-size:clamp(54px,7vw,92px)}
+h2 span{color:var(--sand)}
+.head p{max-width:420px;color:#b9b0a1}
+.mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:14px}
+.mosaic figure{position:relative;overflow:hidden;background:var(--coal)}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.mosaic figure:hover img{transform:scale(1.04)}
+.mosaic figcaption{position:absolute;left:0;bottom:0;padding:34px 18px 14px;width:100%;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);font-family:'Amatic SC',cursive;font-weight:700;font-size:32px;line-height:1}
+.m1{grid-column:1/6;grid-row:1/4}
+.m2{grid-column:6/10;grid-row:1/3}
+.m3{grid-column:10/13;grid-row:1/4}
+.m4{grid-column:6/10;grid-row:3/5}
+.m5{grid-column:1/4;grid-row:4/6}
+.m6{grid-column:4/6;grid-row:4/6}
+.m7{grid-column:10/13;grid-row:4/6}
+.m8{grid-column:6/10;grid-row:5/6}
+.prices{background:var(--cream);color:#1a1612}
+.prices h2 span{color:var(--sand-d)}
+.prices .head p{color:#5d5448}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:0 70px}
+.row{display:grid;grid-template-columns:1fr auto;gap:4px 20px;padding:20px 0;border-top:1px solid #cdbfa8;align-items:baseline}
+.row h3{font-size:40px}
+.row .p{font-family:'Amatic SC',cursive;font-weight:700;font-size:44px;color:var(--sand-d);line-height:1}
+.row small{grid-column:1/3;font-size:15px;color:#6c6254}
+.extra{margin-top:46px;background:#1a1612;color:var(--cream);padding:30px 34px;display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center}
+.extra b{font-family:'Amatic SC',cursive;font-size:56px;color:var(--sand);line-height:.9}
+.extra p{font-size:18px}
+.fine{margin-top:22px;font-size:15px;color:#6c6254}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about .photo{position:relative}
+.about .photo img{width:100%;aspect-ratio:3/2;object-fit:cover;filter:saturate(.92)}
+.about .photo:before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--sand);z-index:-1}
+blockquote{font-family:'Amatic SC',cursive;font-weight:700;font-size:clamp(36px,4vw,54px);line-height:1;color:var(--sand);margin:22px 0 26px}
+.about p{color:#d4cabb;margin-bottom:14px}
+.contact{background:var(--coal);border-top:1px solid #2a2622}
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.ways a.way{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:baseline;padding:22px 0;border-top:1px solid #3a342d;text-decoration:none}
+.ways a.way:last-of-type{border-bottom:1px solid #3a342d}
+.ways .k{font-family:'Amatic SC',cursive;font-weight:700;font-size:34px;color:var(--sand)}
+.ways .v{font-size:22px}
+.ways a.way:hover .v{color:var(--sand)}
+address{font-style:normal;margin-top:26px;color:#d4cabb}
+footer{padding:30px 0;font-size:14px;color:#8d8477;border-top:1px solid #2a2622}
+footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+@media(max-width:860px){
+body{font-size:17px}
+nav a:not(.btn){display:none}
+.hero{grid-template-columns:1fr;min-height:0}
+.hero-text{padding:120px 24px 40px}
+.hero-img{min-height:380px;order:2}
+.hero-img:after{background:linear-gradient(180deg,var(--black) 0,rgba(11,11,11,0) 25%)}
+.section{padding:70px 0}
+.mosaic{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px;gap:10px}
+.mosaic figure{grid-column:auto!important;grid-row:auto!important}
+.m1,.m3{grid-row:span 2!important}
+.m8{grid-column:1/3!important}
+.list,.about,.contact .grid{grid-template-columns:1fr;gap:0}
+.about{gap:46px}
+.contact .grid{gap:40px}
+.extra{grid-template-columns:1fr;gap:8px;padding:24px}
+.ways a.way{grid-template-columns:1fr;gap:0}
+.about .photo:before{inset:12px -10px -12px 10px}
+.row h3{font-size:34px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#">Sanne Fotografie</a>
+<nav><a href="#portfolio">Portfolio</a><a href="#tarieven">Tarieven</a><a href="#over-sanne">Over Sanne</a><a class="btn" href="#contact">Contact</a></nav>
+</div></header>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Sanne<br><span>Fotografie</span></h1>
+<div class="tag">jouw wens met mijn lens vastgelegd</div>
+<p>Portretten, zwangerschap, newborn, bruiloft, dieren en meer. Fotoshoots in de studio in Zwolle of bij jou op locatie.</p>
+<div class="cta"><a class="btn" href="#contact">Plan een shoot</a><a class="btn ghost" href="#tarieven">Bekijk de tarieven</a></div>
+</div>
+<div class="hero-img"><img src="dubbelportret.jpg" alt="Dubbelportret van een jongen, het gezicht is in twee helften gespiegeld"></div>
+</section>
+
+<section class="section" id="portfolio">
+<div class="wrap">
+<div class="head"><h2>Voor mijn <span>lens</span></h2><p>Een greep uit het werk. Van kleine kinderen tot een kat die naar de camera slaat.</p></div>
+<div class="mosaic">
+<figure class="m1"><img src="zwanger.jpg" alt="Zwangere buik met de handen van het stel" loading="lazy"><figcaption>Zwanger</figcaption></figure>
+<figure class="m2"><img src="lijnportret.jpg" alt="Gezin in zijaanzicht op een rij, een lijnportret" loading="lazy"><figcaption>Lijnportret</figcaption></figure>
+<figure class="m3"><img src="kat.jpg" alt="Kat die naar de camera kijkt tegen een zwarte achtergrond" loading="lazy" style="object-position:30% 50%"><figcaption>Dieren</figcaption></figure>
+<figure class="m4"><img src="bruiloft.jpg" alt="Bruidspaar onder een paraplu met een lange sluier" loading="lazy"><figcaption>Bruiloft</figcaption></figure>
+<figure class="m5"><img src="kind.jpg" alt="Lachend kind in studio" loading="lazy" style="object-position:50% 20%"><figcaption>Portretten</figcaption></figure>
+<figure class="m6"><img src="newborn.jpg" alt="Pasgeboren baby in twee handen" loading="lazy" style="object-position:60% 50%"><figcaption>Newborn</figcaption></figure>
+<figure class="m7"><img src="cakesmash.jpg" alt="Cakesmash opstelling met roze ballonnen" loading="lazy"><figcaption>Cakesmash</figcaption></figure>
+<figure class="m8"><img src="hei.jpg" alt="Een eenzame boom op de zandvlakte onder een felle zon" loading="lazy" style="object-position:50% 70%"><figcaption>Sahara shoot</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="section prices" id="tarieven">
+<div class="wrap">
+<div class="head"><h2>Tarieven</h2><p>Per shoot, inclusief het aantal bewerkte foto's dat erbij staat.</p></div>
+<div class="list">
+<div class="row"><h3>Portret, 1 persoon</h3><span class="p">&euro; 125</span><small>8 bewerkte foto's, 30 minuten</small></div>
+<div class="row"><h3>Zwangere vrouw</h3><span class="p">&euro; 155</span><small>10 bewerkte foto's, 30 minuten</small></div>
+<div class="row"><h3>Portret, 2 personen</h3><span class="p">&euro; 150</span><small>12 bewerkte foto's, 45 minuten</small></div>
+<div class="row"><h3>Newbornshoot</h3><span class="p">&euro; 220</span><small>20 bewerkte foto's, 60 minuten</small></div>
+<div class="row"><h3>Dubbelportret, 2 personen</h3><span class="p">&euro; 120</span><small>1 dubbelportret en 2 individuele portretten, 10 minuten</small></div>
+<div class="row"><h3>Cakesmash</h3><span class="p">&euro; 185</span><small>15 bewerkte foto's, 45 minuten</small></div>
+<div class="row"><h3>Lijnportret, tot 5 personen</h3><span class="p">&euro; 160</span><small>1 lijnportret en per persoon 1 zijaanzicht</small></div>
+<div class="row"><h3>Dierenfotoshoot, 1 dier</h3><span class="p">&euro; 130</span><small>8 bewerkte foto's, 30 minuten</small></div>
+<div class="row"><h3>Bruiloft</h3><span class="p">&euro; 220 p.u.</span><small>20 bewerkte foto's per uur</small></div>
+<div class="row"><h3>Sahara shoot</h3><span class="p">&euro; 55</span><small>5 bewerkte foto's, 15 minuten</small></div>
+</div>
+<div class="extra"><b>Extra speciaal</b><p>Bij alle fotoshoots, behalve de Sahara shoot, krijg je naast de bewerkte foto's ook alle andere foto's die ik tijdens onze afspraak maak, gratis en onbewerkt.</p></div>
+<p class="fine">Meer groottes, groepen en productfoto's (vanaf &euro; 50) staan op de volledige tarievenpagina. Alle shoots kunnen op locatie, behalve de cakesmash. Reiskosten zijn &euro; 0,50 per km vanaf Veldbeemdgras 34, heen en terug.</p>
+</div>
+</section>
+
+<section class="section" id="over-sanne">
+<div class="wrap about">
+<div class="photo"><img src="workshop.jpg" alt="Vier mensen fotograferen in het bos tijdens een workshop" loading="lazy"></div>
+<div>
+<h2>Fotograaf <span>en docent</span></h2>
+<blockquote>Dat moment waarop iemand eerst nog wat ongemakkelijk voor mijn camera staat en daarna langzaam zichzelf laat zien.</blockquote>
+<p>Sanne woont in Zwolle en fotografeert eigenlijk al altijd. Haar studio groeide uit een kleine opstelling thuis, toen steeds meer kinderen en volwassenen voor haar camera wilden staan.</p>
+<p>Ze geeft ook workshops fotografie.</p>
+</div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="wrap grid">
+<div>
+<h2>Plan een <span>shoot</span></h2>
+<p style="margin-top:20px;color:#d4cabb;max-width:420px">Enthousiast geworden? Stuur een bericht. Sanne reageert zo snel mogelijk. Blijft het stil, kijk dan even in je spam.</p>
+<address>Veldbeemdgras 34<br>Zwolle</address>
+</div>
+<div class="ways">
+<a class="way" href="mailto:info@sannefotografie.nl"><span class="k">Mail</span><span class="v">info@sannefotografie.nl</span></a>
+<a class="way" href="https://wa.me/31640973062"><span class="k">WhatsApp</span><span class="v">06 4097 3062</span></a>
+</div>
+</div>
+</section>
+<footer><div class="wrap"><span>Sanne Fotografie, Zwolle</span><span>KvK 69059128</span></div></footer>
+</body>
+</html>

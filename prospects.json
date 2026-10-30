@@ -12,5 +12,8 @@
   {"naam": "Slagerij Peter Nijenhuis", "slug": "slagerij-peter-nijenhuis", "plaats": "Deventer", "branche": "horeca en winkels", "datum": "2026-10-28", "mailadres": "onbekend", "rechtsvorm": "onbekend"},
   {"naam": "Tegelbedrijf H. van der Meulen", "slug": "tegelbedrijf-van-der-meulen", "plaats": "Leeuwarden", "branche": "bouw en vakmensen", "datum": "2026-10-29", "mailadres": "info@tegelbedrijfvdmeulen.nl", "rechtsvorm": "onbekend"},
   {"naam": "Timmerbedrijf den Iseger", "slug": "timmerbedrijf-den-iseger", "plaats": "Leeuwarden", "branche": "bouw en vakmensen", "datum": "2026-10-29", "mailadres": "timmerbedrijfdeniseger@gmail.com", "rechtsvorm": "onbekend"},
-  {"naam": "LM Schilderwerken", "slug": "lm-schilderwerken", "plaats": "Zutphen", "branche": "bouw en vakmensen", "datum": "2026-10-29", "mailadres": "lmschilderwerken@outlook.com", "rechtsvorm": "onbekend"}
+  {"naam": "LM Schilderwerken", "slug": "lm-schilderwerken", "plaats": "Zutphen", "branche": "bouw en vakmensen", "datum": "2026-10-29", "mailadres": "lmschilderwerken@outlook.com", "rechtsvorm": "onbekend"},
+  {"naam": "Trimsalon Gek Op Cockers", "slug": "gek-op-cockers", "plaats": "Zwolle", "branche": "mix", "datum": "2026-10-30", "mailadres": "info@gekopcockers.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Loodgietersbedrijf Nero v.o.f.", "slug": "loodgietersbedrijf-nero", "plaats": "Zwolle", "branche": "mix", "datum": "2026-10-30", "mailadres": "info@loodgietersbedrijfnero.nl", "rechtsvorm": "vof"},
+  {"naam": "Sanne Fotografie", "slug": "sanne-fotografie", "plaats": "Zwolle", "branche": "mix", "datum": "2026-10-30", "mailadres": "info@sannefotografie.nl", "rechtsvorm": "eenmanszaak"}
 ]
