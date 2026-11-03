@@ -15,5 +15,8 @@
   {"naam": "LM Schilderwerken", "slug": "lm-schilderwerken", "plaats": "Zutphen", "branche": "bouw en vakmensen", "datum": "2026-10-29", "mailadres": "lmschilderwerken@outlook.com", "rechtsvorm": "onbekend"},
   {"naam": "Trimsalon Gek Op Cockers", "slug": "gek-op-cockers", "plaats": "Zwolle", "branche": "mix", "datum": "2026-10-30", "mailadres": "info@gekopcockers.nl", "rechtsvorm": "onbekend"},
   {"naam": "Loodgietersbedrijf Nero v.o.f.", "slug": "loodgietersbedrijf-nero", "plaats": "Zwolle", "branche": "mix", "datum": "2026-10-30", "mailadres": "info@loodgietersbedrijfnero.nl", "rechtsvorm": "vof"},
-  {"naam": "Sanne Fotografie", "slug": "sanne-fotografie", "plaats": "Zwolle", "branche": "mix", "datum": "2026-10-30", "mailadres": "info@sannefotografie.nl", "rechtsvorm": "eenmanszaak"}
+  {"naam": "Sanne Fotografie", "slug": "sanne-fotografie", "plaats": "Zwolle", "branche": "mix", "datum": "2026-10-30", "mailadres": "info@sannefotografie.nl", "rechtsvorm": "eenmanszaak"},
+  {"naam": "Van Dam Mediation", "slug": "van-dam-mediation", "plaats": "Hierden", "branche": "zzp en dienstverleners", "datum": "2026-11-03", "mailadres": "info@vandammediation.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Bureau 1900", "slug": "bureau-1900", "plaats": "Bennekom", "branche": "zzp en dienstverleners", "datum": "2026-11-03", "mailadres": "wakelkamp@bureau1900.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Mentalift", "slug": "mentalift", "plaats": "Hattemerbroek", "branche": "zzp en dienstverleners", "datum": "2026-11-03", "mailadres": "jasper@mentalift.nl", "rechtsvorm": "onbekend"}
 ]

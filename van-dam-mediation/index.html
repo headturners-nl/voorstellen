@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Van Dam Mediation | Arbeidsmediator in Hierden</title>
+<meta name="description" content="Aad van Dam is arbeidsmediator en doet uitsluitend arbeidsmediation. Een gesprek met de ander aan tafel, onder geheimhouding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#00a09b; --teal-d:#007a76; --oranje:#ff854f; --oranje-d:#d9602a;
+  --inkt:#231f20; --grijs:#5b5a5b; --papier:#faf7f3; --lijn:#e6e0d8;
+  --kop:"Bricolage Grotesque", Georgia, sans-serif; --tekst:"Hanken Grotesk", Arial, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--papier);color:var(--inkt);font:18px/1.65 var(--tekst);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--kop);line-height:1.08;letter-spacing:-.02em}
+
+/* kop */
+header{background:#fff;border-bottom:1px solid var(--lijn)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:16px;padding-bottom:16px}
+header img{height:38px;width:auto}
+.kop-contact{display:flex;align-items:center;gap:22px;font-weight:700}
+.kop-contact a{text-decoration:none}
+.knop{display:inline-block;background:var(--oranje);color:#1d1210;font-weight:700;text-decoration:none;padding:14px 24px;border-radius:4px;border:2px solid var(--oranje);transition:.15s}
+.knop:hover{background:var(--oranje-d);border-color:var(--oranje-d);color:#fff}
+.knop.rand{background:transparent;color:inherit;border-color:currentColor}
+.knop.rand:hover{background:var(--inkt);color:#fff;border-color:var(--inkt)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--teal);color:#fff}
+.hero::before{content:"";position:absolute;right:-8%;top:0;bottom:0;width:62%;background:var(--oranje);clip-path:polygon(34% 0,100% 0,100% 100%,0 100%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;min-height:540px}
+.hero-tekst{padding:84px 0 84px}
+.hero h1{font-size:clamp(40px,5.4vw,70px);font-weight:800}
+.hero p{margin:24px 0 32px;font-size:20px;max-width:30em}
+.hero .knoppen{display:flex;gap:14px;flex-wrap:wrap}
+.hero .knop{background:#fff;border-color:#fff;color:var(--inkt)}
+.hero .knop:hover{background:var(--inkt);border-color:var(--inkt);color:#fff}
+.hero .knop.rand{background:transparent;border-color:#fff;color:#fff}
+.hero .knop.rand:hover{background:#fff;color:var(--teal-d)}
+.hero-foto{align-self:stretch;display:flex;align-items:flex-end;justify-content:center}
+.hero-foto img{width:100%;max-width:540px;height:auto;aspect-ratio:600/510;object-fit:cover;margin-bottom:0;border-radius:2px 2px 0 0;box-shadow:0 0 0 8px rgba(255,255,255,.9) inset}
+.hero-foto figure{position:relative;margin:0 0 -1px}
+.hero-foto figcaption{position:absolute;left:-14px;bottom:20px;background:var(--inkt);color:#fff;font-size:14px;font-weight:700;padding:8px 14px}
+
+/* kenmerken */
+.strook{background:var(--inkt);color:#fff}
+.strook .wrap{display:flex;flex-wrap:wrap;gap:12px 36px;padding-top:20px;padding-bottom:20px;font-size:15px}
+.strook b{color:var(--oranje)}
+
+section{padding:96px 0}
+.kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--teal-d);margin-bottom:16px}
+h2{font-size:clamp(32px,4vw,50px);font-weight:800}
+
+/* twee kanten */
+.twee{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:44px;border:2px solid var(--inkt)}
+.kant{padding:44px 44px 48px}
+.kant:first-child{background:#fff;border-right:2px solid var(--inkt)}
+.kant:last-child{background:var(--inkt);color:#fff}
+.kant h3{font-size:26px;margin-bottom:14px}
+.kant:first-child h3 span{color:var(--teal-d)}
+.kant:last-child h3 span{color:var(--oranje)}
+.kant ul{list-style:none;margin-top:14px}
+.kant li{padding:10px 0;border-top:1px solid rgba(128,128,128,.35)}
+.tafel{margin-top:32px;max-width:46em;font-size:20px}
+.tafel strong{color:var(--teal-d)}
+
+/* verloop */
+.verloop{background:#fff;border-top:1px solid var(--lijn);border-bottom:1px solid var(--lijn)}
+.verloop-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;margin-top:8px}
+.verloop-grid > div:first-child p{margin-top:20px;color:var(--grijs)}
+ol.stappen{list-style:none;counter-reset:s}
+ol.stappen li{counter-increment:s;position:relative;padding:0 0 30px 74px;border-left:2px solid var(--lijn);margin-left:22px}
+ol.stappen li:last-child{border-left-color:transparent;padding-bottom:0}
+ol.stappen li::before{content:counter(s);position:absolute;left:-22px;top:-4px;width:42px;height:42px;display:grid;place-items:center;background:var(--teal);color:#fff;font:800 20px var(--kop);clip-path:polygon(50% 0,100% 100%,0 100%);padding-top:12px}
+ol.stappen li:nth-child(even)::before{background:var(--oranje);color:#1d1210}
+ol.stappen h3{font-size:22px;margin-bottom:6px}
+ol.stappen p{color:var(--grijs)}
+
+/* citaat */
+.citaat{background:var(--teal);color:#fff;padding:90px 0}
+.citaat .wrap{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center}
+.citaat .piek{width:120px;height:104px;background:var(--oranje);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.citaat blockquote{font:700 clamp(26px,3.4vw,42px)/1.18 var(--kop);letter-spacing:-.015em}
+.citaat cite{display:block;margin-top:20px;font:500 17px var(--tekst);font-style:normal;opacity:.92}
+
+/* over */
+.over{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.over p{margin-top:18px;color:#3c3a3b}
+.feiten{list-style:none;margin-top:28px}
+.feiten li{display:flex;gap:16px;padding:14px 0;border-top:1px solid var(--lijn)}
+.feiten li b{min-width:150px;font-family:var(--kop);font-size:17px}
+.over figure img{width:100%;height:auto;border-radius:2px}
+.over figcaption{font-size:14px;color:var(--grijs);margin-top:10px}
+
+/* contact */
+.contact{background:var(--inkt);color:#fff;padding:96px 0}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.contact h2{color:#fff}
+.contact p{margin:20px 0 30px;font-size:20px;max-width:28em;color:#e9e4de}
+.gegevens{background:#fff;color:var(--inkt);padding:36px 38px;border-top:8px solid var(--oranje)}
+.gegevens dl div{padding:12px 0;border-bottom:1px solid var(--lijn)}
+.gegevens dl div:last-child{border-bottom:0}
+.gegevens dt{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-d);font-weight:700}
+.gegevens dd{font-size:20px;font-weight:700}
+.gegevens a{text-decoration:none}
+
+footer{background:#151213;color:#b9b2aa;font-size:14px;padding:26px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+
+@media (max-width:860px){
+  body{font-size:17px}
+  .hero::before{width:100%;right:0;clip-path:polygon(0 62%,100% 38%,100% 100%,0 100%)}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;gap:0}
+  .hero-tekst{padding:48px 0 28px}
+  .hero-foto img{max-width:none}
+  .hero-foto figcaption{left:0}
+  section{padding:64px 0}
+  .twee{grid-template-columns:1fr}
+  .kant{padding:32px 26px}
+  .kant:first-child{border-right:0;border-bottom:2px solid var(--inkt)}
+  .verloop-grid,.over,.contact .wrap{grid-template-columns:1fr;gap:36px}
+  .citaat .wrap{grid-template-columns:1fr;gap:24px}
+  .citaat .piek{width:72px;height:62px}
+  .kop-contact a.tel{display:none}
+  header img{height:30px}
+  .feiten li{flex-direction:column;gap:2px}
+  .verloop-grid > *,.over > *,.contact .wrap > *{min-width:0}
+  ol.stappen li{padding-left:52px;margin-left:20px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#top" aria-label="Van Dam Mediation"><img src="logo.svg" alt="Van Dam Mediation"></a>
+    <div class="kop-contact">
+      <a class="tel" href="tel:+31625041551">06 25 04 15 51</a>
+      <a class="knop" href="#contact">Gratis kennismaken</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Jullie lopen vast op werk. Samen aan tafel komen jullie er wel uit.</h1>
+      <p>Aad van Dam is arbeidsmediator en doet niets anders. Hij begeleidt het gesprek tussen jou en de ander, onpartijdig, onder geheimhouding en vrijwillig.</p>
+      <div class="knoppen">
+        <a class="knop" href="tel:+31625041551">Bel 06 25 04 15 51</a>
+        <a class="knop rand" href="mailto:info@vandammediation.nl">Mail Aad</a>
+      </div>
+    </div>
+    <div class="hero-foto">
+      <figure>
+        <img src="aad.jpg" alt="Aad van Dam, arbeidsmediator">
+        <figcaption>Aad van Dam, arbeidsmediator</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="strook">
+  <div class="wrap">
+    <span><b>Specialisatie</b> uitsluitend arbeidsmediation</span>
+    <span><b>Geregistreerd</b> Full certified ADR-registermediator, arbeid</span>
+    <span><b>Taal</b> Nederlands en Engels</span>
+    <span><b>Beoordeeld</b> 9,8 op Trustoo</span>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Voor wie</div>
+    <h2>Twee kanten, één tafel</h2>
+    <p class="tafel">Bij arbeidsmediation zijn jullie allebei deelnemer. Aad beslist niets en legt niets op. Hij zorgt dat jullie elkaar kunnen horen, ook als het emotioneel wordt. <strong>Jullie bepalen zelf welke oplossing past.</strong></p>
+    <div class="twee">
+      <div class="kant">
+        <h3><span>Jij</span> zit met een conflict</h3>
+        <p>Je hebt problemen met een collega, in je team of met je werkgever. Misschien staat je baan op het spel en dreigt ontslag.</p>
+        <ul>
+          <li>Je kunt vrijuit praten, alles valt onder geheimhouding</li>
+          <li>Jij beslist of je meedoet, en je mag altijd stoppen</li>
+          <li>Je wordt gehoord, ook de emoties horen erbij</li>
+        </ul>
+      </div>
+      <div class="kant">
+        <h3><span>De ander</span> zit er ook middenin</h3>
+        <p>Een conflict tussen werknemer en werkgever, tussen collega's binnen een team of in het bestuur van een organisatie.</p>
+        <ul>
+          <li>Een neutrale en veilige plek met vaste spelregels</li>
+          <li>Aad blijft onafhankelijk en onpartijdig</li>
+          <li>Lukt het niet, dan is er exit-mediation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="verloop">
+  <div class="wrap">
+    <div class="verloop-grid">
+      <div>
+        <div class="kicker">Werkwijze</div>
+        <h2>Zo loopt een mediation</h2>
+        <p>Mogelijk zijn enkele gesprekken nodig om tot een oplossing te komen. Elke deelnemer krijgt om beurten de ruimte om zijn of haar verhaal te doen.</p>
+      </div>
+      <ol class="stappen">
+        <li>
+          <h3>Intakegesprek</h3>
+          <p>Je spreekt Aad individueel, maximaal een half uur. Hij vertelt hoe mediation werkt. Gratis en zonder verplichting.</p>
+        </li>
+        <li>
+          <h3>Mediationovereenkomst</h3>
+          <p>Jullie en de mediator tekenen de overeenkomst. Daarin liggen geheimhouding en spelregels vast. Dan start de mediation officieel.</p>
+        </li>
+        <li>
+          <h3>Het gesprek</h3>
+          <p>Aad vat samen, reflecteert, spiegelt en stelt vragen. De werkelijke belangen, zorgen en behoeften komen boven tafel en het conflict de-escaleert.</p>
+        </li>
+        <li>
+          <h3>De oplossing</h3>
+          <p>Jullie komen zelf met de oplossing. Zodra jullie het eens zijn, stelt Aad een overeenkomst op met de afspraken die jullie samen ondertekenen.</p>
+        </li>
+        <li>
+          <h3>Of uit elkaar, maar goed geregeld</h3>
+          <p>Komen jullie er niet uit, dan gaat de mediation over in exit-mediation. Jullie bespreken onder meer einddatum en transitievergoeding en leggen het vast in een vaststellingsovereenkomst.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<div class="citaat">
+  <div class="wrap">
+    <div class="piek" aria-hidden="true"></div>
+    <blockquote>
+      Arbeidsmediation doe ik niet als een hobby. Het is niet iets wat je erbij doet om wat extra te verdienen. Het is mijn beroep.
+      <cite>Aad van Dam</cite>
+    </blockquote>
+  </div>
+</div>
+
+<section>
+  <div class="wrap over">
+    <div>
+      <div class="kicker">Over Aad</div>
+      <h2>Fulltime met arbeidsconflicten bezig</h2>
+      <p>Aad werkt met mensen die op hun werk in een conflict zitten en waarvan de baan mogelijk op het spel staat. Zijn doel is dat je daarna weer met plezier naar je werk gaat.</p>
+      <p>Tijdens zijn carrière reisde en werkte hij met verschillende culturen uit Azië, het Midden-Oosten, Oost-Europa en Zuid-Amerika. Hij behandelt iedereen met integriteit, gelijkheid en respect.</p>
+      <ul class="feiten">
+        <li><b>Registratie</b><span>Full certified ADR-registermediator met specialisatie arbeid</span></li>
+        <li><b>Ook gecertificeerd als</b><span>Arbitrator, conflict coach, auditor en mentor</span></li>
+        <li><b>Taal</b><span>Nederlands en Engels, in woord en schrift</span></li>
+        <li><b>Locatie</b><span>Paasloweg 17, Hierden</span></li>
+      </ul>
+    </div>
+    <figure>
+      <img src="foto.jpg" alt="Aad van Dam in het bos">
+      <figcaption>Aad van Dam</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Zit je vast? Bel Aad.</h2>
+      <p>Een eerste gesprek is gratis. Aad vertelt hoe arbeidsmediation werkt en of het bij jullie situatie past.</p>
+      <a class="knop" href="tel:+31625041551">Bel 06 25 04 15 51</a>
+    </div>
+    <div class="gegevens">
+      <dl>
+        <div><dt>Telefoon</dt><dd><a href="tel:+31625041551">+31 (0)6 25 04 15 51</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:info@vandammediation.nl">info@vandammediation.nl</a></dd></div>
+        <div><dt>Adres</dt><dd>Paasloweg 17<br>3849 RV Hierden</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Van Dam Mediation &middot; KvK 89745736</span>
+    <span>Voorstel voor een nieuwe homepage door Headturners</span>
+  </div>
+</footer>
+</body>
+</html>

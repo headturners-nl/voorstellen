@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bureau 1900 | Interim manager, coach en mediator in Bennekom</title>
+<meta name="description" content="Monique Wakelkamp is interim manager, coach en MfN-registermediator. Zij versterkt tijdelijk de brug als het team onder druk staat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Albert+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --nacht:#020202; --marine:#16233b; --groen:#3fae9e; --groen-d:#2b8678; --cyaan:#12b5d6;
+  --zand:#f6f2ea; --wit:#fff; --inkt:#1b2430; --grijs:#5f6874; --lijn:#ddd6c8;
+  --kop:"Young Serif", Georgia, serif; --tekst:"Albert Sans", Arial, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--zand);color:var(--inkt);font:18px/1.65 var(--tekst);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--kop);font-weight:400;line-height:1.12}
+
+/* bretonstreep */
+.streep{height:26px;background:repeating-linear-gradient(90deg,var(--marine) 0 34px,var(--zand) 34px 68px)}
+.streep.nacht{background:repeating-linear-gradient(90deg,var(--marine) 0 34px,#fff 34px 68px)}
+
+/* kop */
+header{background:var(--wit)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:14px;padding-bottom:14px}
+header img{height:42px;width:auto}
+header nav{display:flex;align-items:center;gap:26px;font-weight:700;font-size:16px}
+header nav a{text-decoration:none}
+.knop{display:inline-block;background:var(--groen);color:#06201b;font-weight:700;text-decoration:none;padding:14px 26px;border-radius:999px;transition:.15s}
+.knop:hover{background:var(--marine);color:#fff}
+.knop.licht{background:#fff;color:var(--marine)}
+.knop.licht:hover{background:var(--groen);color:#06201b}
+.knop.rand{background:transparent;border:2px solid #fff;color:#fff;padding:12px 24px}
+.knop.rand:hover{background:#fff;color:var(--marine)}
+
+/* hero */
+.hero{background:var(--nacht);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;align-items:end;gap:20px;min-height:560px}
+.hero-tekst{padding:56px 0 60px}
+.rol{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.rol span{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px}
+.hero h1{font-size:clamp(36px,4.4vw,56px)}
+.hero h1 em{font-style:normal;color:var(--groen)}
+.hero p{margin:24px 0 32px;font-size:20px;color:#d9dee4;max-width:30em}
+.hero .knoppen{display:flex;gap:14px;flex-wrap:wrap}
+.hero-foto img{width:100%;height:auto;max-height:600px;object-fit:cover;object-position:50% 0}
+
+/* secties */
+section{padding:96px 0}
+.kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--groen-d);margin-bottom:14px}
+h2{font-size:clamp(32px,4vw,50px)}
+
+/* herkenning */
+.herkenning{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.herkenning p{margin-top:20px;color:#3a4350}
+.lijst{list-style:none;margin-top:24px}
+.lijst li{padding:14px 0 14px 34px;border-top:1px solid var(--lijn);position:relative}
+.lijst li::before{content:"";position:absolute;left:0;top:23px;width:18px;height:2px;background:var(--groen)}
+.zin{font:400 clamp(26px,3vw,36px)/1.25 var(--kop);color:var(--marine)}
+
+/* drie rollen */
+.rollen{background:var(--marine);color:#fff}
+.rollen h2{max-width:14em}
+.rij{display:grid;grid-template-columns:.9fr 1.4fr auto;gap:40px;align-items:center;padding:36px 0;border-top:1px solid rgba(255,255,255,.22)}
+.rij:last-child{border-bottom:1px solid rgba(255,255,255,.22)}
+.rij h3{font-size:30px}
+.rij h3 small{display:block;font:700 13px var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--groen);margin-bottom:8px}
+.rij p{color:#cfd7e2}
+.rij a{white-space:nowrap;font-weight:700;color:var(--groen);text-decoration:none;border-bottom:2px solid var(--groen);padding-bottom:2px}
+.rollen .kop-blok{margin-bottom:50px}
+
+/* verhaal */
+.verhaal{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.verhaal figure{position:relative}
+.verhaal figure img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.verhaal figcaption{font-size:14px;color:var(--grijs);margin-top:10px}
+.verhaal p{margin-top:18px;color:#3a4350}
+.verhaal blockquote{margin-top:28px;padding-left:22px;border-left:4px solid var(--groen);font:400 24px/1.3 var(--kop);color:var(--marine)}
+
+/* ervaring */
+.ervaring{background:#fff;border-top:1px solid var(--lijn);border-bottom:1px solid var(--lijn)}
+.ervaring .kop-blok{max-width:40em;margin-bottom:46px}
+.ervaring .kop-blok p{margin-top:16px;color:var(--grijs)}
+.opdrachten{display:grid;grid-template-columns:repeat(2,1fr);gap:0 60px}
+.opdracht{padding:22px 0;border-top:1px solid var(--lijn)}
+.opdracht h3{font:700 19px var(--tekst);margin-bottom:6px;color:var(--marine)}
+.opdracht p{color:var(--grijs);font-size:16.5px}
+
+/* over */
+.over{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.over img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 12%}
+.feiten{list-style:none;margin-top:24px}
+.feiten li{padding:14px 0;border-top:1px solid var(--lijn);display:flex;gap:18px}
+.feiten b{min-width:150px}
+.score{display:inline-flex;align-items:baseline;gap:12px;margin-top:28px;padding:14px 22px;background:#fff;border:1px solid var(--lijn)}
+.score strong{font:400 40px var(--kop);color:var(--marine)}
+.score span{font-size:15px;color:var(--grijs)}
+.over p.motto{margin-top:22px;font:400 24px/1.3 var(--kop);color:var(--marine)}
+
+/* contact */
+.contact{background:var(--nacht);color:#fff;padding:90px 0}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.contact p{margin:20px 0 30px;font-size:20px;color:#d9dee4;max-width:28em}
+.kaart{background:#fff;color:var(--inkt);padding:34px 38px}
+.kaart div{padding:12px 0;border-bottom:1px solid var(--lijn)}
+.kaart div:last-child{border-bottom:0}
+.kaart dt{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--groen-d);font-weight:700}
+.kaart dd{font-size:20px;font-weight:700}
+.kaart a{text-decoration:none}
+footer{background:#06090c;color:#98a2ae;font-size:14px;padding:24px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+footer img{height:44px;width:auto;border-radius:3px}
+
+@media (max-width:860px){
+  body{font-size:17px}
+  section{padding:64px 0}
+  header nav a:not(.knop){display:none}
+  header img{height:32px}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;gap:0}
+  .hero-tekst{padding:44px 0 36px}
+  .hero-foto{max-width:380px}
+  .herkenning,.verhaal,.over,.contact .wrap{grid-template-columns:1fr;gap:36px}
+  .herkenning>*,.verhaal>*,.over>*,.contact .wrap>*,.rij>*{min-width:0}
+  .rij{grid-template-columns:1fr;gap:14px;padding:28px 0}
+  .opdrachten{grid-template-columns:1fr}
+  .feiten li{flex-direction:column;gap:2px}
+  .over img{aspect-ratio:1/1}
+  .streep,.streep.nacht{height:18px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#top" aria-label="Bureau 1900"><img src="logo.gif" alt="Bureau 1900, interim management, coaching, mediation"></a>
+    <nav>
+      <a href="#rollen">Aanbod</a>
+      <a href="#ervaring">Ervaring</a>
+      <a href="#over">Over Monique</a>
+      <a class="knop" href="#contact">Bel of mail</a>
+    </nav>
+  </div>
+  <div class="streep"></div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <div class="rol"><span>Interim manager</span><span>Coach</span><span>MfN-registermediator</span></div>
+      <h1>Is je stuurman weg of de kapitein <em>overbelast</em>? Ik kom de brug versterken.</h1>
+      <p>Monique Wakelkamp leidt tijdelijk je team, projecten of een tender, zodat de zaken blijven doorlopen. Met daadkracht, nuchterheid en saamhorigheid.</p>
+      <div class="knoppen">
+        <a class="knop" href="tel:+31653659668">Bel 06 53 65 96 68</a>
+        <a class="knop rand" href="mailto:wakelkamp@bureau1900.nl">Mail Monique</a>
+      </div>
+    </div>
+    <div class="hero-foto">
+      <img src="monique.jpg" alt="Monique Wakelkamp">
+    </div>
+  </div>
+</div>
+<div class="streep nacht"></div>
+
+<section>
+  <div class="wrap herkenning">
+    <div>
+      <div class="kicker">Herkenbaar?</div>
+      <h2>Lean en mean werkt, tot er iemand uitvalt</h2>
+      <p>De meeste organisaties zijn zo scherp ingericht dat niemand meer ruimte heeft om taken over te nemen. Zodra er iemand wegvalt, blijft er iets liggen. Vaak is het niet de taak die ontbreekt, maar de aansturing.</p>
+      <ul class="lijst">
+        <li>Een teammanager gaat met zwangerschapsverlof of sabbatical</li>
+        <li>Na een fusie zoekt iedereen nog naar een gezamenlijke manier van werken</li>
+        <li>Een nieuw project moet starten terwijl het gewone werk doorloopt</li>
+        <li>De HRM-afdeling heeft door externe oorzaken een tijdelijke piek</li>
+        <li>Een aanbesteding legt grote druk op de bestaande organisatie</li>
+      </ul>
+    </div>
+    <div>
+      <p class="zin">Je huurt me in voor de stress van vandaag, maar uiteindelijk gaat het om het resultaat en de rust van morgen.</p>
+      <p style="margin-top:22px">Zulke projecten doe ik, voor één of meer dagen per week, kort of langere tijd. Het is maar net wat de situatie verlangt.</p>
+    </div>
+  </div>
+</section>
+
+<section class="rollen" id="rollen">
+  <div class="wrap">
+    <div class="kop-blok">
+      <div class="kicker" style="color:var(--groen)">Aanbod</div>
+      <h2>Drie manieren om de koers vast te houden</h2>
+    </div>
+    <div class="rij">
+      <h3><small>Interim management</small>Tijdelijke vervanging en externe sturing</h3>
+      <p>Moeten jullie je stuurman tijdelijk missen, of heeft de kapitein de handen al vol? Ik stuur het team aan, rol het project uit, splits het op in kleinere taken en zorg voor een goede start.</p>
+      <a href="https://bureau1900.nl/interim-management-tijdelijke-vervanging/">Lees meer</a>
+    </div>
+    <div class="rij">
+      <h3><small>Coaching</small>Het team of de leider bijsturen</h3>
+      <p>Ik ben de begeleider van de leider. Ik help de teamleider het heft weer in handen te nemen en help elk teamlid de sterke punten van zichzelf en de collega's te zien.</p>
+      <a href="https://bureau1900.nl/bijsturen-en-versterken-van-team-en-individu/">Lees meer</a>
+    </div>
+    <div class="rij">
+      <h3><small>Mediation</small>Onpartijdige hulp bij een verstoorde arbeidsverhouding</h3>
+      <p>Een mediator haalt de kou uit de lucht en geeft partijen ruimte voor hun verhaal. Daarna is er ruimte voor toenadering: wat willen de partijen nu echt?</p>
+      <a href="https://www.geenruzieophetwerk.nl">geenruzieophetwerk.nl</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap verhaal">
+    <figure>
+      <img src="boot.jpg" alt="Een motorboot op de Rijn">
+      <figcaption>De Rijn, waar het in 1994 bijna misging</figcaption>
+    </figure>
+    <div>
+      <div class="kicker">Waarom ik dit werk doe</div>
+      <h2>Onbezorgd varen op de Rijn, 1994</h2>
+      <p>Net toen we de Wageningse binnenhaven uit wilden varen viel de motor van onze boot uit. Een reusachtig binnenschip voer recht op ons af. Het bleek iets kleins in de motor, dat bij het nalopen van onze checklist aan het licht had moeten komen.</p>
+      <p>Dit verhaal pak ik nog regelmatig erbij als ik tijdelijk een project aanstuur. Ik ben de loods die je door onrustig weer heen helpt. En ik kijk samen met jullie hoe jullie de volgende storm zelf doorstaan.</p>
+      <blockquote>Mijn les: vertrouw niet op aannames.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="ervaring" id="ervaring">
+  <div class="wrap">
+    <div class="kop-blok">
+      <div class="kicker">Ervaring</div>
+      <h2>Gepokt en gemazeld, in meer dan 25 jaar</h2>
+      <p>Geen project is hetzelfde. Discretie is een van de afspraken, dus een greep uit wat ik deed en graag blijf doen.</p>
+    </div>
+    <div class="opdrachten">
+      <div class="opdracht"><h3>Project duurzame inzetbaarheid leiden</h3><p>Een pilot voor een hogeschool, voor facilitair, ICT en technisch personeel.</p></div>
+      <div class="opdracht"><h3>Tenders begeleiden</h3><p>Als projectsecretaris voor een zorgverzekeraar, zodat het vaste team werd ontlast.</p></div>
+      <div class="opdracht"><h3>Herinrichting begeleiden</h3><p>Bij een grote zorgverzekeraar de werkstromen ondersteunen en de logistiek bij P&amp;O faciliteren.</p></div>
+      <div class="opdracht"><h3>Toetsen op marktconformiteit</h3><p>Klantonderzoek, relaties verstevigen en het commerciële team op sterkte brengen.</p></div>
+      <div class="opdracht"><h3>Profileren van een thuiszorgorganisatie</h3><p>Als senior accountmanager contracten sluiten en de dienstverlening uitbreiden.</p></div>
+      <div class="opdracht"><h3>Salesplan opstellen</h3><p>Voor een bedrijf met na een fusie te veel projecten en te weinig tijd.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap over">
+    <img src="monique-2.jpg" alt="Monique Wakelkamp">
+    <div>
+      <div class="kicker">Over Monique</div>
+      <h2>Interim manager, coach en mediator</h2>
+      <ul class="feiten">
+        <li><b>Ervaring</b><span>25 jaar als leidinggevende in verschillende organisaties</span></li>
+        <li><b>Eigen baas</b><span>Sinds 2007</span></li>
+        <li><b>Registratie</b><span>MfN-registermediator voor arbeidszaken</span></li>
+        <li><b>Werkgebied</b><span>Woonachtig in Bennekom, werkzaam door heel Nederland</span></li>
+        <li><b>Warm hart voor</b><span>Het bedrijfsleven en de zorgsector</span></li>
+      </ul>
+      <p class="motto">Altijd op zoek naar de overeenkomsten.</p>
+      <div class="score"><strong>9,5</strong><span>Trustoo, 21 reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Speelt er veel tegelijk? Bel of mail.</h2>
+      <p>Zo is snel helder wat ik voor jullie kan doen. Ben ik niet direct bereikbaar, dan bel ik binnen 24 uur terug.</p>
+      <a class="knop" href="tel:+31653659668">Bel 06 53 65 96 68</a>
+    </div>
+    <dl class="kaart">
+      <div><dt>Telefoon</dt><dd><a href="tel:+31653659668">+31 653 659 668</a></dd></div>
+      <div><dt>E-mail</dt><dd><a href="mailto:wakelkamp@bureau1900.nl">wakelkamp@bureau1900.nl</a></dd></div>
+      <div><dt>Adres</dt><dd>Dikkenbergweg 7<br>6721 AC Bennekom</dd></div>
+    </dl>
+  </div>
+</section>
+</main>
+
+<div class="streep nacht"></div>
+<footer>
+  <div class="wrap">
+    <span>Bureau 1900 &middot; Monique Wakelkamp &middot; KvK 09175342</span>
+    <span>Voorstel voor een nieuwe homepage door Headturners</span>
+  </div>
+</footer>
+</body>
+</html>
