@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Leest Administratie- en Advieskantoor, Breda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--zwart:#121012;--oranje:#ff6600;--oranje-d:#c94d00;--papier:#fbf7f0;--lijn:#d8cbb4;--grijs:#5b5560}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Karla',sans-serif;font-size:18px;line-height:1.6;color:var(--zwart);background:var(--papier)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Alfa Slab One',Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:.005em}
+
+/* kop */
+header{border-bottom:3px solid var(--zwart)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 24px;max-width:1140px;margin:0 auto}
+.bar img{height:56px;width:auto;mix-blend-mode:multiply}
+.bel{display:inline-flex;align-items:center;gap:10px;background:var(--zwart);color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:2px;white-space:nowrap}
+.bel:hover{background:var(--oranje)}
+.bel span{color:var(--oranje)}
+.bel:hover span{color:#fff}
+
+/* hero */
+.hero{padding:64px 0 80px;background:
+ linear-gradient(var(--papier),var(--papier))}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.kicker{display:inline-block;font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--oranje-d);border-bottom:3px solid var(--oranje);padding-bottom:4px;margin-bottom:24px}
+.hero h1{font-size:clamp(36px,4.6vw,58px);margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--oranje)}
+.hero p.lead{font-size:20px;max-width:34em;margin-bottom:32px}
+.knoppen{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:15px 26px;border:3px solid var(--zwart);border-radius:2px}
+.btn.vol{background:var(--oranje);border-color:var(--oranje);color:var(--zwart)}
+.btn.vol:hover{background:var(--zwart);border-color:var(--zwart);color:#fff}
+.btn.rand:hover{background:var(--zwart);color:#fff}
+
+/* grootboek */
+.boek{position:relative;background:#fff;border:2px solid var(--zwart);box-shadow:10px 10px 0 var(--oranje);transform:rotate(1.2deg);padding:0}
+.boek .kop{display:flex;justify-content:space-between;background:var(--zwart);color:#fff;font-family:'Alfa Slab One',serif;font-size:15px;letter-spacing:.06em;padding:12px 20px}
+.boek .kop span:last-child{color:var(--oranje)}
+.boek ul{list-style:none;padding:8px 20px 28px;background:
+ repeating-linear-gradient(to bottom,transparent 0 51px,var(--lijn) 51px 52px)}
+.boek li{display:flex;align-items:baseline;gap:10px;height:52px;line-height:52px;font-size:19px;font-weight:500}
+.boek li::after{content:"";flex:1;order:2;border-bottom:2px dotted #a89a80;transform:translateY(-6px)}
+.boek li b{order:3;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--oranje-d)}
+.stempel{position:absolute;right:-18px;bottom:-26px;transform:rotate(-12deg);border:4px solid var(--oranje);color:var(--oranje);font-family:'Alfa Slab One',serif;font-size:26px;padding:6px 18px;background:rgba(251,247,240,.92);letter-spacing:.06em}
+
+/* band zwart */
+.band{background:var(--zwart);color:#fff;padding:84px 0}
+.band h2{font-size:clamp(30px,3.8vw,46px);max-width:15em;margin-bottom:48px}
+.band h2 em{font-style:normal;color:var(--oranje)}
+.situaties{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid #3a363c}
+.situaties div{padding:28px 32px 28px 0;border-bottom:1px solid #3a363c}
+.situaties div:nth-child(even){padding-left:32px;border-left:1px solid #3a363c;padding-right:0}
+.situaties h3{font-size:24px;color:var(--oranje);margin-bottom:8px}
+.situaties p{color:#d9d4dc;font-size:18px}
+
+/* citaat */
+.citaat{padding:90px 0 40px}
+.citaat .wrap{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:start}
+.citaat .groot{font-family:'Alfa Slab One',serif;font-size:150px;line-height:.8;color:var(--oranje)}
+.citaat blockquote{font-family:'Alfa Slab One',serif;font-size:clamp(26px,3.2vw,40px);line-height:1.2}
+.citaat cite{display:block;margin-top:20px;font-style:normal;font-weight:700;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--grijs)}
+
+/* wie */
+.wie{padding:50px 0 90px}
+.wie .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.wie h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:20px}
+.wie p{margin-bottom:16px}
+.schaal{list-style:none;border:2px solid var(--zwart);background:#fff}
+.schaal li{display:flex;justify-content:space-between;gap:16px;padding:16px 22px;border-bottom:1px solid var(--lijn);font-weight:500}
+.schaal li:last-child{border-bottom:0;background:var(--oranje);font-weight:700}
+.schaal li span{color:var(--grijs);font-size:15px}
+.schaal li:last-child span{color:var(--zwart)}
+
+/* reviews */
+.reviews{background:#f0e7d6;padding:84px 0;border-top:3px solid var(--zwart);border-bottom:3px solid var(--zwart)}
+.reviews h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:40px}
+.rgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.rev{background:#fff;border:2px solid var(--zwart);padding:30px 30px 26px;position:relative}
+.rev::before{content:"";position:absolute;left:30px;top:-3px;width:56px;height:6px;background:var(--oranje)}
+.rev p{font-size:19px;margin-bottom:18px}
+.rev cite{font-style:normal;font-weight:700}
+.rev small{display:block;color:var(--grijs);font-size:15px}
+
+/* contact */
+.contact{padding:90px 0}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.contact h2{font-size:clamp(32px,4.2vw,54px);margin-bottom:20px}
+.nummer{display:block;font-family:'Alfa Slab One',serif;font-size:clamp(30px,4vw,48px);text-decoration:none;color:var(--zwart);border-bottom:5px solid var(--oranje);width:max-content;max-width:100%;margin:28px 0 12px}
+.nummer:hover{color:var(--oranje-d)}
+.mail{font-size:22px;font-weight:700}
+.kaart{border:2px solid var(--zwart);background:#fff;padding:28px;box-shadow:8px 8px 0 var(--zwart)}
+.kaart img{height:54px;width:auto;margin-bottom:18px}
+.kaart address{font-style:normal;font-size:20px;line-height:1.5}
+.kaart p{color:var(--grijs);font-size:16px;margin-top:14px}
+footer{background:var(--zwart);color:#bdb7c1;padding:22px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media (max-width:860px){
+ body{font-size:17px}
+ .hero{padding:40px 0 64px}
+ .hero .wrap,.wie .wrap,.contact .wrap,.rgrid{grid-template-columns:1fr;gap:44px}
+ .boek{transform:none;margin-right:8px}
+ .stempel{right:-6px;font-size:22px}
+ .situaties{grid-template-columns:1fr}
+ .situaties div,.situaties div:nth-child(even){padding:24px 0;border-left:0}
+ .citaat{padding-top:60px}
+ .citaat .wrap{grid-template-columns:1fr;gap:0}
+ .citaat .groot{font-size:96px;height:56px}
+ .band,.reviews,.contact{padding:60px 0}
+}
+@media (max-width:480px){
+ .bar img{height:44px}
+ .bel{padding:10px 14px;font-size:16px}
+ .bel span{display:none}
+ .boek li{font-size:15px;gap:6px}
+ .boek li b{font-size:12px}
+ .boek ul{padding:8px 14px 28px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="bar">
+  <a href="#"><img src="logo.png" alt="Leest, Administratie- en advieskantoor Breda" width="441" height="121"></a>
+  <a class="bel" href="tel:+31624636250"><span>Bel</span> 06 24 63 62 50</a>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <span class="kicker">Administratie en advies, Breda</span>
+   <h1>Uw boekhouding op orde. <em>Ook als hij nu in een schoenendoos zit.</em></h1>
+   <p class="lead">Leest neemt de administratieve werkzaamheden van MKB'ers over, zodat u kunt doen waar u goed in bent. Bij achterstanden, bij onderbezetting, eenmalig of structureel.</p>
+   <div class="knoppen">
+    <a class="btn vol" href="tel:+31624636250">Bel 06 24 63 62 50</a>
+    <a class="btn rand" href="mailto:info@leestadministratie.nl">Mail ons</a>
+   </div>
+  </div>
+  <div style="position:relative">
+   <div class="boek" aria-hidden="true">
+    <div class="kop"><span>WERKZAAMHEDEN</span><span>STATUS</span></div>
+    <ul>
+     <li>Debiteuren<b>op orde</b></li>
+     <li>Crediteuren<b>op orde</b></li>
+     <li>Inkoop<b>op orde</b></li>
+     <li>Loonadministratie<b>op orde</b></li>
+     <li>Aangifte omzetbelasting<b>op orde</b></li>
+    </ul>
+   </div>
+   <div class="stempel" aria-hidden="true">OP ORDE</div>
+  </div>
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap">
+  <h2>Wanneer u Leest <em>inschakelt</em></h2>
+  <div class="situaties">
+   <div>
+    <h3>Het ligt er al maanden</h3>
+    <p>U wilde de achterstallige administratie al lang bijwerken, maar het komt er niet van. Wij scheppen snel orde, zelfs in een chaotische boekhouding.</p>
+   </div>
+   <div>
+    <h3>Er zijn handen tekort</h3>
+    <p>Uw afdeling is onderbezet en het boekwerk blijft liggen. Wij schieten tijdelijk te hulp en zetten de schouders eronder.</p>
+   </div>
+   <div>
+    <h3>U wilt het daarna zelf doen</h3>
+    <p>Wij zetten een goed georganiseerde administratie op. Daarna houdt u hem met een minimum aan tijd zelf bij.</p>
+   </div>
+   <div>
+    <h3>U wilt het liever kwijt</h3>
+    <p>Wij verzorgen uw boekhouding volledig, ook op de lange termijn. Een vraag over uw administratie? Wij adviseren u ook daarbij.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="citaat">
+ <div class="wrap">
+  <div class="groot" aria-hidden="true">&ldquo;</div>
+  <div>
+   <blockquote>U bent geen ondernemer geworden om uw kostbare tijd door te brengen achter de mappen.</blockquote>
+   <cite>Leest Administratie- en Advieskantoor</cite>
+  </div>
+ </div>
+</section>
+
+<section class="wie">
+ <div class="wrap">
+  <div>
+   <h2>Van eenmanszaak tot besloten vennootschap</h2>
+   <p>Geen enkele ondernemer ontkomt aan een optimale boekhouding. Of u nu zzp'er bent, een eenmanszaak runt of leiding geeft aan een groter bedrijf: Leest helpt bij de boekhouding in Breda en omgeving.</p>
+   <p>Het kantoor werkt met ruime ervaring in bedrijfsadministratie, debiteuren en crediteuren bij nationale en internationale bedrijven.</p>
+  </div>
+  <ul class="schaal">
+   <li>ZZP'er <span>boekhouding en advies</span></li>
+   <li>Eenmanszaak <span>boekhouding en advies</span></li>
+   <li>MKB <span>achterstand of onderbezetting</span></li>
+   <li>Besloten vennootschap <span>boekhouding en advies</span></li>
+   <li>Interim administrateur <span>freelance inzetbaar</span></li>
+  </ul>
+ </div>
+</section>
+
+<section class="reviews">
+ <div class="wrap">
+  <h2>Wat opdrachtgevers zeggen</h2>
+  <div class="rgrid">
+   <figure class="rev">
+    <p>&ldquo;Manon is in staat om binnen zeer korte tijd mee te draaien op de afdeling. Naast het oppakken van de gevraagde werkzaamheden, is ze kritisch en probeerde, waar mogelijk, de efficiëntie van processen direct te verbeteren.&rdquo;</p>
+    <cite>Tim Nouws</cite>
+   </figure>
+   <figure class="rev">
+    <p>&ldquo;Manon heeft hier enorm bij geholpen! Ze heeft onze werkwijze en het werken in het ERP-pakket snel opgepakt en heeft ervoor gezorgd dat onze administratie weer bij en up-to-date is.&rdquo;</p>
+    <cite>Nienke van der Reijden</cite>
+   </figure>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div>
+   <h2>Eerst even kennismaken?</h2>
+   <p>Maak een vrijblijvende afspraak. Dan kijken we samen wat de beste oplossing is voor uw bedrijf.</p>
+   <a class="nummer" href="tel:+31624636250">06 24 63 62 50</a>
+   <a class="mail" href="mailto:info@leestadministratie.nl">info@leestadministratie.nl</a>
+  </div>
+  <div class="kaart">
+   <img src="logo.png" alt="Leest" width="441" height="121">
+   <address>Leest Administratie- en Advieskantoor<br>Stadionstraat 11C10<br>4815 NC Breda</address>
+   <p>Afslag Breda/Prinsenbeek</p>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap"><span>Leest Administratie- en Advieskantoor, Breda</span><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners</span></div>
+</footer>
+
+</body>
+</html>

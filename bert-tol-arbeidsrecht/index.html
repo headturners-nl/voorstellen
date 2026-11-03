@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bert Tol Bureau Arbeidsrecht, Zwolle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--oranje:#f07f0a;--oranje-d:#b95e00;--kool:#2b2b2d;--kool2:#3a3a3d;--papier:#f8f4ec;--lijn:#d9d1c1;--tekst:#2b2b2d;--grijs:#68645c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;font-size:18px;line-height:1.65;color:var(--tekst);background:var(--papier)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600;line-height:1.15}
+
+/* kop */
+header{background:var(--kool);color:#fff}
+.bar{max-width:1140px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.bar img{height:50px;width:auto}
+.bar nav{display:flex;gap:28px;font-weight:600;font-size:16px}
+.bar nav a{text-decoration:none;color:#e9e5dc}
+.bar nav a:hover{color:var(--oranje)}
+.tel{background:var(--oranje);color:#1b1b1b;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:2px;white-space:nowrap}
+.tel:hover{background:#fff}
+
+/* hero */
+.hero{position:relative;background:var(--kool);color:#fff;overflow:hidden}
+.hero .foto{position:absolute;inset:0;background:url(bert-tol.jpg) 78% 30%/cover no-repeat}
+.hero .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,43,45,.96) 0%,rgba(43,43,45,.9) 34%,rgba(43,43,45,.35) 62%,rgba(43,43,45,0) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:96px;padding-bottom:104px}
+.hero .tekst{max-width:600px}
+.kicker{display:inline-block;font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--oranje);margin-bottom:20px}
+.hero h1{font-size:clamp(36px,5vw,60px);margin-bottom:22px}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--oranje)}
+.hero p{font-size:20px;max-width:30em;margin-bottom:32px;color:#ece8de}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:15px 26px;border-radius:2px;border:2px solid #fff}
+.btn.vol{background:var(--oranje);border-color:var(--oranje);color:#1b1b1b}
+.btn.vol:hover{background:#fff;border-color:#fff}
+.btn:not(.vol):hover{background:#fff;color:var(--kool)}
+.lint{background:var(--oranje);color:#1b1b1b;font-weight:600}
+.lint .wrap{display:flex;gap:10px 34px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px;font-size:16px}
+.lint b{font-weight:700}
+
+/* kiezer */
+.kiezer{padding:96px 0 90px}
+.kiezer h2{font-size:clamp(30px,3.6vw,46px);margin-bottom:12px;max-width:16em}
+.kiezer .intro{max-width:36em;color:var(--grijs);margin-bottom:44px}
+.paneel{display:grid;grid-template-columns:340px 1fr;border:2px solid var(--kool);background:#fff}
+.tabs{display:flex;flex-direction:column;background:var(--kool)}
+.tabs button{all:unset;cursor:pointer;display:block;box-sizing:border-box;padding:24px 28px;color:#e9e5dc;font-family:'Source Serif 4',serif;font-size:23px;font-weight:600;border-bottom:1px solid #4a4a4d;position:relative}
+.tabs button:last-child{border-bottom:0}
+.tabs button small{display:block;font-family:'Source Sans 3';font-weight:400;font-size:15px;color:#b3aea3;margin-top:2px}
+.tabs button:hover{background:var(--kool2)}
+.tabs button[aria-selected=true]{background:var(--oranje);color:#1b1b1b}
+.tabs button[aria-selected=true] small{color:#3a2200}
+.tabs button:focus-visible{outline:3px solid #fff;outline-offset:-6px}
+.inhoud{padding:44px 48px}
+.inhoud section{display:none}
+.inhoud section.aan{display:block}
+.inhoud h3{font-size:28px;margin-bottom:14px}
+.inhoud p.in{margin-bottom:22px;max-width:34em}
+.inhoud ul{list-style:none;columns:2;column-gap:36px}
+.inhoud li{break-inside:avoid;padding:11px 0 11px 22px;border-top:1px solid var(--lijn);position:relative;font-weight:600}
+.inhoud li::before{content:"";position:absolute;left:0;top:21px;width:9px;height:9px;background:var(--oranje)}
+.inhoud .noot{margin-top:24px;color:var(--grijs);font-size:16px;max-width:36em}
+.noscript-lijst{display:none}
+
+/* over */
+.over{background:var(--kool);color:#fff;padding:90px 0;position:relative;overflow:hidden}
+.over::before{content:"";position:absolute;right:-120px;top:-80px;width:520px;height:520px;background:url(monogram.png) center/contain no-repeat;opacity:.55;pointer-events:none}
+.over .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:64px}
+.over h2{font-size:clamp(30px,3.8vw,46px);margin-bottom:24px}
+.over h2 em{font-style:italic;font-weight:400;color:var(--oranje)}
+.over p{color:#e3dfd5;margin-bottom:16px;max-width:36em}
+.feit{border-left:4px solid var(--oranje);padding:4px 0 4px 26px;margin-bottom:30px}
+.feit b{display:block;font-family:'Source Serif 4',serif;font-size:44px;line-height:1;color:var(--oranje);margin-bottom:6px}
+.feit span{color:#e3dfd5}
+
+/* diensten */
+.diensten{padding:96px 0 30px}
+.diensten h2{font-size:clamp(28px,3.4vw,42px);margin-bottom:36px}
+.d-rij{display:grid;grid-template-columns:260px 1fr;gap:32px;padding:28px 0;border-top:2px solid var(--kool)}
+.d-rij:last-child{border-bottom:2px solid var(--kool)}
+.d-rij h3{font-size:26px}
+.d-rij p{max-width:38em}
+
+/* publicaties */
+.pub{padding:70px 0 90px}
+.pub h2{font-size:clamp(26px,3vw,36px);margin-bottom:28px}
+.pubs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--lijn)}
+.pubs a{text-decoration:none;padding:24px 28px 24px 0;border-bottom:1px solid var(--lijn)}
+.pubs a+a{padding-left:28px;border-left:1px solid var(--lijn)}
+.pubs time{display:block;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--oranje-d);margin-bottom:8px}
+.pubs span{font-family:'Source Serif 4',serif;font-size:21px;font-weight:600;line-height:1.3;display:block}
+.pubs a:hover span{color:var(--oranje-d)}
+
+/* contact */
+.contact{background:var(--oranje);color:#1b1b1b;padding:84px 0}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.contact h2{font-size:clamp(32px,4.2vw,54px);margin-bottom:16px}
+.contact p{max-width:30em;font-size:19px}
+.nr{display:block;font-family:'Source Serif 4',serif;font-weight:600;font-size:clamp(34px,4.6vw,58px);text-decoration:none;margin:20px 0 6px;line-height:1.05}
+.nr:hover{color:#fff}
+.mailreg{font-weight:700;font-size:21px}
+.adres{background:var(--kool);color:#fff;padding:32px;border-radius:2px}
+.adres img{height:46px;width:auto;margin-bottom:18px}
+.adres address{font-style:normal;font-size:20px;line-height:1.5}
+.adres p{font-size:15px;color:#c9c4b8;margin-top:14px}
+.adres a{color:var(--oranje)}
+footer{background:#1d1d1f;color:#aaa59a;font-size:14px;padding:22px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+ body{font-size:17px}
+ .bar nav{display:none}
+ .hero .foto{background-position:82% center}
+ .hero .foto::after{background:linear-gradient(180deg,rgba(43,43,45,.55) 0%,rgba(43,43,45,.92) 55%,rgba(43,43,45,.97) 100%)}
+ .hero .wrap{padding-top:200px;padding-bottom:56px}
+ .kiezer{padding:64px 0}
+ .paneel{grid-template-columns:1fr}
+ .tabs{flex-direction:row;overflow-x:auto}
+ .tabs button{flex:1 0 auto;padding:16px 20px;font-size:19px;border-bottom:0;border-right:1px solid #4a4a4d;white-space:nowrap}
+ .tabs button small{display:none}
+ .inhoud{padding:28px 22px}
+ .inhoud ul{columns:1}
+ .over{padding:64px 0}
+ .over .wrap,.contact .wrap{grid-template-columns:1fr;gap:36px}
+ .over::before{width:320px;height:320px;right:-100px;top:-60px;opacity:.4}
+ .diensten{padding:64px 0 20px}
+ .d-rij{grid-template-columns:1fr;gap:8px}
+ .pubs{grid-template-columns:1fr}
+ .pubs a+a{padding-left:0;border-left:0}
+ .contact{padding:60px 0}
+}
+@media (max-width:480px){
+ .bar img{height:40px}
+ .tel{padding:9px 14px;font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="bar">
+  <a href="#"><img src="logo.png" alt="Bert Tol Bureau Arbeidsrecht" width="238" height="68"></a>
+  <nav><a href="#wie">Voor wie</a><a href="#over">Over ons</a><a href="#diensten">Diensten</a><a href="#contact">Contact</a></nav>
+  <a class="tel" href="tel:0384535025">038 453 50 25</a>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="foto" role="img" aria-label="Bert Tol op een parkbank, telefonerend"></div>
+ <div class="wrap">
+  <div class="tekst">
+   <span class="kicker">Arbeidsrecht en ambtenarenrecht, Zwolle</span>
+   <h1>Arbeidsrecht is ons vak. <em>De regie blijft bij u.</em></h1>
+   <p>Bij ontslag, een vaststellingsovereenkomst of een conflict op de werkvloer: zelfstandig jurist Bert Tol gaat voor u aan het werk. U behoudt de regie.</p>
+   <div class="btns">
+    <a class="btn vol" href="tel:0384535025">Bel 038 453 50 25</a>
+    <a class="btn" href="mailto:info@berttol.nl">Mail info@berttol.nl</a>
+   </div>
+  </div>
+ </div>
+</section>
+<div class="lint"><div class="wrap"><span><b>Sinds 1987</b> in het arbeidsrecht</span><span><b>Sinds 2006</b> een eigen praktijk in Zwolle</span><span><b>Zonder advocaat</b> naar de rechtbank in arbeidszaken</span></div></div>
+
+<section class="kiezer" id="wie">
+ <div class="wrap">
+  <h2>Welke kant van de tafel zit u?</h2>
+  <p class="intro">De praktijk heeft werkgevers, werknemers en zelfstandigen als klant. Dat houdt scherp en evenwichtig. Kies uw situatie.</p>
+
+  <div class="paneel">
+   <div class="tabs" role="tablist" aria-label="Kies uw situatie">
+    <button role="tab" id="t1" aria-selected="true" aria-controls="p1">Ik ben werkgever<small>Ontslag, verzuim, overeenkomsten</small></button>
+    <button role="tab" id="t2" aria-selected="false" aria-controls="p2">Ik ben werknemer<small>Dreigend ontslag of een conflict</small></button>
+    <button role="tab" id="t3" aria-selected="false" aria-controls="p3">Ik ben zelfstandige<small>Opdracht, incasso, voorwaarden</small></button>
+    <button role="tab" id="t4" aria-selected="false" aria-controls="p4">Ik zit in een OR<small>Medezeggenschap</small></button>
+   </div>
+   <div class="inhoud">
+    <section id="p1" role="tabpanel" aria-labelledby="t1" class="aan">
+     <h3>Als werkgever</h3>
+     <p class="in">U vertelt uw verhaal en er volgt snel een oplossingsrichting die in uw onderneming of instelling gaat werken.</p>
+     <ul>
+      <li>Op-non-actiefstelling of schorsing</li>
+      <li>Ontslag op staande voet beoordelen</li>
+      <li>Ontslag via het UWV of de kantonrechter</li>
+      <li>Beëindigingsovereenkomst of vaststellingsovereenkomst</li>
+      <li>Ziekteverzuim en re-integratie</li>
+      <li>Flexibele contracten</li>
+      <li>Overeenkomsten opstellen, ook met zzp'ers</li>
+      <li>Claims van werknemers en sancties van het UWV</li>
+     </ul>
+    </section>
+    <section id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+     <h3>Als werknemer</h3>
+     <p class="in">Ontslag of een arbeidsconflict kunnen zich onverwacht aandienen, hoe sterk uw rechtspositie ook lijkt. U staat er niet alleen voor.</p>
+     <ul>
+      <li>Op-non-actiefstelling of schorsing</li>
+      <li>Ontslag op staande voet</li>
+      <li>Dreigend ontslag via het UWV of de kantonrechter</li>
+      <li>Aangeboden ontslagvergoeding of transitievergoeding beoordelen</li>
+      <li>Beëindigingsovereenkomst of vaststellingsovereenkomst</li>
+      <li>Concurrentiebeding of relatiebeding</li>
+      <li>Achterstallig loon</li>
+      <li>Lastige gesprekken voorbereiden, desgewenst gaat Bert Tol mee</li>
+     </ul>
+     <p class="noot">Ook voor ambtenaren, werknemers in het onderwijs en in de zorg.</p>
+    </section>
+    <section id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+     <h3>Als zelfstandig professional</h3>
+     <p class="in">Bert Tol is zelf ook zelfstandig ondernemer en kent uw positie. Maatwerk tegen een aanvaardbare prijs.</p>
+     <ul>
+      <li>Onterechte voortijdige beëindiging van een opdracht</li>
+      <li>Een factuur die niet wordt betaald (incasso)</li>
+      <li>Een (model)overeenkomst toetsen en opstellen</li>
+      <li>Een geschil met een arbeidsongeschiktheidsverzekeraar</li>
+      <li>Algemene voorwaarden opstellen</li>
+      <li>Klachtenprocedures bij tuchtcolleges</li>
+     </ul>
+    </section>
+    <section id="p4" role="tabpanel" aria-labelledby="t4" hidden>
+     <h3>Voor de ondernemingsraad</h3>
+     <p class="in">Bert Tol is vanaf 1987 ook werkzaam als adviseur medezeggenschap.</p>
+     <ul>
+      <li>Ondersteuning van de ondernemingsraad</li>
+      <li>Cursussen in arbeidsrecht en sociale zekerheid</li>
+     </ul>
+     <p class="noot"><a href="https://www.berttol.nl/ondersteuning-van-de-ondernemingsraad/">Lees meer over de OR</a></p>
+    </section>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="over" id="over">
+ <div class="wrap">
+  <div>
+   <h2>Eerst redelijk overleggen. <em>Als het moet, de rechtbank.</em></h2>
+   <p>Werkgevers en werknemers kunnen tegengestelde belangen hebben, maar de wettelijke regels zijn voor iedereen gelijk. Het streven is altijd naar redelijke oplossingen in onderling overleg. Maar als het moet, gaat Bert Tol naar de rechtbank.</p>
+   <p>Om te procederen bij de rechtbank is het in het arbeidsrecht niet nodig om advocaat te zijn. Dat kan ook als arbeidsrechtjurist. Voor u betekent dit een scherper tarief voor dezelfde kennis en kwaliteit.</p>
+  </div>
+  <div>
+   <div class="feit"><b>1987</b><span>Mr. Bert Tol werkt fulltime als onderhandelaar, adviseur medezeggenschap en procesjurist in het arbeidsrecht en ambtenarenrecht.</span></div>
+   <div class="feit"><b>2006</b><span>Medio 2006 start de zelfstandige juridische praktijk in Zwolle.</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="diensten" id="diensten">
+ <div class="wrap">
+  <h2>Drie manieren van werken</h2>
+  <div class="d-rij"><h3>Juridisch advies</h3><p>Met een goed juridisch advies komt u echt een stap verder en voorkomt u nare gevolgen en conflicten. Maatwerk tegen een betaalbare prijs.</p></div>
+  <div class="d-rij"><h3>Rechtsbijstand</h3><p>Bij procesvoering gaat Bert Tol voor u aan het werk, ook bij de rechtbank. U behoudt de regie.</p></div>
+  <div class="d-rij"><h3>Bemiddeling</h3><p>Bij arbeidsconflicten bemiddelt Bureau Arbeidsrecht, om samen tot een werkbare oplossing te komen.</p></div>
+ </div>
+</section>
+
+<section class="pub">
+ <div class="wrap">
+  <h2>Uit de publicaties</h2>
+  <div class="pubs">
+   <a href="https://www.berttol.nl/2022/08/04/toelichting-beeindigingsovereenkomst-c-q-vaststellingsovereenkomst/"><time>4 augustus 2022</time><span>Toelichting beëindigingsovereenkomst c.q. vaststellingsovereenkomst</span></a>
+   <a href="https://www.berttol.nl/2023/03/13/ziek-en-toch-een-vaststellingsovereenkomst/"><time>13 maart 2023</time><span>Ziek en toch een vaststellingsovereenkomst?</span></a>
+   <a href="https://www.berttol.nl/2023/02/09/wia-uitkering-en-cvs-me-long-covid/"><time>9 februari 2023</time><span>WIA-uitkering en CVS/ME, Long Covid</span></a>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div>
+   <h2>Leg uw kwestie voor.</h2>
+   <p>Grote kans dat we samen verder komen. Bel of mail, en vertel waar u mee zit.</p>
+   <a class="nr" href="tel:0384535025">038 453 50 25</a>
+   <a class="mailreg" href="mailto:info@berttol.nl">info@berttol.nl</a>
+  </div>
+  <div class="adres">
+   <img src="logo.png" alt="Bert Tol Bureau Arbeidsrecht" width="238" height="68">
+   <address>Bert Tol Bureau Arbeidsrecht<br>Brederostraat 91<br>8023 AR Zwolle</address>
+   <p><a href="https://nl.linkedin.com/in/berttolbureauarbeidsrecht">LinkedIn</a></p>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap"><span>Bert Tol Bureau Arbeidsrecht, Zwolle</span><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners</span></div>
+</footer>
+
+<script>
+(function(){
+ var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+ function kies(t){
+  tabs.forEach(function(x){
+   var on=x===t;x.setAttribute('aria-selected',on);
+   var p=document.getElementById(x.getAttribute('aria-controls'));
+   p.hidden=!on;p.classList.toggle('aan',on);
+  });
+ }
+ tabs.forEach(function(t,i){
+  t.addEventListener('click',function(){kies(t)});
+  t.addEventListener('keydown',function(e){
+   var n=null;
+   if(e.key==='ArrowDown'||e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];
+   if(e.key==='ArrowUp'||e.key==='ArrowLeft')n=tabs[(i+tabs.length-1)%tabs.length];
+   if(n){e.preventDefault();n.focus();kies(n)}
+  });
+ });
+})();
+</script>
+</body>
+</html>

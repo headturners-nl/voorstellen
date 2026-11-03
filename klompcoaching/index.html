@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>KlompCoaching, loopbaancoach en lifecoach in Amersfoort</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--zee:#1f799b;--diep:#123f52;--zon:#f2b233;--room:#fbf6ec;--zand:#f1e7d3;--baksteen:#b4573b;--tekst:#25333a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',sans-serif;font-size:18px;line-height:1.65;color:var(--tekst);background:var(--room);overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:400;line-height:1.12;color:var(--diep)}
+h1 em,h2 em{font-style:italic;color:var(--zee)}
+
+header .bar{max-width:1120px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.merk{display:flex;align-items:center;gap:12px;text-decoration:none}
+.merk img{width:64px;height:64px;border-radius:50%;object-fit:cover}
+.merk b{font-family:'Fraunces',serif;font-weight:600;font-size:24px;color:var(--diep)}
+nav{display:flex;gap:26px;font-weight:600;font-size:16px}
+nav a{text-decoration:none;color:var(--diep)}
+nav a:hover{color:var(--zee)}
+.knop{display:inline-block;text-decoration:none;background:var(--zee);color:#fff;font-weight:700;padding:14px 26px;border-radius:999px;transition:background .2s}
+.knop:hover{background:var(--diep)}
+.knop.zon{background:var(--zon);color:var(--diep)}
+.knop.zon:hover{background:#fff}
+.knop.lijn{background:transparent;color:var(--diep);box-shadow:inset 0 0 0 2px var(--diep)}
+.knop.lijn:hover{background:var(--diep);color:#fff}
+
+/* hero */
+.hero{position:relative;padding:36px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.label{font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--baksteen);margin-bottom:18px}
+.hero h1{font-size:clamp(40px,5.4vw,70px);margin-bottom:24px}
+.hero p.lead{font-size:20px;max-width:30em;margin-bottom:32px}
+.acties{display:flex;flex-wrap:wrap;gap:12px}
+.foto{position:relative;justify-self:center;width:min(100%,420px)}
+.foto .zon{position:absolute;width:62%;aspect-ratio:1;border-radius:50%;background:var(--zon);right:-14%;top:-6%;z-index:0}
+.foto .boog{position:relative;z-index:1;border-radius:999px 999px 24px 24px;overflow:hidden;aspect-ratio:4/5.4;box-shadow:0 24px 50px -24px rgba(18,63,82,.5)}
+.foto img{width:100%;height:100%;object-fit:cover;object-position:72% 40%}
+.foto .bijschrift{position:absolute;z-index:2;left:-26px;bottom:34px;background:#fff;padding:14px 18px;border-radius:14px;box-shadow:0 14px 30px -14px rgba(18,63,82,.45);font-size:15px;line-height:1.35;max-width:210px}
+.foto .bijschrift b{display:block;color:var(--diep);font-family:'Fraunces',serif;font-weight:600;font-size:18px}
+.weg{position:absolute;left:0;right:0;bottom:0;height:70px;pointer-events:none}
+
+/* vragen */
+.vragen{background:var(--diep);color:#fff;padding:80px 0 88px}
+.vragen .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px;align-items:start}
+.vragen h2{color:var(--zon);font-size:clamp(28px,3.2vw,40px)}
+.vragen ul{list-style:none}
+.vragen li{font-family:'Fraunces',serif;font-size:clamp(23px,2.7vw,34px);line-height:1.25;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.vragen li:first-child{padding-top:0}
+.vragen li:last-child{border:0}
+.vragen li i{color:var(--zon)}
+.vragen p{margin-top:26px;font-size:19px;color:#d4e6ee;max-width:34em}
+
+/* aanbod */
+.aanbod{padding:96px 0 40px}
+.aanbod h2{font-size:clamp(30px,3.6vw,46px);margin-bottom:12px}
+.aanbod .intro{max-width:36em;margin-bottom:44px}
+.rij{display:grid;grid-template-columns:.9fr 1.5fr auto;gap:32px;align-items:baseline;padding:30px 0;border-top:1px solid #d9cdb4}
+.rij:last-of-type{border-bottom:1px solid #d9cdb4}
+.rij h3{font-size:28px}
+.rij h3 small{display:block;font-family:'Nunito Sans';font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--baksteen);margin-bottom:6px}
+.rij p{max-width:36em}
+.rij a{font-weight:700;color:var(--zee);text-decoration:none;white-space:nowrap;border-bottom:2px solid var(--zon)}
+.rij a:hover{color:var(--diep)}
+
+/* route */
+.route{position:relative;padding:80px 0 100px}
+.route .kop{max-width:620px;margin-bottom:56px}
+.route h2{font-size:clamp(30px,3.6vw,46px);margin-bottom:14px}
+.pad{position:relative;max-width:900px}
+.pad svg.lijn{position:absolute;left:0;top:0;width:100px;height:100%;overflow:visible}
+.halte{position:relative;padding:0 0 52px 130px}
+.halte:last-child{padding-bottom:0}
+.halte::before{content:"";position:absolute;left:36px;top:6px;width:30px;height:30px;border-radius:50%;background:var(--room);border:6px solid var(--zee);z-index:2}
+.halte.zon::before{border-color:var(--zon);background:var(--zon)}
+.halte h3{font-size:26px;margin-bottom:6px}
+.halte p{max-width:34em}
+.feiten{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.feiten span{background:var(--zand);border-radius:999px;padding:6px 16px;font-weight:600;font-size:15px;color:var(--diep)}
+
+/* over */
+.over{background:var(--zand);padding:90px 0}
+.over .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.over h2{font-size:clamp(28px,3.4vw,42px);margin-bottom:20px}
+.over p{margin-bottom:16px}
+.citaat{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(24px,2.8vw,34px);line-height:1.3;color:var(--diep);border-left:6px solid var(--zon);padding-left:28px}
+.keur{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:30px}
+.keur img{height:68px;width:auto;background:#fff;border-radius:10px;padding:8px}
+
+/* contact */
+.contact{padding:96px 0}
+.contact .box{background:var(--zee);color:#fff;border-radius:32px;padding:64px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.contact .box::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:var(--zon);right:-90px;top:-110px;opacity:.95}
+.contact h2{color:#fff;font-size:clamp(30px,3.8vw,48px);margin-bottom:16px;position:relative;z-index:1}
+.contact p{position:relative;z-index:1;max-width:32em}
+.contact .rechts{position:relative;z-index:1;display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.contact .rechts a{text-align:center}
+.contact .rechts small{display:block;text-align:center;color:#d4ecf5;font-size:15px}
+footer{padding:0 0 40px;font-size:14px;color:#5b6a71}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+ body{font-size:17px}
+ nav{display:none}
+ .hero{padding:16px 0 80px}
+ .hero .wrap,.vragen .wrap,.over .wrap,.contact .box{grid-template-columns:1fr}
+ .hero .wrap{gap:56px}
+ .foto{width:min(88%,360px)}
+ .foto .bijschrift{left:-8px}
+ .rij{grid-template-columns:1fr;gap:10px}
+ .rij a{justify-self:start}
+ .vragen,.over,.contact{padding:64px 0}
+ .contact .box{padding:40px 28px}
+ .halte{padding-left:96px}
+ .halte::before{left:20px}
+ .pad svg.lijn{width:70px}
+}
+@media (max-width:480px){
+ .merk b{font-size:20px}
+ .merk img{width:52px;height:52px}
+ header .knop{display:none}
+ .halte h3{font-size:23px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="bar">
+  <a class="merk" href="#"><img src="logo.jpg" alt="Logo KlompCoaching" width="64" height="64"><b>KlompCoaching</b></a>
+  <nav><a href="#aanbod">Aanbod</a><a href="#route">Het traject</a><a href="#over">Over mij</a></nav>
+  <a class="knop" href="#contact">Plan een kennismaking</a>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <div class="label">Loopbaancoach en lifecoach in Amersfoort</div>
+   <h1>Jij achter het stuur. <em>Ik naast je.</em></h1>
+   <p class="lead">Voel je dat je vastzit, in je werk, je leven of allebei? Samen ontdekken we wat jij belangrijk vindt, waar je talent ligt en welke stappen je verder brengen.</p>
+   <div class="acties">
+    <a class="knop zon" href="#contact">Plan een gratis kennismaking</a>
+    <a class="knop lijn" href="https://wa.me/31636467224">WhatsApp 06 36 46 72 24</a>
+   </div>
+  </div>
+  <div class="foto">
+   <div class="zon"></div>
+   <div class="boog"><img src="sanne.jpg" alt="Sanne van KlompCoaching in gesprek met een coachee" width="1067" height="1600"></div>
+   <div class="bijschrift"><b>Sanne</b>Loopbaancoach en lifecoach, aangesloten bij NOBCO</div>
+  </div>
+ </div>
+ <svg class="weg" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 240 0, 420 70, 720 36 S 1200 6, 1440 38 L1440 70 L0 70 Z" fill="#123f52"/></svg>
+</section>
+
+<section class="vragen">
+ <div class="wrap">
+  <h2>Herken je dit?</h2>
+  <div>
+   <ul>
+    <li>Mis je <i>rust, balans of richting?</i></li>
+    <li>Wil je een <i>gezondere leefstijl?</i></li>
+    <li>Verlang je naar werk en keuzes die <i>écht passen</i> bij wie jij bent?</li>
+    <li>Zit je niet meer goed op je plek in je <i>huidige functie?</i></li>
+   </ul>
+   <p>Dan helpt het om eerst te ontdekken wat er werkelijk bij jou past, voordat je in actie komt.</p>
+  </div>
+ </div>
+</section>
+
+<section class="aanbod" id="aanbod">
+ <div class="wrap">
+  <h2>Vijf manieren om <em>verder te komen</em></h2>
+  <p class="intro">Wat je vraag ook is, je begint met een gratis kennismaking. Daarna kijken we welk traject bij je past.</p>
+
+  <div class="rij">
+   <h3><small>Individueel</small>Loopbaancoaching</h3>
+   <p>Je levensverhaal als kompas. We kijken naar de momenten, keuzes en ervaringen die jou hebben gebracht waar je nu bent, vinden je kwaliteiten en drijfveren en maken er een actieplan van.</p>
+   <a href="#route">Zo werkt het traject</a>
+  </div>
+  <div class="rij">
+   <h3><small>Individueel</small>Lifecoaching</h3>
+   <p>Voor meer richting, balans en persoonlijke groei. Over stress, zelfvertrouwen, grenzen stellen, zingeving en gewoontes die je wilt veranderen. Praktisch, persoonlijk en direct toepasbaar.</p>
+   <a href="https://klompcoaching.nl/lifecoach/">Lees meer</a>
+  </div>
+  <div class="rij">
+   <h3><small>Voor teams</small>Teamcoaching</h3>
+   <p>Vanuit systeemdenken kijkt je team naar zichzelf. Samen ontdekken we de onbewuste patronen die de samenwerking beïnvloeden, zodat het team structureel anders leert samenwerken.</p>
+   <a href="https://klompcoaching.nl/werkplezier-teams/">Lees meer</a>
+  </div>
+  <div class="rij">
+   <h3><small>Cursus voor leiders</small>Transformeer je (zorg)team</h3>
+   <p>Voor leiders en managers in de zorg die vastlopen in vergaderingen en brandjes blussen. Een programma van 6 maanden met 8 online of live sessies en support via WhatsApp.</p>
+   <a href="https://klompcoaching.nl/transformeer-je-zorgteam/">Lees meer</a>
+  </div>
+  <div class="rij">
+   <h3><small>Bij jou thuis</small>Yin yoga coaching</h3>
+   <p>Rust, ruimte en inzicht in je eigen tempo. Een sessie van 1,5 uur: 60 minuten yin yoga en 30 minuten verdieping, niet alleen vanuit praten maar juist ook vanuit voelen.</p>
+   <a href="https://klompcoaching.nl/yin-yoga-coaching/">Lees meer</a>
+  </div>
+ </div>
+</section>
+
+<section class="route" id="route">
+ <div class="wrap">
+  <div class="kop">
+   <h2>Een loopbaantraject, <em>stap voor stap</em></h2>
+   <p>Zo ziet de route eruit. Je weet vooraf wat je kunt verwachten.</p>
+  </div>
+  <div class="pad">
+   <svg class="lijn" viewBox="0 0 100 800" preserveAspectRatio="none" aria-hidden="true"><path d="M51 20 C 10 120, 90 200, 51 300 S 10 480, 51 560 S 90 700, 51 790" fill="none" stroke="#1f799b" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/></svg>
+   <div class="halte zon">
+    <h3>Een gratis kennismaking</h3>
+    <p>Je plant een klikgesprek of stuurt een bericht. Ik neem binnen 24 uur contact met je op en kijk ernaar uit je te ontmoeten.</p>
+   </div>
+   <div class="halte">
+    <h3>Vijf gesprekken van anderhalf uur</h3>
+    <p>We spreken elkaar eens in de twee tot drie weken, live op locatie Coachhuis nabij de stad van Amersfoort of online, wat jij prettig vindt.</p>
+    <div class="feiten"><span>5 gesprekken</span><span>1,5 uur per gesprek</span><span>live of online</span></div>
+   </div>
+   <div class="halte">
+    <h3>Tussen de gesprekken door</h3>
+    <p>Je krijgt opdrachten en reflecties die je helpen je verhaal verder te ontdekken en te vertalen naar je loopbaanwensen. Voor vragen ben ik bereikbaar via e-mail en WhatsApp.</p>
+   </div>
+   <div class="halte">
+    <h3>Nazorg</h3>
+    <p>Na afloop plannen we een gesprek om te kijken waar je staat en hoe je verder kunt.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="over" id="over">
+ <div class="wrap">
+  <div>
+   <h2>Mijn naam is Sanne</h2>
+   <p>Mijn loopbaan stond altijd in het teken van het ontwikkelen van anderen, als begeleider, procesbegeleider en coach in de gehandicaptenzorg. Ik zag hoe mensen ongelukkig in hun werk stonden en wat dat doet met de kwaliteit van het werk en het levensgeluk.</p>
+   <p>Mijn klanten beschrijven mij onder andere als luisterend, eerlijk, toegankelijk, diepgaand en gedreven.</p>
+   <div class="keur">
+    <img src="nobco.png" alt="Aangesloten bij NOBCO, affiliated with EMCC" width="500" height="212">
+    <img src="ecoachpro.png" alt="eCoachPro Certified Level 1" width="588" height="572">
+   </div>
+  </div>
+  <p class="citaat">&ldquo;Als ik je coach sta jij achter het stuur en ik sta naast je en moedig je aan.&rdquo;</p>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="box">
+   <div>
+    <h2>Zin om te ontdekken wat bij jou past?</h2>
+    <p>Plan een gratis kennismaking of stel gewoon je vraag. Ik neem binnen 24 uur contact met je op.</p>
+   </div>
+   <div class="rechts">
+    <a class="knop zon" href="https://wa.me/31636467224">WhatsApp 06 36 46 72 24</a>
+    <a class="knop lijn" style="color:#fff;box-shadow:inset 0 0 0 2px #fff" href="mailto:Klompcoaching@gmail.com">Klompcoaching@gmail.com</a>
+    <small><a href="https://www.instagram.com/klompcoaching/">Instagram</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/KlompCoaching">Facebook</a></small>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap"><span>&copy; KlompCoaching, Amersfoort</span><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners</span></div>
+</footer>
+
+</body>
+</html>
