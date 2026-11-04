@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Kapperszaak Oden, Gouda</title>
+<meta name="description" content="Haar knippen en baard scheren in het centrum van Gouda, sinds 2009.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d0d0d;--ink2:#1c1c1c;--paper:#efece6;--line:#2c2c2c;--mute:#8f8b83;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;background:var(--paper);color:var(--ink);font-size:17px;line-height:1.55}
+img{display:block;max-width:100%}
+a{color:inherit}
+.slab{font-family:'Alfa Slab One',serif;font-weight:400;line-height:1.02}
+.cond{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+/* scheermesjelabel, het motief uit het raamlogo */
+.blade{display:inline-block;background:var(--white);color:var(--ink);padding:.28em .9em;clip-path:polygon(7px 0,calc(100% - 7px) 0,100% 7px,100% calc(100% - 7px),calc(100% - 7px) 100%,7px 100%,0 calc(100% - 7px),0 7px);font-family:'Alfa Slab One',serif;font-size:1.05rem;white-space:nowrap}
+.blade.dark{background:var(--ink);color:var(--white)}
+
+header{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:22px 5vw}
+header .nav{display:flex;gap:28px;align-items:center;color:var(--white)}
+header .nav a{text-decoration:none;font-size:.95rem}
+header .call{background:var(--white);color:var(--ink);padding:10px 18px;font-size:.95rem}
+header .brand img{width:72px}
+
+.hero{background:var(--ink);color:var(--white);display:grid;grid-template-columns:1.05fr 1fr;min-height:100vh;min-height:100svh}
+.hero .txt{padding:150px 5vw 70px 5vw;display:flex;flex-direction:column;justify-content:center;gap:28px}
+.hero h1{font-size:clamp(2.6rem,5.6vw,5.4rem);max-width:11ch}
+.hero p.lead{max-width:34ch;font-size:1.2rem;color:#d8d5ce}
+.hero .acts{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;text-decoration:none;padding:15px 26px;background:var(--white);color:var(--ink);font-size:1.05rem}
+.btn.ghost{background:transparent;color:var(--white);border:1px solid #555}
+.hero .pic{position:relative;min-height:420px}
+.hero .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero .since{position:absolute;left:-1px;bottom:44px;z-index:2}
+
+section{padding:96px 5vw}
+.wrap{max-width:1180px;margin:0 auto}
+h2{font-size:clamp(2rem,4vw,3.4rem);margin-bottom:14px}
+.kicker{color:var(--mute);margin-bottom:12px;font-size:1rem}
+
+.werk{background:var(--paper)}
+.werk .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:40px;flex-wrap:wrap}
+.werk .head p{max-width:36ch;color:#444}
+.masonry{columns:4 220px;column-gap:14px}
+.masonry figure{break-inside:avoid;margin-bottom:14px;background:var(--ink);overflow:hidden}
+.masonry img{width:100%;height:auto;filter:grayscale(.15)}
+.werk .more{margin-top:26px;font-size:1rem}
+.werk .more a{border-bottom:2px solid var(--ink);text-decoration:none;padding-bottom:2px}
+
+.prijs{background:var(--ink);color:var(--white)}
+.prijs .grid{display:grid;grid-template-columns:1fr 1.25fr;gap:70px;align-items:start}
+.prijs h2{max-width:8ch}
+.prijs .side p{color:#bdb9b0;max-width:30ch;margin-top:12px}
+.menu{list-style:none;border-top:1px solid var(--line)}
+.menu li{display:grid;grid-template-columns:1fr auto;gap:8px 20px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.menu b{font-family:'Barlow Condensed',sans-serif;font-size:1.55rem;text-transform:uppercase;letter-spacing:.04em;font-weight:600;display:block}
+.menu span.d{color:#a9a59c;font-size:.98rem;grid-column:1}
+.menu .blade{grid-row:1/3;grid-column:2;font-size:1.3rem}
+
+.afspraak{background:var(--paper)}
+.afspraak .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:70px}
+.afspraak .big{font-size:clamp(1.9rem,3.6vw,3rem);margin-bottom:22px}
+.afspraak p{max-width:44ch;color:#333;margin-bottom:12px}
+.tel{display:inline-block;margin-top:14px;font-size:clamp(2rem,4.6vw,3.6rem);text-decoration:none;border-bottom:4px solid var(--ink)}
+.uren{border:2px solid var(--ink);padding:30px;background:#fff}
+.uren h3{font-size:1.5rem;margin-bottom:14px}
+.uren table{width:100%;border-collapse:collapse}
+.uren td{padding:11px 0;border-bottom:1px dashed #bbb;font-size:1.05rem}
+.uren td:last-child{text-align:right;font-weight:600}
+.uren tr:last-child td{border-bottom:0}
+.uren tr.today td{background:var(--ink);color:#fff;padding-left:12px;padding-right:12px}
+.adres{margin-top:26px;padding-top:20px;border-top:2px solid var(--ink)}
+.adres a{font-weight:600}
+
+.team{background:var(--ink2);color:var(--white);padding:54px 5vw}
+.team .wrap{display:flex;gap:30px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.team p{max-width:56ch;color:#cfcbc3}
+.team h3{font-size:1.7rem;margin-bottom:6px}
+
+footer{background:var(--ink);color:#aaa;padding:48px 5vw 40px}
+footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}
+footer img{width:96px}
+footer a{color:#fff}
+footer .f{font-size:.95rem;line-height:1.9}
+
+@media(max-width:900px){
+ .hero{grid-template-columns:1fr;min-height:0}
+ .hero .pic{order:-1;min-height:96vw;max-height:620px}
+ .hero .txt{padding:44px 6vw 56px}
+ .hero .since{bottom:18px;top:auto}
+ header{position:absolute}
+ header .nav a:not(.call){display:none}
+ .prijs .grid,.afspraak .grid{grid-template-columns:1fr;gap:36px}
+ section{padding:64px 6vw}
+ .masonry{columns:2 140px;column-gap:10px}
+ .masonry figure{margin-bottom:10px}
+ .uren{padding:22px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#"><img src="logo.png" alt="Kapperszaak Oden"></a>
+  <div class="nav cond">
+    <a href="#werk">Het werk</a>
+    <a href="#prijzen">Prijzen</a>
+    <a href="#afspraak">Openingstijden</a>
+    <a class="call" href="tel:0182751111">0182 751 111</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="txt">
+    <div class="cond" style="color:#aaa">Korte Groenendaal 6, Gouda</div>
+    <h1 class="slab">Haar knippen, baard scheren.</h1>
+    <p class="lead">In het centrum van Gouda, sinds 2009. Je zit bij ons in de stoel, we nemen de tijd en je loopt eruit zoals je wilt.</p>
+    <div class="acts">
+      <a class="btn cond" href="tel:0182751111">Bel 0182 751 111</a>
+      <a class="btn ghost cond" href="mailto:info@kapsalonoden.nl">Mail ons</a>
+    </div>
+  </div>
+  <div class="pic">
+    <img src="voorgevel.jpg" alt="De voorgevel van Kapperszaak Oden aan de Korte Groenendaal">
+    <span class="blade since">Estd 2009</span>
+  </div>
+</div>
+
+<section class="werk" id="werk">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="kicker cond">Uit de stoel</div>
+        <h2 class="slab">Het werk</h2>
+      </div>
+      <p>Foto's van knipbeurten in onze eigen zaak aan de Korte Groenendaal.</p>
+    </div>
+    <div class="masonry">
+      <figure><img loading="lazy" src="werk-1.jpg" alt="Lange baard en opgebonden haar"></figure>
+      <figure><img loading="lazy" src="werk-8.jpg" alt="Fade met baard"></figure>
+      <figure><img loading="lazy" src="werk-3.jpg" alt="Glad naar achteren gekamd haar"></figure>
+      <figure><img loading="lazy" src="werk-13.jpg" alt="Korte fade met blond haar"></figure>
+      <figure><img loading="lazy" src="werk-2.jpg" alt="Jongen met knotje en fade"></figure>
+      <figure><img loading="lazy" src="werk-7.jpg" alt="Baard en gestyled haar"></figure>
+      <figure><img loading="lazy" src="werk-6.jpg" alt="Hoge pompadour met fade"></figure>
+      <figure><img loading="lazy" src="werk-16.jpg" alt="Krullen met fade"></figure>
+      <figure><img loading="lazy" src="werk-9.jpg" alt="Pompadour in de salon"></figure>
+      <figure><img loading="lazy" src="werk-12.jpg" alt="Zijscheiding met fade"></figure>
+    </div>
+    <p class="more">Meer foto's staan op <a href="https://www.instagram.com/kapperszaak_oden/">@kapperszaak_oden</a></p>
+  </div>
+</section>
+
+<section class="prijs" id="prijzen">
+  <div class="wrap grid">
+    <div class="side">
+      <div class="kicker cond">Prijslijst</div>
+      <h2 class="slab">Wat het kost</h2>
+      <p>Vaste prijzen, geen toeslagen om over na te denken.</p>
+    </div>
+    <ul class="menu">
+      <li><b>Haar knippen</b><span class="d">Een frisse coupe die past bij jouw stijl.</span><span class="blade">€25</span></li>
+      <li><b>Knippen en baard scheren</b><span class="d">Coupe en een gladgeschoren of strak bijgewerkte baard.</span><span class="blade">€35</span></li>
+      <li><b>Wassen, knippen en baard scheren</b><span class="d">Dezelfde behandeling, met een schone kop erbij.</span><span class="blade">€37</span></li>
+      <li><b>Baard trimmen</b><span class="d">Strak in model.</span><span class="blade">€10</span></li>
+      <li><b>Baard scheren</b><span class="d">Glad resultaat of bijgewerkte contouren.</span><span class="blade">€15</span></li>
+      <li><b>Kinderen t/m 12 jaar</b><span class="d">Een leuk en fris kapsel, met zorg geknipt.</span><span class="blade">€20</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="afspraak" id="afspraak">
+  <div class="wrap grid">
+    <div>
+      <div class="kicker cond">Afspraak</div>
+      <h2 class="slab big">Je komt op afspraak. Of je loopt gewoon binnen.</h2>
+      <p>We werken op afspraak, zodat je niet hoeft te wachten. Kom je toch langs zonder afspraak, dan kijken we of er tussendoor een plekje vrij is.</p>
+      <a class="tel slab" href="tel:0182751111">0182 751 111</a>
+      <p style="margin-top:18px">Mailen kan ook: <a href="mailto:info@kapsalonoden.nl"><b>info@kapsalonoden.nl</b></a></p>
+    </div>
+    <div>
+      <div class="uren">
+        <h3 class="cond">Openingstijden</h3>
+        <table id="uren">
+          <tr data-d="2"><td>Dinsdag</td><td>09:00 tot 18:00</td></tr>
+          <tr data-d="3"><td>Woensdag</td><td>09:00 tot 18:00</td></tr>
+          <tr data-d="4"><td>Donderdag</td><td>09:00 tot 18:00</td></tr>
+          <tr data-d="5"><td>Vrijdag</td><td>09:00 tot 18:00</td></tr>
+          <tr data-d="6"><td>Zaterdag</td><td>09:00 tot 17:00</td></tr>
+        </table>
+        <div class="adres">Korte Groenendaal 6<br>2801 JN Gouda<br><a href="https://www.google.com/maps/search/?api=1&query=Kapperszaak+Oden+Korte+Groenendaal+6+Gouda">Route in Google Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="team">
+  <div class="wrap">
+    <div>
+      <h3 class="slab">Kapper gezocht</h3>
+      <p>Ben je creatief en gek op haar en stijl? Er is plek in het team. Bel 0182 751 111 voor meer informatie.</p>
+    </div>
+    <a class="btn cond" href="tel:0182751111">Bel ons</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <img src="logo.png" alt="Kapperszaak Oden">
+    <div class="f">Korte Groenendaal 6, 2801 JN Gouda<br><a href="tel:0182751111">0182 751 111</a> &nbsp;&middot;&nbsp; <a href="mailto:info@kapsalonoden.nl">info@kapsalonoden.nl</a><br><a href="https://www.instagram.com/kapperszaak_oden/">Instagram</a></div>
+  </div>
+</footer>
+
+<script>
+try{var d=new Date().getDay();var r=document.querySelector('#uren tr[data-d="'+d+'"]');if(r)r.className='today'}catch(e){}
+</script>
+</body>
+</html>

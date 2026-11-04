@@ -21,5 +21,8 @@
   {"naam": "Mentalift", "slug": "mentalift", "plaats": "Hattemerbroek", "branche": "zzp en dienstverleners", "datum": "2026-11-03", "mailadres": "jasper@mentalift.nl", "rechtsvorm": "onbekend"},
   {"naam": "Leest Administratie- en Advieskantoor", "slug": "leest-administratie", "plaats": "Breda", "branche": "zzp en dienstverleners", "datum": "2026-11-03", "mailadres": "info@leestadministratie.nl", "rechtsvorm": "onbekend"},
   {"naam": "KlompCoaching", "slug": "klompcoaching", "plaats": "Amersfoort", "branche": "zzp en dienstverleners", "datum": "2026-11-03", "mailadres": "Klompcoaching@gmail.com", "rechtsvorm": "onbekend"},
-  {"naam": "Bert Tol Bureau Arbeidsrecht", "slug": "bert-tol-arbeidsrecht", "plaats": "Zwolle", "branche": "zzp en dienstverleners", "datum": "2026-11-03", "mailadres": "info@berttol.nl", "rechtsvorm": "onbekend"}
+  {"naam": "Bert Tol Bureau Arbeidsrecht", "slug": "bert-tol-arbeidsrecht", "plaats": "Zwolle", "branche": "zzp en dienstverleners", "datum": "2026-11-03", "mailadres": "info@berttol.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Kapperszaak Oden", "slug": "kapperszaak-oden", "plaats": "Gouda", "branche": "horeca en winkels", "datum": "2026-11-04", "mailadres": "info@kapsalonoden.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Pinkbloem", "slug": "pinkbloem", "plaats": "Gouda", "branche": "horeca en winkels", "datum": "2026-11-04", "mailadres": "info@pinkbloem.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Lunchcafé Juuls", "slug": "lunchcafe-juuls", "plaats": "Gouda", "branche": "horeca en winkels", "datum": "2026-11-04", "mailadres": "info@lunchcafejuuls.nl", "rechtsvorm": "onbekend"}
 ]

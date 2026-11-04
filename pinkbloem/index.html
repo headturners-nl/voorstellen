@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pinkbloem, bloemen en planten in Gouda</title>
+<meta name="description" content="Boeketten, kamerplanten en buitenplanten van Pinkbloem aan de Ridder van Catsweg in Gouda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--coral:#fc6e51;--red:#fb441f;--pink:#d6447c;--cream:#fff4ec;--ink:#3a1f1a;--leaf:#2f4a38;--soft:#f9dccf}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Figtree',sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit}
+.serif{font-family:'Young Serif',serif;font-weight:400;line-height:1.08}
+.arch{border-radius:999px 999px 18px 18px;overflow:hidden;background:var(--soft)}
+.arch img{width:100%;height:100%;object-fit:cover}
+
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 5vw;gap:20px}
+.logo{font-family:'Young Serif',serif;font-size:1.9rem;color:var(--pink);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:14px;height:14px;border-radius:50%;background:var(--coral);display:inline-block}
+nav{display:flex;gap:26px;align-items:center;font-weight:500}
+nav a{text-decoration:none}
+nav .shop{background:var(--pink);color:#fff;padding:11px 22px;border-radius:99px;font-weight:600}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:5vw;align-items:end;padding:30px 5vw 0;max-width:1320px;margin:0 auto}
+.hero .t{padding-bottom:70px}
+.hero .tag{display:inline-block;background:var(--soft);padding:6px 16px;border-radius:99px;font-weight:600;font-size:.92rem;margin-bottom:26px;color:var(--red)}
+.hero h1{font-size:clamp(2.7rem,6vw,5.6rem);color:var(--leaf);margin-bottom:26px}
+.hero h1 em{font-style:normal;color:var(--pink)}
+.hero p{max-width:36ch;font-size:1.2rem;margin-bottom:32px}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:16px 28px;border-radius:99px;text-decoration:none;font-weight:600}
+.btn.p{background:var(--pink);color:#fff}
+.btn.s{border:2px solid var(--leaf);color:var(--leaf)}
+.hero .pic{height:min(680px,78vh);min-height:460px}
+
+.strip{background:var(--leaf);color:#fff;padding:18px 5vw;display:flex;justify-content:center;gap:12px 46px;flex-wrap:wrap;font-weight:600}
+.strip span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--coral);margin-right:10px}
+
+.wat{padding:110px 5vw 40px;max-width:1220px;margin:0 auto}
+.wat h2{font-size:clamp(2rem,4.2vw,3.6rem);color:var(--leaf);margin-bottom:60px;max-width:16ch}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center;margin-bottom:90px}
+.row.rev .pic{order:2}
+.row .pic{aspect-ratio:4/5;max-width:430px;width:100%}
+.row.rev .pic{justify-self:end}
+.row h3{font-size:clamp(1.9rem,3.4vw,3rem);color:var(--pink);margin-bottom:14px}
+.row p{max-width:38ch;font-size:1.12rem}
+.row .lnk{display:inline-block;margin-top:20px;font-weight:700;color:var(--red);text-decoration:none;border-bottom:2px solid var(--red)}
+
+.quote{background:var(--soft);padding:90px 5vw;text-align:center}
+.quote blockquote{font-family:'Young Serif',serif;font-size:clamp(1.5rem,3.2vw,2.6rem);line-height:1.25;max-width:24ch;margin:0 auto 22px;color:var(--leaf)}
+.quote cite{font-style:normal;font-weight:600;color:var(--red)}
+
+.winkel{display:grid;grid-template-columns:1fr 1fr;max-width:1220px;margin:0 auto;padding:110px 5vw;gap:6vw;align-items:center}
+.winkel .pic{aspect-ratio:3/4;max-width:460px}
+.winkel h2{font-size:clamp(2rem,4vw,3.4rem);color:var(--leaf);margin-bottom:20px}
+.winkel p{margin-bottom:12px;max-width:40ch}
+.uren{margin:24px 0;border-top:2px solid var(--ink);max-width:380px}
+.uren div{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #e3c9bb}
+.uren div b{font-weight:600}
+.uren .today{background:var(--pink);color:#fff;padding:11px 12px;border-radius:8px;border-bottom:0}
+.adres{font-weight:600;margin-bottom:24px}
+
+.contact{background:var(--leaf);color:#fff;padding:90px 5vw;text-align:center}
+.contact h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:12px}
+.contact p{margin-bottom:30px;color:#d6e0d8}
+.contact .btn.p{background:var(--coral);color:#2a1410}
+.contact .btn.s{border-color:#fff;color:#fff}
+.contact .acts{justify-content:center}
+footer{background:#233828;color:#b9c8bd;padding:30px 5vw;font-size:.95rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:#fff}
+
+@media(max-width:860px){
+ nav a:not(.shop){display:none}
+ .hero{grid-template-columns:1fr;padding-top:10px}
+ .hero .t{padding-bottom:20px}
+ .hero .pic{height:auto;aspect-ratio:4/5;min-height:0;max-width:420px;margin:0 auto;width:100%}
+ .wat{padding-top:70px}
+ .row,.winkel{grid-template-columns:1fr;gap:26px}
+ .row.rev .pic{order:0;justify-self:start}
+ .row{margin-bottom:64px}
+ .winkel{padding:70px 6vw}
+ .quote,.contact{padding:64px 6vw}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#"><i></i>Pinkbloem</a>
+  <nav>
+    <a href="#aanbod">Aanbod</a>
+    <a href="#winkel">Winkel</a>
+    <a href="#contact">Contact</a>
+    <a class="shop" href="https://shop.wybloemisten.com/?shopid=2443">Webshop</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="t">
+    <span class="tag">Ridder van Catsweg 323a, Gouda</span>
+    <h1 class="serif">Verse bloemen en <em>planten</em> aan de Ridder van Catsweg</h1>
+    <p>Boeketten voor een verjaardag of bruiloft, kamerplanten voor in huis en buitenplanten voor tuin of balkon. Bestel online of haal op in Gouda.</p>
+    <div class="acts">
+      <a class="btn p" href="https://shop.wybloemisten.com/?shopid=2443">Naar de webshop</a>
+      <a class="btn s" href="https://api.whatsapp.com/send?phone=31682822635">Stuur een appje</a>
+    </div>
+  </div>
+  <div class="pic arch"><img src="boeket-1.jpg" alt="Een boeket van Pinkbloem met roze en paarse bloemen"></div>
+</div>
+
+<div class="strip"><span>Online bestellen</span><span>Persoonlijk advies</span><span>Maatwerk voor bruiloft en verjaardag</span></div>
+
+<section class="wat" id="aanbod">
+  <h2 class="serif">Wat je bij ons haalt</h2>
+
+  <div class="row">
+    <div class="pic arch"><img loading="lazy" src="boeket-2.jpg" alt="Voorjaarsboeket met tulpen"></div>
+    <div>
+      <h3 class="serif">Boeketten</h3>
+      <p>Samengesteld met verse bloemen van het seizoen. Om iemand te verrassen of jezelf te verwennen. Een boeket naar jouw wens kan ook, voor een bruiloft, verjaardag of een andere gebeurtenis.</p>
+      <a class="lnk" href="https://shop.wybloemisten.com/?shopid=2443">Bekijk de boeketten</a>
+    </div>
+  </div>
+
+  <div class="row rev">
+    <div class="pic arch"><img loading="lazy" src="binnen.jpg" alt="Planten en bloemen in de winkel"></div>
+    <div>
+      <h3 class="serif">Kamerplanten</h3>
+      <p>Van makkelijk te verzorgen tot bijzondere exemplaren. Vertel waar je ze neer wilt zetten, dan zoeken we mee naar een plant die erbij past.</p>
+      <a class="lnk" href="https://shop.wybloemisten.com/?shopid=2443">Bekijk de planten</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="pic arch"><img loading="lazy" src="winkel.jpg" alt="Buitenplanten voor de winkel"></div>
+    <div>
+      <h3 class="serif">Buitenplanten</h3>
+      <p>Bloeiende planten en groenblijvende struiken voor in de tuin of op het balkon.</p>
+      <a class="lnk" href="#winkel">Naar de winkel</a>
+    </div>
+  </div>
+</section>
+
+<div class="quote">
+  <blockquote>&ldquo;De bloemen van Pinkbloem waren prachtig en de service was uitstekend! Zeker een aanrader.&rdquo;</blockquote>
+  <cite>Anneke</cite>
+</div>
+
+<section class="winkel" id="winkel">
+  <div class="pic arch"><img loading="lazy" src="tafel.jpg" alt="Gerberas en boeketten op de toonbank"></div>
+  <div>
+    <h2 class="serif">De winkel</h2>
+    <p>Een bestelling ophalen of persoonlijk advies? Maak een afspraak, dan staat alles klaar aan de Ridder van Catsweg.</p>
+    <div class="uren" id="uren">
+      <div data-d="3"><b>Woensdag</b><span>9.00 tot 17.30</span></div>
+      <div data-d="4"><b>Donderdag</b><span>9.00 tot 17.30</span></div>
+      <div data-d="5"><b>Vrijdag</b><span>9.00 tot 17.30</span></div>
+      <div data-d="6"><b>Zaterdag</b><span>9.00 tot 17.00</span></div>
+    </div>
+    <div class="adres">Ridder van Catsweg 323a<br>2804 RH Gouda</div>
+    <a class="btn s" href="https://www.google.com/maps/search/?api=1&query=Pinkbloem+Ridder+van+Catsweg+323a+Gouda">Route in Google Maps</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="serif">Een boeket nodig?</h2>
+  <p>Stuur een appje of bel, dan denken we met je mee.</p>
+  <div class="acts">
+    <a class="btn p" href="https://api.whatsapp.com/send?phone=31682822635">WhatsApp 06 82822635</a>
+    <a class="btn s" href="mailto:info@pinkbloem.nl">info@pinkbloem.nl</a>
+  </div>
+</section>
+
+<footer>
+  <span>Pinkbloem, Ridder van Catsweg 323a, 2804 RH Gouda &middot; KvK 98445405</span>
+  <span><a href="https://instagram.com/Pinkbloemgouda">Instagram</a> &nbsp;&middot;&nbsp; <a href="https://facebook.com/profile.php?id=61583059439821">Facebook</a></span>
+</footer>
+
+<script>
+try{var d=new Date().getDay();var r=document.querySelector('#uren div[data-d="'+d+'"]');if(r)r.className='today'}catch(e){}
+</script>
+</body>
+</html>
