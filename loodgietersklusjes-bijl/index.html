@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Loodgietersklusjes Bijl, Nijmegen</title>
+<meta name="description" content="Kleinklusbedrijf Bijl: loodgieter voor kleine klussen in Nijmegen, Beuningen, Wijchen, Malden en Molenhoek. Vaak dezelfde dag geholpen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lucht:#69d1f4;
+  --lucht-licht:#d9f3fc;
+  --pijp:#b3b3b3;
+  --pijp-rand:#7d7d7d;
+  --inkt:#262b33;
+  --stil:#555d68;
+  --pluger:#e0442d;
+  --kop:'Anton',Impact,sans-serif;
+  --sans:'Hanken Grotesk',system-ui,sans-serif;
+  --bon:'Courier Prime','Courier New',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-size:18px;line-height:1.55;color:var(--inkt);background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 48px);margin-inline:auto}
+
+/* motief: de pijp uit het logo, met koppelingen en een druppel */
+.pijp{height:18px;background:var(--pijp);border-top:3px solid var(--pijp-rand);border-bottom:3px solid var(--pijp-rand);position:relative;border-radius:2px}
+.pijp::before,.pijp::after{content:"";position:absolute;top:-8px;bottom:-8px;width:20px;background:var(--pijp);border:3px solid var(--pijp-rand);border-radius:5px}
+.pijp::before{left:12%}
+.pijp::after{left:72%}
+.pijp.dun{height:14px}
+.druppel{width:14px;height:20px;background:var(--lucht);border:3px solid var(--pijp-rand);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;display:block;margin:0 0 0 calc(72% + 3px);position:relative;top:-3px;transform:scale(.9)}
+
+header.top{background:var(--lucht)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 0}
+header.top .merk{font-family:var(--kop);font-size:24px;letter-spacing:.04em;text-decoration:none;text-transform:uppercase}
+header.top nav{display:flex;gap:26px;align-items:center;font-weight:700;font-size:16px}
+header.top nav a{text-decoration:none}
+.bel{white-space:nowrap;background:var(--inkt);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none}
+.bel:hover{background:#000}
+
+.hero{background:var(--lucht);padding:28px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero img.logo{width:min(440px,100%);margin:0 0 26px -6px}
+h1{font-family:var(--kop);font-weight:400;font-size:clamp(46px,6.2vw,86px);line-height:.98;text-transform:uppercase;letter-spacing:.005em}
+.hero p.lead{font-size:21px;margin:22px 0 30px;max-width:26em}
+.knoppen{display:flex;flex-wrap:wrap;gap:14px}
+.knop{display:inline-block;text-decoration:none;font-weight:700;font-size:18px;padding:16px 28px;border-radius:999px;background:var(--inkt);color:#fff;border:2px solid var(--inkt)}
+.knop:hover{background:#000}
+.knop.leeg{background:transparent;color:var(--inkt)}
+.knop.leeg:hover{background:var(--inkt);color:#fff}
+.foto{border:14px solid var(--pijp);outline:3px solid var(--pijp-rand);outline-offset:-3px;border-radius:26px;background:var(--pijp);position:relative;box-shadow:0 0 0 3px var(--pijp-rand)}
+.foto img{width:100%;border-radius:12px;aspect-ratio:4/3.4;object-fit:cover;object-position:60% 30%}
+.foto figcaption{position:absolute;left:18px;bottom:-24px;background:#fff;border:3px solid var(--inkt);padding:6px 14px;font-weight:700;font-size:15px;transform:rotate(-2deg)}
+
+section{padding:84px 0}
+h2{font-family:var(--kop);font-weight:400;text-transform:uppercase;font-size:clamp(36px,4.6vw,60px);line-height:1;letter-spacing:.005em;margin-bottom:18px}
+.intro{max-width:34em;font-size:19px;color:var(--stil)}
+
+/* wel / niet */
+.welniet .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.kolom h3{font-family:var(--kop);font-weight:400;text-transform:uppercase;font-size:28px;letter-spacing:.02em;margin-bottom:6px}
+.kolom ul{list-style:none;margin-top:10px}
+.kolom li{padding:12px 0 12px 38px;border-bottom:2px solid #e4e7ea;position:relative}
+.wel li::before{content:"";position:absolute;left:4px;top:18px;width:16px;height:9px;border-left:4px solid var(--inkt);border-bottom:4px solid var(--inkt);transform:rotate(-45deg)}
+.niet{background:var(--lucht-licht);padding:30px 30px 14px;border-radius:18px}
+.niet li{border-bottom-color:rgba(38,43,51,.15)}
+.niet li::before,.niet li::after{content:"";position:absolute;left:3px;top:24px;width:20px;height:4px;background:var(--pluger);transform:rotate(45deg)}
+.niet li::after{transform:rotate(-45deg)}
+.niet p.nb{font-size:16px;color:var(--stil);margin:8px 0 18px}
+
+/* rekening */
+.tarief{background:var(--lucht-licht)}
+.tarief .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+.bon{background:#fffef8;font-family:var(--bon);font-size:17px;padding:34px 34px 30px;box-shadow:0 18px 30px -18px rgba(38,43,51,.45);position:relative;transform:rotate(.6deg);
+  --kant:12px;
+  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/20px 100% repeat-x;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/20px 100% repeat-x;padding-bottom:44px}
+.bon h3{font-family:var(--bon);font-weight:700;font-size:19px;text-transform:uppercase;letter-spacing:.08em;text-align:center;margin-bottom:4px}
+.bon .sub{text-align:center;font-size:14px;color:#6b6f75;margin-bottom:20px;padding-bottom:14px;border-bottom:2px dashed #b9bcc0}
+.bon dl{margin:0}
+.rij{display:flex;align-items:baseline;gap:8px;padding:7px 0}
+.rij dt{flex:0 1 auto}
+.rij .stip{flex:1;border-bottom:2px dotted #a3a7ad;transform:translateY(-4px);min-width:16px}
+.rij dd{font-weight:700;white-space:nowrap}
+.rij small{display:block;font-size:13px;color:#6b6f75;font-weight:400}
+.bon hr{border:0;border-top:2px dashed #b9bcc0;margin:14px 0}
+.bon .klein{font-size:14px;color:#6b6f75;line-height:1.45}
+.tarief .intro{margin-bottom:22px}
+.betaling{display:inline-block;background:var(--inkt);color:#fff;font-weight:700;padding:10px 18px;border-radius:999px;font-size:16px;margin-top:6px}
+
+/* werk */
+.werk .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.werk dl{border-top:3px solid var(--inkt)}
+.werk .r{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:15px 0;border-bottom:1px solid #d6d9dd}
+.werk dt{font-family:var(--kop);text-transform:uppercase;font-size:21px;letter-spacing:.03em;line-height:1.2}
+.werk dd{font-size:17px}
+
+/* gebied */
+.gebied{background:var(--lucht);padding:64px 0}
+.gebied .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.gebied h2{font-size:clamp(34px,4vw,50px)}
+.plaatsen{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin-top:10px}
+.plaatsen li{background:#fff;font-weight:700;padding:10px 20px;border-radius:999px;border:3px solid var(--inkt)}
+.uren{background:#fff;border-radius:18px;padding:24px 28px;border:3px solid var(--inkt)}
+.uren p{font-size:18px}
+.uren .groot{font-family:var(--kop);font-size:30px;text-transform:uppercase;letter-spacing:.02em;line-height:1.1;margin-bottom:6px}
+
+/* contact */
+.contact{background:var(--inkt);color:#fff;padding:80px 0 60px}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:end}
+.contact h2{color:#fff;font-size:clamp(42px,6vw,84px)}
+.contact a.nr{display:inline-block;font-family:var(--kop);font-size:clamp(34px,4.6vw,60px);letter-spacing:.03em;text-decoration:none;background:var(--lucht);color:var(--inkt);padding:10px 30px;border-radius:999px;margin-top:8px}
+.contact a.nr:hover{background:#fff}
+.contact dl{font-size:19px}
+.contact dt{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#9fe0f7;margin-top:18px;font-weight:700}
+.contact dt:first-child{margin-top:0}
+.contact dd a{text-decoration:none;border-bottom:2px solid var(--lucht)}
+footer{background:#14171c;color:#9aa1ab;font-size:14px;padding:20px 0}
+
+@media (max-width:900px){
+  .hero{padding-bottom:56px}
+  .hero .wrap,.welniet .wrap,.tarief .wrap,.werk .wrap,.gebied .wrap,.contact .wrap{grid-template-columns:1fr;gap:40px}
+  section{padding:60px 0}
+  header.top nav a:not(.bel){display:none}
+  header.top .merk{font-size:19px}
+  .foto{max-width:520px}
+  .bon{transform:none}
+  .werk .r{grid-template-columns:1fr;gap:4px}
+}
+@media (max-width:480px){
+  body{font-size:17px}
+  .wrap{width:min(1120px,100% - 32px)}
+  .bon{padding:26px 20px 40px;font-size:15.5px}
+  .foto{border-width:10px;border-radius:20px}
+  .niet{padding:24px 20px 10px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="merk" href="#">Bijl loodgietersklusjes</a>
+    <nav>
+      <a href="#welniet">Wat ik doe</a>
+      <a href="#tarief">Tarieven</a>
+      <a href="#gebied">Werkgebied</a>
+      <a class="bel" href="tel:+31684869797">06 8486 9797</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <img class="logo" src="logo.png" alt="Loodgietersklusjes Bijl">
+      <h1>Lekkende kraan? Vaak dezelfde dag geholpen.</h1>
+      <p class="lead">Loodgieter voor kleine klussen in Nijmegen en omgeving. Een lekkende kraan, een doorlopend toilet of een zichtbare lekkage.</p>
+      <div class="knoppen">
+        <a class="knop" href="tel:+31684869797">Bel 06 8486 9797</a>
+        <a class="knop leeg" href="mailto:info@loodgietersklusjes.nl">Mail Martijn</a>
+      </div>
+    </div>
+    <figure class="foto">
+      <img src="martijn-bij-de-bus.jpg" alt="Martijn Bijl bij zijn bedrijfsbus met logo en telefoonnummer">
+      <figcaption>Martijn Bijl</figcaption>
+    </figure>
+  </div>
+</section>
+<div class="pijp" aria-hidden="true"></div><span class="druppel" aria-hidden="true"></span>
+
+<section class="welniet" id="welniet">
+  <div class="wrap">
+    <div class="kolom wel">
+      <h2>Klusjes van een kwartiertje tot twee uur</h2>
+      <p class="intro">Kleine loodgieterswerkzaamheden voor particulieren. Door me op kleinere klussen te richten kan ik snel schakelen en duidelijke afspraken maken.</p>
+      <ul>
+        <li>Kranen repareren en vervangen</li>
+        <li>Toiletpotten en stortbakken repareren en vervangen</li>
+        <li>Zichtbare lekkages aan waterleiding, cv en riool verhelpen</li>
+        <li>Sanitair vervangen: wastafels, fonteinen, badmeubels</li>
+        <li>Radiatorkranen en thermostaatknoppen vervangen</li>
+        <li>Kleine installaties aanleggen, zoals een buitenkraan of een (vaat)wasmachineaansluiting</li>
+      </ul>
+    </div>
+    <div class="kolom niet">
+      <h3>Dit doe ik niet</h3>
+      <p class="nb">Dan weet u dat meteen, en hoeft u er niet voor te bellen.</p>
+      <ul>
+        <li>Rioolontstoppingen, bijvoorbeeld keuken of toilet</li>
+        <li>Opsporing van lekkages die niet zichtbaar zijn</li>
+        <li>Complete badkamerrenovaties</li>
+        <li>Grote installatiewerkzaamheden</li>
+        <li>Nieuwbouwprojecten</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="pijp dun" aria-hidden="true"></div>
+
+<section class="tarief" id="tarief">
+  <div class="wrap">
+    <div>
+      <h2>Wat het kost</h2>
+      <p class="intro">De tarieven op een rij, alle bedragen inclusief btw.</p>
+      <p class="betaling">Betalen na afloop, met pin of contant</p>
+    </div>
+    <div class="bon" role="group" aria-label="Tarieven">
+      <h3>Tarieven loodgieterswerk</h3>
+      <p class="sub">ma t/m vrij 08.00 tot 17.00, incl. btw</p>
+      <dl>
+        <div class="rij"><dt>Kleine klus<small>tot 45 minuten, minimaal dit tarief<br>€70 + €30 voorrijkosten</small></dt><span class="stip"></span><dd>€100</dd></div>
+        <div class="rij"><dt>Normaal tarief<small>45 minuten tot 1 uur<br>€80 + €30 voorrijkosten</small></dt><span class="stip"></span><dd>€110</dd></div>
+        <div class="rij"><dt>Na het eerste uur</dt><span class="stip"></span><dd>€20 per 15 min</dd></div>
+        <hr>
+        <div class="rij"><dt>Spoed<small>zo snel mogelijk, dezelfde of volgende dag</small></dt><span class="stip"></span><dd>+50%</dd></div>
+        <div class="rij"><dt>Avond en zaterdag</dt><span class="stip"></span><dd>+75%</dd></div>
+        <div class="rij"><dt>Zon- en feestdagen</dt><span class="stip"></span><dd>+100%</dd></div>
+        <hr>
+        <div class="rij"><dt>Voorrijkosten</dt><span class="stip"></span><dd>€30</dd></div>
+        <div class="rij"><dt>Dukenburg en Hatert</dt><span class="stip"></span><dd>€20</dd></div>
+        <hr>
+        <p class="klein">Exclusief materiaalkosten, parkeerkosten en het afvoeren van sanitair en ijzer. Op alle diensten zijn de algemene voorwaarden van toepassing.</p>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="werk">
+  <div class="wrap">
+    <div>
+      <h2>Loodgieterswerk</h2>
+      <p class="intro">Onderhoud, vervanging, aanleg en reparatie.</p>
+    </div>
+    <dl>
+      <div class="r"><dt>Sanitair</dt><dd>Wastafel, toilet, fontein, douchegarnituur</dd></div>
+      <div class="r"><dt>Kranen</dt><dd>Wastafelkraan, keukenkraan, wasmachinekraan, douchekraan, thermostaatkraan, buitenkraan</dd></div>
+      <div class="r"><dt>Riool</dt><dd>Wasmachine-aansluiting, HWA, regenpijp, sifon, zwanenhals, binnenriolering</dd></div>
+      <div class="r"><dt>Waterleiding</dt><dd>Buitenkraan, wasmachine, vaatwasser, keuken</dd></div>
+      <div class="r"><dt>Aansluiten</dt><dd>Gasfornuis, kookplaat, gasoven, gasslang, gaskraan keuken</dd></div>
+      <div class="r"><dt>Boiler</dt><dd>Keukenboiler, elektrische boiler</dd></div>
+      <div class="r"><dt>Wc-stortbak</dt><dd>Vlotter, bodemklep, hoog of laag hangend reservoir</dd></div>
+      <div class="r"><dt>Klein cv-werk</dt><dd>Radiatoren weghalen, lekkages verhelpen, radiatorkranen, thermostaatknoppen</dd></div>
+      <div class="r"><dt>Aanpassingen</dt><dd>Verhoogd toilet, toiletbeugels en handgrepen, douchestoeltje of douchezitje</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="gebied" id="gebied">
+  <div class="wrap">
+    <div>
+      <h2>Ik werk in</h2>
+      <ul class="plaatsen">
+        <li>Nijmegen</li><li>Beuningen</li><li>Wijchen</li><li>Malden</li><li>Molenhoek / Mook</li>
+      </ul>
+    </div>
+    <div class="uren">
+      <p class="groot">Maandag tot en met vrijdag<br>09.00 tot 17.00</p>
+      <p>Zaterdag en zondag gesloten. Telefonisch contact graag ook binnen die uren. Ben ik even niet bereikbaar, dan krijgt u zo snel mogelijk een reactie op uw mail.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Bent u op zoek naar een loodgieter?</h2>
+      <a class="nr" href="tel:+31684869797">06 8486 9797</a>
+    </div>
+    <dl>
+      <dt>E-mail</dt>
+      <dd><a href="mailto:info@loodgietersklusjes.nl">info@loodgietersklusjes.nl</a></dd>
+      <dt>Bedrijf</dt>
+      <dd>Kleinklusbedrijf Bijl<br>Weezenhof, 6536 CS Nijmegen</dd>
+    </dl>
+  </div>
+</section>
+<footer><div class="wrap">Kleinklusbedrijf Bijl, Nijmegen. Voorstel voor een nieuwe homepage, gemaakt door Headturners.</div></footer>
+</body>
+</html>

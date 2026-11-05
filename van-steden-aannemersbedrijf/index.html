@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Th. van Steden &amp; Zn, aannemer in Eindhoven</title>
+<meta name="description" content="Aannemersbedrijf, dakdekkersbedrijf en elektra-installatiebedrijf Th. van Steden &amp; Zn in Eindhoven. Sinds 1990, 24 uur per dag bereikbaar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --inkt:#242021;
+  --groen:#9ccd67;
+  --groen-diep:#5f7a2e;
+  --mos:#889f52;
+  --bleek:#eef5e3;
+  --papier:#fbfaf6;
+  --slab:'Bitter',Georgia,serif;
+  --sans:'Source Sans 3',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-size:18px;line-height:1.55;color:var(--inkt);background:var(--papier);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+
+/* motief: dakenlijn, afgeleid van de silhouet in het logo */
+.daklijn{height:34px;background:var(--inkt);
+  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 34' preserveAspectRatio='none'><path d='M0 34V22l12-12 12 12v12h6V16h10V6l8-6 8 6v10h6v18h8V20l14-14 14 14v14h8V12h12l6-8 6 8h10v22h10V18l12-12 12 12v16z'/></svg>") repeat-x bottom/240px 34px;
+          mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 34' preserveAspectRatio='none'><path d='M0 34V22l12-12 12 12v12h6V16h10V6l8-6 8 6v10h6v18h8V20l14-14 14 14v14h8V12h12l6-8 6 8h10v22h10V18l12-12 12 12v16z'/></svg>") repeat-x bottom/240px 34px}
+.daklijn.groen{background:var(--groen)}
+.daklijn.bleek{background:var(--bleek)}
+
+.noodbalk{background:var(--groen);color:var(--inkt);font-weight:700;font-size:16px}
+.noodbalk .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+.noodbalk a{text-decoration:none}
+
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0}
+header.top img{height:62px;width:auto}
+header.top nav{display:flex;gap:26px;font-weight:600;font-size:16px}
+header.top nav a{text-decoration:none}
+header.top nav a:hover{color:var(--groen-diep)}
+
+.hero{background:var(--inkt);color:#fff;padding:72px 0 0}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:end}
+.kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:var(--groen);margin-bottom:16px}
+h1{font-family:var(--slab);font-weight:800;font-size:clamp(40px,5.4vw,72px);line-height:1.02;letter-spacing:-.015em}
+h1 span{color:var(--groen)}
+.hero p.lead{font-size:20px;color:#d9ddd0;max-width:32em;margin:26px 0 0}
+.belblok{background:var(--groen);color:var(--inkt);padding:26px 28px 30px;margin-bottom:-1px;position:relative}
+.belblok small{display:block;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+.belblok a.nr{display:block;font-family:var(--slab);font-weight:800;font-size:clamp(32px,3.6vw,46px);line-height:1.1;text-decoration:none;margin:6px 0 8px}
+.belblok p{font-size:16px}
+.band{margin-top:64px;height:240px;overflow:hidden;position:relative}
+.band img{width:100%;height:100%;object-fit:cover}
+
+section{padding:84px 0}
+h2{font-family:var(--slab);font-weight:800;font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-.01em;margin-bottom:18px}
+h3{font-family:var(--slab);font-weight:700;font-size:22px;line-height:1.2}
+.intro{max-width:36em;font-size:19px;color:#4a4748}
+
+/* bij wat bel je */
+.nood .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.nood ul{list-style:none}
+.nood li{font-family:var(--slab);font-weight:700;font-size:clamp(24px,2.6vw,34px);line-height:1.15;padding:20px 0;border-top:3px solid var(--inkt)}
+.nood li:last-child{border-bottom:3px solid var(--inkt)}
+.nood li small{display:block;font-family:var(--sans);font-weight:400;font-size:16px;margin-top:4px;color:#4a4748}
+.verz{margin-top:26px;padding:18px 20px;background:var(--bleek);border-left:5px solid var(--mos);font-size:17px;max-width:30em}
+
+/* vier afdelingen */
+.afd{background:var(--bleek)}
+.afd h2{max-width:14em}
+.afdlijst{margin-top:44px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:3px solid var(--inkt)}
+.afdlijst div{padding:24px 24px 8px 0;border-right:1px solid rgba(36,32,33,.25);margin-right:24px}
+.afdlijst div:last-child{border-right:0;margin-right:0}
+.afdlijst h3{margin-bottom:8px}
+.afdlijst p{font-size:17px;color:#3f3c3d}
+.vca{display:flex;align-items:center;gap:18px;margin-top:36px;font-size:16px;color:#3f3c3d;max-width:44em}
+.vca img{height:64px;width:auto;mix-blend-mode:multiply}
+
+/* dak */
+.dak .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.dakfotos{display:grid;gap:16px}
+.dakfotos img{width:100%;height:210px;object-fit:cover}
+.dakfotos figcaption{font-size:14px;color:#6b6768;margin-top:6px}
+.dakblok{margin:30px 0 8px;background:var(--inkt);color:#fff;padding:26px 28px}
+.dakblok strong{font-family:var(--slab);font-size:26px;display:block;line-height:1.15;color:var(--groen)}
+.dakblok span{color:#d9ddd0;font-size:17px}
+.twee{columns:2;column-gap:32px;list-style:none;margin-top:20px}
+.twee li{padding:9px 0;border-bottom:1px solid #d6d3cc;break-inside:avoid;font-weight:600}
+
+/* totaalpakket */
+.pakket{background:var(--inkt);color:#fff}
+.pakket .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:64px}
+.pakket .intro{color:#d0d4c7}
+.pakket h2{color:#fff}
+.pakket ul{list-style:none;columns:2;column-gap:32px}
+.pakket li{font-family:var(--slab);font-weight:700;font-size:22px;padding:12px 0;border-top:1px solid rgba(255,255,255,.28);break-inside:avoid}
+.pakket .meer{margin-top:22px;color:var(--groen);font-weight:600;font-size:17px}
+
+/* voor wie */
+.wie .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px}
+.wie ul{list-style:none}
+.wie li{padding:14px 0 14px 34px;border-bottom:1px solid #d6d3cc;position:relative;font-size:18px}
+.wie li::before{content:"";position:absolute;left:0;top:21px;width:18px;height:10px;background:var(--mos);clip-path:polygon(0 100%,50% 0,100% 100%)}
+.bus{margin-top:30px;max-width:300px}
+.bus img{width:100%}
+.bus figcaption{font-size:14px;color:#6b6768;margin-top:6px}
+
+/* regio */
+.regio{background:var(--bleek);padding:64px 0}
+.regio .wrap{display:grid;grid-template-columns:.6fr 1.4fr;gap:48px;align-items:start}
+.plaatsen{display:flex;flex-wrap:wrap;gap:8px 10px;list-style:none}
+.plaatsen li{background:#fff;border:1px solid #cfdcb9;padding:6px 14px;font-weight:600;font-size:16px}
+
+/* contact */
+.contact{background:var(--groen);padding:80px 0 72px}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:end}
+.contact h2{font-size:clamp(34px,4.6vw,60px)}
+.contact a.nr{display:inline-block;font-family:var(--slab);font-weight:800;font-size:clamp(34px,4.4vw,56px);text-decoration:none;background:var(--inkt);color:#fff;padding:14px 26px;margin-top:10px}
+.contact a.nr:hover{background:#000}
+.contact dl{font-size:18px}
+.contact dt{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-top:18px}
+.contact dt:first-child{margin-top:0}
+.contact dd{font-weight:600}
+footer{background:var(--inkt);color:#bfc3b6;font-size:14px;padding:20px 0}
+
+@media (max-width:900px){
+  .hero{padding-top:40px}
+  .hero .wrap,.nood .wrap,.dak .wrap,.pakket .wrap,.wie .wrap,.regio .wrap,.contact .wrap{grid-template-columns:1fr;gap:36px}
+  .hero .wrap{gap:32px}
+  .band{margin-top:40px;height:150px}
+  section{padding:60px 0}
+  .afdlijst{grid-template-columns:1fr 1fr}
+  .afdlijst div{margin-right:0;padding-right:16px;border-right:0;border-bottom:1px solid rgba(36,32,33,.25);padding-bottom:20px}
+  header.top nav{display:none}
+  header.top img{height:48px}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .wrap{width:min(1160px,100% - 32px)}
+  .afdlijst{grid-template-columns:1fr}
+  .twee,.pakket ul{columns:1}
+  .noodbalk .wrap span{display:none}
+  .belblok{padding:22px 20px 24px}
+}
+</style>
+</head>
+<body>
+
+<div class="noodbalk"><div class="wrap"><span>Aannemer, dakdekker en elektra-installateur in Eindhoven</span><a href="tel:+31402622311">24 uur per dag bereikbaar: 040-2622311</a></div></div>
+<header class="top">
+  <div class="wrap">
+    <a href="#"><img src="logo.png" alt="Th. van Steden &amp; Zn"></a>
+    <nav>
+      <a href="#bellen">24 uurs service</a>
+      <a href="#dak">Dakwerken</a>
+      <a href="#pakket">Totaalpakket</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding-bottom:0">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Sinds 1990, Boschdijk Eindhoven</p>
+      <h1>Het dak lekt. De meterkast <span>valt uit.</span> Wij komen.</h1>
+      <p class="lead">Van Steden &amp; Zn is aannemer, dakdekker en elektra-installateur in één bedrijf. De vakmensen zitten in eigen huis, dus de werkzaamheden sluiten op elkaar aan en er valt weinig stil.</p>
+    </div>
+    <div class="belblok" id="bellen-blok">
+      <small>24 uurs service</small>
+      <a class="nr" href="tel:+31402622311">040-2622311</a>
+      <p>Ook als u nog geen klant bij ons bent.</p>
+    </div>
+  </div>
+  <div class="band"><img src="dak-woning.jpg" alt="Woning met pannendak in de regio Eindhoven"></div>
+</section>
+<div class="daklijn groen" aria-hidden="true" style="margin-top:-1px"></div>
+
+<section class="nood" id="bellen">
+  <div class="wrap">
+    <div>
+      <p class="kicker" style="color:var(--groen-diep)">Dag en nacht</p>
+      <h2>Wanneer belt u ons?</h2>
+      <p class="intro">Het hele huis, dag en nacht. Een van de drie hieronder, of iets daartussen.</p>
+      <p class="verz">Moet de verzekering erbij? Onze contacten met de verzekeringsmaatschappijen zijn goed.</p>
+    </div>
+    <ul>
+      <li>Lekkage in uw dak</li>
+      <li>Lekkage in de waterleiding</li>
+      <li>Storing in de meterkast</li>
+    </ul>
+  </div>
+</section>
+
+<section class="afd">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--groen-diep)">Vier kernactiviteiten</p>
+    <h2>Eén bedrijf, vier afdelingen</h2>
+    <div class="afdlijst">
+      <div><h3>Electro-installatie</h3><p>Met technisch geschoolde medewerkers.</p></div>
+      <div><h3>Dakdekkers</h3><p>Vakmensen die snel en zeker werken.</p></div>
+      <div><h3>Aannemers</h3><p>Voor de grotere werkzaamheden, met VCA-certificaat.</p></div>
+      <div><h3>Klus</h3><p>Super snel en vakkundig.</p></div>
+    </div>
+    <div class="vca"><img src="vca.gif" alt="VCA-logo"><p>Alle vier de afdelingen werken onder het VCA-certificaat. VCA staat voor VGM Checklist Aannemers, waarbij VGM staat voor Veiligheid, Gezondheid en Milieu.</p></div>
+  </div>
+</section>
+
+<section class="dak" id="dak">
+  <div class="wrap">
+    <div>
+      <p class="kicker" style="color:var(--groen-diep)">Dakwerken</p>
+      <h2>Alle werkzaamheden aan uw dak</h2>
+      <p class="intro">Een dak staat constant bloot aan de weersinvloeden. Wij voeren alle voorkomende onderhoudswerkzaamheden uit die een dak nodig heeft.</p>
+      <div class="dakblok"><strong>10 jaar volledige garantie</strong><span>op bitumen dakbedekking. Wij gebruiken enkel A-klasse dakleer.</span></div>
+      <ul class="twee">
+        <li>Bitumen dakbedekking</li>
+        <li>EPDM</li>
+        <li>Pannendaken</li>
+        <li>Zinken goten</li>
+        <li>Dakkapellen</li>
+        <li>Dakramen</li>
+        <li>Lichtkoepels en lichtstraten</li>
+        <li>Solar tubes</li>
+        <li>Schoorstenen</li>
+        <li>Isolatie</li>
+      </ul>
+    </div>
+    <div class="dakfotos">
+      <figure><img src="dak-plat.jpg" alt="Plat dak met dakbedekking" loading="lazy"><figcaption>Plat dak</figcaption></figure>
+      <figure><img src="dakkapel.jpg" alt="Dakkapel met rolluik op een pannendak" loading="lazy"><figcaption>Dakkapel met rolluik</figcaption></figure>
+      <p style="font-size:17px;color:#4a4748">Ook uw schoorsteen heeft onderhoud nodig. De meeste mensen doen niets tot er een lekkage is, en dan is de schade vaak vele malen groter.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pakket" id="pakket">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Totaalpakket</p>
+      <h2>Verbouwen zonder dat het blijft liggen</h2>
+      <p class="intro">Deskundigheid en vakmanschap zitten in eigen huis. Wij zorgen dat de afzonderlijke werkzaamheden goed op elkaar aansluiten, zodat er weinig of geen stagnatie optreedt, bij normale werkomstandigheden.</p>
+    </div>
+    <div>
+      <ul>
+        <li>Dakwerken</li>
+        <li>Metselwerken</li>
+        <li>Sanitair</li>
+        <li>Loodgieterwerken</li>
+        <li>Zinken goten</li>
+        <li>Stukadoorswerken</li>
+        <li>Timmerwerken</li>
+        <li>Tegelwerken</li>
+        <li>Elektra</li>
+        <li>Bribus-keukens en keukenapparatuur</li>
+      </ul>
+      <p class="meer">Ook kozijnen en glas, rolluiken en verbouwingen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wie">
+  <div class="wrap">
+    <div>
+      <p class="kicker" style="color:var(--groen-diep)">Portfolio</p>
+      <h2>Voor wie wij werken</h2>
+      <p class="intro">Particulieren, vastgoedbeheerders en horeca in Eindhoven en omgeving.</p>
+      <figure class="bus"><img src="bus.jpg" alt="Bedrijfsbus van Th. van Steden &amp; Zn" loading="lazy"><figcaption>Aannemer, dakdekkers, electra-installatiebedrijf</figcaption></figure>
+    </div>
+    <ul>
+      <li>(Nood)reparaties bij vele particulieren na schades, met afwikkeling bij de verzekeringsmaatschappij</li>
+      <li>Onderhoud van de gehele woning, inclusief 24 uursdienst, voor een verhuur-beheergroep</li>
+      <li>Alle onderhoudswerkzaamheden voor een hotelketen in Eindhoven</li>
+      <li>24 uursdienst bij calamiteiten voor een hotel in de binnenstad van Eindhoven</li>
+      <li>Onderhoud en uitbreiding van de electra voor een eetcafé, met 24 uursdienst</li>
+      <li>Onderhoud van diverse panden in Eindhoven en omgeving voor een vastgoedbeheerder</li>
+      <li>Uitbreidingen volgens de nieuwste veiligheidsnormen bij vele particulieren</li>
+    </ul>
+  </div>
+</section>
+
+<div class="daklijn bleek" aria-hidden="true"></div>
+<section class="regio">
+  <div class="wrap">
+    <div>
+      <h2 style="font-size:32px">Werkgebied</h2>
+      <p style="font-size:17px">Regio Brabant Zuid-Oost, en alle gemeenten rond Eindhoven.</p>
+    </div>
+    <ul class="plaatsen">
+      <li>Eindhoven</li><li>Helmond</li><li>Deurne</li><li>Cranendonck</li><li>Son</li><li>Breugel</li><li>Best</li><li>Oirschot</li><li>Veldhoven</li><li>Leende</li><li>Heeze</li><li>Asten</li><li>Bergeijk</li><li>Valkenswaard</li><li>Waalre</li><li>Geldrop</li><li>Mierlo</li><li>Bakel</li><li>Laarbeek</li><li>Bladel</li><li>Nuenen</li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Bel, ook midden in de nacht.</h2>
+      <a class="nr" href="tel:+31402622311">040-2622311</a>
+    </div>
+    <dl>
+      <dt>Adres</dt>
+      <dd>Boschdijk 926<br>5627 AC Eindhoven</dd>
+      <dt>Telefoon</dt>
+      <dd>040-2622311</dd>
+      <dt>Fax</dt>
+      <dd>040-2622274</dd>
+      <dt>K.v.K.</dt>
+      <dd>17145403</dd>
+    </dl>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">Th. van Steden &amp; Zn, Eindhoven. Voorstel voor een nieuwe homepage, gemaakt door Headturners.</div></footer>
+</body>
+</html>

@@ -24,5 +24,8 @@
   {"naam": "Bert Tol Bureau Arbeidsrecht", "slug": "bert-tol-arbeidsrecht", "plaats": "Zwolle", "branche": "zzp en dienstverleners", "datum": "2026-11-03", "mailadres": "info@berttol.nl", "rechtsvorm": "onbekend"},
   {"naam": "Kapperszaak Oden", "slug": "kapperszaak-oden", "plaats": "Gouda", "branche": "horeca en winkels", "datum": "2026-11-04", "mailadres": "info@kapsalonoden.nl", "rechtsvorm": "onbekend"},
   {"naam": "Pinkbloem", "slug": "pinkbloem", "plaats": "Gouda", "branche": "horeca en winkels", "datum": "2026-11-04", "mailadres": "info@pinkbloem.nl", "rechtsvorm": "onbekend"},
-  {"naam": "Lunchcafé Juuls", "slug": "lunchcafe-juuls", "plaats": "Gouda", "branche": "horeca en winkels", "datum": "2026-11-04", "mailadres": "info@lunchcafejuuls.nl", "rechtsvorm": "onbekend"}
+  {"naam": "Lunchcafé Juuls", "slug": "lunchcafe-juuls", "plaats": "Gouda", "branche": "horeca en winkels", "datum": "2026-11-04", "mailadres": "info@lunchcafejuuls.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Zwegers Stucadoorswerken", "slug": "zwegers-stucadoorswerken", "plaats": "Breda", "branche": "bouw en vakmensen", "datum": "2026-11-05", "mailadres": "info@zwegerstuc.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Th. van Steden & Zn", "slug": "van-steden-aannemersbedrijf", "plaats": "Eindhoven", "branche": "bouw en vakmensen", "datum": "2026-11-05", "mailadres": "onbekend", "rechtsvorm": "onbekend"},
+  {"naam": "Loodgietersklusjes Bijl", "slug": "loodgietersklusjes-bijl", "plaats": "Nijmegen", "branche": "bouw en vakmensen", "datum": "2026-11-05", "mailadres": "info@loodgietersklusjes.nl", "rechtsvorm": "onbekend"}
 ]
