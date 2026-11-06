@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>C. Witteman, tuinaanleg en sierbestrating</title>
-<meta name="description" content="Hoveniersbedrijf C. Witteman ontwerpt en legt tuinen aan voor particulieren, bedrijven en overheidsinstellingen. Al meer dan 35 jaar.">
+<title>C. Witteman, sierbestrating en aanleg van tuinen in Leiden</title>
+<meta name="description" content="C. Witteman ontwerpt en legt tuinen aan: sierbestrating, terrassen, vlonders, vijvers, overkappingen en tuinhuizen. Al meer dan 35 jaar.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,700;0,800;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,800;0,900;1,500;1,800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --klinker:#b3262c;
@@ -18,220 +18,299 @@
   --zand:#ead6b4;
   --zand-licht:#f7efe0;
   --inkt:#25221e;
-  --wit:#fffdf8;
+  --voeg:#d9c39d;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Work Sans",system-ui,sans-serif;background:var(--zand-licht);color:var(--inkt);font-size:18px;line-height:1.65}
+body{font-family:"Work Sans",system-ui,sans-serif;background:var(--zand-licht);color:var(--inkt);font-size:18px;line-height:1.6;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit}
-h1,h2,h3{font-family:Bitter,Georgia,serif;font-weight:800;line-height:1.08;letter-spacing:-.01em}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Bitter,Georgia,serif;font-weight:800;line-height:.98;letter-spacing:-.02em}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.knop{display:inline-flex;align-items:center;gap:10px;background:var(--klinker);color:#fff;text-decoration:none;padding:16px 26px;border-radius:4px;font-weight:600;font-size:16px;transition:transform .2s,background .2s;box-shadow:0 4px 0 var(--klinker-diep)}
+.knop:hover{transform:translateY(-2px);background:#c52d33}
+.knop.groen{background:var(--groen);box-shadow:0 4px 0 var(--groen-diep)}
+.knop.licht{background:var(--zand-licht);color:var(--inkt);box-shadow:0 4px 0 var(--voeg)}
 
-/* visgraat klinkerpatroon als eigen merkmotief */
-.klinker{
-  height:26px;
-  background-color:var(--zand);
-  background-image:
-    repeating-linear-gradient(45deg,transparent 0 11px,rgba(179,38,44,.55) 11px 13px),
-    repeating-linear-gradient(-45deg,transparent 0 11px,rgba(179,38,44,.55) 11px 13px);
-  background-size:26px 26px;
-  border-top:3px solid var(--groen);
-  border-bottom:3px solid var(--groen);
-}
-.klinker.dik{height:56px}
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.12s}.js .rv.d2{transition-delay:.24s}.js .rv.d3{transition-delay:.36s}
 
-header{background:var(--wit)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:10px;padding-bottom:10px}
-.merk img{height:76px;width:auto}
-header nav{display:flex;align-items:center;gap:26px;font-weight:500;font-size:16px}
-header nav a{text-decoration:none}
-header nav a:hover{color:var(--klinker)}
-.knop{display:inline-block;background:var(--klinker);color:#fff;text-decoration:none;padding:14px 26px;font-weight:600;font-size:16px;border-radius:4px;transition:background .15s}
-.knop:hover{background:var(--klinker-diep)}
-.knop.groen{background:var(--groen)}
-.knop.groen:hover{background:var(--groen-diep)}
-.knop.rand{background:transparent;color:var(--inkt);box-shadow:inset 0 0 0 2px var(--inkt)}
-.knop.rand:hover{background:var(--inkt);color:#fff}
+/* kop */
+header{position:fixed;top:0;left:0;right:0;z-index:30;transition:background .3s,box-shadow .3s}
+header.vast{background:rgba(247,239,224,.97);box-shadow:0 1px 0 var(--voeg)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+.merk img{height:56px;width:auto;background:#fff;padding:6px 10px;border-radius:4px}
+header nav{display:flex;gap:28px;align-items:center;font-weight:600;font-size:15px}
+header nav a{text-decoration:none;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.5);transition:color .3s}
+header.vast nav a{color:var(--inkt);text-shadow:none}
+header nav a.knop{color:#fff;text-shadow:none}
 
 /* hero */
-.hero{padding:64px 0 72px}
-.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
-.hero .jaren{display:inline-flex;align-items:baseline;gap:12px;margin-bottom:18px;color:var(--klinker);font-family:Bitter,serif;font-weight:800}
-.hero .jaren b{font-size:72px;line-height:.9}
-.hero .jaren span{font-size:18px;line-height:1.15;color:var(--inkt);font-weight:700}
-.hero h1{font-size:clamp(36px,4.8vw,60px);margin-bottom:22px}
-.hero p.lead{max-width:30em;margin-bottom:30px;font-size:19px}
+.hero{min-height:100vh;min-height:100svh;display:grid;grid-template-columns:1fr 1fr;background:var(--groen-diep);color:#fff;position:relative;overflow:hidden}
+.hero .tekst{padding:150px 56px 80px max(28px,calc((100vw - 1240px)/2 + 28px));display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.jaren{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}
+.jaren b{font-family:Bitter,serif;font-weight:900;font-size:76px;line-height:.8;color:var(--zand)}
+.jaren span{font-size:14px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;opacity:.85;max-width:12em;line-height:1.35}
+.hero h1{font-size:clamp(52px,6.6vw,104px);margin-bottom:26px}
+.hero h1 em{font-style:italic;color:var(--zand)}
+.hero p{font-size:20px;max-width:28em;opacity:.92;margin-bottom:34px}
 .hero .acties{display:flex;flex-wrap:wrap;gap:14px}
-.hero .foto{position:relative}
-.hero .foto img{width:100%;aspect-ratio:10/8;object-fit:cover;border-radius:6px}
-.hero .foto::after{content:"";position:absolute;left:-14px;bottom:-14px;width:46%;height:46%;z-index:-1;
-  background-color:var(--zand);
-  background-image:repeating-linear-gradient(45deg,transparent 0 11px,rgba(179,38,44,.55) 11px 13px),repeating-linear-gradient(-45deg,transparent 0 11px,rgba(179,38,44,.55) 11px 13px);
-  background-size:26px 26px}
+.hero .foto{position:relative;overflow:hidden}
+.hero .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.1);animation:inzoom 2.4s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes inzoom{to{transform:scale(1)}}
+.hero .foto::before{content:"";position:absolute;inset:0 auto 0 0;width:120px;background:linear-gradient(90deg,var(--groen-diep),transparent);z-index:1}
 
-/* wat we doen */
-.werk{padding:84px 0 40px}
-.werk h2{font-size:clamp(30px,4vw,46px);margin-bottom:14px}
-.werk p.intro{max-width:36em;margin-bottom:44px}
-.regel{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;margin-bottom:56px}
-.regel.om{grid-template-columns:1fr 1.05fr}
-.regel.om .tekst{order:2}
-.regel img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
-.regel h3{font-size:clamp(26px,3vw,36px);margin-bottom:10px;color:var(--groen)}
-.regel h3::after{content:"";display:block;width:64px;height:6px;margin-top:12px;background:var(--klinker)}
-.regel p{max-width:30em}
-.regel ul{list-style:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
-.regel li{background:var(--zand);padding:5px 12px;font-size:15px;font-weight:500;border-radius:3px}
+/* klinkerband: signatuur, wordt gelegd */
+.klinkers{height:84px;background:var(--voeg);position:relative;overflow:hidden}
+.klinkers svg{position:absolute;inset:0;width:100%;height:100%}
+.klinkers rect{fill:var(--klinker);transform-box:fill-box;transform-origin:center}
+.js .klinkers rect{opacity:0;transform:translateY(-30px) scale(.9)}
+.klinkers.gelegd rect{opacity:1;transform:none;transition:opacity .35s,transform .45s cubic-bezier(.3,1.4,.5,1)}
 
-/* fotostrook */
-.strook{padding:24px 0 84px}
-.strook h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:26px}
-.rooster{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
-.rooster figure{position:relative;overflow:hidden;border-radius:5px;background:var(--zand)}
-.rooster figure{grid-column:span 2;aspect-ratio:4/3}
-.rooster img{width:100%;height:100%;object-fit:cover}
-.rooster figcaption{position:absolute;left:0;bottom:0;background:var(--groen);color:#fff;font-size:14px;font-weight:600;padding:5px 12px;border-top-right-radius:5px}
+/* intro */
+.intro{padding:120px 0 100px}
+.intro .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:end}
+.intro h2{font-size:clamp(42px,5.4vw,78px)}
+.intro h2 em{color:var(--klinker);font-style:italic}
+.intro p{font-size:20px}
 
-/* werkwijze in drie zinnen */
-.band{background:var(--groen);color:#fff;padding:72px 0}
-.band .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
-.band h2{font-size:clamp(30px,4vw,46px)}
-.band p{font-size:19px;margin-bottom:16px;opacity:.95}
-.band p:last-child{margin-bottom:0}
+/* werkzaamheden: grote panelen */
+.panelen{display:grid;gap:26px;padding-bottom:120px}
+.paneel{display:grid;grid-template-columns:1.25fr 1fr;min-height:520px;border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -30px rgba(40,30,10,.35)}
+.paneel:nth-child(even){grid-template-columns:1fr 1.25fr}
+.paneel:nth-child(even) .beeld{order:2}
+.paneel .beeld{overflow:hidden;position:relative}
+.paneel .beeld img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.paneel:hover .beeld img{transform:scale(1.06)}
+.paneel .inhoud{padding:56px 52px;display:flex;flex-direction:column;justify-content:center}
+.paneel .nr{font-family:Bitter,serif;font-style:italic;font-weight:500;color:var(--klinker);font-size:18px;margin-bottom:14px}
+.paneel h3{font-size:clamp(32px,3.4vw,50px);margin-bottom:18px}
+.paneel p{margin-bottom:22px;max-width:30em}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{background:var(--zand-licht);border:1.5px solid var(--voeg);border-radius:3px;padding:6px 12px;font-size:14px;font-weight:600}
+.paneel.rood{background:var(--klinker);color:#fff}.paneel.rood .nr{color:var(--zand)}.paneel.rood .tags span{background:transparent;border-color:rgba(255,255,255,.45)}
+.paneel.groen{background:var(--groen);color:#fff}.paneel.groen .nr{color:var(--zand)}.paneel.groen .tags span{background:transparent;border-color:rgba(255,255,255,.45)}
+
+/* portfolio met filter */
+.portfolio{background:var(--inkt);color:#fff;padding:110px 0}
+.portfolio .kop{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.portfolio h2{font-size:clamp(44px,6vw,86px)}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:inherit;font-size:15px;font-weight:600;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35);border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.filters button.aan,.filters button:hover{background:var(--zand);color:var(--inkt);border-color:var(--zand)}
+.raster{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:14px}
+.raster figure{position:relative;overflow:hidden;border-radius:4px;transition:opacity .4s,transform .4s}
+.raster figure.groot{grid-column:span 2;grid-row:span 2}
+.raster figure.breed{grid-column:span 2}
+.raster figure.weg{opacity:.12;transform:scale(.97)}
+.raster img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.raster figure:hover img{transform:scale(1.07)}
+.raster figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.7));font-family:Bitter,serif;font-weight:800;font-size:22px;transform:translateY(10px);opacity:.9;transition:transform .4s,opacity .4s}
+.raster figure:hover figcaption{transform:none;opacity:1}
+
+/* aanpak */
+.aanpak{padding:120px 0}
+.aanpak .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.aanpak h2{font-size:clamp(44px,5.6vw,82px);margin-bottom:28px}
+.aanpak h2 em{color:var(--groen);font-style:italic}
+.aanpak p{font-size:20px;margin-bottom:16px}
+.stappen{display:grid;gap:0;border-left:4px solid var(--klinker)}
+.stap{padding:22px 0 22px 30px;position:relative}
+.stap::before{content:"";position:absolute;left:-14px;top:30px;width:24px;height:14px;background:var(--klinker);border:3px solid var(--zand-licht)}
+.stap b{display:block;font-family:Bitter,serif;font-weight:800;font-size:34px;line-height:1.1}
+.stap span{opacity:.8}
 
 /* contact */
-.contact{padding:84px 0 36px}
-.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
-.contact h2{font-size:clamp(32px,4.4vw,52px);margin-bottom:22px}
-.contact .groot a{display:block;font-family:Bitter,serif;font-weight:800;font-size:clamp(30px,4vw,48px);text-decoration:none;color:var(--klinker);line-height:1.2}
-.contact .mail{display:inline-block;margin-top:10px;font-size:22px;font-weight:600}
-.contact address{font-style:normal;line-height:1.8;background:var(--wit);padding:28px 30px;border-left:8px solid var(--klinker)}
-footer .onder{margin-top:56px;padding:18px 0 28px;font-size:14px;opacity:.7;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.contact{background:var(--klinker);color:#fff;padding:110px 0 40px;position:relative;overflow:hidden}
+.contact h2{font-size:clamp(52px,8vw,128px);margin-bottom:44px}
+.contact h2 em{font-style:italic;color:var(--zand)}
+.contact .rij{display:grid;grid-template-columns:1.2fr 1.2fr 1fr;gap:40px;border-top:1px solid rgba(255,255,255,.3);padding-top:40px}
+.contact small{display:block;font-size:13px;letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-bottom:10px}
+.contact .rij a{text-decoration:none;font-family:Bitter,serif;font-weight:800;font-size:clamp(22px,2.1vw,30px);line-height:1.15;display:block;word-break:break-word}
+.contact .rij a:hover{color:var(--zand)}
+.onder{margin-top:80px;font-size:14px;opacity:.7;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
+.belbalk{display:none}
 @media (max-width:900px){
+  .wrap{padding:0 20px}
   header nav a:not(.knop){display:none}
-  .merk img{height:60px}
-  .hero{padding:36px 0 52px}
-  .hero .wrap,.regel,.regel.om,.band .wrap,.contact .wrap{grid-template-columns:1fr;gap:28px}
-  .regel.om .tekst{order:0}
-  .hero .jaren b{font-size:56px}
-  .rooster{grid-template-columns:repeat(2,1fr)}
-  .rooster figure{grid-column:span 1}
-  .contact .wrap>*{min-width:0}
-  .contact .groot a{font-size:30px;overflow-wrap:anywhere}
-  .contact .mail{font-size:18px!important}
+  header nav .knop{padding:12px 18px}
+  .merk img{height:46px}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero .foto{order:-1;height:46vh;min-height:300px}
+  .hero .foto::before{inset:auto 0 0 0;width:auto;height:120px;background:linear-gradient(0deg,var(--groen-diep),transparent)}
+  .hero .tekst{padding:10px 20px 70px}
+  .jaren b{font-size:58px}
+  .klinkers{height:60px}
+  .intro{padding:80px 0 60px}
+  .intro .wrap,.aanpak .wrap{grid-template-columns:1fr;gap:30px}
+  .paneel,.paneel:nth-child(even){grid-template-columns:1fr;min-height:0}
+  .paneel:nth-child(even) .beeld{order:0}
+  .paneel .beeld{height:280px}
+  .paneel .inhoud{padding:34px 26px}
+  .panelen{padding-bottom:80px}
+  .portfolio{padding:80px 0}
+  .raster{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+  .raster figure.groot{grid-column:span 2;grid-row:span 2}
+  .raster figcaption{font-size:17px;padding:30px 12px 10px}
+  .aanpak{padding:80px 0}
+  .contact .rij{grid-template-columns:1fr;gap:28px}
+  .contact{padding-bottom:110px}
+  .belbalk{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px}
+  .belbalk a{flex:1;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv,.js .klinkers rect{opacity:1;transform:none}
+  .hero .foto img{transform:none}
 }
 </style>
 </head>
 <body>
+<script>document.body.classList.add('js');</script>
 
-<header>
+<header id="kop">
   <div class="wrap">
     <a class="merk" href="#top"><img src="logo.png" alt="Witteman, tuinen en sierbestrating"></a>
     <nav>
       <a href="#werk">Werkzaamheden</a>
-      <a href="#fotos">Foto's</a>
-      <a href="#contact" class="knop">Offerte aanvragen</a>
+      <a href="#fotos">Portfolio</a>
+      <a class="knop" href="#contact">Offerte aanvragen</a>
     </nav>
   </div>
-  <div class="klinker"></div>
 </header>
 
 <main id="top">
-
 <section class="hero">
-  <div class="wrap">
-    <div>
-      <div class="jaren"><b>35+</b><span>jaar vertrouwd<br>hoveniersadres</span></div>
-      <h1>Uw tuin ontworpen, aangelegd en afgewerkt door één hovenier.</h1>
-      <p class="lead">C. Witteman ontwerpt en legt tuinen aan voor particulieren, bedrijven en overheidsinstellingen. Met oog voor detail en gevoel voor mogelijkheden.</p>
-      <div class="acties">
-        <a class="knop" href="tel:+31654300253">Bel 06 54 300 253</a>
-        <a class="knop rand" href="#fotos">Bekijk het werk</a>
-      </div>
+  <div class="tekst">
+    <div class="jaren rv"><b>35+</b><span>jaar vertrouwd hoveniersadres</span></div>
+    <h1 class="rv d1">Uw tuin,<br>van ontwerp<br>tot <em>laatste steen.</em></h1>
+    <p class="rv d2">C. Witteman ontwerpt en legt tuinen aan voor particulieren, bedrijven en overheidsinstellingen. Met oog voor detail en gevoel voor mogelijkheden.</p>
+    <div class="acties rv d3">
+      <a class="knop" href="tel:+31654300253">Bel 06 54 300 253</a>
+      <a class="knop licht" href="#fotos">Bekijk het werk</a>
     </div>
-    <div class="foto"><img src="vlonder.jpg" alt="Hardhouten vlonder met trap rond een boom, aangelegd door Witteman"></div>
+  </div>
+  <div class="foto"><img src="vlonder.jpg" alt="Hardhouten vlonder met trap rond een boom, aangelegd door Witteman"></div>
+</section>
+
+<div class="klinkers" id="klinkers" aria-hidden="true"><svg id="kl" preserveAspectRatio="xMinYMid slice"></svg></div>
+
+<section class="intro">
+  <div class="wrap">
+    <h2 class="rv">Eén hovenier.<br>Van terras tot <em>tuinhuis.</em></h2>
+    <p class="rv d1">Van het ontwerp tot de aanleg van terras, vijver, overkapping en tuinhuis. Advies, ontwerp en aanleg bij elkaar, zodat u jarenlang van uw tuin geniet.</p>
   </div>
 </section>
 
-<section class="werk" id="werk">
-  <div class="wrap">
-    <h2>Van tuinaanleg tot sierbestrating</h2>
-    <p class="intro">Van het ontwerp tot de aanleg van terras, vijver, overkapping en tuinhuis.</p>
-
-    <div class="regel">
-      <img src="terras-trap.jpg" alt="Terras met trap van natuursteen en hardhout" loading="lazy">
-      <div class="tekst">
+<section id="werk">
+  <div class="wrap panelen">
+    <article class="paneel rv">
+      <div class="beeld"><img src="terras-trap.jpg" alt="Terras met trap van natuursteen en hardhout" loading="lazy"></div>
+      <div class="inhoud">
+        <span class="nr">Bestrating</span>
         <h3>Sierbestrating, terrassen en trappen</h3>
         <p>Terrassen, paden en trappen, aangelegd met sierbestrating, natuursteen en hardhout.</p>
-        <ul><li>Sierbestrating</li><li>Trappen</li><li>Beschoeiing en vlonders</li></ul>
+        <div class="tags"><span>Sierbestrating</span><span>Trappen</span><span>Beschoeiing en vlonders</span></div>
       </div>
-    </div>
-
-    <div class="regel om">
-      <img src="vijver-terras.jpg" alt="Verhoogde vijver van stapelstenen op een terras" loading="lazy">
-      <div class="tekst">
+    </article>
+    <article class="paneel groen rv">
+      <div class="beeld"><img src="vijver-terras.jpg" alt="Verhoogde vijver van stapelstenen op een terras" loading="lazy"></div>
+      <div class="inhoud">
+        <span class="nr">Water en gazon</span>
         <h3>Vijvers, jacuzzi's en kunstgras</h3>
         <p>Een vijver, een jacuzzi op een vlonder of een gazon van kunstgras.</p>
-        <ul><li>Vijvers</li><li>Jacuzzi's</li><li>Kunstgras</li></ul>
+        <div class="tags"><span>Vijvers</span><span>Jacuzzi's</span><span>Kunstgras</span></div>
       </div>
-    </div>
-
-    <div class="regel">
-      <img src="overkapping.jpg" alt="Overkapping met berging naast een gazon" loading="lazy">
-      <div class="tekst">
+    </article>
+    <article class="paneel rood rv">
+      <div class="beeld"><img src="overkapping.jpg" alt="Overkapping met berging naast een gazon" loading="lazy"></div>
+      <div class="inhoud">
+        <span class="nr">Hout en bouw</span>
         <h3>Overkappingen, tuinhuizen en schuttingen</h3>
         <p>Een overkapping, een tuinhuis of blokhut, een schutting of sierhekwerk. Ook speeltoestellen.</p>
-        <ul><li>Overkappingen</li><li>Tuinhuizen, blokhutten en schuren</li><li>Schuttingen en sierhekwerk</li><li>Speeltoestellen</li></ul>
+        <div class="tags"><span>Overkappingen</span><span>Tuinhuizen en blokhutten</span><span>Schuttingen en sierhekwerk</span><span>Speeltoestellen</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="portfolio" id="fotos">
+  <div class="wrap">
+    <div class="kop">
+      <h2 class="rv">Uit eigen<br>portfolio.</h2>
+      <div class="filters rv d1" role="group" aria-label="Filter op soort werk">
+        <button class="aan" data-f="alles">Alles</button>
+        <button data-f="hout">Hout en bouw</button>
+        <button data-f="water">Water en gazon</button>
+        <button data-f="steen">Bestrating</button>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="strook" id="fotos">
-  <div class="wrap">
-    <h2>Uit eigen portfolio</h2>
-    <div class="rooster">
-      <figure><img src="tuin-gazon.jpg" alt="Tuin met kunstgras en tegelpad"><figcaption>Kunstgras</figcaption></figure>
-      <figure><img src="tuinhuis-riet.jpg" alt="Tuinhuis met rieten dak"><figcaption>Tuinhuis</figcaption></figure>
-      <figure><img src="jacuzzi.jpg" alt="Jacuzzi op een houten vlonder"><figcaption>Jacuzzi</figcaption></figure>
-      <figure><img src="schutting.jpg" alt="Schutting van bamboe met poort"><figcaption>Schutting</figcaption></figure>
-      <figure><img src="speeltuin.jpg" alt="Speeltoestel met glijbaan en trampoline"><figcaption>Speeltoestel</figcaption></figure>
-      <figure><img src="tuinhuis.jpg" alt="Houten tuinschuur met raam"><figcaption>Schuur</figcaption></figure>
+    <div class="raster">
+      <figure class="groot" data-c="hout"><img src="tuinhuis-riet.jpg" alt="Tuinhuis met rieten dak" loading="lazy"><figcaption>Tuinhuis met rieten dak</figcaption></figure>
+      <figure data-c="water"><img src="jacuzzi.jpg" alt="Jacuzzi op een houten vlonder" loading="lazy"><figcaption>Jacuzzi op vlonder</figcaption></figure>
+      <figure data-c="water"><img src="tuin-gazon.jpg" alt="Tuin met kunstgras en tegelpad" loading="lazy"><figcaption>Kunstgras</figcaption></figure>
+      <figure data-c="steen"><img src="terras-schermen.jpg" alt="Terras met tuinschermen" loading="lazy"><figcaption>Terras</figcaption></figure>
+      <figure data-c="hout"><img src="schutting.jpg" alt="Schutting van bamboe met poort" loading="lazy"><figcaption>Schutting</figcaption></figure>
+      <figure class="breed" data-c="hout"><img src="speeltuin.jpg" alt="Speeltoestel met glijbaan en trampoline" loading="lazy"><figcaption>Speeltoestel</figcaption></figure>
+      <figure data-c="hout"><img src="tuinhuis.jpg" alt="Houten tuinschuur met raam" loading="lazy"><figcaption>Schuur</figcaption></figure>
+      <figure data-c="steen water"><img src="vijver-terras.jpg" alt="Verhoogde vijver op een terras" loading="lazy"><figcaption>Vijver op terras</figcaption></figure>
     </div>
   </div>
 </section>
 
-<div class="klinker dik"></div>
-
-<section class="band">
+<section class="aanpak">
   <div class="wrap">
-    <h2>Advies, ontwerp en aanleg, bij elkaar.</h2>
     <div>
-      <p>Witteman adviseert, ontwerpt en legt uw droomtuin aan. Met opbouwende ideeën en gevoel voor mogelijkheden brengt hij tuinprojecten telkens tot een goed einde.</p>
-      <p>Zo kunt u jarenlang van uw tuin genieten, geheel passend bij uw wensen.</p>
+      <h2 class="rv">Advies, ontwerp<br>en aanleg, <em>bij elkaar.</em></h2>
+      <p class="rv d1">Witteman adviseert, ontwerpt en legt uw droomtuin aan. Met opbouwende ideeën en gevoel voor mogelijkheden brengt hij tuinprojecten telkens tot een goed einde.</p>
+      <p class="rv d2">Zo kunt u jarenlang van uw tuin genieten, geheel passend bij uw wensen.</p>
+    </div>
+    <div class="stappen">
+      <div class="stap rv"><b>Advies</b><span>Wat kan er in uw tuin, en wat past bij u.</span></div>
+      <div class="stap rv d1"><b>Ontwerp</b><span>Uw wensen uitgewerkt tot een plan.</span></div>
+      <div class="stap rv d2"><b>Aanleg</b><span>Bestrating, hout, water en groen door dezelfde hovenier.</span></div>
     </div>
   </div>
 </section>
-
 </main>
 
 <footer class="contact" id="contact">
   <div class="wrap">
-    <div class="groot">
-      <h2>Bel voor de mogelijkheden</h2>
-      <a href="tel:+31654300253">06 54 300 253</a>
-      <a class="mail" href="mailto:info@wittemanhoveniers.nl">info@wittemanhoveniers.nl</a>
+    <h2 class="rv">Bel voor de<br><em>mogelijkheden.</em></h2>
+    <div class="rij">
+      <div class="rv"><small>Bellen</small><a href="tel:+31654300253">06 54 300 253</a></div>
+      <div class="rv d1"><small>Mailen</small><a href="mailto:info@wittemanhoveniers.nl">info@wittemanhoveniers.nl</a></div>
+      <div class="rv d2"><small>Offerte</small>Offerte aanvragen kan telefonisch of per e-mail.<br><br>C. Witteman, sierbestrating en aanleg van tuinen<br>KvK 28045119</div>
     </div>
-    <address>
-      <b>C. Witteman, sierbestrating en aanleg van tuinen</b><br>
-      KvK 28045119<br>
-      Offerte aanvragen kan telefonisch of per e-mail.
-    </address>
+    <div class="onder"><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners.</span><span>headturners.nl</span></div>
   </div>
-  <div class="wrap onder"><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners.</span><span>headturners.nl</span></div>
 </footer>
 
+<div class="belbalk"><a class="knop" href="tel:+31654300253">Bellen</a><a class="knop licht" href="mailto:info@wittemanhoveniers.nl">Mailen</a></div>
+
+<script>
+(function(){
+  var rustig=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var kop=document.getElementById('kop');function k(){kop.classList.toggle('vast',scrollY>60)}k();addEventListener('scroll',k,{passive:true});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  // klinkers in halfsteensverband, gelegd van links naar rechts
+  var svg=document.getElementById('kl'),ns='http://www.w3.org/2000/svg',W=2400,H=84,BW=56,BH=22,G=4,lijst=[];
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);
+  var kleuren=['#b3262c','#a52228','#bd3036','#9c1f25','#ad2a2f'];
+  for(var r=0;r<3;r++){var y=G+r*(BH+G+2);for(var x=(r%2?-BW/2:0);x<W;x+=BW+G){
+    var rc=document.createElementNS(ns,'rect');rc.setAttribute('x',x);rc.setAttribute('y',y);rc.setAttribute('width',BW);rc.setAttribute('height',BH);rc.setAttribute('rx',2);
+    rc.style.fill=kleuren[(Math.random()*kleuren.length)|0];svg.appendChild(rc);lijst.push([x,rc]);}}
+  var band=document.getElementById('klinkers');
+  new IntersectionObserver(function(es,o){if(es[0].isIntersecting){o.disconnect();band.classList.add('gelegd');
+    lijst.forEach(function(p){p[1].style.transitionDelay=rustig?'0s':(p[0]/W*1.6+Math.random()*.15)+'s'})}},{threshold:.3}).observe(band);
+  // filter
+  var knoppen=document.querySelectorAll('.filters button'),figs=document.querySelectorAll('.raster figure');
+  knoppen.forEach(function(b){b.addEventListener('click',function(){knoppen.forEach(function(o){o.classList.toggle('aan',o===b)});
+    var f=b.dataset.f;figs.forEach(function(g){g.classList.toggle('weg',f!=='alles'&&g.dataset.c.split(' ').indexOf(f)<0)})})});
+})();
+</script>
 </body>
 </html>
