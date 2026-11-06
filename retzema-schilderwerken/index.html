@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Retzema Schilderwerken, schilder in Leiden</title>
-<meta name="description" content="Binnen en buiten schilderwerk, houtrot herstel en monumentaal schilderwerk in Leiden en omstreken door Retzema Schilderwerken.">
+<title>Retzema Schilderwerken, binnen- en buitenschilderwerk in Leiden</title>
+<meta name="description" content="Retzema Schilderwerken schildert woningen, bedrijfspanden en monumenten in Leiden en omstreken.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,231 +15,304 @@
   --blauw-diep:#134a74;
   --inkt:#16181b;
   --papier:#f7f5f1;
-  --wit:#fffefc;
   --lijn:#dcd7cd;
-  /* kleuren uit eigen projecten */
   --st-roze:#c7a3a0;
   --st-salie:#98a785;
   --st-terra:#c9593b;
   --st-grijs:#a3a3a0;
+  --muur:var(--st-salie);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Schibsted Grotesk",system-ui,sans-serif;background:var(--papier);color:var(--inkt);font-size:18px;line-height:1.6}
+body{font-family:"Schibsted Grotesk",system-ui,sans-serif;background:var(--papier);color:var(--inkt);font-size:18px;line-height:1.6;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit}
-h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:1}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-
-/* kleurstaal-motief */
-.staal{display:flex;height:14px}
-.staal i{flex:1}
-.staal i:nth-child(1){background:var(--blauw)}
-.staal i:nth-child(2){background:var(--st-roze)}
-.staal i:nth-child(3){background:var(--st-salie)}
-.staal i:nth-child(4){background:var(--st-terra)}
-.staal i:nth-child(5){background:var(--st-grijs)}
-
-header{background:var(--wit);border-bottom:1px solid var(--lijn)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:12px;padding-bottom:12px}
-.merk img{height:54px;width:auto}
-header nav{display:flex;align-items:center;gap:28px;font-size:16px;font-weight:500}
-header nav a{text-decoration:none}
-header nav a:hover{color:var(--blauw)}
-.knop{display:inline-block;background:var(--blauw);color:#fff;text-decoration:none;padding:14px 26px;font-weight:600;font-size:16px;border-radius:2px;transition:background .15s}
-.knop:hover{background:var(--blauw-diep)}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:.95;letter-spacing:-.01em}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.knop{display:inline-flex;align-items:center;gap:10px;background:var(--blauw);color:#fff;text-decoration:none;padding:16px 26px;border-radius:2px;font-weight:600;font-size:16px;transition:transform .2s,background .2s}
+.knop:hover{background:var(--blauw-diep);transform:translateY(-2px)}
 .knop.rand{background:transparent;color:var(--inkt);box-shadow:inset 0 0 0 2px var(--inkt)}
 .knop.rand:hover{background:var(--inkt);color:#fff}
 
-/* hero */
-.hero{padding:56px 0 72px}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:end}
-.hero .regio{font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--blauw);margin-bottom:20px}
-.hero h1{font-size:clamp(52px,7.6vw,104px);margin-bottom:26px;letter-spacing:-.01em}
-.hero h1 em{color:var(--blauw)}
-.hero p.lead{font-size:20px;max-width:30em;margin-bottom:30px}
-.hero .acties{display:flex;flex-wrap:wrap;gap:14px}
-.hero .beeld{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.hero .beeld img{width:100%;object-fit:cover}
-.hero .beeld .a{grid-row:span 2;aspect-ratio:3/4.4;height:100%}
-.hero .beeld .b{aspect-ratio:1}
-.hero .beeld .c{aspect-ratio:1}
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.12s}.js .rv.d2{transition-delay:.24s}.js .rv.d3{transition-delay:.36s}
 
-/* kleurkaart */
-.kaart{padding:40px 0 88px}
-.kaart .kop{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px;flex-wrap:wrap}
-.kaart h2{font-size:clamp(38px,5vw,64px)}
-.kaart p.intro{max-width:26em}
-.tegels{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;grid-auto-flow:dense}
-.tegels figure{background:var(--wit);overflow:hidden}
-.tegels img{width:100%;height:100%;object-fit:cover}
-.t1{grid-column:span 5;aspect-ratio:4/3}
-.t2{grid-column:span 3;aspect-ratio:3/4}
-.t3{grid-column:span 4;aspect-ratio:3/4}
-.t4{grid-column:span 3;aspect-ratio:1}
-.t5{grid-column:span 5;aspect-ratio:4/3}
-.t6{grid-column:span 4;aspect-ratio:1}
-.t7{grid-column:span 4;aspect-ratio:1}
-.t8{grid-column:span 4;aspect-ratio:1}
-.t9{grid-column:span 4;aspect-ratio:1}
+header{position:fixed;top:0;left:0;right:0;z-index:30;background:rgba(247,245,241,.96);box-shadow:0 1px 0 var(--lijn)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:10px;padding-bottom:10px}
+.merk img{height:54px;width:auto}
+header nav{display:flex;gap:28px;align-items:center;font-weight:600;font-size:15px}
+header nav a{text-decoration:none}
+
+/* hero met verfstreek */
+.hero{padding:150px 0 90px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}
+.hero .kicker{font-size:14px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--blauw);margin-bottom:22px}
+.hero h1{font-size:clamp(60px,8.4vw,132px)}
+.streek{position:relative;display:inline-block;color:#fff;padding:0 .12em}
+.streek svg{position:absolute;left:-1%;top:6%;width:108%;height:96%;z-index:-1;overflow:visible}
+.streek path{fill:none;stroke:var(--blauw);stroke-width:120;stroke-linecap:round;stroke-linejoin:round}
+.js .streek path{stroke-dasharray:1500;stroke-dashoffset:1500;transition:stroke-dashoffset 1.3s cubic-bezier(.6,.05,.3,1) .5s}
+.js .streek.klaar path{stroke-dashoffset:0}
+.streek em{font-style:italic;position:relative}
+.hero p{font-size:20px;max-width:30em;margin:30px 0 34px}
+.hero .acties{display:flex;flex-wrap:wrap;gap:14px}
+.hero .beeld{position:relative;height:620px}
+.hero .beeld figure{position:absolute;overflow:hidden;border-radius:2px;box-shadow:0 30px 60px -25px rgba(0,0,0,.4)}
+.hero .beeld img{width:100%;height:100%;object-fit:cover}
+.hero .beeld .a{inset:0 18% 12% 0}
+.hero .beeld .b{width:46%;height:42%;right:0;bottom:0;border:8px solid var(--papier)}
+.hero .stempel{position:absolute;left:-30px;bottom:40px;background:var(--inkt);color:#fff;padding:16px 20px;font-size:14px;line-height:1.35;z-index:2;max-width:14em}
+.hero .stempel b{display:block;font-family:"Instrument Serif",serif;font-weight:400;font-size:28px;line-height:1}
+
+/* kleurwaaier: signatuur */
+.waaier{background:var(--muur);transition:background .8s ease;padding:120px 0;color:var(--inkt)}
+.waaier .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}
+.waaier h2{font-size:clamp(48px,6.4vw,96px);margin-bottom:22px}
+.waaier h2 em{font-style:italic}
+.waaier p.lead{font-size:20px;max-width:28em;margin-bottom:34px}
+.stalen{display:flex;gap:12px;flex-wrap:wrap}
+.staal{width:96px;cursor:pointer;background:#fff;padding:6px 6px 10px;border:0;font:inherit;text-align:left;box-shadow:0 10px 24px -12px rgba(0,0,0,.45);transition:transform .35s cubic-bezier(.3,1.4,.5,1)}
+.staal i{display:block;height:84px;margin-bottom:8px}
+.staal span{font-size:12px;font-weight:700;letter-spacing:.04em;line-height:1.2;display:block}
+.staal:hover{transform:translateY(-6px) rotate(-2deg)}
+.staal.aan{transform:translateY(-14px) rotate(-3deg);box-shadow:0 18px 30px -12px rgba(0,0,0,.55)}
+.kamer{position:relative;aspect-ratio:4/5;max-height:680px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.5)}
+.kamer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .8s,transform 1.4s}
+.kamer img.toon{opacity:1;transform:none}
+.kamer .label{position:absolute;left:18px;bottom:18px;background:var(--papier);padding:8px 14px;font-size:14px;font-weight:600;z-index:2}
+
+/* werk: horizontaal schuivend */
+.werk{padding:120px 0 60px;overflow:hidden}
+.werk .kop{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.werk h2{font-size:clamp(48px,6.4vw,96px)}
+.werk h2 em{font-style:italic;color:var(--blauw)}
+.werk .kop p{max-width:24em}
+.rail{display:flex;gap:18px;padding:0 28px 30px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab}
+.rail::-webkit-scrollbar{display:none}
+.rail.slepen{cursor:grabbing;scroll-snap-type:none}
+.rail figure{flex:0 0 auto;height:min(520px,70vh);scroll-snap-align:center;position:relative;overflow:hidden}
+.rail figure.st{width:min(340px,70vw)}
+.rail figure.lg{width:min(640px,86vw)}
+.rail img{width:100%;height:100%;object-fit:cover;pointer-events:none;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.rail figure:hover img{transform:scale(1.05)}
+.rail figcaption{position:absolute;left:0;bottom:0;background:var(--papier);padding:8px 14px;font-size:14px;font-weight:600}
+.hint{max-width:1240px;margin:0 auto;padding:0 28px;font-size:14px;font-weight:700;color:var(--blauw)}
 
 /* diensten */
-.diensten{background:var(--inkt);color:#f1eee8;padding:84px 0}
-.diensten .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
-.diensten h2{font-size:clamp(38px,5vw,64px);position:sticky;top:40px;align-self:start;color:#fff}
-.diensten h2 em{color:#8cc0e6}
-.d{display:grid;grid-template-columns:44px 1fr;gap:20px;padding:24px 0;border-top:1px solid rgba(255,255,255,.2)}
-.d:last-child{border-bottom:1px solid rgba(255,255,255,.2)}
-.d i{width:44px;height:44px;border-radius:50%;display:block}
-.d h3{font-size:30px;margin-bottom:6px;color:#fff}
-.d p{opacity:.85;max-width:32em}
+.diensten{padding:110px 0;background:var(--inkt);color:#fff}
+.diensten .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.diensten h2{font-size:clamp(48px,6.4vw,96px);position:sticky;top:120px}
+.diensten h2 em{font-style:italic;color:#7fb4dc}
+.dienst{display:grid;grid-template-columns:1fr 1.3fr;gap:30px;padding:30px 0;border-top:1px solid rgba(255,255,255,.2);transition:padding .4s}
+.dienst:last-child{border-bottom:1px solid rgba(255,255,255,.2)}
+.dienst h3{font-size:34px;transition:color .3s,transform .4s}
+.dienst p{opacity:.8}
+.dienst:hover h3{color:#7fb4dc;transform:translateX(10px)}
 
-/* reviews */
-.reviews{padding:88px 0}
-.reviews h2{font-size:clamp(38px,5vw,64px);margin-bottom:12px}
-.reviews p.intro{margin-bottom:40px;color:#55585c}
-.rij{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-blockquote{border-top:4px solid var(--blauw);padding-top:20px}
-blockquote p{font-family:"Instrument Serif",serif;font-size:27px;line-height:1.2;margin-bottom:16px}
-blockquote cite{font-style:normal;font-size:15px;color:#55585c}
-.btw{margin-top:52px;background:var(--wit);border-left:6px solid var(--st-salie);padding:22px 26px;max-width:42em}
-
-/* werkgebied */
-.gebied{background:var(--wit);border-top:1px solid var(--lijn);border-bottom:1px solid var(--lijn);padding:56px 0}
-.gebied .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px;align-items:center}
-.gebied h2{font-size:clamp(32px,4vw,48px)}
-.gebied p{font-family:"Instrument Serif",serif;font-size:clamp(22px,2.4vw,30px);line-height:1.3}
+/* reviews: groot citaat dat wisselt */
+.reviews{padding:130px 0;position:relative}
+.reviews .wrap{max-width:1040px}
+.reviews .bron{font-size:14px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--blauw);margin-bottom:30px}
+.citaten{position:relative;min-height:340px}
+.citaat{position:absolute;inset:0;opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s;pointer-events:none}
+.citaat.toon{opacity:1;transform:none;pointer-events:auto;position:relative}
+.citaat blockquote{font-family:"Instrument Serif",serif;font-size:clamp(34px,4.4vw,62px);line-height:1.08}
+.citaat blockquote::before{content:"\201C";color:var(--blauw)}
+.citaat blockquote::after{content:"\201D";color:var(--blauw)}
+.citaat cite{display:block;font-style:normal;font-weight:600;margin-top:26px}
+.stippen{display:flex;gap:10px;margin-top:40px}
+.stippen button{width:46px;height:6px;border:0;background:var(--lijn);cursor:pointer;transition:background .3s}
+.stippen button.aan{background:var(--blauw)}
+.noot{margin-top:50px;padding:20px 24px;border-left:4px solid var(--blauw);background:#fff;max-width:40em}
 
 /* contact */
-.contact{background:var(--blauw);color:#fff;padding:80px 0 34px}
-.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
-.contact h2{font-size:clamp(42px,6vw,76px);margin-bottom:24px}
-.contact .groot a{display:block;font-family:"Instrument Serif",serif;font-size:clamp(34px,4.6vw,56px);text-decoration:none;line-height:1.15}
-.contact .mail{font-size:clamp(24px,3vw,34px)!important}
-.contact address{font-style:normal;line-height:1.8;border-left:4px solid rgba(255,255,255,.5);padding-left:24px}
-.contact .onder{margin-top:56px;padding-top:20px;border-top:1px solid rgba(255,255,255,.3);font-size:14px;opacity:.8;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.contact{background:var(--blauw);color:#fff;padding:110px 0 40px}
+.contact h2{font-size:clamp(56px,8.4vw,134px);margin-bottom:44px}
+.contact h2 em{font-style:italic}
+.contact .rij{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:40px;border-top:1px solid rgba(255,255,255,.3);padding-top:40px}
+.contact small{display:block;font-size:13px;letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-bottom:10px}
+.contact .rij a{text-decoration:none;font-family:"Instrument Serif",serif;font-size:clamp(26px,2.5vw,36px);line-height:1.1;display:block;word-break:break-word}
+.contact address{font-style:normal;line-height:1.7}
+.contact .gebied{margin-top:50px;font-size:15px;opacity:.8;max-width:60em}
+.onder{margin-top:60px;font-size:14px;opacity:.7;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
+.belbalk{display:none}
 @media (max-width:900px){
+  .wrap{padding:0 20px}
   header nav a:not(.knop){display:none}
-  .hero{padding:32px 0 48px}
-  .hero .wrap,.diensten .wrap,.gebied .wrap,.contact .wrap{grid-template-columns:1fr;gap:32px}
-  .hero .beeld .a{aspect-ratio:3/4}
+  header nav .knop{padding:12px 18px}
+  .lang{display:none}
+  .merk img{height:44px}
+  .hero{padding:110px 0 60px}
+  .hero .wrap,.waaier .wrap,.diensten .wrap{grid-template-columns:1fr;gap:44px}
+  .hero .beeld{height:440px}
+  .hero .stempel{left:0;bottom:-20px}
+  .waaier{padding:80px 0}
+  .staal{width:calc(25% - 9px)}
+  .staal i{height:60px}
+  .kamer{aspect-ratio:4/4.4}
+  .werk{padding:80px 0 40px}
+  .rail{padding:0 20px 24px}
+  .diensten{padding:80px 0}
   .diensten h2{position:static}
-  .rij{grid-template-columns:1fr;gap:36px}
-  .tegels{grid-template-columns:repeat(2,1fr)}
-  .tegels figure{grid-column:span 1!important;aspect-ratio:1!important}
-  .tegels .t1,.tegels .t5{grid-column:span 2!important;aspect-ratio:4/3!important}
+  .dienst{grid-template-columns:1fr;gap:8px}
+  .reviews{padding:80px 0}
+  .citaten{min-height:420px}
+  .contact .rij{grid-template-columns:1fr;gap:28px}
+  .contact{padding-bottom:110px}
+  .belbalk{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px}
+  .belbalk a{flex:1;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+  .belbalk .rand{background:var(--papier)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv{opacity:1;transform:none}
+  .js .streek path{stroke-dashoffset:0}
 }
 </style>
 </head>
 <body>
+<script>document.body.classList.add('js');</script>
 
 <header>
-  <div class="staal"><i></i><i></i><i></i><i></i><i></i></div>
   <div class="wrap">
-    <a class="merk" href="#top"><img src="logo.png" alt="Retzema Schilderwerken, voor al uw binnen- en buitenschilderwerk"></a>
+    <a class="merk" href="#top"><img src="logo.png" alt="Retzema Schilderwerken"></a>
     <nav>
+      <a href="#kleur">Kleur</a>
       <a href="#werk">Werk</a>
       <a href="#diensten">Diensten</a>
       <a href="#reviews">Reviews</a>
-      <a href="#contact" class="knop">Offerte aanvragen</a>
+      <a class="knop" href="#contact"><span>Offerte<span class="lang"> aanvragen</span></span></a>
     </nav>
   </div>
 </header>
 
 <main id="top">
-
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="regio">Leiden en omstreken</p>
-      <h1>Binnen strak, buiten <em>beschermd.</em></h1>
-      <p class="lead">Retzema Schilderwerken schildert woningen, bedrijfspanden en monumenten. Ambachtelijk, met minder milieubelastende materialen, en met een nette werkplek.</p>
-      <div class="acties">
+      <p class="kicker rv">Leiden en omstreken</p>
+      <h1 class="rv d1">Binnen strak,<br>buiten <span class="streek" id="streek"><svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true"><path d="M30 120 C 140 70, 300 150, 420 95 S 560 90, 575 110"/></svg><em>beschermd.</em></span></h1>
+      <p class="rv d2">Retzema Schilderwerken schildert woningen, bedrijfspanden en monumenten. Ambachtelijk, met minder milieubelastende materialen, en met een nette werkplek.</p>
+      <div class="acties rv d3">
         <a class="knop" href="#contact">Vraag een offerte aan</a>
         <a class="knop rand" href="tel:+31646340578">Bel 06 46 34 05 78</a>
       </div>
     </div>
-    <div class="beeld">
-      <img class="a" src="gevel-gebogen.jpg" alt="Woning met gebogen kap, in de steigers" style="object-position:50% 30%">
-      <img class="b" src="plafond-roze.jpg" alt="Plafond met lijstwerk in een zachtroze kleur">
-      <img class="c" src="wand-groen.jpg" alt="Wand in saliegroen">
+    <div class="beeld rv d1">
+      <figure class="a"><img src="monumentaal.jpg" alt="Monumentaal pand in Leiden met wit gelakte kozijnen en een zwarte voordeur"></figure>
+      <figure class="b"><img src="plafond-lijst.jpg" alt="Plafond met lijstwerk in zachtroze"></figure>
+      <div class="stempel"><b>Rijksmonument</b>19e eeuw, Leiden</div>
     </div>
   </div>
 </section>
 
-<section class="kaart" id="werk">
+<section class="waaier" id="kleur">
   <div class="wrap">
-    <div class="kop">
-      <h2>Zo ziet het eruit als het klaar is</h2>
-      <p class="intro">Foto's van eigen projecten in Leiden en omgeving, van jaren dertig woningen tot een rijksmonument.</p>
+    <div>
+      <h2 class="rv">Welke kleur<br><em>wordt het?</em></h2>
+      <p class="lead rv d1">Een klant schreef over "perfect advies over de kleurstelling". Dit zijn kleuren uit eigen projecten. Tik op een staal en zie het resultaat.</p>
+      <div class="stalen rv d2">
+        <button class="staal aan" data-k="#98a785" data-i="0"><i style="background:#98a785"></i><span>Saliegroen</span></button>
+        <button class="staal" data-k="#c7a3a0" data-i="1"><i style="background:#c7a3a0"></i><span>Oudroze</span></button>
+        <button class="staal" data-k="#c9593b" data-i="2"><i style="background:#c9593b"></i><span>Terracotta</span></button>
+        <button class="staal" data-k="#a3a3a0" data-i="3"><i style="background:#a3a3a0"></i><span>Steengrijs</span></button>
+      </div>
     </div>
-    <div class="tegels">
-      <figure class="t1"><img src="monumentaal.jpg" alt="Monumentaal pand in Leiden met wit gelakte kozijnen en een zwarte voordeur" loading="lazy"></figure>
-      <figure class="t2"><img src="woonkamer-oranje.jpg" alt="Woonkamer met terracotta wanden" loading="lazy"></figure>
-      <figure class="t3"><img src="erker.jpg" alt="Erker met wit en zwart geschilderd houtwerk" loading="lazy"></figure>
-      <figure class="t4"><img src="witte-woning.jpg" alt="Witte woning met zwarte kozijnen" loading="lazy"></figure>
-      <figure class="t5"><img src="herenhuis.jpg" alt="Herenhuis met geschilderde kozijnen en lijstwerk" loading="lazy"></figure>
-      <figure class="t6"><img src="trap.jpg" alt="Witte open trap" loading="lazy"></figure>
-      <figure class="t7"><img src="schoorsteen.jpg" alt="Grijs geschilderde schoorsteenmantel" loading="lazy"></figure>
-      <figure class="t8"><img src="winkelpand.jpg" alt="Winkelpand met geschilderde gevel" loading="lazy"></figure>
-      <figure class="t9"><img src="gevel-puntdak.jpg" alt="Gevel met glazen pui" loading="lazy" style="object-position:50% 40%"></figure>
+    <div class="kamer rv d1">
+      <img src="wand-groen.jpg" alt="Wand in saliegroen" class="toon" data-i="0">
+      <img src="plafond-roze.jpg" alt="Plafond met lijstwerk in zachtroze" data-i="1">
+      <img src="woonkamer-oranje.jpg" alt="Woonkamer met terracotta wanden" data-i="2">
+      <img src="schoorsteen.jpg" alt="Grijs geschilderde schoorsteenmantel" data-i="3">
+      <span class="label" id="label">Wand in saliegroen</span>
     </div>
   </div>
+</section>
+
+<section class="werk" id="werk">
+  <div class="wrap kop">
+    <h2 class="rv">Zo ziet het eruit<br>als het <em>klaar is.</em></h2>
+    <p class="rv d1">Foto's van eigen projecten in Leiden en omgeving, van jaren dertig woningen tot een rijksmonument.</p>
+  </div>
+  <div class="rail" id="rail">
+    <figure class="st"><img src="gevel-gebogen.jpg" alt="Woning met gebogen kap in de steigers"><figcaption>In de steigers</figcaption></figure>
+    <figure class="lg"><img src="herenhuis.jpg" alt="Herenhuis met geschilderde kozijnen en lijstwerk"><figcaption>Herenhuis</figcaption></figure>
+    <figure class="st"><img src="erker.jpg" alt="Erker met wit en zwart geschilderd houtwerk"><figcaption>Erker</figcaption></figure>
+    <figure class="st"><img src="witte-woning.jpg" alt="Witte woning met zwarte kozijnen"><figcaption>Witte woning</figcaption></figure>
+    <figure class="st"><img src="trap.jpg" alt="Witte open trap"><figcaption>Trap</figcaption></figure>
+    <figure class="st"><img src="winkelpand.jpg" alt="Winkelpand met geschilderde gevel"><figcaption>Winkelpand</figcaption></figure>
+    <figure class="lg"><img src="keuken.jpg" alt="Interieur met wit geschilderde wanden"><figcaption>Interieur</figcaption></figure>
+    <figure class="st"><img src="gevel-puntdak.jpg" alt="Gevel met glazen pui"><figcaption>Gevel</figcaption></figure>
+    <figure class="st"><img src="deur.jpg" alt="Wit gelakte deur"><figcaption>Deur</figcaption></figure>
+  </div>
+  <p class="hint">⟵ sleep of swipe ⟶</p>
 </section>
 
 <section class="diensten" id="diensten">
   <div class="wrap">
-    <h2>Wat <em>Retzema</em> voor u schildert</h2>
+    <h2 class="rv">Wat Retzema<br><em>voor u schildert.</em></h2>
     <div>
-      <div class="d"><i style="background:var(--st-salie)"></i><div><h3>Binnenschilderwerk</h3><p>Wanden, plafonds, kozijnen en deuren. Voor een renovatie, een nieuwe kleur of een complete restyling.</p></div></div>
-      <div class="d"><i style="background:var(--blauw)"></i><div><h3>Buitenschilderwerk</h3><p>Lakken en coatings die kozijnen, gevelonderdelen en houtwerk beschermen tegen regen, zon en wind.</p></div></div>
-      <div class="d"><i style="background:var(--st-terra)"></i><div><h3>Houtrot en waterschade</h3><p>Aangetast houtwerk wordt hersteld, waarna het schilderwerk aansluit op de bestaande afwerking. Ook voor herstel na brand of waterschade.</p></div></div>
-      <div class="d"><i style="background:var(--st-grijs)"></i><div><h3>Onderhoud voor woningen en VvE's</h3><p>Planmatig onderhoud voor woningen, bedrijfspanden en Verenigingen van Eigenaren.</p></div></div>
-      <div class="d"><i style="background:var(--st-roze)"></i><div><h3>Monumentaal schilderwerk</h3><p>Voor historische panden, onder meer een rijksmonument uit de 19e eeuw in Leiden.</p></div></div>
-      <div class="d"><i style="background:#8cc0e6"></i><div><h3>Dakgoot schoonmaken</h3><p>Een dakgootreiniging voorkomt verstoppingen, lekkages en schade aan de woning.</p></div></div>
+      <div class="dienst rv"><h3>Binnenschilderwerk</h3><p>Wanden, plafonds, kozijnen en deuren. Voor een renovatie, een nieuwe kleur of een complete restyling.</p></div>
+      <div class="dienst rv"><h3>Buitenschilderwerk</h3><p>Lakken en coatings die kozijnen, gevelonderdelen en houtwerk beschermen tegen regen, zon en wind.</p></div>
+      <div class="dienst rv"><h3>Houtrot en waterschade</h3><p>Aangetast houtwerk wordt hersteld, waarna het schilderwerk aansluit op de bestaande afwerking. Ook voor herstel na brand of waterschade.</p></div>
+      <div class="dienst rv"><h3>Onderhoud en VvE's</h3><p>Planmatig onderhoud voor woningen, bedrijfspanden en Verenigingen van Eigenaren.</p></div>
+      <div class="dienst rv"><h3>Monumentaal schilderwerk</h3><p>Voor historische panden, onder meer een rijksmonument uit de 19e eeuw in Leiden.</p></div>
+      <div class="dienst rv"><h3>Dakgoot schoonmaken</h3><p>Een dakgootreiniging voorkomt verstoppingen, lekkages en schade aan de woning.</p></div>
     </div>
   </div>
 </section>
 
 <section class="reviews" id="reviews">
   <div class="wrap">
-    <h2>Wat klanten schrijven</h2>
-    <p class="intro">Overgenomen van de reviewpagina op retzemaschilderwerken.nl.</p>
-    <div class="rij">
-      <blockquote><p>Perfect advies over de kleurstelling voor ons huis. Michael heeft gedegen onderzoek gedaan aangezien wij een stalen woning hebben en hoe deze het beste behandeld kan worden.</p><cite>W.A Bunnig, juli 2025</cite></blockquote>
-      <blockquote><p>Prima werk aan de boeidelen. Belangrijkste was voor mij dat de afspraak snel en goed werd nagekomen.</p><cite>Jessica Cliné, augustus 2024</cite></blockquote>
-      <blockquote><p>Dank je wel voor de snelle service en het mooie, nette resultaat! Michael Retzema denkt mee met de beste oplossing van het schilderwerk.</p><cite>Nienke Kamp, juli 2023</cite></blockquote>
+    <p class="bron rv">Wat klanten schrijven · retzemaschilderwerken.nl</p>
+    <div class="citaten">
+      <div class="citaat toon"><blockquote>Perfect advies over de kleurstelling voor ons huis. Michael heeft gedegen onderzoek gedaan aangezien wij een stalen woning hebben en hoe deze het beste behandeld kan worden.</blockquote><cite>W.A Bunnig, juli 2025</cite></div>
+      <div class="citaat"><blockquote>Prima werk aan de boeidelen. Belangrijkste was voor mij dat de afspraak snel en goed werd nagekomen.</blockquote><cite>Jessica Cliné, augustus 2024</cite></div>
+      <div class="citaat"><blockquote>Dank je wel voor de snelle service en het mooie, nette resultaat! Michael Retzema denkt mee met de beste oplossing van het schilderwerk.</blockquote><cite>Nienke Kamp, juli 2023</cite></div>
     </div>
-    <p class="btw">Voor woningen ouder dan twee jaar informeert Retzema graag over het lage btw-tarief van negen procent.</p>
+    <div class="stippen" id="stippen"><button class="aan" aria-label="Review 1"></button><button aria-label="Review 2"></button><button aria-label="Review 3"></button></div>
+    <p class="noot rv">Voor woningen ouder dan twee jaar informeert Retzema graag over het lage btw-tarief van negen procent.</p>
   </div>
 </section>
-
-<section class="gebied">
-  <div class="wrap">
-    <h2>Werkgebied</h2>
-    <p>Leiden, Oegstgeest, Leiderdorp, Voorschoten, Zoeterwoude, Katwijk, Rijnsburg, Valkenburg, Noordwijk, Wassenaar, Warmond, Sassenheim, Voorhout, Lisse, Hillegom, Nieuw-Vennep en De Zilk.</p>
-  </div>
-</section>
-
 </main>
 
 <footer class="contact" id="contact">
   <div class="wrap">
-    <div class="groot">
-      <h2>Een vrijblijvende offerte</h2>
-      <a href="tel:+31646340578">06 46 34 05 78</a>
-      <a class="mail" href="mailto:info@retzemaschilderwerken.nl">info@retzemaschilderwerken.nl</a>
+    <h2 class="rv">Een vrijblijvende<br><em>offerte.</em></h2>
+    <div class="rij">
+      <div class="rv"><small>Bellen</small><a href="tel:+31646340578">06 46 34 05 78</a></div>
+      <div class="rv d1"><small>Mailen</small><a href="mailto:info@retzemaschilderwerken.nl">info@retzemaschilderwerken.nl</a></div>
+      <div class="rv d2"><small>Adres</small><address>Retzema Schilderwerken<br>Agatha van Alkemadestraat 3<br>2331 EG Leiden</address></div>
     </div>
-    <address>
-      <b>Retzema Schilderwerken</b><br>
-      Agatha van Alkemadestraat 3<br>
-      2331 EG Leiden<br>
-      Op basis van uw wensen en de situatie ter plaatse ontvangt u een uitgewerkte offerte.
-    </address>
+    <p class="gebied">Op basis van uw wensen en de situatie ter plaatse ontvangt u een uitgewerkte offerte. Werkgebied: Leiden, Oegstgeest, Leiderdorp, Voorschoten, Zoeterwoude, Katwijk, Rijnsburg, Valkenburg, Noordwijk, Wassenaar, Warmond, Sassenheim, Voorhout, Lisse, Hillegom, Nieuw-Vennep en De Zilk.</p>
+    <div class="onder"><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners.</span><span>headturners.nl</span></div>
   </div>
-  <div class="wrap onder"><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners.</span><span>headturners.nl</span></div>
 </footer>
 
+<div class="belbalk"><a class="knop" href="tel:+31646340578">Bellen</a><a class="knop rand" href="mailto:info@retzemaschilderwerken.nl">Offerte</a></div>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  setTimeout(function(){document.getElementById('streek').classList.add('klaar')},150);
+  // kleurwaaier
+  var stalen=document.querySelectorAll('.staal'),fotos=document.querySelectorAll('.kamer img'),lab=document.getElementById('label'),sec=document.querySelector('.waaier');
+  stalen.forEach(function(s){s.addEventListener('click',function(){stalen.forEach(function(o){o.classList.toggle('aan',o===s)});
+    sec.style.setProperty('--muur',s.dataset.k);
+    fotos.forEach(function(f){var t=f.dataset.i===s.dataset.i;f.classList.toggle('toon',t);if(t)lab.textContent=f.alt})})});
+  // rail slepen
+  var r=document.getElementById('rail'),x0,s0,neer=false;
+  r.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;neer=true;x0=e.clientX;s0=r.scrollLeft;r.classList.add('slepen')});
+  addEventListener('pointermove',function(e){if(neer)r.scrollLeft=s0-(e.clientX-x0)});
+  addEventListener('pointerup',function(){neer=false;r.classList.remove('slepen')});
+  // reviews
+  var c=document.querySelectorAll('.citaat'),b=document.querySelectorAll('#stippen button'),i=0,t;
+  function toon(n){i=n;c.forEach(function(x,j){x.classList.toggle('toon',j===n)});b.forEach(function(x,j){x.classList.toggle('aan',j===n)})}
+  b.forEach(function(x,j){x.addEventListener('click',function(){toon(j);clearInterval(t)})});
+  if(!matchMedia('(prefers-reduced-motion:reduce)').matches)t=setInterval(function(){toon((i+1)%c.length)},7000);
+})();
+</script>
 </body>
 </html>
