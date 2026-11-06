@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Retzema Schilderwerken, schilder in Leiden</title>
+<meta name="description" content="Binnen en buiten schilderwerk, houtrot herstel en monumentaal schilderwerk in Leiden en omstreken door Retzema Schilderwerken.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blauw:#1c6398;
+  --blauw-diep:#134a74;
+  --inkt:#16181b;
+  --papier:#f7f5f1;
+  --wit:#fffefc;
+  --lijn:#dcd7cd;
+  /* kleuren uit eigen projecten */
+  --st-roze:#c7a3a0;
+  --st-salie:#98a785;
+  --st-terra:#c9593b;
+  --st-grijs:#a3a3a0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Schibsted Grotesk",system-ui,sans-serif;background:var(--papier);color:var(--inkt);font-size:18px;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:1}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* kleurstaal-motief */
+.staal{display:flex;height:14px}
+.staal i{flex:1}
+.staal i:nth-child(1){background:var(--blauw)}
+.staal i:nth-child(2){background:var(--st-roze)}
+.staal i:nth-child(3){background:var(--st-salie)}
+.staal i:nth-child(4){background:var(--st-terra)}
+.staal i:nth-child(5){background:var(--st-grijs)}
+
+header{background:var(--wit);border-bottom:1px solid var(--lijn)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:12px;padding-bottom:12px}
+.merk img{height:54px;width:auto}
+header nav{display:flex;align-items:center;gap:28px;font-size:16px;font-weight:500}
+header nav a{text-decoration:none}
+header nav a:hover{color:var(--blauw)}
+.knop{display:inline-block;background:var(--blauw);color:#fff;text-decoration:none;padding:14px 26px;font-weight:600;font-size:16px;border-radius:2px;transition:background .15s}
+.knop:hover{background:var(--blauw-diep)}
+.knop.rand{background:transparent;color:var(--inkt);box-shadow:inset 0 0 0 2px var(--inkt)}
+.knop.rand:hover{background:var(--inkt);color:#fff}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:end}
+.hero .regio{font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--blauw);margin-bottom:20px}
+.hero h1{font-size:clamp(52px,7.6vw,104px);margin-bottom:26px;letter-spacing:-.01em}
+.hero h1 em{color:var(--blauw)}
+.hero p.lead{font-size:20px;max-width:30em;margin-bottom:30px}
+.hero .acties{display:flex;flex-wrap:wrap;gap:14px}
+.hero .beeld{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hero .beeld img{width:100%;object-fit:cover}
+.hero .beeld .a{grid-row:span 2;aspect-ratio:3/4.4;height:100%}
+.hero .beeld .b{aspect-ratio:1}
+.hero .beeld .c{aspect-ratio:1}
+
+/* kleurkaart */
+.kaart{padding:40px 0 88px}
+.kaart .kop{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px;flex-wrap:wrap}
+.kaart h2{font-size:clamp(38px,5vw,64px)}
+.kaart p.intro{max-width:26em}
+.tegels{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;grid-auto-flow:dense}
+.tegels figure{background:var(--wit);overflow:hidden}
+.tegels img{width:100%;height:100%;object-fit:cover}
+.t1{grid-column:span 5;aspect-ratio:4/3}
+.t2{grid-column:span 3;aspect-ratio:3/4}
+.t3{grid-column:span 4;aspect-ratio:3/4}
+.t4{grid-column:span 3;aspect-ratio:1}
+.t5{grid-column:span 5;aspect-ratio:4/3}
+.t6{grid-column:span 4;aspect-ratio:1}
+.t7{grid-column:span 4;aspect-ratio:1}
+.t8{grid-column:span 4;aspect-ratio:1}
+.t9{grid-column:span 4;aspect-ratio:1}
+
+/* diensten */
+.diensten{background:var(--inkt);color:#f1eee8;padding:84px 0}
+.diensten .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.diensten h2{font-size:clamp(38px,5vw,64px);position:sticky;top:40px;align-self:start;color:#fff}
+.diensten h2 em{color:#8cc0e6}
+.d{display:grid;grid-template-columns:44px 1fr;gap:20px;padding:24px 0;border-top:1px solid rgba(255,255,255,.2)}
+.d:last-child{border-bottom:1px solid rgba(255,255,255,.2)}
+.d i{width:44px;height:44px;border-radius:50%;display:block}
+.d h3{font-size:30px;margin-bottom:6px;color:#fff}
+.d p{opacity:.85;max-width:32em}
+
+/* reviews */
+.reviews{padding:88px 0}
+.reviews h2{font-size:clamp(38px,5vw,64px);margin-bottom:12px}
+.reviews p.intro{margin-bottom:40px;color:#55585c}
+.rij{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+blockquote{border-top:4px solid var(--blauw);padding-top:20px}
+blockquote p{font-family:"Instrument Serif",serif;font-size:27px;line-height:1.2;margin-bottom:16px}
+blockquote cite{font-style:normal;font-size:15px;color:#55585c}
+.btw{margin-top:52px;background:var(--wit);border-left:6px solid var(--st-salie);padding:22px 26px;max-width:42em}
+
+/* werkgebied */
+.gebied{background:var(--wit);border-top:1px solid var(--lijn);border-bottom:1px solid var(--lijn);padding:56px 0}
+.gebied .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px;align-items:center}
+.gebied h2{font-size:clamp(32px,4vw,48px)}
+.gebied p{font-family:"Instrument Serif",serif;font-size:clamp(22px,2.4vw,30px);line-height:1.3}
+
+/* contact */
+.contact{background:var(--blauw);color:#fff;padding:80px 0 34px}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(42px,6vw,76px);margin-bottom:24px}
+.contact .groot a{display:block;font-family:"Instrument Serif",serif;font-size:clamp(34px,4.6vw,56px);text-decoration:none;line-height:1.15}
+.contact .mail{font-size:clamp(24px,3vw,34px)!important}
+.contact address{font-style:normal;line-height:1.8;border-left:4px solid rgba(255,255,255,.5);padding-left:24px}
+.contact .onder{margin-top:56px;padding-top:20px;border-top:1px solid rgba(255,255,255,.3);font-size:14px;opacity:.8;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  header nav a:not(.knop){display:none}
+  .hero{padding:32px 0 48px}
+  .hero .wrap,.diensten .wrap,.gebied .wrap,.contact .wrap{grid-template-columns:1fr;gap:32px}
+  .hero .beeld .a{aspect-ratio:3/4}
+  .diensten h2{position:static}
+  .rij{grid-template-columns:1fr;gap:36px}
+  .tegels{grid-template-columns:repeat(2,1fr)}
+  .tegels figure{grid-column:span 1!important;aspect-ratio:1!important}
+  .tegels .t1,.tegels .t5{grid-column:span 2!important;aspect-ratio:4/3!important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="staal"><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <a class="merk" href="#top"><img src="logo.png" alt="Retzema Schilderwerken, voor al uw binnen- en buitenschilderwerk"></a>
+    <nav>
+      <a href="#werk">Werk</a>
+      <a href="#diensten">Diensten</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact" class="knop">Offerte aanvragen</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="regio">Leiden en omstreken</p>
+      <h1>Binnen strak, buiten <em>beschermd.</em></h1>
+      <p class="lead">Retzema Schilderwerken schildert woningen, bedrijfspanden en monumenten. Ambachtelijk, met minder milieubelastende materialen, en met een nette werkplek.</p>
+      <div class="acties">
+        <a class="knop" href="#contact">Vraag een offerte aan</a>
+        <a class="knop rand" href="tel:+31646340578">Bel 06 46 34 05 78</a>
+      </div>
+    </div>
+    <div class="beeld">
+      <img class="a" src="gevel-gebogen.jpg" alt="Woning met gebogen kap, in de steigers" style="object-position:50% 30%">
+      <img class="b" src="plafond-roze.jpg" alt="Plafond met lijstwerk in een zachtroze kleur">
+      <img class="c" src="wand-groen.jpg" alt="Wand in saliegroen">
+    </div>
+  </div>
+</section>
+
+<section class="kaart" id="werk">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo ziet het eruit als het klaar is</h2>
+      <p class="intro">Foto's van eigen projecten in Leiden en omgeving, van jaren dertig woningen tot een rijksmonument.</p>
+    </div>
+    <div class="tegels">
+      <figure class="t1"><img src="monumentaal.jpg" alt="Monumentaal pand in Leiden met wit gelakte kozijnen en een zwarte voordeur" loading="lazy"></figure>
+      <figure class="t2"><img src="woonkamer-oranje.jpg" alt="Woonkamer met terracotta wanden" loading="lazy"></figure>
+      <figure class="t3"><img src="erker.jpg" alt="Erker met wit en zwart geschilderd houtwerk" loading="lazy"></figure>
+      <figure class="t4"><img src="witte-woning.jpg" alt="Witte woning met zwarte kozijnen" loading="lazy"></figure>
+      <figure class="t5"><img src="herenhuis.jpg" alt="Herenhuis met geschilderde kozijnen en lijstwerk" loading="lazy"></figure>
+      <figure class="t6"><img src="trap.jpg" alt="Witte open trap" loading="lazy"></figure>
+      <figure class="t7"><img src="schoorsteen.jpg" alt="Grijs geschilderde schoorsteenmantel" loading="lazy"></figure>
+      <figure class="t8"><img src="winkelpand.jpg" alt="Winkelpand met geschilderde gevel" loading="lazy"></figure>
+      <figure class="t9"><img src="gevel-puntdak.jpg" alt="Gevel met glazen pui" loading="lazy" style="object-position:50% 40%"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="diensten" id="diensten">
+  <div class="wrap">
+    <h2>Wat <em>Retzema</em> voor u schildert</h2>
+    <div>
+      <div class="d"><i style="background:var(--st-salie)"></i><div><h3>Binnenschilderwerk</h3><p>Wanden, plafonds, kozijnen en deuren. Voor een renovatie, een nieuwe kleur of een complete restyling.</p></div></div>
+      <div class="d"><i style="background:var(--blauw)"></i><div><h3>Buitenschilderwerk</h3><p>Lakken en coatings die kozijnen, gevelonderdelen en houtwerk beschermen tegen regen, zon en wind.</p></div></div>
+      <div class="d"><i style="background:var(--st-terra)"></i><div><h3>Houtrot en waterschade</h3><p>Aangetast houtwerk wordt hersteld, waarna het schilderwerk aansluit op de bestaande afwerking. Ook voor herstel na brand of waterschade.</p></div></div>
+      <div class="d"><i style="background:var(--st-grijs)"></i><div><h3>Onderhoud voor woningen en VvE's</h3><p>Planmatig onderhoud voor woningen, bedrijfspanden en Verenigingen van Eigenaren.</p></div></div>
+      <div class="d"><i style="background:var(--st-roze)"></i><div><h3>Monumentaal schilderwerk</h3><p>Voor historische panden, onder meer een rijksmonument uit de 19e eeuw in Leiden.</p></div></div>
+      <div class="d"><i style="background:#8cc0e6"></i><div><h3>Dakgoot schoonmaken</h3><p>Een dakgootreiniging voorkomt verstoppingen, lekkages en schade aan de woning.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2>Wat klanten schrijven</h2>
+    <p class="intro">Overgenomen van de reviewpagina op retzemaschilderwerken.nl.</p>
+    <div class="rij">
+      <blockquote><p>Perfect advies over de kleurstelling voor ons huis. Michael heeft gedegen onderzoek gedaan aangezien wij een stalen woning hebben en hoe deze het beste behandeld kan worden.</p><cite>W.A Bunnig, juli 2025</cite></blockquote>
+      <blockquote><p>Prima werk aan de boeidelen. Belangrijkste was voor mij dat de afspraak snel en goed werd nagekomen.</p><cite>Jessica Cliné, augustus 2024</cite></blockquote>
+      <blockquote><p>Dank je wel voor de snelle service en het mooie, nette resultaat! Michael Retzema denkt mee met de beste oplossing van het schilderwerk.</p><cite>Nienke Kamp, juli 2023</cite></blockquote>
+    </div>
+    <p class="btw">Voor woningen ouder dan twee jaar informeert Retzema graag over het lage btw-tarief van negen procent.</p>
+  </div>
+</section>
+
+<section class="gebied">
+  <div class="wrap">
+    <h2>Werkgebied</h2>
+    <p>Leiden, Oegstgeest, Leiderdorp, Voorschoten, Zoeterwoude, Katwijk, Rijnsburg, Valkenburg, Noordwijk, Wassenaar, Warmond, Sassenheim, Voorhout, Lisse, Hillegom, Nieuw-Vennep en De Zilk.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="groot">
+      <h2>Een vrijblijvende offerte</h2>
+      <a href="tel:+31646340578">06 46 34 05 78</a>
+      <a class="mail" href="mailto:info@retzemaschilderwerken.nl">info@retzemaschilderwerken.nl</a>
+    </div>
+    <address>
+      <b>Retzema Schilderwerken</b><br>
+      Agatha van Alkemadestraat 3<br>
+      2331 EG Leiden<br>
+      Op basis van uw wensen en de situatie ter plaatse ontvangt u een uitgewerkte offerte.
+    </address>
+  </div>
+  <div class="wrap onder"><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners.</span><span>headturners.nl</span></div>
+</footer>
+
+</body>
+</html>

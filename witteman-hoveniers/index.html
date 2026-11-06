@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>C. Witteman, tuinaanleg en sierbestrating</title>
+<meta name="description" content="Hoveniersbedrijf C. Witteman ontwerpt en legt tuinen aan voor particulieren, bedrijven en overheidsinstellingen. Al meer dan 35 jaar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,700;0,800;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --klinker:#b3262c;
+  --klinker-diep:#8a1a20;
+  --groen:#1f5f43;
+  --groen-diep:#153f2d;
+  --zand:#ead6b4;
+  --zand-licht:#f7efe0;
+  --inkt:#25221e;
+  --wit:#fffdf8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Work Sans",system-ui,sans-serif;background:var(--zand-licht);color:var(--inkt);font-size:18px;line-height:1.65}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Bitter,Georgia,serif;font-weight:800;line-height:1.08;letter-spacing:-.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* visgraat klinkerpatroon als eigen merkmotief */
+.klinker{
+  height:26px;
+  background-color:var(--zand);
+  background-image:
+    repeating-linear-gradient(45deg,transparent 0 11px,rgba(179,38,44,.55) 11px 13px),
+    repeating-linear-gradient(-45deg,transparent 0 11px,rgba(179,38,44,.55) 11px 13px);
+  background-size:26px 26px;
+  border-top:3px solid var(--groen);
+  border-bottom:3px solid var(--groen);
+}
+.klinker.dik{height:56px}
+
+header{background:var(--wit)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:10px;padding-bottom:10px}
+.merk img{height:76px;width:auto}
+header nav{display:flex;align-items:center;gap:26px;font-weight:500;font-size:16px}
+header nav a{text-decoration:none}
+header nav a:hover{color:var(--klinker)}
+.knop{display:inline-block;background:var(--klinker);color:#fff;text-decoration:none;padding:14px 26px;font-weight:600;font-size:16px;border-radius:4px;transition:background .15s}
+.knop:hover{background:var(--klinker-diep)}
+.knop.groen{background:var(--groen)}
+.knop.groen:hover{background:var(--groen-diep)}
+.knop.rand{background:transparent;color:var(--inkt);box-shadow:inset 0 0 0 2px var(--inkt)}
+.knop.rand:hover{background:var(--inkt);color:#fff}
+
+/* hero */
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.hero .jaren{display:inline-flex;align-items:baseline;gap:12px;margin-bottom:18px;color:var(--klinker);font-family:Bitter,serif;font-weight:800}
+.hero .jaren b{font-size:72px;line-height:.9}
+.hero .jaren span{font-size:18px;line-height:1.15;color:var(--inkt);font-weight:700}
+.hero h1{font-size:clamp(36px,4.8vw,60px);margin-bottom:22px}
+.hero p.lead{max-width:30em;margin-bottom:30px;font-size:19px}
+.hero .acties{display:flex;flex-wrap:wrap;gap:14px}
+.hero .foto{position:relative}
+.hero .foto img{width:100%;aspect-ratio:10/8;object-fit:cover;border-radius:6px}
+.hero .foto::after{content:"";position:absolute;left:-14px;bottom:-14px;width:46%;height:46%;z-index:-1;
+  background-color:var(--zand);
+  background-image:repeating-linear-gradient(45deg,transparent 0 11px,rgba(179,38,44,.55) 11px 13px),repeating-linear-gradient(-45deg,transparent 0 11px,rgba(179,38,44,.55) 11px 13px);
+  background-size:26px 26px}
+
+/* wat we doen */
+.werk{padding:84px 0 40px}
+.werk h2{font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.werk p.intro{max-width:36em;margin-bottom:44px}
+.regel{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;margin-bottom:56px}
+.regel.om{grid-template-columns:1fr 1.05fr}
+.regel.om .tekst{order:2}
+.regel img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
+.regel h3{font-size:clamp(26px,3vw,36px);margin-bottom:10px;color:var(--groen)}
+.regel h3::after{content:"";display:block;width:64px;height:6px;margin-top:12px;background:var(--klinker)}
+.regel p{max-width:30em}
+.regel ul{list-style:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.regel li{background:var(--zand);padding:5px 12px;font-size:15px;font-weight:500;border-radius:3px}
+
+/* fotostrook */
+.strook{padding:24px 0 84px}
+.strook h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:26px}
+.rooster{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.rooster figure{position:relative;overflow:hidden;border-radius:5px;background:var(--zand)}
+.rooster figure{grid-column:span 2;aspect-ratio:4/3}
+.rooster img{width:100%;height:100%;object-fit:cover}
+.rooster figcaption{position:absolute;left:0;bottom:0;background:var(--groen);color:#fff;font-size:14px;font-weight:600;padding:5px 12px;border-top-right-radius:5px}
+
+/* werkwijze in drie zinnen */
+.band{background:var(--groen);color:#fff;padding:72px 0}
+.band .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.band h2{font-size:clamp(30px,4vw,46px)}
+.band p{font-size:19px;margin-bottom:16px;opacity:.95}
+.band p:last-child{margin-bottom:0}
+
+/* contact */
+.contact{padding:84px 0 36px}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(32px,4.4vw,52px);margin-bottom:22px}
+.contact .groot a{display:block;font-family:Bitter,serif;font-weight:800;font-size:clamp(30px,4vw,48px);text-decoration:none;color:var(--klinker);line-height:1.2}
+.contact .mail{display:inline-block;margin-top:10px;font-size:22px;font-weight:600}
+.contact address{font-style:normal;line-height:1.8;background:var(--wit);padding:28px 30px;border-left:8px solid var(--klinker)}
+footer .onder{margin-top:56px;padding:18px 0 28px;font-size:14px;opacity:.7;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  header nav a:not(.knop){display:none}
+  .merk img{height:60px}
+  .hero{padding:36px 0 52px}
+  .hero .wrap,.regel,.regel.om,.band .wrap,.contact .wrap{grid-template-columns:1fr;gap:28px}
+  .regel.om .tekst{order:0}
+  .hero .jaren b{font-size:56px}
+  .rooster{grid-template-columns:repeat(2,1fr)}
+  .rooster figure{grid-column:span 1}
+  .contact .wrap>*{min-width:0}
+  .contact .groot a{font-size:30px;overflow-wrap:anywhere}
+  .contact .mail{font-size:18px!important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="merk" href="#top"><img src="logo.png" alt="Witteman, tuinen en sierbestrating"></a>
+    <nav>
+      <a href="#werk">Werkzaamheden</a>
+      <a href="#fotos">Foto's</a>
+      <a href="#contact" class="knop">Offerte aanvragen</a>
+    </nav>
+  </div>
+  <div class="klinker"></div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="jaren"><b>35+</b><span>jaar vertrouwd<br>hoveniersadres</span></div>
+      <h1>Uw tuin ontworpen, aangelegd en afgewerkt door één hovenier.</h1>
+      <p class="lead">C. Witteman ontwerpt en legt tuinen aan voor particulieren, bedrijven en overheidsinstellingen. Met oog voor detail en gevoel voor mogelijkheden.</p>
+      <div class="acties">
+        <a class="knop" href="tel:+31654300253">Bel 06 54 300 253</a>
+        <a class="knop rand" href="#fotos">Bekijk het werk</a>
+      </div>
+    </div>
+    <div class="foto"><img src="vlonder.jpg" alt="Hardhouten vlonder met trap rond een boom, aangelegd door Witteman"></div>
+  </div>
+</section>
+
+<section class="werk" id="werk">
+  <div class="wrap">
+    <h2>Van tuinaanleg tot sierbestrating</h2>
+    <p class="intro">Van het ontwerp tot de aanleg van terras, vijver, overkapping en tuinhuis.</p>
+
+    <div class="regel">
+      <img src="terras-trap.jpg" alt="Terras met trap van natuursteen en hardhout" loading="lazy">
+      <div class="tekst">
+        <h3>Sierbestrating, terrassen en trappen</h3>
+        <p>Terrassen, paden en trappen, aangelegd met sierbestrating, natuursteen en hardhout.</p>
+        <ul><li>Sierbestrating</li><li>Trappen</li><li>Beschoeiing en vlonders</li></ul>
+      </div>
+    </div>
+
+    <div class="regel om">
+      <img src="vijver-terras.jpg" alt="Verhoogde vijver van stapelstenen op een terras" loading="lazy">
+      <div class="tekst">
+        <h3>Vijvers, jacuzzi's en kunstgras</h3>
+        <p>Een vijver, een jacuzzi op een vlonder of een gazon van kunstgras.</p>
+        <ul><li>Vijvers</li><li>Jacuzzi's</li><li>Kunstgras</li></ul>
+      </div>
+    </div>
+
+    <div class="regel">
+      <img src="overkapping.jpg" alt="Overkapping met berging naast een gazon" loading="lazy">
+      <div class="tekst">
+        <h3>Overkappingen, tuinhuizen en schuttingen</h3>
+        <p>Een overkapping, een tuinhuis of blokhut, een schutting of sierhekwerk. Ook speeltoestellen.</p>
+        <ul><li>Overkappingen</li><li>Tuinhuizen, blokhutten en schuren</li><li>Schuttingen en sierhekwerk</li><li>Speeltoestellen</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strook" id="fotos">
+  <div class="wrap">
+    <h2>Uit eigen portfolio</h2>
+    <div class="rooster">
+      <figure><img src="tuin-gazon.jpg" alt="Tuin met kunstgras en tegelpad"><figcaption>Kunstgras</figcaption></figure>
+      <figure><img src="tuinhuis-riet.jpg" alt="Tuinhuis met rieten dak"><figcaption>Tuinhuis</figcaption></figure>
+      <figure><img src="jacuzzi.jpg" alt="Jacuzzi op een houten vlonder"><figcaption>Jacuzzi</figcaption></figure>
+      <figure><img src="schutting.jpg" alt="Schutting van bamboe met poort"><figcaption>Schutting</figcaption></figure>
+      <figure><img src="speeltuin.jpg" alt="Speeltoestel met glijbaan en trampoline"><figcaption>Speeltoestel</figcaption></figure>
+      <figure><img src="tuinhuis.jpg" alt="Houten tuinschuur met raam"><figcaption>Schuur</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="klinker dik"></div>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Advies, ontwerp en aanleg, bij elkaar.</h2>
+    <div>
+      <p>Witteman adviseert, ontwerpt en legt uw droomtuin aan. Met opbouwende ideeën en gevoel voor mogelijkheden brengt hij tuinprojecten telkens tot een goed einde.</p>
+      <p>Zo kunt u jarenlang van uw tuin genieten, geheel passend bij uw wensen.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="groot">
+      <h2>Bel voor de mogelijkheden</h2>
+      <a href="tel:+31654300253">06 54 300 253</a>
+      <a class="mail" href="mailto:info@wittemanhoveniers.nl">info@wittemanhoveniers.nl</a>
+    </div>
+    <address>
+      <b>C. Witteman, sierbestrating en aanleg van tuinen</b><br>
+      KvK 28045119<br>
+      Offerte aanvragen kan telefonisch of per e-mail.
+    </address>
+  </div>
+  <div class="wrap onder"><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners.</span><span>headturners.nl</span></div>
+</footer>
+
+</body>
+</html>

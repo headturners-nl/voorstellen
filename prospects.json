@@ -27,5 +27,8 @@
   {"naam": "Lunchcafé Juuls", "slug": "lunchcafe-juuls", "plaats": "Gouda", "branche": "horeca en winkels", "datum": "2026-11-04", "mailadres": "info@lunchcafejuuls.nl", "rechtsvorm": "onbekend"},
   {"naam": "Zwegers Stucadoorswerken", "slug": "zwegers-stucadoorswerken", "plaats": "Breda", "branche": "bouw en vakmensen", "datum": "2026-11-05", "mailadres": "info@zwegerstuc.nl", "rechtsvorm": "onbekend"},
   {"naam": "Th. van Steden & Zn", "slug": "van-steden-aannemersbedrijf", "plaats": "Eindhoven", "branche": "bouw en vakmensen", "datum": "2026-11-05", "mailadres": "onbekend", "rechtsvorm": "onbekend"},
-  {"naam": "Loodgietersklusjes Bijl", "slug": "loodgietersklusjes-bijl", "plaats": "Nijmegen", "branche": "bouw en vakmensen", "datum": "2026-11-05", "mailadres": "info@loodgietersklusjes.nl", "rechtsvorm": "onbekend"}
+  {"naam": "Loodgietersklusjes Bijl", "slug": "loodgietersklusjes-bijl", "plaats": "Nijmegen", "branche": "bouw en vakmensen", "datum": "2026-11-05", "mailadres": "info@loodgietersklusjes.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Kanbier's Dochter", "slug": "kanbiers-dochter", "plaats": "Leiden", "branche": "mix", "datum": "2026-11-06", "mailadres": "info@kanbiersdochter.nl", "rechtsvorm": "onbekend"},
+  {"naam": "C. Witteman Sierbestrating en aanleg van Tuinen", "slug": "witteman-hoveniers", "plaats": "Leiden", "branche": "mix", "datum": "2026-11-06", "mailadres": "info@wittemanhoveniers.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Retzema Schilderwerken", "slug": "retzema-schilderwerken", "plaats": "Leiden", "branche": "mix", "datum": "2026-11-06", "mailadres": "info@retzemaschilderwerken.nl", "rechtsvorm": "onbekend"}
 ]
