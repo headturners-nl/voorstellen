@@ -30,5 +30,8 @@
   {"naam": "Loodgietersklusjes Bijl", "slug": "loodgietersklusjes-bijl", "plaats": "Nijmegen", "branche": "bouw en vakmensen", "datum": "2026-11-05", "mailadres": "info@loodgietersklusjes.nl", "rechtsvorm": "onbekend"},
   {"naam": "Kanbier's Dochter", "slug": "kanbiers-dochter", "plaats": "Leiden", "branche": "mix", "datum": "2026-11-06", "mailadres": "info@kanbiersdochter.nl", "rechtsvorm": "onbekend"},
   {"naam": "C. Witteman Sierbestrating en aanleg van Tuinen", "slug": "witteman-hoveniers", "plaats": "Leiden", "branche": "mix", "datum": "2026-11-06", "mailadres": "info@wittemanhoveniers.nl", "rechtsvorm": "onbekend"},
-  {"naam": "Retzema Schilderwerken", "slug": "retzema-schilderwerken", "plaats": "Leiden", "branche": "mix", "datum": "2026-11-06", "mailadres": "info@retzemaschilderwerken.nl", "rechtsvorm": "onbekend"}
+  {"naam": "Retzema Schilderwerken", "slug": "retzema-schilderwerken", "plaats": "Leiden", "branche": "mix", "datum": "2026-11-06", "mailadres": "info@retzemaschilderwerken.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Vallen Logopedisten", "slug": "vallen-logopedisten", "plaats": "Roermond", "branche": "zorg en praktijken", "datum": "2026-11-09", "mailadres": "info@vallenlogopedisten.nl", "rechtsvorm": "bv"},
+  {"naam": "Podotherapie Van der Beek", "slug": "podotherapie-van-der-beek", "plaats": "Apeldoorn", "branche": "zorg en praktijken", "datum": "2026-11-09", "mailadres": "info@podotherapievanderbeek.nl", "rechtsvorm": "onbekend"},
+  {"naam": "Ergotherapie Noord", "slug": "ergotherapie-noord", "plaats": "Groningen", "branche": "zorg en praktijken", "datum": "2026-11-09", "mailadres": "info@ergotherapienoord.nl", "rechtsvorm": "onbekend"}
 ]

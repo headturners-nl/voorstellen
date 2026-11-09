@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vallen Logopedisten, logopedie in Roermond en Swalmen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d3568;--deep:#082447;--lime:#c9dc4a;--lime2:#e3ee9b;--paper:#f7f9ea;--ink:#16233b;--kop:'Bricolage Grotesque',Georgia,serif;--tekst:'Lexend',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--tekst);font-weight:300;font-size:17px;line-height:1.7;color:var(--ink);background:var(--paper);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--kop);font-weight:800;line-height:1.02;letter-spacing:-.02em}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.lime{background:var(--lime);color:var(--deep)}
+.btn.line{border:2px solid rgba(255,255,255,.6);color:#fff}
+.btn.navy{background:var(--navy);color:#fff}
+
+/* nav */
+.top{position:sticky;top:0;z-index:50;background:var(--deep);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px}
+.logo{background:#fff;border-radius:14px;padding:6px 14px}
+.logo img{height:40px;width:auto}
+.top nav{display:flex;gap:26px;font-size:15px;align-items:center}
+.top nav a{text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1}
+.top .tel{white-space:nowrap;background:var(--lime);color:var(--deep);opacity:1;font-weight:600;padding:10px 18px;border-radius:999px}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center;padding-top:72px;padding-bottom:96px;position:relative}
+.kick{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);font-weight:600;margin-bottom:22px}
+.hero h1{font-size:clamp(52px,8.4vw,128px);color:#fff}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero p.lead{font-size:20px;max-width:30em;margin:28px 0 36px;color:#dbe6f5}
+.hero .acts{display:flex;gap:14px;flex-wrap:wrap}
+#heroHoney{position:relative;min-height:420px}
+.hex{position:absolute;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:var(--lime);overflow:hidden;cursor:pointer;transition:transform .35s ease,filter .35s}
+.hex img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transition:transform .6s ease}
+.hex:hover img,.hex.on img{transform:scale(1.08)}
+.hex:hover,.hex.on{transform:scale(1.04);z-index:3}
+.hex.plain{background:var(--lime2);display:flex;align-items:center;justify-content:center;font-family:var(--kop);font-weight:800;color:var(--navy);text-align:center;line-height:1;font-size:clamp(14px,2vw,26px)}
+.hex.dim{filter:saturate(.75) brightness(.92)}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:56px;background:var(--paper);clip-path:polygon(0 100%,0 60%,8% 40%,16% 60%,24% 40%,32% 60%,40% 40%,48% 60%,56% 40%,64% 60%,72% 40%,80% 60%,88% 40%,96% 60%,100% 45%,100% 100%)}
+
+/* cijfers */
+.cijfers{background:var(--lime);color:var(--deep);padding:70px 0 80px;position:relative}
+.cijfers .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:34px;align-items:end}
+.cijfers h2{font-size:clamp(34px,4vw,52px)}
+.cijfers .n{font-family:var(--kop);font-weight:800;font-size:clamp(56px,7vw,104px);line-height:.9;letter-spacing:-.04em}
+.cijfers .l{font-size:14px;line-height:1.5;margin-top:10px;max-width:16em}
+.bron{font-size:12.5px;opacity:.75;margin-top:28px;grid-column:1/-1}
+
+/* waarmee */
+.waar{padding:110px 0 60px}
+.waar .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.waar h2{font-size:clamp(38px,5vw,68px);color:var(--navy);position:sticky;top:110px;align-self:start}
+.waar h2 span{color:#7d9407}
+.waar .intro{margin-top:22px;max-width:24em;font-size:17px}
+details{border-top:2px solid var(--navy);padding:0}
+details:last-of-type{border-bottom:2px solid var(--navy)}
+summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:22px 0;font-family:var(--kop);font-weight:800;font-size:clamp(26px,3.2vw,40px);color:var(--navy);letter-spacing:-.02em}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:var(--tekst);font-weight:300;font-size:36px;line-height:1;transition:transform .3s;color:#7d9407}
+details[open] summary:after{transform:rotate(45deg)}
+details ul{display:flex;flex-wrap:wrap;gap:10px;padding:0 0 28px;list-style:none}
+details li{background:#fff;border:1.5px solid var(--navy);border-radius:999px;padding:6px 16px;font-size:15px}
+details li.s{background:var(--lime);border-color:var(--lime)}
+
+/* team */
+.team{background:var(--deep);color:#fff;padding:110px 0 90px;position:relative}
+.team h2{font-size:clamp(40px,6vw,84px);max-width:11em}
+.team h2 em{font-style:normal;color:var(--lime)}
+.team .sub{max-width:34em;color:#c5d3ea;margin:20px 0 48px}
+#honey{position:relative;margin:0 auto;max-width:1180px}
+.honeycard{max-width:560px;margin:34px auto 0;background:var(--lime);color:var(--deep);border-radius:26px 26px 26px 4px;padding:24px 30px;min-height:132px;transition:opacity .2s}
+.honeycard b{display:block;font-family:var(--kop);font-size:32px;letter-spacing:-.02em;line-height:1.1}
+.honeycard span{display:block;font-size:15px;margin-top:6px}
+.honeycard small{display:block;margin-top:8px;font-size:13px;opacity:.75}
+ul.faces{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px}
+ul.faces li{font-size:14px}
+ul.faces img{border-radius:12px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.js ul.faces{display:block;height:0;overflow:hidden;visibility:hidden}
+
+/* locaties */
+.loc{padding:110px 0 100px}
+.loc .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+.loc h2{font-size:clamp(38px,5vw,70px);color:var(--navy)}
+.loc ul{list-style:none;margin-top:30px;columns:2;column-gap:36px}
+.loc li{padding:9px 0;border-bottom:1px solid #cdd6a2;break-inside:avoid;font-size:15.5px}
+.loc li b{font-weight:600}
+.carbox{position:relative}
+.carbox img{border-radius:30px 30px 160px 30px;width:100%;aspect-ratio:1/1.05;object-fit:cover;object-position:30% 50%}
+.carbox .tag{position:absolute;left:-26px;bottom:34px;background:var(--lime);color:var(--deep);padding:16px 22px;border-radius:20px 20px 20px 4px;font-family:var(--kop);font-weight:800;font-size:24px;line-height:1.1;max-width:12em;box-shadow:0 12px 30px rgba(8,36,71,.25)}
+
+/* contact */
+.contact{background:var(--navy);color:#fff;padding:96px 0 40px;position:relative;overflow:hidden}
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:end}
+.contact h2{font-size:clamp(44px,6.4vw,100px)}
+.contact h2 em{font-style:normal;color:var(--lime)}
+.big-tel{display:block;font-family:var(--kop);font-weight:800;font-size:clamp(40px,5vw,68px);letter-spacing:-.03em;color:var(--lime);text-decoration:none;line-height:1}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:6px 22px;margin:26px 0;font-size:16px}
+.contact dt{color:#9fb6d8}
+.contact a.mail{color:#fff}
+.contact .wrap.fw{display:block}
+.foot{margin-top:70px;padding-top:22px;border-top:1px solid rgba(255,255,255,.2);font-size:13px;color:#9fb6d8;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.callbar{display:none}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.hex,.hex img{transition:none}}
+
+@media (max-width:900px){
+ body{font-size:16px}
+ .top nav a:not(.tel){display:none}
+ .top .tel{padding:9px 14px;font-size:14px}
+ .logo img{height:34px}
+ .hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:84px}
+ #heroHoney{min-height:300px}
+ .cijfers .wrap{grid-template-columns:1fr 1fr;gap:34px 20px}
+ .cijfers h2{grid-column:1/-1}
+ .waar{padding-top:80px}
+ .waar .wrap{grid-template-columns:1fr;gap:30px}
+ .waar h2{position:static}
+ .loc .wrap,.contact .wrap{grid-template-columns:1fr;gap:40px}
+ .loc ul{columns:1}
+ .carbox .tag{left:12px}
+ .team{padding:80px 0 70px}
+ .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--lime);color:var(--deep);justify-content:center;gap:10px;padding:15px;font-weight:600;text-decoration:none;font-size:17px;box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+ body{padding-bottom:56px}
+}
+</style>
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body>
+
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#"><img src="logo.jpg" alt="Vallen Logopedisten, stem, spraak, taal, dyslexie en pre-logopedie"></a>
+  <nav>
+   <a href="#waarmee">Behandelingen</a>
+   <a href="#team">Team</a>
+   <a href="#locaties">Locaties</a>
+   <a class="tel" href="tel:+31475320626">Bel 0475 320626</a>
+  </nav>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <p class="kick">Roermond, Swalmen en omstreken</p>
+   <h1>Logopedie. Al <em>41&nbsp;jaar.</em></h1>
+   <p class="lead">Voor kinderen en volwassenen met vragen over spraak, taal, dyslexie, stem, gehoor, adem en over slikken, eten en drinken.</p>
+   <div class="acts">
+    <a class="btn lime" href="https://www.vallenlogopedisten.nl/aanmelden/">Aanmelden</a>
+    <a class="btn line" href="tel:+31475320626">Bel 0475 320626</a>
+   </div>
+  </div>
+  <div id="heroHoney" aria-hidden="true"></div>
+ </div>
+</section>
+
+<section class="cijfers">
+ <div class="wrap">
+  <h2 class="rv">Wat cliënten en auditors over ons zeggen.</h2>
+  <div class="rv"><div class="n">9,46</div><p class="l">Rapportcijfer van onze cliënten</p></div>
+  <div class="rv"><div class="n">9,63</div><p class="l">Aanbevelingsscore van onze cliënten</p></div>
+  <div class="rv"><div class="n">100%</div><p class="l">Score Vrijwillige Kwaliteitstoets logopedie, 12 mei 2026</p></div>
+  <p class="bron">Patiëntervaringsonderzoek door MediQuest over het eerste kwartaal van 2024. Kwaliteitstoets gemeten door auditbureau HCA.</p>
+ </div>
+</section>
+
+<section class="waar" id="waarmee">
+ <div class="wrap">
+  <div class="rv">
+   <h2>Waarmee kunt u <span>bij ons terecht?</span></h2>
+   <p class="intro">Wij onderzoeken, begeleiden en behandelen alle voorkomende logopedische stoornissen bij kinderen en volwassenen. Ook geven wij scholing en preventie aan beroepssprekers, toneelspelers en zangers.</p>
+  </div>
+  <div class="rv">
+   <details open><summary>Spraak</summary><ul>
+    <li>Stotteren</li><li>Broddelen</li><li>Slissen en lispelen</li><li>Articulatiestoornissen</li><li>Dysartrie</li><li>Dyspraxie</li><li>Onduidelijk spreken</li><li>Spraakstoornissen bij syndromen</li><li>Schisis</li><li class="s">Parkinson</li></ul></details>
+   <details><summary>Taal</summary><ul>
+    <li>Taalontwikkelingsstoornis</li><li>Taalproblemen bij kinderen</li><li>Meertaligheid</li><li>Afasie</li><li class="s">Dyslexie, NVLF geregistreerd</li><li>HANEN ouderprogramma</li><li>Baby- en kindergebaren</li><li>Nederlands met Gebaren</li></ul></details>
+   <details><summary>Adem en stem</summary><ul>
+    <li>Heesheid</li><li>Hyperventilatie</li><li>COPD</li><li>Stembandverlamming</li><li>Beroepssprekers</li><li>Zangstem</li><li>Stemverandering bij transseksualiteit</li><li>Coblenzer</li><li>Manuele Facilitatie van de Larynx</li><li>Mindfulness</li></ul></details>
+   <details><summary>Slikken, eten en drinken</summary><ul>
+    <li>Prelogopedie bij baby's en kinderen</li><li>Dysfagie</li><li>ARFID</li><li>Overgevoeligheid in het mondgebied</li><li>Eet- en drinkproblemen na een oncologische aandoening</li><li>Mimetherapie</li></ul></details>
+   <details><summary>Mondgewoonten</summary><ul>
+    <li>Duim-, vinger- en speenzuigen</li><li>Open mondgedrag</li><li>Afwijkende slik</li><li>Afwijkende tongpositie in rust</li><li>Oro Myo Functionele Therapie</li><li>Mandibulaire dysfuncties</li></ul></details>
+   <details><summary>Gehoor en prikkels</summary><ul>
+    <li>Luistertraining, ook bij een cochleair implantaat</li><li>Spraakafzien en liplezen</li><li>Nederlandse Gebarentaal</li><li>Sensorische informatieverwerking</li></ul></details>
+  </div>
+ </div>
+</section>
+
+<section class="team" id="team">
+ <div class="wrap">
+  <h2 class="rv">Vijftien logopedisten. <em>Eén praktijk.</em></h2>
+  <p class="sub rv">Marie-Thérèse Vallen-Mooren werkt hier sinds 1984. De nieuwste collega's startten in 2026. Tik of wijs een gezicht aan om te zien wie het is en waar diegene in gespecialiseerd is.</p>
+  <div id="honey"></div>
+  <div class="honeycard" id="card" aria-live="polite"><b>Marie-Thérèse Vallen-Mooren</b><span>Logopedist, praktijkmanager, pre-logopedist, adem- en stemtherapeut</span><small>Werkzaam bij Vallen Logopedisten sinds 1984</small></div>
+  <ul class="faces" id="faces">
+   <li data-n="Marie-Thérèse Vallen-Mooren" data-r="Logopedist, praktijkmanager, pre-logopedist, adem- en stemtherapeut" data-s="1984"><img src="tres.jpg" alt="Marie-Thérèse Vallen-Mooren" loading="lazy"><span>Marie-Thérèse Vallen-Mooren</span></li>
+   <li data-n="Manon Korsten" data-r="Logopedist, manager, pre-logopedist" data-s="2017"><img src="manon.jpg" alt="Manon Korsten" loading="lazy"><span>Manon Korsten</span></li>
+   <li data-n="Vivian Scheffer" data-r="Logopedist, pre-logopedist, dyslexiespecialist" data-s="2016"><img src="vivian.jpg" alt="Vivian Scheffer" loading="lazy"><span>Vivian Scheffer</span></li>
+   <li data-n="Anouk Brauer" data-r="Logopedist" data-s="2017"><img src="anouk.jpg" alt="Anouk Brauer" loading="lazy"><span>Anouk Brauer</span></li>
+   <li data-n="Britt van Dongen" data-r="Logopedist" data-s="2022"><img src="britt.jpg" alt="Britt van Dongen" loading="lazy"><span>Britt van Dongen</span></li>
+   <li data-n="Kim Janssen" data-r="Logopedist, afasietherapeut, adem- en stemtherapeut" data-s="2022"><img src="kim-j.jpg" alt="Kim Janssen" loading="lazy"><span>Kim Janssen</span></li>
+   <li data-n="Kim Vossen" data-r="Logopedist, adem- en stemtherapeut" data-s="2023"><img src="kim-v.jpg" alt="Kim Vossen" loading="lazy"><span>Kim Vossen</span></li>
+   <li data-n="Tahnée Boots" data-r="Logopedist, pre-logopedist, dyslexiespecialist" data-s="2023"><img src="tahnee.jpg" alt="Tahnée Boots" loading="lazy"><span>Tahnée Boots</span></li>
+   <li data-n="Conner Leenders" data-r="Logopedist" data-s="2024"><img src="conner.jpg" alt="Conner Leenders" loading="lazy"><span>Conner Leenders</span></li>
+   <li data-n="Loes van Zijl" data-r="Logopedist, adem- en stemtherapeut" data-s="2024"><img src="loes.jpg" alt="Loes van Zijl" loading="lazy"><span>Loes van Zijl</span></li>
+   <li data-n="Evi Heijnen" data-r="Logopedist" data-s="2025"><img src="evi.jpg" alt="Evi Heijnen" loading="lazy"><span>Evi Heijnen</span></li>
+   <li data-n="Lorrain Kunnen" data-r="Logopedist, afasietherapeut, adem- en stemtherapeut" data-s="2025"><img src="lorrain.jpg" alt="Lorrain Kunnen" loading="lazy"><span>Lorrain Kunnen</span></li>
+   <li data-n="Kristel Vossen" data-r="Logopedist, mimetherapeut, afasietherapeut, parkinsontherapeut, adem- en stemtherapeut" data-s="2026"><img src="kristel.jpg" alt="Kristel Vossen" loading="lazy"><span>Kristel Vossen</span></li>
+   <li data-n="Jessy Zuidema" data-r="Logopedist" data-s="2026"><img src="jessy.jpg" alt="Jessy Zuidema" loading="lazy"><span>Jessy Zuidema</span></li>
+   <li data-n="Nina van de Venne" data-r="Logopedist" data-s="2026"><img src="nina.jpg" alt="Nina van de Venne" loading="lazy"><span>Nina van de Venne</span></li>
+  </ul>
+ </div>
+</section>
+
+<section class="loc" id="locaties">
+ <div class="wrap">
+  <div class="rv">
+   <h2>Op school, in de wijk of bij u thuis.</h2>
+   <p style="margin-top:22px;max-width:30em">Behandeling vindt plaats in onze praktijkruimtes in Roermond en Swalmen, of bij u thuis (bij indicatie). Alle werkdagen van 8.30 tot 17.00 uur. In overleg met uw logopedist kan een afspraak ook daarbuiten.</p>
+   <ul>
+    <li><b>Hoofdlocatie</b>, Schout Offermanstraat 30, Roermond</li>
+    <li>De Donderie, Donderbergweg 47/49, Roermond</li>
+    <li>Montessori Basisschool, Achilleslaan 4</li>
+    <li>Basisschool Neel, Dominicushof 5</li>
+    <li>Basisschool Willem de Zwijger, Minister Beversstraat 7</li>
+    <li>Basisschool de Zonnewijzer, Hendriklaan 86</li>
+    <li>Basisschool Vincent van Gogh, Donderbergweg 43</li>
+    <li>Basisschool de Kasteeltuin, Wassenbergstraat 2-4</li>
+    <li>Basisschool 't Mozaïek, Surinamestraat 2</li>
+    <li>Gemeenschapshuis de Robijn, Molenweg 3, Swalmen</li>
+    <li>Basisschool Lambertus, Meestersweg 5, Swalmen</li>
+    <li>Basisschool Sint Theresia, Kerkweg 7, Boukoul</li>
+    <li>Basisschool Marjam, Ambachtsingel 40, Roermond</li>
+   </ul>
+  </div>
+  <div class="carbox rv">
+   <img src="auto.jpg" alt="De logopedie-auto van Vallen Logopedisten" loading="lazy">
+   <div class="tag">Ook bij u thuis, bij indicatie</div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="rv">
+   <h2>Aanmelden kan <em>vandaag.</em></h2>
+  </div>
+  <div class="rv">
+   <a class="big-tel" href="tel:+31475320626">0475 320626</a>
+   <dl>
+    <dt>E-mail</dt><dd><a class="mail" href="mailto:info@vallenlogopedisten.nl">info@vallenlogopedisten.nl</a></dd>
+    <dt>Adres</dt><dd>Schout Offermanstraat 30<br>6042 XS Roermond</dd>
+    <dt>Open</dt><dd>Alle werkdagen 8.30 tot 17.00 uur</dd>
+   </dl>
+   <a class="btn lime" href="https://www.vallenlogopedisten.nl/aanmelden/">Naar het aanmeldformulier</a>
+  </div>
+ </div>
+ <div class="wrap fw"><div class="foot"><span>Vallen Logopedisten BV, KvK 68695411</span><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners</span></div></div>
+</section>
+
+<a class="callbar" href="tel:+31475320626">Bel 0475 320626</a>
+
+<script>
+(function(){
+ var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+ /* inschuiven */
+ var rv=[].slice.call(document.querySelectorAll('.rv'));
+ if('IntersectionObserver' in window && !reduce){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  rv.forEach(function(el){io.observe(el)});
+ } else rv.forEach(function(el){el.classList.add('in')});
+
+ /* honingraat */
+ var people=[].slice.call(document.querySelectorAll('#faces li')).map(function(li){return{n:li.dataset.n,r:li.dataset.r,s:li.dataset.s,src:li.querySelector('img').getAttribute('src')}});
+ function build(el,items,rows,opts){
+  el.innerHTML='';
+  var maxc=Math.max.apply(null,rows),W=el.clientWidth,w=Math.floor(W/maxc),h=Math.round(w*1.1547),step=Math.round(h*.75),i=0;
+  el.style.height=((rows.length-1)*step+h)+'px';
+  rows.forEach(function(n,r){
+   var off=(maxc-n)*w/2;
+   for(var c=0;c<n&&i<items.length;c++,i++){
+    var it=items[i],d=document.createElement('div');
+    d.className='hex'+(it.plain?' plain':'');
+    d.style.cssText='width:'+(w-4)+'px;height:'+(h-4)+'px;left:'+(off+c*w+2)+'px;top:'+(r*step+2)+'px';
+    if(it.plain){d.innerHTML=it.plain}else{var im=new Image();im.src=it.src;im.alt=it.n||'';d.appendChild(im)}
+    if(opts.onpick&&!it.plain){d.setAttribute('tabindex','0');d.setAttribute('role','button');d.setAttribute('aria-label',it.n);
+      var pick=function(it,d){return function(){opts.onpick(it,d)}}(it,d);
+      d.addEventListener('mouseenter',pick);d.addEventListener('click',pick);d.addEventListener('focus',pick)}
+    el.appendChild(d);
+   }
+  });
+ }
+ var honey=document.getElementById('honey'),card=document.getElementById('card');
+ function pick(it,d){
+  [].forEach.call(honey.children,function(x){x.classList.remove('on')});d.classList.add('on');
+  card.innerHTML='<b></b><span></span><small></small>';card.children[0].textContent=it.n;
+  card.children[1].textContent=it.r.charAt(0).toUpperCase()+it.r.slice(1);card.children[2].textContent='Werkzaam bij Vallen Logopedisten sinds '+it.s;
+ }
+ function layout(){
+  var W=window.innerWidth,rows=W>1000?[5,6,5]:(W>640?[4,5,4,3]:[3,4,3,4,2]);
+  var items=people.slice();items.splice(items.length,0,{plain:'41<br>jaar'});
+  var tot=rows.reduce(function(a,b){return a+b},0);
+  while(items.length<tot)items.push({plain:'&nbsp;'});
+  build(honey,items,rows,{onpick:pick});
+  var first=honey.children[0];if(first)first.classList.add('on');
+  var hh=document.getElementById('heroHoney');
+  var hrows=W>900?[3,4,3]:[3,4,3];
+  build(hh,people.slice(1,11),hrows,{});
+ }
+ layout();var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(layout,150)});
+})();
+</script>
+</body>
+</html>

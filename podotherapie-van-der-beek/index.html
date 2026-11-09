@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Podotherapie Van der Beek, Apeldoorn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#3b1d38;--mauve:#ba88a1;--mauve-d:#8e5a78;--cream:#fbf5ef;--orange:#f7992f;--yellow:#ffd565;--pink:#f3a6c6;--blue:#7cc3e8;--kop:'Gloock',Georgia,serif;--tekst:'Hanken Grotesk',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--tekst);font-size:18px;line-height:1.65;color:var(--plum);background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--kop);font-weight:400;line-height:1.02;letter-spacing:-.01em}
+.btn{display:inline-flex;align-items:center;padding:16px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(59,29,56,.2)}
+.btn.plum{background:var(--plum);color:#fff}
+.btn.orange{background:var(--orange);color:var(--plum)}
+.btn.line{border:2px solid var(--plum)}
+
+/* nav */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid #eee3ea}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.top img{height:42px;width:auto}
+.top nav{display:flex;gap:28px;align-items:center;font-size:15px;font-weight:500}
+.top nav a{text-decoration:none}
+.top nav a:hover{color:var(--mauve-d)}
+.top .tel{background:var(--plum);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;white-space:nowrap}
+.top .tel:hover{color:#fff}
+
+/* hero */
+.hero{position:relative;background:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;align-items:end;gap:40px;padding-top:56px;padding-bottom:10px}
+.kick{font-size:14px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--mauve-d);margin-bottom:20px}
+.hero h1{font-size:clamp(52px,8.6vw,132px);color:var(--plum);line-height:.95}
+.hero h1 span{display:block;white-space:nowrap}
+.hero h1 em{font-style:normal;color:var(--mauve-d)}
+.hero .lead{font-size:19px;margin:0 0 26px}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.paint{display:block;width:100%;height:auto;margin-top:-40px;position:relative;z-index:0}
+.hero .wrap{position:relative;z-index:2}
+
+/* wie */
+.wie{background:var(--mauve);color:var(--plum);padding:100px 0 110px;position:relative}
+.wie .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center}
+.foto{position:relative}
+.foto img.a{border-radius:260px 260px 24px 24px;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:28% 30%;box-shadow:0 30px 60px rgba(59,29,56,.3)}
+.foto .stip{position:absolute;right:-24px;bottom:30px;width:128px;height:128px;border-radius:50%;background:var(--yellow);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:var(--kop);font-size:34px;line-height:1;transform:rotate(-8deg)}
+.foto .stip small{font-family:var(--tekst);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
+.wie h2{font-size:clamp(38px,5vw,72px);color:#fff}
+.wie .tijd{list-style:none;margin-top:36px;border-left:3px solid var(--plum);padding-left:0}
+.wie .tijd li{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:14px 0 14px 22px;position:relative}
+.wie .tijd li:before{content:"";position:absolute;left:-9px;top:24px;width:15px;height:15px;border-radius:50%;background:var(--yellow);border:3px solid var(--plum)}
+.wie .tijd b{font-family:var(--kop);font-weight:400;font-size:30px;line-height:1.1}
+.wie .tijd span{font-size:17px}
+.wie .zin{margin-top:26px;font-size:19px;max-width:30em}
+
+/* spoor */
+.spoor{background:var(--cream);padding:110px 0 120px;position:relative}
+.spoor .kop{max-width:760px;margin-bottom:50px}
+.spoor h2{font-size:clamp(42px,6vw,92px)}
+.spoor h2 em{font-style:normal;color:var(--mauve-d)}
+.spoor .kop p{margin-top:22px;max-width:32em}
+.pad{position:relative;max-width:1000px;margin:0 auto}
+.stap{display:flex;align-items:center;gap:26px;min-height:132px}
+.stap:nth-child(even){flex-direction:row-reverse;text-align:right}
+.stap svg{width:64px;height:auto;flex:none;transition:transform .7s cubic-bezier(.2,1.4,.4,1),opacity .6s}
+.stap:nth-child(odd) svg{transform:rotate(14deg)}
+.stap:nth-child(even) svg{transform:rotate(-14deg) scaleX(-1)}
+.stap h3{font-size:clamp(34px,5.4vw,76px);color:var(--plum)}
+.stap:nth-child(odd){margin-left:0}
+.stap:nth-child(even){margin-left:auto;width:78%}
+.stap:nth-child(odd){width:78%}
+.mini{display:flex;gap:0}
+.js .stap{opacity:0;transition:opacity .7s ease}
+.js .stap svg{opacity:0;transform:scale(.3) rotate(0)}
+.js .stap.in{opacity:1}
+.js .stap.in:nth-child(odd) svg{opacity:1;transform:rotate(14deg)}
+.js .stap.in:nth-child(even) svg{opacity:1;transform:rotate(-14deg) scaleX(-1)}
+.spoor .na{margin-top:50px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.spoor .na p{max-width:30em}
+
+/* diabetes */
+.diab{background:var(--plum);color:#fff;padding:110px 0 100px;position:relative;overflow:hidden}
+.diab .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:70px}
+.diab h2{font-size:clamp(40px,5.4vw,78px);color:var(--yellow)}
+.diab .stat{margin-top:34px;padding:26px 28px;border-radius:24px;background:rgba(255,255,255,.08)}
+.diab .stat b{font-family:var(--kop);font-weight:400;font-size:70px;line-height:1;color:var(--orange)}
+.diab .stat p{font-size:16px;margin-top:6px;color:#ecd8e6}
+.diab .uit{font-size:15px;color:#d9b9cd;margin-top:16px}
+.diab details{border-top:1px solid rgba(255,255,255,.3)}
+.diab details:last-child{border-bottom:1px solid rgba(255,255,255,.3)}
+.diab summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-family:var(--kop);font-size:clamp(28px,3.4vw,44px)}
+.diab summary::-webkit-details-marker{display:none}
+.diab summary:after{content:"";width:18px;height:18px;border-right:3px solid var(--orange);border-bottom:3px solid var(--orange);transform:rotate(45deg);transition:transform .3s;margin-right:6px;margin-top:-6px}
+.diab details[open] summary:after{transform:rotate(225deg);margin-top:6px}
+.diab details p{padding:0 0 24px;max-width:34em;color:#ecd8e6}
+
+/* kwaliteit */
+.kw{padding:110px 0;background:#fff}
+.kw .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:70px;align-items:center}
+.kw h2{font-size:clamp(38px,5vw,70px)}
+.kw .cijfers{display:flex;gap:44px;margin:46px 0 30px;flex-wrap:wrap}
+.kw .c b{display:block;font-family:var(--kop);font-weight:400;font-size:clamp(72px,9vw,128px);line-height:.9;color:var(--mauve-d)}
+.kw .c span{font-size:15px;display:block;max-width:13em;margin-top:8px}
+.kw .reg{font-size:15px;color:#6e4f69;max-width:34em}
+.kw .keur{background:var(--cream);border-radius:28px;padding:30px;transform:rotate(2deg)}
+.kw .keur img{border-radius:16px;margin:0 auto}
+
+/* zorg */
+.zorg{background:var(--cream);padding:90px 0 100px}
+.zorg .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1000px}
+.zorg h3{font-size:34px;margin-bottom:12px}
+.zorg .blok{border-top:4px solid var(--mauve);padding-top:20px}
+.zorg .blok:nth-child(2){border-color:var(--orange);margin-top:40px}
+.zorg p{font-size:17px}
+.zorg .top3{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.zorg .top3 span{background:#fff;border:2px solid var(--plum);border-radius:999px;padding:4px 16px;font-weight:700;font-size:15px}
+
+/* contact */
+.contact{background:var(--mauve);padding:100px 0 36px;position:relative;overflow:hidden}
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:end}
+.contact h2{font-size:clamp(46px,7vw,112px);color:#fff}
+.contact .tel{display:block;font-family:var(--kop);font-size:clamp(44px,5.6vw,80px);line-height:1;text-decoration:none;color:var(--plum);margin-bottom:22px}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:6px 22px;margin-bottom:28px}
+.contact dt{font-weight:700}
+.contact .fw{display:block;padding-top:70px}
+.foot{border-top:1px solid rgba(59,29,56,.35);padding-top:20px;font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.callbar{display:none}
+
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv,.js .stap,.js .stap svg{transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+ body{font-size:17px}
+ .top nav a:not(.tel){display:none}
+ .top img{height:34px}
+ .top .tel{padding:9px 14px;font-size:14px}
+ .hero .wrap{grid-template-columns:1fr;padding-top:36px;gap:22px}
+ .paint{margin-top:0;width:175%;max-width:none;margin-left:-26%}
+ .hero h1{font-size:clamp(44px,12.4vw,80px)}
+ .wie{padding:70px 0 80px}
+ .wie .wrap,.diab .wrap,.kw .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+ .foto{max-width:420px;margin:0 auto}
+ .foto .stip{right:-8px}
+ .wie .tijd li{grid-template-columns:78px 1fr}
+ .spoor{padding:80px 0 90px}
+ .stap{min-height:96px;gap:16px}
+ .stap:nth-child(odd),.stap:nth-child(even){width:100%}
+ .stap svg{width:44px}
+ .zorg .wrap{grid-template-columns:1fr;gap:30px}
+ .zorg .blok:nth-child(n){margin-top:0}
+ .diab,.kw{padding:80px 0}
+ .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--orange);color:var(--plum);justify-content:center;padding:15px;font-weight:700;text-decoration:none;font-size:17px;box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+ body{padding-bottom:56px}
+}
+</style>
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="voet" viewBox="0 0 60 124">
+  <path d="M31 30C19 30 11 42 12 58c1 13 6 21 5 36-1 14 7 26 17 26 11 0 14-12 12-25-1-14 6-22 5-39-1-17-8-26-20-26z"/>
+  <circle cx="40" cy="15" r="8"/><circle cx="26" cy="14" r="5"/><circle cx="16" cy="19" r="4.4"/><circle cx="9" cy="27" r="3.8"/><circle cx="5" cy="37" r="3.2"/>
+ </symbol>
+</svg>
+
+<header class="top">
+ <div class="wrap">
+  <a href="#"><img src="logo.jpg" alt="Podotherapie Van der Beek Apeldoorn" width="300" height="66"></a>
+  <nav>
+   <a href="#wie">De praktijk</a>
+   <a href="#spoor">Klachten</a>
+   <a href="#diabetes">Diabetes</a>
+   <a href="#contact">Contact</a>
+   <a class="tel" href="tel:+31555411760">055 541 1760</a>
+  </nav>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <p class="kick">Podotherapie in Apeldoorn, sinds 1987</p>
+   <h1><span>U loopt ermee.</span><span>U staat <em>erop.</em></span></h1>
+  </div>
+  <div>
+   <p class="lead">Ze zorgen voor uw evenwicht, maar bijna niemand ziet ze staan: voeten. Pas bij klachten blijkt hoeveel ze doen, tot in uw knie, heup en rug.</p>
+   <div class="acts">
+    <a class="btn plum" href="tel:+31555411760">Bel 055 541 1760</a>
+    <a class="btn line" href="mailto:info@podotherapievanderbeek.nl">Mail de praktijk</a>
+   </div>
+  </div>
+ </div>
+ <img class="paint" src="hero-voet.jpg" alt="Kleurrijke voetafdruk, het beeldmerk van de praktijk" width="1920" height="600">
+</section>
+
+<section class="wie" id="wie">
+ <div class="wrap">
+  <div class="foto rv">
+   <img class="a" src="anje.jpg" alt="Een podotherapeut onderzoekt de benen van een patiënt">
+   <div class="stip">1987<small>in Apeldoorn</small></div>
+  </div>
+  <div class="rv">
+   <h2>Kleinschalig, met een eigen kijk op voeten.</h2>
+   <p class="zin">Bij Podotherapie Van der Beek kiest u bewust voor persoonlijke aandacht. U wordt behandeld door Anje van der Beek.</p>
+   <ul class="tijd">
+    <li><b>1986</b><span>Afgestudeerd in Podotherapie aan Fontys Hogescholen in Eindhoven.</span></li>
+    <li><b>1987</b><span>De praktijk wordt gevestigd in Apeldoorn.</span></li>
+    <li><b>2011</b><span>Een van de eerste podotherapeuten in Nederland die afstudeert als diabetespodotherapeut.</span></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="spoor" id="spoor">
+ <div class="wrap">
+  <div class="kop rv">
+   <h2>Van teen tot <em>lage rug.</em></h2>
+   <p>Podotherapeuten zijn gespecialiseerd in voet- en houdingsklachten. Zo loopt de route langs de plekken waar u bij Podotherapie Van der Beek mee terecht kunt.</p>
+  </div>
+  <div class="pad" id="pad">
+   <div class="stap"><svg viewBox="0 0 60 124" fill="#f3a6c6"><use href="#voet"/></svg><h3>Tenen, nagel en huid</h3></div>
+   <div class="stap"><svg viewBox="0 0 60 124" fill="#ffd565"><use href="#voet"/></svg><h3>Voorvoet</h3></div>
+   <div class="stap"><svg viewBox="0 0 60 124" fill="#f7992f"><use href="#voet"/></svg><h3>Middenvoet</h3></div>
+   <div class="stap"><svg viewBox="0 0 60 124" fill="#7cc3e8"><use href="#voet"/></svg><h3>Achtervoet</h3></div>
+   <div class="stap"><svg viewBox="0 0 60 124" fill="#ba88a1"><use href="#voet"/></svg><h3>Enkel en onderbeen</h3></div>
+   <div class="stap"><svg viewBox="0 0 60 124" fill="#f3a6c6"><use href="#voet"/></svg><h3>Knie</h3></div>
+   <div class="stap"><svg viewBox="0 0 60 124" fill="#ffd565"><use href="#voet"/></svg><h3>Heup, bekken en lage rug</h3></div>
+  </div>
+  <div class="na rv">
+   <a class="btn orange" href="tel:+31555411760">Maak een afspraak, 055 541 1760</a>
+   <p>De behandelmogelijkheden lopen van zolen en ortheses tot advies en voorlichting.</p>
+  </div>
+ </div>
+</section>
+
+<section class="diab" id="diabetes">
+ <div class="wrap">
+  <div class="rv">
+   <h2>Diabetes en uw voeten.</h2>
+   <div class="stat"><b>25%</b><p>van de mensen met diabetes in Nederland krijgt een diabetische voet. Bij 15% van hen ontstaat een voetwond.</p></div>
+   <p class="uit">Cijfers zoals de praktijk ze noemt. Anje van der Beek is sinds 2011 diabetespodotherapeut.</p>
+  </div>
+  <div class="rv">
+   <details open><summary>Gevoel</summary><p>Het gevoel in de voeten kan verminderen of verdwijnen. Een te kleine schoen, een likdoorn, een steentje in uw schoen of een te warm voetenbad voelt u dan niet meer. Zo ontstaan wondjes die moeilijk genezen.</p></details>
+   <details><summary>Doorbloeding</summary><p>De doorbloeding van en naar uw voeten kan afnemen. De huid wordt kwetsbaarder, gaat sneller kapot en wondjes genezen langzaam of helemaal niet.</p></details>
+   <details><summary>Vorm</summary><p>Door uitval van bepaalde zenuwen kan de vorm van uw voeten veranderen. Klauwtenen en hamertenen kunnen ontstaan en de voet kan holler worden. Dat vergroot de kans op drukplekken, eelt en wonden.</p></details>
+   <details><summary>Stijve gewrichten</summary><p>De gewrichten van de voeten worden stijver. U gebruikt uw voeten minder goed, waardoor de kans op drukplekken en wonden toeneemt.</p></details>
+   <details><summary>Infecties</summary><p>Met diabetes bent u vatbaarder voor infecties, zoals schimmelinfecties van huid en nagels. Heeft u een wondje aan uw voet, dan is de kans op een infectie groot.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="kw">
+ <div class="wrap">
+  <div class="rv">
+   <h2>Kwaliteit die gemeten wordt.</h2>
+   <div class="cijfers">
+    <div class="c"><b>8,9</b><span>Keuring begin 2018 door een onafhankelijke instantie</span></div>
+    <div class="c"><b>9,1</b><span>Patiënttevredenheid in 2021 en in 2022</span></div>
+   </div>
+   <p class="reg">Aangesloten bij NVvP, NVvDP, Loopzorgalliantie en het Kwaliteitsregister Paramedici. Podotherapeut is een beschermde titel binnen de BIG-wet.</p>
+  </div>
+  <div class="keur rv"><img src="keurmerk.jpg" alt="Praktijkkeurmerk Podotherapie, erkend door Stichting Podotherapie Nederland" width="560"></div>
+ </div>
+</section>
+
+<section class="zorg">
+ <div class="wrap">
+  <div class="blok rv">
+   <h3>Thuis blijven oefenen</h3>
+   <p>Uw podotherapeut geeft oefeningen mee voor thuis. Op de website van de praktijk vindt u ze in vier delen, met voorbeeldfilmpjes.</p>
+  </div>
+  <div class="blok rv">
+   <h3>Vergoeding 2026</h3>
+   <p>De praktijk zet de vergoedingen van de aanvullende verzekeringen jaarlijks op een rij. Top 3 voor 2026:</p>
+   <div class="top3"><span>ASR</span><span>Unive</span><span>VGZ</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="rv"><h2>Last van uw voeten?</h2></div>
+  <div class="rv">
+   <a class="tel" href="tel:+31555411760">055 541 1760</a>
+   <dl>
+    <dt>E-mail</dt><dd><a href="mailto:info@podotherapievanderbeek.nl">info@podotherapievanderbeek.nl</a></dd>
+    <dt>Adres</dt><dd>Leidekkersdreef 1<br>7328 AT Apeldoorn</dd>
+   </dl>
+   <a class="btn plum" href="mailto:info@podotherapievanderbeek.nl">Stuur een bericht</a>
+  </div>
+ </div>
+ <div class="wrap fw"><div class="foot"><span>KvK 08196466, AGB-code praktijk 26050064</span><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners</span></div></div>
+</section>
+
+<a class="callbar" href="tel:+31555411760">Bel 055 541 1760</a>
+
+<script>
+(function(){
+ var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+ var rv=[].slice.call(document.querySelectorAll('.rv,.stap'));
+ if('IntersectionObserver' in window && !reduce){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.35,rootMargin:'0px 0px -8% 0px'});
+  rv.forEach(function(el){io.observe(el)});
+ } else rv.forEach(function(el){el.classList.add('in')});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ergotherapie Noord, Groningen en Leek</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Albert+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#c42727;--red-d:#9b1c1c;--ink:#2b2b2e;--grey:#e9e6e2;--paper:#faf8f5;--sky:#cfe3f2;--kop:'Syne',system-ui,sans-serif;--tekst:'Albert Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--tekst);font-size:18px;line-height:1.65;color:var(--ink);background:var(--paper);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1220px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--kop);font-weight:800;line-height:1;letter-spacing:-.03em}
+.btn{display:inline-flex;align-items:center;padding:16px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.white{background:#fff;color:var(--red-d)}
+.btn.line{border:2px solid rgba(255,255,255,.75);color:#fff}
+.btn.red{background:var(--red);color:#fff}
+
+.top{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 #e6e1db}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px}
+.top img{height:40px;width:auto}
+.top nav{display:flex;gap:28px;font-size:15px;font-weight:500;align-items:center}
+.top nav a{text-decoration:none}
+.top nav a:hover{color:var(--red)}
+.top .tel{background:var(--red);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;white-space:nowrap}
+.top .tel:hover{color:#fff}
+
+/* hero */
+.hero{background:var(--red);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:70px}
+.kick{font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#ffd3cf;margin-bottom:22px}
+.hero h1{font-size:clamp(40px,5.6vw,86px);line-height:1.04}
+.hero h1 .w{display:block;color:#fff;position:relative;min-height:1.05em;font-family:var(--kop)}
+.hero h1 .w span{display:inline-block;border-bottom:.08em solid #fff;padding-bottom:.02em;transition:opacity .35s,transform .35s}
+.hero h1 .w span.out{opacity:0;transform:translateY(.25em)}
+.hero p.lead{font-size:21px;max-width:26em;margin:28px 0 34px;color:#ffe7e4}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.raam{position:relative;justify-self:end;width:100%;max-width:440px}
+.raam img{width:100%;height:auto;aspect-ratio:4/4.7;object-fit:cover;object-position:46% 35%;border-radius:999px 999px 28px 28px;box-shadow:0 40px 80px rgba(80,0,0,.35)}
+.raam .tag{position:absolute;left:-40px;bottom:46px;background:#fff;color:var(--ink);padding:16px 22px;border-radius:18px;font-weight:700;font-size:16px;line-height:1.3;box-shadow:0 16px 40px rgba(80,0,0,.25);transform:rotate(-3deg)}
+.raam .tag b{display:block;font-family:var(--kop);font-size:22px;color:var(--red)}
+.hero .ring{position:absolute;right:-180px;top:-200px;width:620px;height:620px;border-radius:50%;border:70px solid rgba(255,255,255,.07)}
+
+/* zin */
+.zin{padding:110px 0 100px}
+.zin .wrap{max-width:1100px}
+.zin h2{font-size:clamp(30px,4.4vw,64px);max-width:15em}
+.zin h2 em{font-style:normal;color:var(--red)}
+.zin .chips{display:flex;flex-wrap:wrap;gap:10px;margin:40px 0 44px}
+.chip{font:inherit;font-weight:500;font-size:17px;border:2px solid var(--ink);background:transparent;color:var(--ink);padding:9px 20px;border-radius:999px;cursor:pointer;transition:all .2s}
+.chip:hover{background:var(--grey)}
+.chip[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.manieren{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:3px solid var(--ink)}
+.manieren div{padding:22px 24px 0 0}
+.manieren div+div{padding-left:24px;border-left:1px solid #cfc9c1}
+.manieren h3{font-size:24px;margin-bottom:10px}
+.manieren p{font-size:16px}
+
+/* voor wie */
+.wie{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+.wie>div{padding:100px 6vw 100px 5vw}
+.wie .v{background:var(--ink);color:#fff}
+.wie .k{background:var(--sky);color:var(--ink)}
+.wie h2{font-size:clamp(30px,3.8vw,56px);margin-bottom:34px;overflow-wrap:anywhere}
+.wie .v h2{color:#ffb2ab}
+.wie ul{list-style:none}
+.wie li{padding:22px 0;border-top:1px solid rgba(255,255,255,.25)}
+.wie .k li{border-color:rgba(43,43,46,.25)}
+.wie li b{display:block;font-family:var(--kop);font-size:23px;letter-spacing:-.02em;margin-bottom:6px;line-height:1.15}
+.wie li span{font-size:16.5px;opacity:.9}
+.wie .v{padding-left:max(28px,calc((100vw - 1220px)/2 + 28px))}
+
+/* team */
+.team{padding:120px 0 110px;background:var(--paper)}
+.team h2{font-size:clamp(32px,5vw,76px);max-width:12em}
+.team h2 em{font-style:normal;color:var(--red)}
+.team .rij{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:34px;margin-top:60px;align-items:start}
+.pers img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:26px;transition:transform .6s}
+.pers .f{overflow:hidden;border-radius:26px;background:var(--grey)}
+.pers:hover img{transform:scale(1.04)}
+.pers:nth-child(2){margin-top:70px}
+.pers:nth-child(3) img{object-position:44% 25%}
+.pers:nth-child(3){margin-top:30px}
+.pers h3{font-size:30px;margin:20px 0 4px}
+.pers .tel{font-weight:700;color:var(--red);text-decoration:none}
+.pers p{font-size:16px;margin-top:8px}
+.pers .nu{font-size:14px;color:#6b6761;margin-bottom:2px}
+
+/* verwijzing */
+.verw{background:var(--red);color:#fff;padding:100px 0}
+.verw .wrap{display:grid;grid-template-columns:.9fr 1.3fr;gap:70px;align-items:start}
+.verw h2{font-size:clamp(30px,4.2vw,60px)}
+.verw .groot{font-family:var(--kop);font-weight:800;font-size:clamp(70px,9vw,140px);line-height:.9;margin-top:30px;letter-spacing:-.04em}
+.verw .groot small{display:block;font-family:var(--tekst);font-weight:500;font-size:17px;letter-spacing:0;margin-top:10px;max-width:18em;color:#ffe7e4}
+.verw ol{list-style:none}
+.verw li{padding:24px 0;border-top:1px solid rgba(255,255,255,.4)}
+.verw li:last-child{border-bottom:1px solid rgba(255,255,255,.4)}
+.verw li b{font-family:var(--kop);font-size:26px;letter-spacing:-.02em;display:block;margin-bottom:6px;line-height:1.1}
+.verw li span{color:#ffe7e4}
+
+/* loc */
+.loc{padding:110px 0 100px}
+.loc h2{font-size:clamp(30px,4.6vw,64px);max-width:12em}
+.loc .rij{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:50px;border-top:3px solid var(--ink)}
+.loc .rij div{padding:26px 26px 0 0}
+.loc .rij div+div{padding-left:26px;border-left:1px solid #cfc9c1}
+.loc h3{font-size:24px;margin-bottom:8px}
+.loc .gebied{margin-top:44px;font-size:17px;max-width:44em}
+
+/* contact */
+.contact{background:var(--ink);color:#fff;padding:100px 0 36px}
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:end}
+.contact h2{font-size:clamp(38px,5.6vw,88px)}
+.contact h2 em{font-style:normal;color:#ff9d94}
+.contact .nr{display:block;font-family:var(--kop);font-weight:800;font-size:clamp(40px,5.2vw,72px);text-decoration:none;color:#fff;letter-spacing:-.03em;line-height:1;margin-bottom:22px}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:6px 22px;margin-bottom:26px}
+.contact dt{color:#b9b4ad}
+.contact .fw{display:block;padding-top:70px}
+.foot{border-top:1px solid rgba(255,255,255,.2);padding-top:20px;font-size:13px;color:#b9b4ad;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.callbar{display:none}
+
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.pers img{transition:none}.hero h1 .w span{transition:none}}
+
+@media (max-width:900px){
+ body{font-size:17px}
+ .top nav a:not(.tel){display:none}
+ .top img{height:36px}
+ .top .tel{padding:9px 14px;font-size:14px}
+ .hero .wrap{grid-template-columns:minmax(0,1fr);padding-top:44px;padding-bottom:70px}
+ .hero h1{font-size:9.2vw}
+ .raam{justify-self:center;max-width:340px}
+ .raam .tag{left:-12px}
+ .zin{padding:80px 0}
+ .manieren{grid-template-columns:1fr 1fr}
+ .manieren div:nth-child(3){padding-left:0;border-left:0}
+ .manieren div{padding-bottom:20px}
+ .wie{grid-template-columns:minmax(0,1fr)}
+ .wie>div,.wie .v{padding:70px 28px}
+ .team{padding:80px 0}
+ .team h2{font-size:6.2vw}
+ .contact h2,.loc h2,.verw h2,.zin h2{overflow-wrap:break-word}
+ .team .rij{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;margin-top:40px}
+ .pers:first-child{grid-column:1/-1}
+ .pers:nth-child(2),.pers:nth-child(3){margin-top:0}
+ .pers h3{font-size:19px;overflow-wrap:anywhere}
+ .pers p{font-size:15px}
+ .verw .wrap,.contact .wrap{grid-template-columns:1fr;gap:40px}
+ .verw,.loc{padding:80px 0}
+ .loc .rij{grid-template-columns:1fr}
+ .loc .rij div,.loc .rij div+div{padding:22px 0;border-left:0;border-top:1px solid #cfc9c1}
+ .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--red);color:#fff;justify-content:center;padding:15px;font-weight:700;text-decoration:none;font-size:17px;box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+ body{padding-bottom:56px}
+}
+@media (max-width:520px){
+ .manieren{grid-template-columns:1fr}
+ .manieren div+div{padding-left:0;border-left:0;border-top:1px solid #cfc9c1}
+}
+</style>
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body>
+
+<header class="top">
+ <div class="wrap">
+  <a href="#"><img src="logo.jpg" alt="Ergotherapie noord"></a>
+  <nav>
+   <a href="#wie">Voor wie</a>
+   <a href="#team">Team</a>
+   <a href="#verwijzing">Verwijzing</a>
+   <a href="#contact">Contact</a>
+   <a class="tel" href="tel:+31502307000">050 230 7000</a>
+  </nav>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="ring" aria-hidden="true"></div>
+ <div class="wrap">
+  <div>
+   <p class="kick">Ergotherapie in Groningen en Leek</p>
+   <h1>Ik wil weer zelf <span class="w" id="woord" aria-live="off"><span>douchen.</span></span></h1>
+   <p class="lead">Als zelfstandigheid niet vanzelfsprekend is, kijkt een ergotherapeut vooral naar wat je nog wél kunt. En traint, adviseert en denkt met je mee.</p>
+   <div class="acts">
+    <a class="btn white" href="tel:+31502307000">Bel 050 230 7000</a>
+    <a class="btn line" href="#verwijzing">Zonder verwijsbrief langskomen</a>
+   </div>
+  </div>
+  <div class="raam">
+   <img src="emma.jpg" alt="Emma Lankhaar, ergotherapeut bij Ergotherapie noord" width="1600" height="1066">
+   <div class="tag"><b>Sinds 2013</b>in Groningen en Leek</div>
+  </div>
+ </div>
+</section>
+
+<section class="zin" id="zin">
+ <div class="wrap">
+  <h2 class="rv">Wat wil jij weer <em>zelf kunnen?</em></h2>
+  <div class="chips rv" id="chips" role="group" aria-label="Kies een activiteit">
+   <button class="chip" aria-pressed="true">jezelf wassen en aankleden</button>
+   <button class="chip" aria-pressed="false">eten klaarmaken</button>
+   <button class="chip" aria-pressed="false">boodschappen doen</button>
+   <button class="chip" aria-pressed="false">stofzuigen</button>
+   <button class="chip" aria-pressed="false">fietsen</button>
+   <button class="chip" aria-pressed="false">werken</button>
+   <button class="chip" aria-pressed="false">huiswerk maken</button>
+   <button class="chip" aria-pressed="false">sporten</button>
+   <button class="chip" aria-pressed="false">biljarten</button>
+   <button class="chip" aria-pressed="false">spelen</button>
+  </div>
+  <div class="manieren rv">
+   <div><h3>Training</h3><p>Gericht oefenen, zodat je de activiteit weer zelf kunt uitvoeren.</p></div>
+   <div><h3>Een andere manier</h3><p>Je leert de activiteit op een andere manier te doen.</p></div>
+   <div><h3>Een hulpmiddel</h3><p>Een hulpmiddel dat past bij jou en bij wat je wilt doen.</p></div>
+   <div><h3>Aanpassing</h3><p>De activiteit of je omgeving aanpassen, bijvoorbeeld in huis.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="wie" id="wie">
+ <div class="v">
+  <h2 class="rv">Volwassenen</h2>
+  <ul class="rv">
+   <li><b>Kwetsbare ouderen en mensen met dementie</b><span>Voorkomen van (dreigend) valgevaar en verbeteren van zelfzorg en huishouden. Mantelzorgers krijgen psycho-educatie en praktische tips.</span></li>
+   <li><b>Parkinson(isme) en MS</b><span>Problemen met transfers, aankleden of zelfstandig douchen. Advies en training, eventueel met hulpmiddelen, en een zinvolle daginvulling binnen de beschikbare energie.</span></li>
+   <li><b>Herstel na NAH, post-COVID en bij burn-out</b><span>Grip krijgen op belasting en belastbaarheid. Praktische strategieën voor vermoeidheid, cognitieve overbelasting, re-integratie en dagstructuur.</span></li>
+  </ul>
+ </div>
+ <div class="k">
+  <h2 class="rv">Kinderen</h2>
+  <ul class="rv">
+   <li><b>0 tot 18 jaar</b><span>Schoolse taken als schrijven, fijne motoriek en concentratie. Spelontwikkeling, zelfverzorging en overprikkeling.</span></li>
+   <li><b>Kinderen met een meervoudige beperking</b><span>Complexe aanvragen voor hulpmiddelen, zoals aangepast zitten en liggen en rolstoelen, en woningaanpassingen.</span></li>
+   <li><b>Ook na je 18e</b><span>Heeft een jongere nog ondersteuning nodig, dan blijft de ergotherapeut een vertrouwd gezicht.</span></li>
+  </ul>
+ </div>
+</section>
+
+<section class="team" id="team">
+ <div class="wrap">
+  <h2 class="rv">Drie ergotherapeuten. <em>Eén praktijk.</em></h2>
+  <div class="rij">
+   <article class="pers rv">
+    <div class="f"><img src="mirjam.jpg" alt="Mirjam de Vries" loading="lazy"></div>
+    <h3>Mirjam de Vries</h3>
+    <p class="nu">Brede ervaring in eerstelijn, instellingen en sociaal domein</p>
+    <a class="tel" href="tel:+31614404941">06 1440 4941</a>
+    <p>EDOMAH opgeleid (dementie), lid van Parkinsonnet en bestuurslid van het CVA Netwerk Groningen en van ErGO. Talentbegeleider voor meer- en hoogbegaafden. Humor is voor haar belangrijk.</p>
+   </article>
+   <article class="pers rv">
+    <div class="f"><img src="karaly.jpg" alt="Karaly Krol" loading="lazy"></div>
+    <h3>Karaly Krol</h3>
+    <p class="nu">Richt zich vooral op kinderen</p>
+    <a class="tel" href="tel:+31614375489">06 1437 5489</a>
+    <p>Afgestudeerd in 2025 aan de Hanze Hogeschool. Haar onderzoek naar Niet Aangeboren Hersenletsel leverde de HBO afstudeerprijs op.</p>
+   </article>
+   <article class="pers rv">
+    <div class="f"><img src="emma.jpg" alt="Emma Lankhaar" loading="lazy"></div>
+    <h3>Emma Lankhaar</h3>
+    <p class="nu">Richt zich op volwassenen</p>
+    <a class="tel" href="tel:+31627859065">06 2785 9065</a>
+    <p>Afgestudeerd in 2025 aan de Hanze Hogeschool, met bijzondere affiniteit voor belasting en belastbaarheid. Ze neemt de tijd om te luisteren wat voor jou belangrijk is.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="verw" id="verwijzing">
+ <div class="wrap">
+  <div class="rv">
+   <h2>Wel of geen verwijsbrief?</h2>
+   <div class="groot">10 uur<small>ergotherapie per jaar wordt vergoed vanuit de basisverzekering</small></div>
+  </div>
+  <ol class="rv">
+   <li><b>Via je huisarts of specialist</b><span>Een verwijzing kan digitaal verstuurd worden via Zorgdomein.</span></li>
+   <li><b>Met het verwijsformulier</b><span>Download het aanmeldingsformulier en laat het invullen.</span></li>
+   <li><b>Zonder verwijsbrief</b><span>Via Directe Toegang Ergotherapie voert de ergotherapeut een korte screening uit om te kijken of je in aanmerking komt. Bij post-COVID is dat niet mogelijk.</span></li>
+  </ol>
+ </div>
+</section>
+
+<section class="loc" id="locaties">
+ <div class="wrap">
+  <h2 class="rv">Op drie plekken in Groningen en Leek.</h2>
+  <div class="rij rv">
+   <div><h3>Groningen, in het MCZ</h3><p>Sportlaan 2.1<br>9728 PH Groningen</p></div>
+   <div><h3>Groningen centrum</h3><p>HAP Radesingel<br>Radesingel 6<br>9711 EJ Groningen</p></div>
+   <div><h3>Leek, in de Balans</h3><p>Industriepark 55<br>9351 PA Leek</p></div>
+  </div>
+  <p class="gebied rv">Eerstelijns ergotherapie voor de stad Groningen, Haren, Eelde-Paterswolde, Peize, Roden, Leek en Marum. Daarnaast voor tijdelijke klussen als ergotherapeut of binnen het sociaal domein.</p>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="rv"><h2>Zelfstandig, <em>samen.</em></h2></div>
+  <div class="rv">
+   <a class="nr" href="tel:+31502307000">050 230 7000</a>
+   <dl>
+    <dt>E-mail</dt><dd><a href="mailto:info@ergotherapienoord.nl">info@ergotherapienoord.nl</a></dd>
+    <dt>Direct</dt><dd>Mirjam 06 1440 4941<br>Karaly 06 1437 5489<br>Emma 06 2785 9065</dd>
+   </dl>
+   <a class="btn red" href="mailto:info@ergotherapienoord.nl">Stuur een bericht</a>
+  </div>
+ </div>
+ <div class="wrap fw"><div class="foot"><span>KvK 58896716, AGB-code praktijk 88-051405</span><span>Voorstel voor een nieuwe homepage, gemaakt door Headturners</span></div></div>
+</section>
+
+<a class="callbar" href="tel:+31502307000">Bel 050 230 7000</a>
+
+<script>
+(function(){
+ var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+ var rv=[].slice.call(document.querySelectorAll('.rv'));
+ if('IntersectionObserver' in window && !reduce){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  rv.forEach(function(el){io.observe(el)});
+ } else rv.forEach(function(el){el.classList.add('in')});
+
+ var woorden=['douchen.','fietsen.','koken.','schrijven.','werken.','aankleden.','sporten.','spelen.'];
+ var chipsMap={'jezelf wassen en aankleden':'douchen.','eten klaarmaken':'koken.','boodschappen doen':'boodschappen doen.','stofzuigen':'stofzuigen.','fietsen':'fietsen.','werken':'werken.','huiswerk maken':'huiswerk maken.','sporten':'sporten.','biljarten':'biljarten.','spelen':'spelen.'};
+ var w=document.getElementById('woord'),i=0,pinned=false,timer;
+ function show(t){var s=w.firstChild;s.className='out';setTimeout(function(){s.textContent=t;s.className=''},reduce?0:300)}
+ function loop(){timer=setInterval(function(){if(pinned)return;i=(i+1)%woorden.length;show(woorden[i])},2600)}
+ if(!reduce)loop();
+ var chips=[].slice.call(document.querySelectorAll('#chips .chip'));
+ chips.forEach(function(c){c.addEventListener('click',function(){
+  chips.forEach(function(x){x.setAttribute('aria-pressed','false')});c.setAttribute('aria-pressed','true');
+  pinned=true;show(chipsMap[c.textContent]);clearTimeout(window._pt);window._pt=setTimeout(function(){pinned=false},9000);
+ })});
+})();
+</script>
+</body>
+</html>
